@@ -16,10 +16,10 @@ const Team = () => {
       email: "gabin@fcinst.org",
     },
     {
-      name: "Jaeyeon Yoo",
+      name: "Jaeyoun You",
       role: "Researcher",
       expertise: "HCI and Human-AI Interaction Research",
-      email: "jaeyeon@fcinst.org",
+      email: "jane@fcinst.org",
     },
     {
       name: "Hyemin Hwang",
