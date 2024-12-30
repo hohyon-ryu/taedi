@@ -1,20 +1,34 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Vision from "./components/Vision";
 import Research from "./components/Research";
 import Team from "./components/Team";
+import OKR from "./components/OKR";
 import "./App.css";
 
 function App() {
   return (
-    <div className="app">
-      <Header />
-      <main>
-        <Vision />
-        <Research />
-        <Team />
-      </main>
-    </div>
+    <Router>
+      <div className="app">
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Header />
+                <main>
+                  <Vision />
+                  <Research />
+                  <Team />
+                </main>
+              </>
+            }
+          />
+          <Route path="/okr" element={<OKR />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

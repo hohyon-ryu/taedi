@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "../styles/Header.css";
 
 const Header = () => {
@@ -31,6 +32,9 @@ const Header = () => {
           Pioneering the future through digital transformation research and
           innovative governance solutions for a sustainable tomorrow
         </p>
+        <Link to="/okr" className="header-link">
+          2025 Goals
+        </Link>
       </div>
     </header>
   );
