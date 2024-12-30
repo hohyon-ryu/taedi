@@ -1,0 +1,142 @@
+.team {
+  padding: 4rem 2rem;
+  background-color: white;
+}
+
+.team-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.team-member-card {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.team-member-card:hover {
+  transform: translateY(-5px);
+}
+
+.member-avatar {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #C7CEEA, #FEE1E8);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+}
+
+.team-member-card h3 {
+  color: #333;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.member-role {
+  color: #666;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.member-expertise {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.member-email {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.member-email:hover {
+  text-decoration: underline;
+}
+
+.publications {
+  background-color: #f8f9fa;
+  padding: 3rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.publications-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.publications-list h3 {
+  color: #333;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.publications-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.publications-list li {
+  background-color: white;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  color: #666;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.publications-list li:hover {
+  transform: translateX(5px);
+}
+
+@media (max-width: 1024px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .team {
+    padding: 3rem 1rem;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .team h2 {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .publications {
+    padding: 2rem 1.5rem;
+  }
+}

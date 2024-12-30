@@ -1,0 +1,111 @@
+.research {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+}
+
+.research-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.research h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.research-areas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.research-area-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.research-area-card:hover {
+  transform: translateY(-5px);
+}
+
+.research-area-card h3 {
+  color: #333;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.research-area-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  color: #333;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.project-status {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.progress-bar {
+  height: 8px;
+  background-color: #eee;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #C7CEEA, #A0E7E5);
+  transition: width 0.3s ease;
+}
+
+.completion {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .research {
+    padding: 3rem 1rem;
+  }
+
+  .research-areas,
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .research h2 {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .research-area-card,
+  .project-card {
+    padding: 1.5rem;
+  }
+}
