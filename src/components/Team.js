@@ -40,7 +40,7 @@ const Team = () => {
       <div className="team-content">
         <h2>Research Team Profiles</h2>
         <img
-          src="/static/team.jpg"
+          src={process.env.PUBLIC_URL + "/static/team.jpg"}
           alt="TAEDI Research Team"
           className="team-photo"
         />
