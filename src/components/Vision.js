@@ -4,29 +4,29 @@ import "../styles/Vision.css";
 const Vision = () => {
   const changes = [
     {
-      title: "강화",
+      title: "Enhancement",
       color: "#C7CEEA",
-      description: "Enhancement - 디지털 기술을 통한 인간 능력의 확장",
+      description: "Expanding human capabilities through digital technology",
     },
     {
-      title: "연결",
+      title: "Hyperconnectivity",
       color: "#FEE1E8",
-      description: "Hyperconnectivity - 초연결 사회에서의 새로운 관계",
+      description: "New relationships in a hyperconnected society",
     },
     {
-      title: "가속",
+      title: "Acceleration",
       color: "#A0E7E5",
-      description: "Acceleration - 기술 발전과 사회 변화의 가속화",
+      description: "Accelerating technological progress and social change",
     },
   ];
 
   return (
     <section className="vision">
       <div className="vision-content">
-        <h2>팀 비전 & 미션</h2>
+        <h2>Team Vision & Mission</h2>
         <div className="vision-goal">
-          <h3>2025년 목표</h3>
-          <p>디지털 시대의 새로운 거버넌스 체계 정립</p>
+          <h3>2025 Goal</h3>
+          <p>Establishing new governance systems for the digital age</p>
         </div>
         <div className="changes-grid">
           {changes.map((change, index) => (

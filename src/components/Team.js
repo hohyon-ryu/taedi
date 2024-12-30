@@ -4,27 +4,27 @@ import "../styles/Team.css";
 const Team = () => {
   const teamMembers = [
     {
-      name: "유호현",
-      role: "팀장",
-      expertise: "AI 기술과 거버넌스 융합 연구 전문가",
+      name: "Hohyon Ryu",
+      role: "Team Lead",
+      expertise: "AI Technology and Governance Integration Expert",
       email: "hohyon@fcinst.org",
     },
     {
-      name: "노가빈",
-      role: "연구원",
-      expertise: "사회학 관점의 거버넌스 연구",
+      name: "Gabin Noh",
+      role: "Researcher",
+      expertise: "Governance Research from Sociological Perspective",
       email: "gabin@fcinst.org",
     },
     {
-      name: "유재연",
-      role: "연구원",
-      expertise: "HCI 및 인간-AI 상호작용 연구",
+      name: "Jaeyeon Yoo",
+      role: "Researcher",
+      expertise: "HCI and Human-AI Interaction Research",
       email: "jaeyeon@fcinst.org",
     },
     {
-      name: "황혜민",
-      role: "인턴",
-      expertise: "글로벌 사례 연구 및 지원",
+      name: "Hyemin Hwang",
+      role: "Intern",
+      expertise: "Global Case Studies and Support",
       email: "hyemin@fcinst.org",
     },
   ];
@@ -38,7 +38,7 @@ const Team = () => {
   return (
     <section className="team">
       <div className="team-content">
-        <h2>연구진 프로필</h2>
+        <h2>Research Team Profiles</h2>
         <div className="team-grid">
           {teamMembers.map((member, index) => (
             <div key={index} className="team-member-card">
@@ -54,9 +54,9 @@ const Team = () => {
         </div>
 
         <div className="publications">
-          <h2>학술 성과</h2>
+          <h2>Academic Achievements</h2>
           <div className="publications-list">
-            <h3>논문 출판 계획 (2024-2025)</h3>
+            <h3>Publication Plan (2024-2025)</h3>
             <ul>
               {publications.map((pub, index) => (
                 <li key={index}>{pub}</li>
