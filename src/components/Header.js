@@ -25,11 +25,12 @@ const Header = () => {
         }}
       />
       <div className="header-content">
-        <h1>Taejae Future Consensus Institute</h1>
-        <h2>Digital Transformation Team</h2>
+        <h1>태재미래전략연구</h1>
+        <h2>Taejae Future Consensus Institute</h2>
+        <h3>Digital Transformation Team</h3>
         <p className="header-subtitle">
-          Researching social transformation through digital technology and
-          designing new governance systems for a healthy and secure future
+          Pioneering the future through digital transformation research and
+          innovative governance solutions for a sustainable tomorrow
         </p>
       </div>
     </header>
