@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/taedi/static/css/main.f855e6bc.css",
-    "main.js": "/taedi/static/js/main.0fedba59.js",
+    "main.css": "/taedi/static/css/main.17164f89.css",
+    "main.js": "/taedi/static/js/main.fb87ac3f.js",
     "static/js/453.d5c0fa1d.chunk.js": "/taedi/static/js/453.d5c0fa1d.chunk.js",
-    "static/media/logo.svg": "/taedi/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/taedi/index.html",
-    "main.f855e6bc.css.map": "/taedi/static/css/main.f855e6bc.css.map",
-    "main.0fedba59.js.map": "/taedi/static/js/main.0fedba59.js.map",
+    "main.17164f89.css.map": "/taedi/static/css/main.17164f89.css.map",
+    "main.fb87ac3f.js.map": "/taedi/static/js/main.fb87ac3f.js.map",
     "453.d5c0fa1d.chunk.js.map": "/taedi/static/js/453.d5c0fa1d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.0fedba59.js"
+    "static/css/main.17164f89.css",
+    "static/js/main.fb87ac3f.js"
   ]
 }
