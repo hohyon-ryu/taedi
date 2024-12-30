@@ -39,6 +39,14 @@ const Team = () => {
     <section className="team">
       <div className="team-content">
         <h2>Research Team Profiles</h2>
+        <div className="team-intro">
+          <p>
+            Meet Taedi, our beloved mascot smart bear, whose name combines
+            "Taejae" and "Digital". As our team's symbol of innovation and
+            wisdom, Taedi represents our commitment to bridging the gap between
+            technology and governance in the digital age.
+          </p>
+        </div>
         <img
           src={process.env.PUBLIC_URL + "/static/team.jpg"}
           alt="TAEDI Research Team"
