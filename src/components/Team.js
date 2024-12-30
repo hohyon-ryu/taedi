@@ -39,6 +39,11 @@ const Team = () => {
     <section className="team">
       <div className="team-content">
         <h2>Research Team Profiles</h2>
+        <img
+          src="/static/team.jpg"
+          alt="TAEDI Research Team"
+          className="team-photo"
+        />
         <div className="team-grid">
           {teamMembers.map((member, index) => (
             <div key={index} className="team-member-card">
