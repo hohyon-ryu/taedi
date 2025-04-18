@@ -3,9 +3,7 @@ import "../styles/OKR.css";
 
 const OKR = () => {
   return (
-    <div className="okr-container">
-      {/* OKR section completely removed */}
-    </div>
+    <div className="okr-container">{/* OKR section completely removed */}</div>
   );
 };
 

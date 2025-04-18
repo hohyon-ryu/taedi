@@ -40,8 +40,9 @@ const Research = () => {
       title: "인간-AI 결합 에이전트의 시너제틱 인텔리전스 거버넌스 모델 제안",
       conference: "HCI Korea 2025",
       description: "인간과 AI의 협력 거버넌스 모델에 관한 연구",
-      fileLink: "/static/publications/HCI 2025 인간-AI 결합 에이전트의 시너제틱 인텔리전스 거버넌스 모델 제안.pdf"
-    }
+      fileLink:
+        "/static/publications/HCI 2025 인간-AI 결합 에이전트의 시너제틱 인텔리전스 거버넌스 모델 제안.pdf",
+    },
   ];
 
   return (
@@ -64,7 +65,12 @@ const Research = () => {
               <h3>{publication.title}</h3>
               <p className="publication-venue">{publication.conference}</p>
               <p>{publication.description}</p>
-              <a href={publication.fileLink} target="_blank" rel="noopener noreferrer" className="download-btn">
+              <a
+                href={publication.fileLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="download-btn"
+              >
                 Download PDF
               </a>
             </div>
