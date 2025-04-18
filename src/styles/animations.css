@@ -119,7 +119,96 @@
   transform: translateY(0);
 }
 
+/* Highlight utilities - Single color */
+:root {
+  --highlight-color: #3B82F6; /* Primary blue highlight color */
+}
+
+.highlight {
+  color: var(--highlight-color);
+  font-weight: 600;
+}
+
+.highlight-bg {
+  background: linear-gradient(120deg, rgba(59, 130, 246, 0.15) 0%, rgba(59, 130, 246, 0.05) 100%);
+  padding: 0 0.25rem;
+  border-radius: 3px;
+}
+
+.highlight-underline {
+  text-decoration: none;
+  background-image: linear-gradient(120deg, var(--highlight-color) 0%, var(--highlight-color) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  opacity: 0.3;
+  transition: background-size 0.25s ease-in;
+}
+
+.highlight-underline:hover {
+  background-size: 100% 0.3em;
+}
+
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(90deg, var(--highlight-color), rgba(59, 130, 246, 0.7));
+  display: inline;
+}
+
+/* Button styles with highlight color - Simplified */
+.download-btn, .view-poster-btn {
+  background-color: var(--highlight-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.download-btn:hover, .view-poster-btn:hover {
+  background-color: rgba(59, 130, 246, 0.85);
+  transform: translateY(-2px);
+}
+
 /* Ensures elements are visible by default before JS loads */
 .animate-on-scroll {
   will-change: opacity, transform;
+}
+
+/* Publication and authors styling */
+.publication-english-title {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 0.7rem;
+  line-height: 1.4;
+}
+
+.publication-authors {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.author-info {
+  padding-right: 0.8rem;
+  margin-right: 0.8rem;
+  margin-bottom: 0.4rem;
+}
+
+.author-name {
+  font-weight: 500;
+  color: #333;
+}
+
+.author-affiliation {
+  font-size: 0.85rem;
+  color: #666;
+  margin-left: 0.3rem;
 }

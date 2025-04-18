@@ -46,9 +46,12 @@ const Vision = () => {
             Creating a future where technology empowers positive social
             transformation through equitable digital solutions, inclusive
             governance frameworks, and sustainable innovation practices. We
-            envision a society where technological advancements harmoniously
-            integrate with human needs, enhancing quality of life while
-            preserving core social values and promoting collective well-being.
+            envision a society where technological advancements{" "}
+            <span className="highlight">
+              harmoniously integrate with human needs
+            </span>
+            , enhancing quality of life while preserving core social values and
+            promoting collective well-being.
           </p>
         </div>
 
@@ -64,7 +67,7 @@ const Vision = () => {
           <h3>Mission</h3>
           <p itemProp="slogan">
             Understanding and shaping comprehensive social transformations in
-            the digital age
+            the <span className="highlight">digital age</span>
           </p>
         </div>
       </div>

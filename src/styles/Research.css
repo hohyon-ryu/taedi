@@ -451,6 +451,14 @@
   text-align: right;
 }
 
+.publication-english-title {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 0.7rem;
+  line-height: 1.4;
+}
+
 @media (max-width: 1024px) {
   .research-areas,
   .progress-container {

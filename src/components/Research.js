@@ -52,6 +52,26 @@ const Research = () => {
     {
       title:
         "Governance in the Age of AI: Towards a New Paradigm of Human-AI Collaborative Governance",
+      authors: [
+        {
+          name: "유호현",
+          englishName: "Hohyon Ryu",
+          affiliation: "태재미래전략연구원",
+          englishAffiliation: "Taejae Future Consensus Institute",
+        },
+        {
+          name: "노가빈",
+          englishName: "Gabin Noh",
+          affiliation: "서울대학교, 태재미래전략연구원",
+          englishAffiliation: "Seoul National University",
+        },
+        {
+          name: "유재연",
+          englishName: "Jaeyoun You",
+          affiliation: "서울대학교, 태재미래전략연구원",
+          englishAffiliation: "Seoul National University",
+        },
+      ],
       conference:
         "Dg.o2025 - 26th Annual International Conference on Digital Government Research",
       description:
@@ -61,8 +81,40 @@ const Research = () => {
     },
     {
       title: "인간-AI 결합 에이전트의 시너제틱 인텔리전스 거버넌스 모델 제안",
+      englishTitle:
+        "Proposing a Synergetic Intelligence Governance Model for 'Human-AI' Agents",
+      authors: [
+        {
+          name: "유호현",
+          englishName: "Hohyon Ryu",
+          affiliation: "태재미래전략연구원",
+          englishAffiliation: "Taejae Future Consensus Institute",
+          email: "hohyon@fcinst.org",
+        },
+        {
+          name: "유재연",
+          englishName: "Jaeyoun You",
+          affiliation: "서울대학교, 태재미래전략연구원",
+          englishAffiliation: "Seoul National University",
+          email: "you.jae@snu.ac.kr",
+        },
+        {
+          name: "노가빈",
+          englishName: "Gabin Noh",
+          affiliation: "서울대학교, 태재미래전략연구원",
+          englishAffiliation: "Seoul National University",
+          email: "lvlcs5124@gmail.com",
+        },
+        {
+          name: "황혜민",
+          englishName: "Hyemin Hwang",
+          affiliation: "태재미래전략연구원",
+          englishAffiliation: "Taejae Future Consensus Institute",
+          email: "elly25727766@gmail.com",
+        },
+      ],
       conference: "2025 한국HCI학회 학술대회",
-      venue: "제주 ICC, February 5-7, 2025",
+      venue: "소노벨 비발디파크 (홍천), February 10-12, 2025",
       description:
         "본 연구는 인간과 AI의 협력적 의사결정 모델을 제안하며, 디지털 거버넌스 환경에서 시너지 효과를 극대화하는 방법론을 탐색합니다.",
       fileLink:
@@ -115,7 +167,13 @@ const Research = () => {
                 transitionDelay: `${0.1 * index}s`,
               }}
             >
-              <h3>{area.title}</h3>
+              <h3>
+                {index === 2 || index === 3 ? (
+                  <span className="highlight">{area.title}</span>
+                ) : (
+                  area.title
+                )}
+              </h3>
               <p>{area.description}</p>
             </div>
           ))}
@@ -140,6 +198,22 @@ const Research = () => {
               }}
             >
               <h3>{publication.title}</h3>
+              {publication.englishTitle && (
+                <p className="publication-english-title">
+                  {publication.englishTitle}
+                </p>
+              )}
+
+              {publication.authors && (
+                <div className="publication-authors">
+                  {publication.authors.map((author, authorIndex) => (
+                    <div key={authorIndex} className="author-info">
+                      {author.name} ({author.englishName}), {author.affiliation}
+                    </div>
+                  ))}
+                </div>
+              )}
+
               <p className="publication-venue">{publication.conference}</p>
               {publication.venue && (
                 <p className="publication-venue-details">{publication.venue}</p>
