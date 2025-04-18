@@ -6,9 +6,9 @@ import "../styles/Team.css";
 import "../styles/Vision.css";
 
 export const metadata = {
-  title: "TFCI Digital Transformation Team",
+  title: "TFCI Digital Transformation and Social Changes Team",
   description:
-    "Taejae Future Consensus Institute - Digital Transformation Team. Pioneering the future through digital transformation research and innovative governance solutions.",
+    "Taejae Future Consensus Institute - Digital Transformation and Social Changes Team. Pioneering the future through digital transformation research and innovative governance solutions.",
   viewport: {
     width: "device-width",
     initialScale: 1,
