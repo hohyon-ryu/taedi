@@ -1,4 +1,5 @@
 import FirebaseAnalytics from "../components/FirebaseAnalytics";
+import "../styles/animations.css";
 import "../styles/globals.css";
 import "../styles/Header.css";
 import "../styles/Research.css";

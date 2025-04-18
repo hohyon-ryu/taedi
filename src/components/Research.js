@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import React from "react";
+import { useInView } from "react-intersection-observer";
 import "../styles/Research.css";
 
 const Research = () => {
@@ -52,38 +55,90 @@ const Research = () => {
       conference:
         "Dg.o2025 - 26th Annual International Conference on Digital Government Research",
       description:
-        "AI 거버넌스 패러다임의 변화와 인간-AI 협력적 거버넌스 모델에 관한 연구",
+        "This paper proposes a new governance paradigm that leverages the synergistic intelligence between humans and AI systems. It addresses the challenges in digital governance while suggesting practical frameworks for implementation.",
       fileLink:
         "/static/publications/DGO2025_camera-ready-paper-templatePH_final_resubmint.pdf",
-      venue:
-        "09 – 12 June, Pontifical Catholic University of Rio Grande do Sul, Porto Alegre City, Brazil",
     },
     {
       title: "인간-AI 결합 에이전트의 시너제틱 인텔리전스 거버넌스 모델 제안",
-      conference: "HCI Korea 2025",
-      description: "인간과 AI의 협력 거버넌스 모델에 관한 연구",
+      conference: "2025 한국HCI학회 학술대회",
+      venue: "제주 ICC, February 5-7, 2025",
+      description:
+        "본 연구는 인간과 AI의 협력적 의사결정 모델을 제안하며, 디지털 거버넌스 환경에서 시너지 효과를 극대화하는 방법론을 탐색합니다.",
       fileLink:
         "/static/publications/HCI 2025 인간-AI 결합 에이전트의 시너제틱 인텔리전스 거버넌스 모델 제안.pdf",
     },
   ];
 
+  // Simple title animation using intersection observer
+  const { ref: titleRef, inView: titleInView } = useInView({
+    threshold: 0.2,
+    triggerOnce: true,
+  });
+
+  // Research areas animation using intersection observer
+  const { ref: areasRef, inView: areasInView } = useInView({
+    threshold: 0.1,
+    triggerOnce: true,
+  });
+
+  // Publications animation using intersection observer
+  const { ref: pubRef, inView: pubInView } = useInView({
+    threshold: 0.1,
+    triggerOnce: true,
+  });
+
+  // Posters animation using intersection observer
+  const { ref: postersRef, inView: postersInView } = useInView({
+    threshold: 0.1,
+    triggerOnce: true,
+  });
+
   return (
     <section className="research">
       <div className="research-content">
-        <h2>Research Areas</h2>
-        <div className="research-areas">
+        <h2
+          ref={titleRef}
+          className={titleInView ? "animate-scale visible" : "animate-scale"}
+        >
+          Research Areas
+        </h2>
+
+        <div ref={areasRef} className="research-areas">
           {researchAreas.map((area, index) => (
-            <div key={index} className="research-area-card">
+            <div
+              key={index}
+              className={`research-area-card ${
+                areasInView ? "animate-fade-up visible" : "animate-fade-up"
+              }`}
+              style={{
+                transitionDelay: `${0.1 * index}s`,
+              }}
+            >
               <h3>{area.title}</h3>
               <p>{area.description}</p>
             </div>
           ))}
         </div>
 
-        <h2>Publications</h2>
+        <h2
+          ref={pubRef}
+          className={pubInView ? "animate-scale visible" : "animate-scale"}
+        >
+          Publications
+        </h2>
+
         <div className="publications-grid">
           {publications.map((publication, index) => (
-            <div key={index} className="publication-card">
+            <div
+              key={index}
+              className={`publication-card ${
+                pubInView ? "animate-fade-left visible" : "animate-fade-left"
+              }`}
+              style={{
+                transitionDelay: `${0.2 * index}s`,
+              }}
+            >
               <h3>{publication.title}</h3>
               <p className="publication-venue">{publication.conference}</p>
               {publication.venue && (
@@ -102,10 +157,26 @@ const Research = () => {
           ))}
         </div>
 
-        <h2>Research Posters</h2>
+        <h2
+          ref={postersRef}
+          className={postersInView ? "animate-scale visible" : "animate-scale"}
+        >
+          Research Posters
+        </h2>
+
         <div className="research-posters">
           {researchPosters.map((poster, index) => (
-            <div key={index} className="research-poster-card">
+            <div
+              key={index}
+              className={`research-poster-card ${
+                postersInView
+                  ? "animate-fade-right visible"
+                  : "animate-fade-right"
+              }`}
+              style={{
+                transitionDelay: `${0.1 * index}s`,
+              }}
+            >
               <h3>
                 <Link href={poster.link}>{poster.title}</Link>
               </h3>
