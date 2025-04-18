@@ -1,8 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
-import OKR from "../components/OKR";
 import Research from "../components/Research";
-import Team from "../components/Team";
 import Vision from "../components/Vision";
 
 export const metadata = {
@@ -29,8 +27,6 @@ export default function Home() {
       <main>
         <Vision />
         <Research />
-        <OKR />
-        <Team />
       </main>
     </>
   );
