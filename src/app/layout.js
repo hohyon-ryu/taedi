@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import FirebaseAnalytics from "../components/FirebaseAnalytics";
 
 export const metadata = {
   title: "TFCI Digital Transformation Team",
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <FirebaseAnalytics />
         <div className="app">{children}</div>
       </body>
     </html>
