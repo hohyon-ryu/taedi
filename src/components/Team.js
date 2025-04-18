@@ -1,5 +1,6 @@
+import Image from "next/image";
 import React from "react";
-import "../styles/Team.css";
+import styles from "../styles/Team.module.css";
 
 const Team = () => {
   const teamMembers = [
@@ -22,10 +23,22 @@ const Team = () => {
       email: "jane@fcinst.org",
     },
     {
-      name: "Hyemin Hwang",
-      role: "Intern",
-      expertise: "Global Case Studies and Support",
-      email: "hyemin@fcinst.org",
+      name: "Minho Kim",
+      role: "Researcher",
+      expertise: "Research Focus Area",
+      email: "minho@fcinst.org",
+    },
+    {
+      name: "Joonyoung Yoon",
+      role: "Researcher",
+      expertise: "Research Focus Area",
+      email: "joonyoung@fcinst.org",
+    },
+    {
+      name: "Suyeon Son",
+      role: "Researcher",
+      expertise: "Research Focus Area",
+      email: "suyeon@fcinst.org",
     },
   ];
 
@@ -36,10 +49,10 @@ const Team = () => {
   ];
 
   return (
-    <section className="team">
-      <div className="team-content">
+    <section className={styles.team}>
+      <div className={styles.teamContent}>
         <h2>Research Team Profiles</h2>
-        <div className="team-intro">
+        <div className={styles.teamIntro}>
           <p>
             Meet Taedi, our beloved mascot smart bear, whose name combines
             "Taejae" and "Digital". As our team's symbol of innovation and
@@ -47,28 +60,35 @@ const Team = () => {
             technology and governance in the digital age.
           </p>
         </div>
-        <img
-          src={process.env.PUBLIC_URL + "/static/team.jpg"}
-          alt="TAEDI Research Team"
-          className="team-photo"
-        />
-        <div className="team-grid">
+        <div className={styles.imageContainer}>
+          <Image
+            src="/static/team.jpg"
+            alt="TAEDI Research Team"
+            className={styles.teamPhoto}
+            width={800}
+            height={500}
+            priority
+            quality={90}
+            sizes="(max-width: 768px) 100vw, 800px"
+          />
+        </div>
+        <div className={styles.teamGrid}>
           {teamMembers.map((member, index) => (
-            <div key={index} className="team-member-card">
-              <div className="member-avatar">{member.name.charAt(0)}</div>
+            <div key={index} className={styles.teamMemberCard}>
+              <div className={styles.memberAvatar}>{member.name.charAt(0)}</div>
               <h3>{member.name}</h3>
-              <p className="member-role">{member.role}</p>
-              <p className="member-expertise">{member.expertise}</p>
-              <a href={`mailto:${member.email}`} className="member-email">
+              <p className={styles.memberRole}>{member.role}</p>
+              <p className={styles.memberExpertise}>{member.expertise}</p>
+              <a href={`mailto:${member.email}`} className={styles.memberEmail}>
                 {member.email}
               </a>
             </div>
           ))}
         </div>
 
-        <div className="publications">
+        <div className={styles.publications}>
           <h2>Academic Achievements</h2>
-          <div className="publications-list">
+          <div className={styles.publicationsList}>
             <h3>Publication Plan (2024-2025)</h3>
             <ul>
               {publications.map((pub, index) => (

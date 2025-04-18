@@ -1,5 +1,7 @@
+"use client";
+
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import "../styles/Header.css";
 
 const Header = () => {
@@ -7,21 +9,23 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setOffset(window.pageYOffset);
+      setOffset(window.scrollY);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    // Using passive listener for better performance
+    window.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <header className="header">
       <div
         className="banner-image"
         style={{
-          backgroundImage: `url('${process.env.PUBLIC_URL}/static/resolution_taedi.jpg')`,
+          backgroundImage: `url('/static/resolution_taedi.jpg')`,
           transform: `translate3d(0, ${offset * 0.4}px, 0)`,
         }}
       />
@@ -32,7 +36,7 @@ const Header = () => {
           Pioneering the future through digital transformation research and
           innovative governance solutions for a sustainable tomorrow
         </p>
-        <Link to="/okr" className="header-link">
+        <Link href="/okr" className="header-link" prefetch={true}>
           2025 Goals
         </Link>
       </div>

@@ -1,0 +1,165 @@
+.team {
+  padding: 4rem 2rem;
+  background-color: white;
+}
+
+.teamContent {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.teamIntro {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  text-align: center;
+  color: #666;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.imageContainer {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.teamPhoto {
+  max-width: 100%;
+  max-height: 600px;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.teamMemberCard {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.teamMemberCard:hover {
+  transform: translateY(-5px);
+}
+
+.memberAvatar {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #C7CEEA, #FEE1E8);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+}
+
+.teamMemberCard h3 {
+  color: #333;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.memberRole {
+  color: #666;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.memberExpertise {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.memberEmail {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.memberEmail:hover {
+  text-decoration: underline;
+}
+
+.publications {
+  background-color: #f8f9fa;
+  padding: 3rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.publicationsList {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.publicationsList h3 {
+  color: #333;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.publicationsList ul {
+  list-style: none;
+  padding: 0;
+}
+
+.publicationsList li {
+  background-color: white;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  color: #666;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.publicationsList li:hover {
+  transform: translateX(5px);
+}
+
+@media (max-width: 1024px) {
+  .teamGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .team {
+    padding: 3rem 1rem;
+  }
+
+  .teamGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .team h2 {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .publications {
+    padding: 2rem 1.5rem;
+  }
+}
