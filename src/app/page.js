@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "../components/Header";
 import Research from "../components/Research";
-import Vision from "../components/Vision";
 import Team from "../components/Team";
+import Vision from "../components/Vision";
 
 export const metadata = {
   title: "태재미래전략연구원 디지털 전환팀 | Digital Transformation Research",
@@ -42,15 +42,19 @@ export const metadata = {
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "ResearchOrganization",
-  "name": "태재미래전략연구원 디지털 전환팀",
-  "alternateName": "TFCI Digital Transformation Team",
-  "url": "https://taedi.org",
-  "logo": "https://taedi.org/static/favicon.png",
-  "description": "디지털 기술의 발전으로 인한 사회 변화를 연구하고, 미래 사회의 비전과 전략을 제시합니다.",
-  "knowsAbout": ["Digital Transformation", "AI Governance", "Digital Economy", "Social Innovation"],
-  "sameAs": [
-    "https://taedi.org"
-  ]
+  name: "태재미래전략연구원 디지털 전환팀",
+  alternateName: "TFCI Digital Transformation Team",
+  url: "https://taedi.org",
+  logo: "https://taedi.org/static/favicon.png",
+  description:
+    "디지털 기술의 발전으로 인한 사회 변화를 연구하고, 미래 사회의 비전과 전략을 제시합니다.",
+  knowsAbout: [
+    "Digital Transformation",
+    "AI Governance",
+    "Digital Economy",
+    "Social Innovation",
+  ],
+  sameAs: ["https://taedi.org"],
 };
 
 export default function Home() {
