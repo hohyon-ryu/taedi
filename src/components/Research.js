@@ -37,12 +37,16 @@ const Research = () => {
 
   const publications = [
     {
-      title: "Governance in the Age of AI: Towards a New Paradigm of Human-AI Collaborative Governance",
-      conference: "Dg.o2025 - 26th Annual International Conference on Digital Government Research",
-      description: "AI 거버넌스 패러다임의 변화와 인간-AI 협력적 거버넌스 모델에 관한 연구",
+      title:
+        "Governance in the Age of AI: Towards a New Paradigm of Human-AI Collaborative Governance",
+      conference:
+        "Dg.o2025 - 26th Annual International Conference on Digital Government Research",
+      description:
+        "AI 거버넌스 패러다임의 변화와 인간-AI 협력적 거버넌스 모델에 관한 연구",
       fileLink:
         "/static/publications/DGO2025_camera-ready-paper-templatePH_final_resubmint.pdf",
-      venue: "09 – 12 June, Pontifical Catholic University of Rio Grande do Sul, Porto Alegre City, Brazil"
+      venue:
+        "09 – 12 June, Pontifical Catholic University of Rio Grande do Sul, Porto Alegre City, Brazil",
     },
     {
       title: "인간-AI 결합 에이전트의 시너제틱 인텔리전스 거버넌스 모델 제안",

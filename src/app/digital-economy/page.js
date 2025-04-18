@@ -64,15 +64,15 @@ const DigitalEconomyPoster = () => {
               <div className="bg-gray-50 p-2 rounded-lg">
                 <h4 className="text-base font-bold text-gray-800 mb-1">개인</h4>
                 <ul className="text-sm space-y-0.5 text-gray-700">
+                  <li>• AI로 인한 슈퍼 휴먼의 등장</li>
                   <li>
-                    • AI로 인한 개인의 능력 강화로 슈퍼휴먼 탄생 - 자기 해결
-                    능력이 뛰어난 개인의 등장
+                    • AI로 소득이 높아지는 사람들과 AI로 문제를 스스로 해결해
+                    비용을 줄이는 사람들로 분화
                   </li>
                   <li>
-                    • AI를 활용하여 영향력 증폭(10%), 비용 절감(30~70%), 소외
-                    계층으로 새롭게 분화
+                    • 경제 활동 변화: 소비가 자동화된 서비스와 전문적 판단을
+                    제공하는 사람들에게 집중됨
                   </li>
-                  <li>• 전문직의 역할이 지식에서 책임으로 변화</li>
                 </ul>
               </div>
 
@@ -80,10 +80,17 @@ const DigitalEconomyPoster = () => {
                 <h4 className="text-base font-bold text-gray-800 mb-1">가정</h4>
                 <ul className="text-sm space-y-0.5 text-gray-700">
                   <li>
-                    • 가족 제도 변화 - 결혼과 출산을 선택으로 인식하는 경향 증가
+                    • 생존과 보호 중심이던 가정의 기능이 약화하고 책임의 역할이
+                    강화함
                   </li>
-                  <li>• 개인 강화로 가족에 대한 의존도 감소, 가족관계 약화</li>
-                  <li>• AI가 건강을 책임지고 커리어를 돕는 스마트홈</li>
+                  <li>
+                    • 상호 책임의 관계 형성에 대한 개인의 선택이 분화하며 혼인율
+                    및 출산율이 감소함
+                  </li>
+                  <li>
+                    • 자녀의 성장에 대한 책임을 더 효율적으로 수행할 수 있는
+                    기술적 저변이 확대됨
+                  </li>
                 </ul>
               </div>
 
@@ -93,11 +100,17 @@ const DigitalEconomyPoster = () => {
                 </h4>
                 <ul className="text-sm space-y-0.5 text-gray-700">
                   <li>
-                    • 능력이 강화된 개인들이 공통 관심사나 가치관 중심으로
-                    형성되는 느슨한 공동체
+                    • 기능적인 필요보다 감정적, 사회적 맥락에서 의존하는 형태의
+                    공동체로 발전
                   </li>
-                  <li>• 물리적 이동의 감소로 온라인 중심 커뮤니티 활성화</li>
-                  <li>• 개인의 사회적 의미가 능력에서 관계로 변화</li>
+                  <li>
+                    • 물리적으로 가까이 분포해야 했던 외주 기능의 수가 크게
+                    줄고, 개인의 이동 거리도 축소함
+                  </li>
+                  <li>
+                    • 집단 의사결정이 필요한 주제에 따라 공동체의 경계가
+                    유연하게 변화함
+                  </li>
                 </ul>
               </div>
 
