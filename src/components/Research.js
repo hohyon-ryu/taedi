@@ -26,29 +26,6 @@ const Research = () => {
     },
   ];
 
-  const projects = [
-    {
-      title: "Synergetic Agent (SA) Development Project",
-      status: "In Progress",
-      completion: 75,
-    },
-    {
-      title: "Multi-layer Community Governance Platform",
-      status: "Planning",
-      completion: 30,
-    },
-    {
-      title: "Digital Synergy Governance Framework Development",
-      status: "In Progress",
-      completion: 60,
-    },
-    {
-      title: "Empirical Study: Community-based Pilot Project",
-      status: "Preparing",
-      completion: 15,
-    },
-  ];
-
   const researchPosters = [
     {
       title: "디지털 시대의 경제 질서 연구 기획안",
@@ -56,6 +33,15 @@ const Research = () => {
         "디지털 전환이 가속화됨에 따라 사회 구조와 경제 질서의 변화 연구",
       link: "/digital-economy",
     },
+  ];
+
+  const publications = [
+    {
+      title: "인간-AI 결합 에이전트의 시너제틱 인텔리전스 거버넌스 모델 제안",
+      conference: "HCI Korea 2025",
+      description: "인간과 AI의 협력 거버넌스 모델에 관한 연구",
+      fileLink: "/static/publications/HCI 2025 인간-AI 결합 에이전트의 시너제틱 인텔리전스 거버넌스 모델 제안.pdf"
+    }
   ];
 
   return (
@@ -71,19 +57,16 @@ const Research = () => {
           ))}
         </div>
 
-        <h2>Major Projects</h2>
-        <div className="projects-grid">
-          {projects.map((project, index) => (
-            <div key={index} className="project-card">
-              <h3>{project.title}</h3>
-              <p className="project-status">Status: {project.status}</p>
-              <div className="progress-bar">
-                <div
-                  className="progress"
-                  style={{ width: `${project.completion}%` }}
-                ></div>
-              </div>
-              <span className="completion">{project.completion}% Complete</span>
+        <h2>Publications</h2>
+        <div className="publications-grid">
+          {publications.map((publication, index) => (
+            <div key={index} className="publication-card">
+              <h3>{publication.title}</h3>
+              <p className="publication-venue">{publication.conference}</p>
+              <p>{publication.description}</p>
+              <a href={publication.fileLink} target="_blank" rel="noopener noreferrer" className="download-btn">
+                Download PDF
+              </a>
             </div>
           ))}
         </div>

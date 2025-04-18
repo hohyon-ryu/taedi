@@ -36,9 +36,6 @@ const Header = () => {
           Pioneering the future through digital transformation research and
           innovative governance solutions for a sustainable tomorrow
         </p>
-        <Link href="/okr" className="header-link" prefetch={true}>
-          2025 Goals
-        </Link>
       </div>
     </header>
   );
