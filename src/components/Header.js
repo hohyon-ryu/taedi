@@ -25,7 +25,7 @@ const Header = () => {
         className="banner-image"
         style={{
           backgroundImage: `url('/static/resolution_taedi.jpg')`,
-          transform: `translate3d(0, ${offset * 0.4}px, 0)`,
+          transform: `translate3d(0, ${offset * 0.8}px, 0)`, // Reduced from 0.4 to 0.3 for less aggressive parallax
         }}
       />
       <div className="header-content">
