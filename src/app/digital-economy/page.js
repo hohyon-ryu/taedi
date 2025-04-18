@@ -25,11 +25,11 @@ const DigitalEconomyPoster = () => {
       <div className="max-w-7xl mx-auto">
         {/* 헤더 */}
         <div className="text-center mb-6">
-          <h1 className="text-4xl font-extrabold mb-2 text-gray-900 tracking-tight">
+          <h1 className="text-3xl font-extrabold mb-2 text-gray-900 tracking-tight">
             디지털 시대의 경제 질서 연구 기획안
           </h1>
           <div className="bg-gray-100 p-3 rounded-lg inline-block">
-            <p className="text-base text-gray-800 italic font-medium">
+            <p className="text-sm text-gray-800 italic font-medium">
               "디지털 전환이 가속화됨에 따라 사회 구조는 어떻게 변화하며, 이러한
               변화는 기존 경제 질서에 어떤 영향을 미치는가?"
             </p>
@@ -55,15 +55,15 @@ const DigitalEconomyPoster = () => {
               </div>
             </div>
             <div className="relative z-10 flex justify-between items-center">
-              <h2 className="text-lg font-bold">1. 디지털 시대 사회 변혁</h2>
+              <h2 className="text-base font-bold">1. 디지털 시대 사회 변혁</h2>
             </div>
           </div>
 
           <div className="px-0 py-3">
-            <div className="grid grid-cols-2 gap-3 mb-4">
+            <div className="grid grid-cols-3 gap-3 mb-4">
               <div className="bg-gray-50 p-2 rounded-lg">
-                <h4 className="text-base font-bold text-gray-800 mb-1">개인</h4>
-                <ul className="text-sm space-y-0.5 text-gray-700">
+                <h4 className="text-sm font-bold text-gray-800 mb-1">개인</h4>
+                <ul className="text-xs space-y-0.5 text-gray-700">
                   <li>• AI로 인한 슈퍼 휴먼의 등장</li>
                   <li>
                     • AI로 소득이 높아지는 사람들과 AI로 문제를 스스로 해결해
@@ -77,8 +77,8 @@ const DigitalEconomyPoster = () => {
               </div>
 
               <div className="bg-gray-50 p-2 rounded-lg">
-                <h4 className="text-base font-bold text-gray-800 mb-1">가정</h4>
-                <ul className="text-sm space-y-0.5 text-gray-700">
+                <h4 className="text-sm font-bold text-gray-800 mb-1">가정</h4>
+                <ul className="text-xs space-y-0.5 text-gray-700">
                   <li>
                     • 생존과 보호 중심이던 가정의 기능이 약화하고 책임의 역할이
                     강화함
@@ -95,10 +95,10 @@ const DigitalEconomyPoster = () => {
               </div>
 
               <div className="bg-gray-50 p-2 rounded-lg">
-                <h4 className="text-base font-bold text-gray-800 mb-1">
+                <h4 className="text-sm font-bold text-gray-800 mb-1">
                   커뮤니티
                 </h4>
-                <ul className="text-sm space-y-0.5 text-gray-700">
+                <ul className="text-xs space-y-0.5 text-gray-700">
                   <li>
                     • 기능적인 필요보다 감정적, 사회적 맥락에서 의존하는 형태의
                     공동체로 발전
@@ -115,11 +115,10 @@ const DigitalEconomyPoster = () => {
               </div>
 
               <div className="bg-gray-50 p-2 rounded-lg">
-                <h4 className="text-base font-bold text-gray-800 mb-1">도시</h4>
-                <ul className="text-sm space-y-0.5 text-gray-700">
+                <h4 className="text-sm font-bold text-gray-800 mb-1">도시</h4>
+                <ul className="text-xs space-y-0.5 text-gray-700">
                   <li>
-                    • 기능별로 전문화된 도시 발전 - 교육도시, 의료도시 등으로
-                    특화
+                    • 기능별로 전문화된 도시 발전 - 교육, 의료도시 등으로 특화
                   </li>
                   <li>
                     • 개인이 필요에 따라 도시를 선택하는 구독형 도시 개념 등장
@@ -131,8 +130,8 @@ const DigitalEconomyPoster = () => {
               </div>
 
               <div className="bg-gray-50 p-2 rounded-lg">
-                <h4 className="text-base font-bold text-gray-800 mb-1">국가</h4>
-                <ul className="text-sm space-y-0.5 text-gray-700">
+                <h4 className="text-sm font-bold text-gray-800 mb-1">국가</h4>
+                <ul className="text-xs space-y-0.5 text-gray-700">
                   <li>• 개인과 국가의 관계 재정립 - 국가 역할 축소와 분권화</li>
                   <li>
                     • 조세 체계의 변화 - 로봇세 등 새로운 과세 대상과 방식 등장
@@ -142,10 +141,10 @@ const DigitalEconomyPoster = () => {
               </div>
 
               <div className="bg-gray-50 p-2 rounded-lg">
-                <h4 className="text-base font-bold text-gray-800 mb-1">
+                <h4 className="text-sm font-bold text-gray-800 mb-1">
                   소유와 분배
                 </h4>
-                <ul className="text-sm space-y-0.5 text-gray-700">
+                <ul className="text-xs space-y-0.5 text-gray-700">
                   <li>
                     • 지식재산권과 데이터 소유권에 대한 새로운 개념 정립 필요
                   </li>
@@ -178,7 +177,7 @@ const DigitalEconomyPoster = () => {
               </div>
             </div>
             <div className="relative z-10 flex justify-between items-center">
-              <h2 className="text-lg font-bold">
+              <h2 className="text-base font-bold">
                 2. 안전하고 건강한 공동체와 경제 질서
               </h2>
             </div>
@@ -188,10 +187,10 @@ const DigitalEconomyPoster = () => {
             <div className="grid grid-cols-3 gap-4">
               {/* AS-IS */}
               <div className="bg-gray-50 p-3 rounded-lg border-l-4 border-gray-400">
-                <h4 className="text-base font-bold text-gray-800 mb-2">
+                <h4 className="text-sm font-bold text-gray-800 mb-2">
                   AS-IS (현 문제점)
                 </h4>
-                <ul className="text-sm space-y-1 text-gray-700">
+                <ul className="text-xs space-y-1 text-gray-700">
                   <li>• 개인 역량 강화와 공동체의 통제 사이의 갈등</li>
                   <li>• 국가 단위 경제 구조와 규제의 한계</li>
                   <li>• 디지털 경제에 맞지 않는 조세 체계</li>
@@ -201,10 +200,10 @@ const DigitalEconomyPoster = () => {
 
               {/* TO-BE */}
               <div className="bg-gray-50 p-3 rounded-lg border-l-4 border-gray-400">
-                <h4 className="text-base font-bold text-gray-800 mb-2">
+                <h4 className="text-sm font-bold text-gray-800 mb-2">
                   TO-BE (바람직한 미래)
                 </h4>
-                <ul className="text-sm space-y-1 text-gray-700">
+                <ul className="text-xs space-y-1 text-gray-700">
                   <li>• 개인 강화와 공동체의 조화로운 성장</li>
                   <li>• 도시 중심 협력 네트워크 경제 구조</li>
                   <li>• 공정하고 효율적인 디지털 조세 체계</li>
@@ -214,10 +213,10 @@ const DigitalEconomyPoster = () => {
 
               {/* TO-DO */}
               <div className="bg-gray-50 p-3 rounded-lg border-l-4 border-gray-400">
-                <h4 className="text-base font-bold text-gray-800 mb-2">
+                <h4 className="text-sm font-bold text-gray-800 mb-2">
                   TO-DO (핵심 연구 과제)
                 </h4>
-                <ul className="text-sm space-y-1 text-gray-700">
+                <ul className="text-xs space-y-1 text-gray-700">
                   <li>1. 개인의 강화와 공동체 변화 연구</li>
                   <li>2. 국가 개념의 변화와 역할 재정의</li>
                   <li>3. 디지털 시대 규제와 조세 체계 구축</li>
@@ -247,7 +246,7 @@ const DigitalEconomyPoster = () => {
               </div>
             </div>
             <div className="relative z-10 flex justify-between items-center">
-              <h2 className="text-lg font-bold">3. 연구 과제</h2>
+              <h2 className="text-base font-bold">3. 연구 과제</h2>
             </div>
           </div>
 
@@ -255,18 +254,18 @@ const DigitalEconomyPoster = () => {
             <div className="grid grid-cols-2 gap-4">
               {/* 과제 1: 개인의 강화와 공동체 변화 */}
               <div className="bg-gray-50 p-3 rounded-lg border-l-4 border-gray-300">
-                <h4 className="text-base font-bold text-gray-800 mb-2">
+                <h4 className="text-sm font-bold text-gray-800 mb-2">
                   과제 1. 개인의 강화와 공동체 변화{" "}
-                  <span className="text-xs font-normal text-gray-500">
+                  <span className="text-2xs font-normal text-gray-500">
                     (유재연)
                   </span>
                 </h4>
-                <p className="text-sm text-gray-700 mb-2">
+                <p className="text-xs text-gray-700 mb-2">
                   디지털 기술은 어떻게 슈퍼휴먼을 만드는가, 그리고 슈퍼휴먼은
                   공동체와 도시를 어떻게 변화시키는가?
                 </p>
 
-                <ul className="text-sm space-y-1 text-gray-700">
+                <ul className="text-xs space-y-1 text-gray-700">
                   <li className="flex items-start">
                     <span className="mr-1">•</span>
                     <div>
@@ -311,18 +310,18 @@ const DigitalEconomyPoster = () => {
 
               {/* 과제 2: 국가 개념의 변화 */}
               <div className="bg-gray-50 p-3 rounded-lg border-l-4 border-gray-300">
-                <h4 className="text-base font-bold text-gray-800 mb-2">
+                <h4 className="text-sm font-bold text-gray-800 mb-2">
                   과제 2. 국가 기능의 재편과 도시-개인의 부상{" "}
-                  <span className="text-xs font-normal text-gray-500">
+                  <span className="text-2xs font-normal text-gray-500">
                     (윤준영)
                   </span>
                 </h4>
-                <p className="text-sm text-gray-700 mb-2">
+                <p className="text-xs text-gray-700 mb-2">
                   국가의 전통적 기능이 어떻게 도시와 개인에게 재분배되고, 이것이
                   미래 사회의 권력구조와 의사결정 메커니즘을 재편할 것인가?
                 </p>
 
-                <ul className="text-sm space-y-1 text-gray-700">
+                <ul className="text-xs space-y-1 text-gray-700">
                   <li className="flex items-start">
                     <span className="mr-1">•</span>
                     <div>
@@ -381,17 +380,17 @@ const DigitalEconomyPoster = () => {
 
               {/* 과제 3: 규제와 조세의 변화 */}
               <div className="bg-gray-50 p-3 rounded-lg border-l-4 border-gray-300">
-                <h4 className="text-base font-bold text-gray-800 mb-2">
+                <h4 className="text-sm font-bold text-gray-800 mb-2">
                   과제 3. 규제와 조세의 변화{" "}
-                  <span className="text-xs font-normal text-gray-500">
+                  <span className="text-2xs font-normal text-gray-500">
                     (김민호)
                   </span>
                 </h4>
-                <p className="text-sm text-gray-700 mb-2">
+                <p className="text-xs text-gray-700 mb-2">
                   디지털 시대의 규제와 조세는 어떻게 달라지는가?
                 </p>
 
-                <ul className="text-sm space-y-1 text-gray-700">
+                <ul className="text-xs space-y-1 text-gray-700">
                   <li className="flex items-start">
                     <span className="mr-1">•</span>
                     <div>
@@ -433,18 +432,18 @@ const DigitalEconomyPoster = () => {
 
               {/* 과제 4: 디지털 자산 및 소유권 개념 */}
               <div className="bg-gray-50 p-3 rounded-lg border-l-4 border-gray-300">
-                <h4 className="text-base font-bold text-gray-800 mb-2">
+                <h4 className="text-sm font-bold text-gray-800 mb-2">
                   과제 4. 디지털 자산 및 소유권 개념{" "}
-                  <span className="text-xs font-normal text-gray-500">
+                  <span className="text-2xs font-normal text-gray-500">
                     (노가빈)
                   </span>
                 </h4>
-                <p className="text-sm text-gray-700 mb-2">
+                <p className="text-xs text-gray-700 mb-2">
                   슈퍼휴먼이 생산하는 디지털 생산물의 소유와 분배 질서는 어떻게
                   정립되어야 하는가?
                 </p>
 
-                <ul className="text-sm space-y-1 text-gray-700">
+                <ul className="text-xs space-y-1 text-gray-700">
                   <li className="flex items-start">
                     <span className="mr-1">•</span>
                     <div>
@@ -490,8 +489,92 @@ const DigitalEconomyPoster = () => {
           </div>
         </div>
 
+        {/* 2025 분기별 계획 */}
+        <div className="mb-2 bg-white overflow-hidden">
+          <div className="bg-gray-500 text-white p-2 relative overflow-hidden">
+            <div className="absolute inset-0">
+              <div className="absolute inset-0 bg-gradient-to-r from-gray-500/90 via-gray-500/85 to-gray-500/80">
+                <Image
+                  src="/static/images/posters/digital_economy/section3.png"
+                  alt=""
+                  width={800}
+                  height={200}
+                  className="w-full h-full object-cover opacity-40 mix-blend-overlay"
+                  style={{
+                    maskImage:
+                      "linear-gradient(to right, transparent 20%, black 50%)",
+                  }}
+                />
+              </div>
+            </div>
+            <div className="relative z-10 flex justify-between items-center">
+              <h2 className="text-base font-bold">4. 2025 분기별 계획</h2>
+            </div>
+          </div>
+
+          <div className="px-0 py-3">
+            <div className="grid grid-cols-4 gap-3">
+              {/* 1분기 */}
+              <div className="bg-gray-50 p-3 rounded-lg border-l-4 border-gray-300">
+                <h4 className="text-sm font-bold text-gray-800 mb-2">1분기</h4>
+                <h5 className="text-xs font-semibold text-gray-700 mb-1">
+                  팀 구성 및 기초 연구
+                </h5>
+                <ul className="text-xs space-y-1 text-gray-700">
+                  <li>• 연구팀 구성 및 역할 분담</li>
+                  <li>• 디지털 경제 관련 기초 문헌 조사</li>
+                  <li>• 연구 프레임워크 구축</li>
+                  <li>• 국내외 사례 조사 시작</li>
+                </ul>
+              </div>
+
+              {/* 2분기 */}
+              <div className="bg-gray-50 p-3 rounded-lg border-l-4 border-gray-300">
+                <h4 className="text-sm font-bold text-gray-800 mb-2">2분기</h4>
+                <h5 className="text-xs font-semibold text-gray-700 mb-1">
+                  공동 연구진 구성
+                </h5>
+                <ul className="text-xs space-y-1 text-gray-700">
+                  <li>• 국내외 연구 협력자 섭외</li>
+                  <li>• 연구 주제별 세미나 개최</li>
+                  <li>• 중간 연구 계획 구체화</li>
+                  <li>• 디지털 경제 정책 검토</li>
+                </ul>
+              </div>
+
+              {/* 3분기 */}
+              <div className="bg-gray-50 p-3 rounded-lg border-l-4 border-gray-300">
+                <h4 className="text-sm font-bold text-gray-800 mb-2">3분기</h4>
+                <h5 className="text-xs font-semibold text-gray-700 mb-1">
+                  공동 연구 진행
+                </h5>
+                <ul className="text-xs space-y-1 text-gray-700">
+                  <li>• 각 연구 주제 심화 분석</li>
+                  <li>• 국제 컨퍼런스 참가</li>
+                  <li>• 중간 연구 결과 발표회</li>
+                  <li>• 정책 제안 초안 작성</li>
+                </ul>
+              </div>
+
+              {/* 4분기 */}
+              <div className="bg-gray-50 p-3 rounded-lg border-l-4 border-gray-300">
+                <h4 className="text-sm font-bold text-gray-800 mb-2">4분기</h4>
+                <h5 className="text-xs font-semibold text-gray-700 mb-1">
+                  최종 보고서 작성
+                </h5>
+                <ul className="text-xs space-y-1 text-gray-700">
+                  <li>• 연구 결과 종합 및 분석</li>
+                  <li>• 최종 보고서 작성</li>
+                  <li>• 디지털 경제 포럼 개최</li>
+                  <li>• 2026년 후속 연구 계획 수립</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* 푸터 */}
-        <div className="mt-3 text-right text-sm text-gray-600">
+        <div className="mt-3 text-right text-xs text-gray-600">
           © 2025 태재미래전략연구원 디지털 전환과 사회변혁 팀
         </div>
       </div>

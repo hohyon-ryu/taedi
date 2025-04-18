@@ -5,24 +5,34 @@ import "../styles/Research.css";
 const Research = () => {
   const researchAreas = [
     {
-      title: "Digital Synergy Governance Model Research",
+      title: "Digital Transformation & Social Changes",
       description:
-        "Developing and validating new governance models for the digital age",
+        "Researching how rapidly evolving digital technologies impact social structures and human relationships across individual, family, community, city, and national levels",
     },
     {
-      title: "Multi-Agent Governance System Design",
+      title: "AI-Human Collaborative Governance",
       description:
-        "Research on collaborative decision-making structures in AI-based multi-agent systems",
+        "Developing new governance models leveraging synergy between AI and humans while ensuring ethical frameworks for a sustainable digital future",
     },
     {
-      title: "AI-Human Collaboration Research",
+      title: "Digital Economy & New Economic Order",
       description:
-        "Studying effective cooperation frameworks between artificial intelligence and humans",
+        "Analyzing changes in ownership concepts, regulatory frameworks, taxation systems, and distribution principles in the digital economy",
     },
     {
-      title: "Digital Transformation Impact Study",
+      title: "Urban-Centered Governance Networks",
       description:
-        "Analyzing social changes and response strategies in digital transformation",
+        "Studying the redistribution of traditional state functions to cities and individuals, and how this reshapes power structures and decision-making mechanisms",
+    },
+    {
+      title: "Digital Asset Ownership & Distribution",
+      description:
+        "Exploring new principles for digital asset ownership, intellectual property rights, and equitable distribution systems in the age of AI",
+    },
+    {
+      title: "Superhuman Capabilities & Community Impact",
+      description:
+        "Examining how AI enhances human capabilities and transforms communities, with focus on bridging digital divides and promoting democratic use of technology",
     },
   ];
 
