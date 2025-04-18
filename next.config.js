@@ -15,8 +15,7 @@ const nextConfig = {
     // ppr: true, // Disabled as it requires Next.js canary version
     optimizePackageImports: ["react-icons"],
   },
-  // Using the optimized compiler
-  swcMinify: true,
+  // The swcMinify option has been removed as it's enabled by default in Next.js 15.3.1
 };
 
 module.exports = nextConfig;

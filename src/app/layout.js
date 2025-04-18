@@ -1,5 +1,10 @@
-import "../styles/globals.css";
 import FirebaseAnalytics from "../components/FirebaseAnalytics";
+import "../styles/globals.css";
+import "../styles/Header.css";
+import "../styles/OKR.css";
+import "../styles/Research.css";
+import "../styles/Team.css";
+import "../styles/Vision.css";
 
 export const metadata = {
   title: "TFCI Digital Transformation Team",

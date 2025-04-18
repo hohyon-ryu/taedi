@@ -1,3 +1,8 @@
+/* Import Tailwind CSS directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Global styles for Next.js app */
 /* Reset CSS */
 *, *::before, *::after {
@@ -110,9 +115,4 @@ img {
   }
 }
 
-/* Component styles */
-@import './Header.css';
-@import './Vision.css';
-@import './Research.css';
-@import './Team.css';
-@import './OKR.css';
+/* Component styles imports removed since they're now in layout.js */

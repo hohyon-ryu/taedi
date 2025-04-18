@@ -88,6 +88,54 @@
   font-size: 0.9rem;
 }
 
+.research-posters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.research-poster-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.research-poster-card:hover {
+  transform: translateY(-5px);
+}
+
+.research-poster-card h3 {
+  color: #333;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.research-poster-card p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.view-poster-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(90deg, #C7CEEA, #A0E7E5);
+  color: #333;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.view-poster-btn:hover {
+  background: linear-gradient(90deg, #A0E7E5, #C7CEEA);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 @media (max-width: 768px) {
   .research {
     padding: 3rem 1rem;
@@ -107,5 +155,10 @@
   .research-area-card,
   .project-card {
     padding: 1.5rem;
+  }
+  
+  .research-posters {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 }

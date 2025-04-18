@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import "../styles/Research.css";
 
@@ -48,6 +49,15 @@ const Research = () => {
     },
   ];
 
+  const researchPosters = [
+    {
+      title: "디지털 시대의 경제 질서 연구 기획안",
+      description:
+        "디지털 전환이 가속화됨에 따라 사회 구조와 경제 질서의 변화 연구",
+      link: "/digital-economy",
+    },
+  ];
+
   return (
     <section className="research">
       <div className="research-content">
@@ -74,6 +84,21 @@ const Research = () => {
                 ></div>
               </div>
               <span className="completion">{project.completion}% Complete</span>
+            </div>
+          ))}
+        </div>
+
+        <h2>Research Posters</h2>
+        <div className="research-posters">
+          {researchPosters.map((poster, index) => (
+            <div key={index} className="research-poster-card">
+              <h3>
+                <Link href={poster.link}>{poster.title}</Link>
+              </h3>
+              <p>{poster.description}</p>
+              <Link href={poster.link} className="view-poster-btn">
+                View Poster
+              </Link>
             </div>
           ))}
         </div>
