@@ -31,7 +31,6 @@ module.exports = {
     },
   },
   plugins: [],
-  // Ensure these utilities are not purged
   safelist: [
     "rounded-sm",
     "rounded",

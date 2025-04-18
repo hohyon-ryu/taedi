@@ -20,6 +20,15 @@ export const metadata = {
   },
   manifest: "/manifest.json",
   themeColor: "#1a365d",
+  icons: {
+    icon: "/static/favicon.png",
+    shortcut: "/static/favicon.png",
+    apple: "/static/favicon.png",
+    other: {
+      rel: "apple-touch-icon",
+      url: "/static/favicon.png",
+    },
+  },
 };
 
 export const viewport = {
