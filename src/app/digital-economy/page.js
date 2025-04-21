@@ -62,13 +62,14 @@ const DigitalEconomyPoster = () => {
                     </h4>
                     <ul className="text-xs space-y-0.5 text-gray-700">
                       <li>• AI로 인한 슈퍼 휴먼의 등장</li>
+                      <li>• AI로 소득이 높아지는 사람들 (사업가, 전문가)</li>
                       <li>
-                        • AI로 소득이 높아지는 사람들과 AI로 문제를 스스로
-                        해결해 비용을 줄이는 사람들로 분화
+                        • AI로 비용을 줄이는 사람들 (배관공 없이 AI 도움으로
+                        수리)
                       </li>
                       <li>
-                        • 경제 활동 변화: 소비가 자동화된 서비스와 전문적 판단을
-                        제공하는 사람들에게 집중됨
+                        • 소비가 자동화된 서비스와 전문적 판단을 제공하는
+                        사람들에게 집중
                       </li>
                     </ul>
                   </div>
@@ -599,9 +600,8 @@ const DigitalEconomyPoster = () => {
                     </h5>
                     <ul className="text-xs space-y-1 text-gray-700">
                       <li>• 연구팀 구성 및 역할 분담</li>
-                      <li>• 디지털 경제 관련 기초 문헌 조사</li>
+                      <li>• 디지털 변혁 관련 기초 문헌 조사</li>
                       <li>• 연구 프레임워크 구축</li>
-                      <li>• 국내외 사례 조사 시작</li>
                     </ul>
                   </div>
                 </AnimateOnScroll>
@@ -616,10 +616,9 @@ const DigitalEconomyPoster = () => {
                       공동 연구진 구성
                     </h5>
                     <ul className="text-xs space-y-1 text-gray-700">
+                      <li>• 연구 계획 구체화</li>
                       <li>• 국내외 연구 협력자 섭외</li>
-                      <li>• 연구 주제별 세미나 개최</li>
-                      <li>• 중간 연구 계획 구체화</li>
-                      <li>• 디지털 경제 정책 검토</li>
+                      <li>• 연구 주제별 프레임워크 수립</li>
                     </ul>
                   </div>
                 </AnimateOnScroll>
@@ -641,7 +640,6 @@ const DigitalEconomyPoster = () => {
                       <li>• 각 연구 주제 심화 분석</li>
                       <li>• 국제 컨퍼런스 참가</li>
                       <li>• 중간 연구 결과 발표회</li>
-                      <li>• 정책 제안 초안 작성</li>
                     </ul>
                   </div>
                 </AnimateOnScroll>
@@ -663,7 +661,6 @@ const DigitalEconomyPoster = () => {
                       <li>• 연구 결과 종합 및 분석</li>
                       <li>• 최종 보고서 작성</li>
                       <li>• 디지털 경제 포럼 개최</li>
-                      <li>• 2026년 후속 연구 계획 수립</li>
                     </ul>
                   </div>
                 </AnimateOnScroll>
