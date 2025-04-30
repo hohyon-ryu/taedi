@@ -46,6 +46,12 @@ const Research = () => {
         "디지털 전환이 가속화됨에 따라 사회 구조와 경제 질서의 변화 연구",
       link: "/digital-economy",
     },
+    {
+      title: "디지털 시대의 경제 질서 워크숍",
+      description:
+        "디지털 경제 질서 연구에 대한 워크숍 결과물과 주요 연구 과제",
+      link: "/digital-economy-workshop",
+    },
   ];
 
   const publications = [
