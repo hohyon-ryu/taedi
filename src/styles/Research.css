@@ -45,22 +45,22 @@
 .research-area-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  border-top-color: #A0E7E5;
+  border-top-color: #a0e7e5;
 }
 
 .research-area-card:nth-child(2n):hover {
-  border-top-color: #C7CEEA;
+  border-top-color: #c7ceea;
 }
 
 .research-area-card:nth-child(3n):hover {
-  border-top-color: #FEE1E8;
+  border-top-color: #fee1e8;
 }
 
 .research-area-card h3 {
   color: #1a365d;
   font-size: 1.4rem;
   margin-bottom: 1rem;
-  border-bottom: 1px solid rgba(0,0,0,0.07);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
   padding-bottom: 0.8rem;
 }
 
@@ -106,7 +106,7 @@
 
 .progress {
   height: 100%;
-  background: linear-gradient(90deg, #C7CEEA, #A0E7E5);
+  background: linear-gradient(90deg, #c7ceea, #a0e7e5);
   transition: width 0.3s ease;
 }
 
@@ -134,14 +134,14 @@
 .research-poster-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  border-top-color: #FEE1E8;
+  border-top-color: #fee1e8;
 }
 
 .research-poster-card h3 {
   color: #1a365d;
   font-size: 1.4rem;
   margin-bottom: 1rem;
-  border-bottom: 1px solid rgba(0,0,0,0.07);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
   padding-bottom: 0.8rem;
 }
 
@@ -155,7 +155,7 @@
 .view-poster-btn {
   display: inline-block;
   padding: 0.5rem 1rem;
-  background: linear-gradient(90deg, #C7CEEA, #A0E7E5);
+  background: linear-gradient(90deg, #c7ceea, #a0e7e5);
   color: #333;
   border-radius: 5px;
   text-decoration: none;
@@ -164,7 +164,7 @@
 }
 
 .view-poster-btn:hover {
-  background: linear-gradient(90deg, #A0E7E5, #C7CEEA);
+  background: linear-gradient(90deg, #a0e7e5, #c7ceea);
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -188,14 +188,14 @@
 .publication-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  border-top-color: #C7CEEA;
+  border-top-color: #c7ceea;
 }
 
 .publication-card h3 {
   color: #1a365d;
   font-size: 1.4rem;
   margin-bottom: 0.8rem;
-  border-bottom: 1px solid rgba(0,0,0,0.07);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
   padding-bottom: 0.8rem;
 }
 
@@ -224,7 +224,7 @@
 .download-btn {
   display: inline-block;
   padding: 0.5rem 1rem;
-  background: linear-gradient(90deg, #C7CEEA, #A0E7E5);
+  background: linear-gradient(90deg, #c7ceea, #a0e7e5);
   color: #333;
   border-radius: 5px;
   text-decoration: none;
@@ -233,7 +233,7 @@
 }
 
 .download-btn:hover {
-  background: linear-gradient(90deg, #A0E7E5, #C7CEEA);
+  background: linear-gradient(90deg, #a0e7e5, #c7ceea);
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -259,17 +259,17 @@
   position: absolute;
   left: 0;
   top: 0;
-  color: #A0E7E5;
+  color: #a0e7e5;
   font-size: 1.2rem;
   line-height: 1.2;
 }
 
 .research-area-card:nth-child(2n) .key-results-list li::before {
-  color: #C7CEEA;
+  color: #c7ceea;
 }
 
 .research-area-card:nth-child(3n) .key-results-list li::before {
-  color: #FEE1E8;
+  color: #fee1e8;
 }
 
 .poster-findings {
@@ -277,7 +277,7 @@
   padding: 1.5rem;
   border-radius: 8px;
   margin-top: 1rem;
-  border-left: 4px solid #A0E7E5;
+  border-left: 4px solid #a0e7e5;
 }
 
 .poster-findings h4 {
@@ -321,17 +321,17 @@
   position: absolute;
   left: 0;
   top: 0;
-  color: #A0E7E5;
+  color: #a0e7e5;
   font-size: 1.2rem;
   line-height: 1.2;
 }
 
 .finding-category:nth-child(2) li::before {
-  color: #C7CEEA;
+  color: #c7ceea;
 }
 
 .finding-category:nth-child(3) li::before {
-  color: #FEE1E8;
+  color: #fee1e8;
 }
 
 /* Quarterly Progress Styles */
@@ -357,22 +357,22 @@
 .progress-quarter:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  border-top-color: #A0E7E5;
+  border-top-color: #a0e7e5;
 }
 
 .progress-quarter:nth-child(2n):hover {
-  border-top-color: #C7CEEA;
+  border-top-color: #c7ceea;
 }
 
 .progress-quarter:nth-child(3n):hover {
-  border-top-color: #FEE1E8;
+  border-top-color: #fee1e8;
 }
 
 .progress-quarter h3 {
   color: #1a365d;
   font-size: 1.4rem;
   margin-bottom: 1rem;
-  border-bottom: 1px solid rgba(0,0,0,0.07);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
   padding-bottom: 0.8rem;
 }
 
@@ -414,21 +414,21 @@
   position: absolute;
   left: 0;
   top: 0;
-  color: #A0E7E5;
+  color: #a0e7e5;
   font-size: 1.2rem;
   line-height: 1.2;
 }
 
 .task-category:nth-child(2) li::before {
-  color: #C7CEEA;
+  color: #c7ceea;
 }
 
 .task-category:nth-child(3) li::before {
-  color: #FEE1E8;
+  color: #fee1e8;
 }
 
 .task-category:nth-child(4) li::before {
-  color: #A0E7E5;
+  color: #a0e7e5;
 }
 
 .progress-bar {
@@ -441,7 +441,7 @@
 
 .progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, #C7CEEA, #A0E7E5);
+  background: linear-gradient(90deg, #c7ceea, #a0e7e5);
   transition: width 0.3s ease;
 }
 
@@ -457,6 +457,60 @@
   color: #555;
   margin-bottom: 0.7rem;
   line-height: 1.4;
+}
+
+.audio-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.audio-content-card {
+  background-color: white;
+  padding: 1.8rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 4px solid transparent;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.audio-content-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-top-color: #fee1e8;
+}
+
+.audio-content-card h3 {
+  color: #1a365d;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  padding-bottom: 0.8rem;
+}
+
+.audio-content-card p {
+  color: #555;
+  line-height: 1.5;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.listen-audio-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(90deg, #fee1e8, #c7ceea);
+  color: #333;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.listen-audio-btn:hover {
+  background: linear-gradient(90deg, #c7ceea, #fee1e8);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 1024px) {
@@ -488,12 +542,12 @@
   .progress-quarter {
     padding: 1.5rem;
   }
-  
+
   .research-posters {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  
+
   .publications-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
@@ -502,18 +556,18 @@
   .poster-findings {
     padding: 1rem;
   }
-  
+
   .finding-category {
     margin-bottom: 1rem;
   }
-  
+
   .research-area-card h3,
   .research-poster-card h3,
   .publication-card h3,
   .progress-quarter h3 {
     font-size: 1.2rem;
   }
-  
+
   .key-results-list li,
   .finding-category li,
   .task-category li {

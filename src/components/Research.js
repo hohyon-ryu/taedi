@@ -46,12 +46,6 @@ const Research = () => {
         "디지털 전환이 가속화됨에 따라 사회 구조와 경제 질서의 변화 연구",
       link: "/digital-economy",
     },
-    {
-      title: "디지털 시대의 경제 질서 워크숍",
-      description:
-        "디지털 경제 질서 연구에 대한 워크숍 결과물과 주요 연구 과제",
-      link: "/digital-economy-workshop",
-    },
   ];
 
   const publications = [
@@ -128,6 +122,16 @@ const Research = () => {
     },
   ];
 
+  const audioContent = [
+    {
+      title: "개인 강화, 공동체, 국가의 변화",
+      description:
+        "개인의 강화로 사회와 경제질서가 어떻게 변하는지에 대한 이야기",
+      link: "/individual-empowerment",
+      type: "audio",
+    },
+  ];
+
   // Simple title animation using intersection observer
   const { ref: titleRef, inView: titleInView } = useInView({
     threshold: 0.2,
@@ -148,6 +152,12 @@ const Research = () => {
 
   // Posters animation using intersection observer
   const { ref: postersRef, inView: postersInView } = useInView({
+    threshold: 0.1,
+    triggerOnce: true,
+  });
+
+  // Audio content animation using intersection observer
+  const { ref: audioRef, inView: audioInView } = useInView({
     threshold: 0.1,
     triggerOnce: true,
   });
@@ -263,6 +273,35 @@ const Research = () => {
               <p>{poster.description}</p>
               <Link href={poster.link} className="view-poster-btn">
                 View Poster
+              </Link>
+            </div>
+          ))}
+        </div>
+
+        <h2
+          ref={audioRef}
+          className={audioInView ? "animate-scale visible" : "animate-scale"}
+        >
+          Audio Content
+        </h2>
+
+        <div className="audio-content">
+          {audioContent.map((content, index) => (
+            <div
+              key={index}
+              className={`audio-content-card ${
+                audioInView ? "animate-fade-up visible" : "animate-fade-up"
+              }`}
+              style={{
+                transitionDelay: `${0.1 * index}s`,
+              }}
+            >
+              <h3>
+                <Link href={content.link}>{content.title}</Link>
+              </h3>
+              <p>{content.description}</p>
+              <Link href={content.link} className="listen-audio-btn">
+                Listen Now
               </Link>
             </div>
           ))}
