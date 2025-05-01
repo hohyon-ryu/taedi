@@ -130,6 +130,13 @@ const Research = () => {
       link: "/individual-empowerment",
       type: "audio",
     },
+    {
+      title: "유발 하라리 - 넥서스 한국어 대담",
+      description:
+        "유발 하라리의 새 책 '넥서스'를 통한 AI 시대의 정보 네트워크와 인류의 미래에 대한 통찰",
+      link: "/yuval-harari-nexus",
+      type: "audio",
+    },
   ];
 
   // Simple title animation using intersection observer

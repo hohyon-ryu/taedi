@@ -1,6 +1,6 @@
+import Link from "next/link";
 import React from "react";
 import AudioPageStyles from "../../components/AudioPageStyles";
-import Link from "next/link";
 
 export default function IndividualEmpowermentLayout({ children }) {
   return (
