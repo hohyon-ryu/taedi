@@ -40,10 +40,7 @@ export default function IndividualEmpowermentPage() {
         <div className="audio-section">
           <div className="audio-player-container">
             <audio controls className="audio-player">
-              <source
-                src="/static/audio/개인 강화, 공동체, 국가의 변화.m4a"
-                type="audio/mp4"
-              />
+              <source src="/static/audio/social_changes.m4a" type="audio/mp4" />
               Your browser does not support the audio element.
             </audio>
           </div>
