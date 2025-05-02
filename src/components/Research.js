@@ -13,19 +13,9 @@ const Research = () => {
         "Researching how rapidly evolving digital technologies impact social structures and human relationships across individual, family, community, city, and national levels",
     },
     {
-      title: "AI-Human Collaborative Governance",
-      description:
-        "Developing new governance models leveraging synergy between AI and humans while ensuring ethical frameworks for a sustainable digital future",
-    },
-    {
       title: "Digital Economy & New Economic Order",
       description:
         "Analyzing changes in ownership concepts, regulatory frameworks, taxation systems, and distribution principles in the digital economy",
-    },
-    {
-      title: "Urban-Centered Governance Networks",
-      description:
-        "Studying the redistribution of traditional state functions to cities and individuals, and how this reshapes power structures and decision-making mechanisms",
     },
     {
       title: "Digital Asset Ownership & Distribution",
