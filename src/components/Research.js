@@ -36,6 +36,12 @@ const Research = () => {
         "디지털 전환이 가속화됨에 따라 사회 구조와 경제 질서의 변화 연구",
       link: "/digital-economy",
     },
+    {
+      title: "디지털 시대 경제 질서의 제도화 - 경제 제도 (김민호)",
+      description:
+        "디지털 혁명으로 인한 글로벌 경제 질서 변화와 국가 간 경제 제도, 규범의 재구성 연구",
+      link: "/digital-economy/economic-institutions",
+    },
   ];
 
   const publications = [

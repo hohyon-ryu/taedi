@@ -12,8 +12,8 @@ const nextConfig = {
   },
   // Explicitly configure i18n with only default locale to prevent redirects
   i18n: {
-    locales: ['default'],
-    defaultLocale: 'default',
+    locales: ["default"],
+    defaultLocale: "default",
     localeDetection: false,
   },
   // Experimental features
