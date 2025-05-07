@@ -41,6 +41,7 @@ const Research = () => {
       description:
         "디지털 혁명으로 인한 글로벌 경제 질서 변화와 국가 간 경제 제도, 규범의 재구성 연구",
       link: "/digital-economy/economic-institutions",
+      onePagerLink: "/digital-economy/economic-institutions/one-pager",
     },
   ];
 
@@ -274,9 +275,20 @@ const Research = () => {
                 <Link href={poster.link}>{poster.title}</Link>
               </h3>
               <p>{poster.description}</p>
-              <Link href={poster.link} className="view-poster-btn">
-                View Poster
-              </Link>
+              <div className="button-container">
+                <Link href={poster.link} className="view-poster-btn">
+                  View Poster
+                </Link>
+                {poster.onePagerLink && (
+                  <Link
+                    href={poster.onePagerLink}
+                    className="view-poster-btn ml-2"
+                    style={{ marginLeft: "8px" }}
+                  >
+                    View One-Pager
+                  </Link>
+                )}
+              </div>
             </div>
           ))}
         </div>
