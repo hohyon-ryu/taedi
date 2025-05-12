@@ -77,6 +77,9 @@ Environmental["환경경제학<br>(1960~현재)<br>로널드 코스, 윌리엄 �
 Happiness["행복경제학<br>(1970~현재)<br>리처드 이스털린, 브루노 프레이<br>이론: 이스털린 역설, 행복지수<br><i>'돈이 많다고 꼭 행복한 건 아니에요'</i>"]
 Information["정보경제학<br>(1970~현재)<br>조지 애컬로프, 조셉 스티글리츠<br>이론: 비대칭정보, 역선택<br><i>'정보가 누구에게 있는지가 중요해요'</i>"]
 Digital["디지털경제학<br>(1990~현재)<br>칼 샤피로, 홀 베리언<br>이론: 네트워크효과, 플랫폼경제<br><i>'디지털 세상은 다른 경제 규칙이 있어요'</i>"]
+PublicChoice["공공선택이론<br>(1960~현재)<br>제임스 뷰캐넌, 고든 털럭<br>이론: 지대추구, 투표역설<br><i>'정치인과 관료도 자기 이익을 추구해요'</i>"]
+FeministEcon["페미니스트 경제학<br>(1970~현재)<br>낸시 폴브레, 줄리 넬슨<br>이론: 돌봄노동경제학, 젠더예산<br><i>'경제에서 여성의 기여도 중요해요'</i>"]
+ComplexityEcon["복잡성 경제학<br>(1990~현재)<br>브라이언 아서, 도이네 파머<br>이론: 복잡적응시스템, 자기강화<br><i>'경제는 복잡하고 끊임없이 진화해요'</i>"]
 
 
 Ancient --> Classical
@@ -121,6 +124,16 @@ Information --> Digital
 GameTheory --> Digital
 Environmental --> Digital
 
+Chicago --> PublicChoice
+Austrian --> PublicChoice
+
+Institutional --> FeministEcon
+Marxist --> FeministEcon
+
+GameTheory --> ComplexityEcon
+Information --> ComplexityEcon
+Digital --> ComplexityEcon
+
 
 Ancient:::ancient
 Mercantil:::ancient
@@ -140,6 +153,9 @@ Environmental:::environmental
 Happiness:::happiness
 Information:::information
 Digital:::digital
+PublicChoice:::chicago
+FeministEcon:::institutional
+ComplexityEcon:::modern
 
 
 subgraph 경제학의 가계도

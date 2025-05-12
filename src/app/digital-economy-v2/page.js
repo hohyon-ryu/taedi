@@ -1,3 +1,4 @@
+import DigitalEconomyCharacteristicsWrapper from "./economy-101/DigitalEconomyCharacteristicsWrapper";
 import EconomicFamilyTreeWrapper from "./economy-101/EconomicFamilyTreeWrapper";
 
 // Styled components section
@@ -348,47 +349,230 @@ export default function DigitalEconomyV2Page() {
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 border-b-4 border-blue-600 pb-3 mb-8 text-center">
                 3. 디지털 경제의 특징
               </h2>
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="prose prose-lg max-w-none">
-                  <p className="text-lg text-gray-700">
-                    디지털 경제는 전통적인 경제 모델과는 다른 독특한 특성을
-                    가지고 있습니다. 특히 무형자산의 중요성, 네트워크 효과,
-                    한계비용 제로 등의 특징이 두드러집니다.
-                  </p>
+              <div className="prose prose-lg max-w-none">
+                <p className="text-lg text-gray-700">
+                  디지털 경제는 전통적인 경제 모델과는 다른 독특한 특성을 가지고
+                  있습니다. 특히 무형자산의 중요성, 네트워크 효과, 한계비용 제로
+                  등의 특징이 두드러집니다. AI 시대에 접어들면서 이러한 특성은
+                  더욱 강화되고 있습니다.
+                </p>
 
-                  <div className="bg-indigo-50 p-6 rounded-lg shadow-md my-6">
-                    <h3 className="text-xl font-bold text-indigo-800 mb-3">
-                      디지털 경제의 핵심 특성
-                    </h3>
-                    <ul className="list-disc pl-6 space-y-2">
-                      <li>
-                        <strong>무형자산 중심</strong>: 지식, 데이터, 알고리즘
-                        등 무형자산이 핵심 가치로 부상
-                      </li>
-                      <li>
-                        <strong>네트워크 효과</strong>: 사용자가 증가할수록
-                        서비스의 가치가 기하급수적으로 증가
-                      </li>
-                      <li>
-                        <strong>한계비용 제로</strong>: 디지털 제품의 추가 생산
-                        비용이 거의 들지 않음
-                      </li>
-                      <li>
-                        <strong>양면 시장</strong>: 서로 다른 두 집단(예:
-                        사용자와 광고주)이 플랫폼을 통해 상호작용
-                      </li>
-                      <li>
-                        <strong>승자독식 경향</strong>: 시장 선점자가 네트워크
-                        효과로 인해 독점적 지위를 차지하기 쉬움
-                      </li>
-                    </ul>
+                {/* 디지털 경제 특성 다이어그램 */}
+                <DigitalEconomyCharacteristicsWrapper />
+
+                <div className="mt-8">
+                  <h3 className="text-2xl font-bold text-gray-800 mb-6">
+                    디지털 경제의 주요 특성 상세 설명
+                  </h3>
+
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <EconomicTermCard title="한계비용 제로 (Zero Marginal Cost)">
+                      <p>
+                        <Highlight>
+                          한 번 만들면 추가로 복제하는 비용이 거의 들지 않아요.
+                        </Highlight>
+                      </p>
+                      <p className="mt-3">
+                        디지털 상품(소프트웨어, 앱, 디지털 콘텐츠)은 처음 개발할
+                        때는 비용이 많이 들지만, 한 번 만들어지면 추가 복제본을
+                        만드는 비용은 거의 0에 가깝습니다.
+                      </p>
+                      <p className="mt-3">
+                        <strong>쉬운 예시:</strong> 게임을 만드는 회사는 처음
+                        게임을 만들 때 많은 돈을 쓰지만, 만들어진 게임을
+                        인터넷으로 다운로드 받는 추가 비용은 거의 들지 않아요.
+                      </p>
+                    </EconomicTermCard>
+
+                    <EconomicTermCard title="네트워크 효과 (Network Effect)">
+                      <p>
+                        <Highlight>
+                          사용하는 사람이 많아질수록 서비스의 가치가 더 커져요.
+                        </Highlight>
+                      </p>
+                      <p className="mt-3">
+                        사용자가 증가할수록 모든 사용자에게 제공되는 가치가
+                        증가하는 현상입니다. 소셜 미디어, 메신저 앱, 공유 경제
+                        플랫폼에서 흔히 볼 수 있습니다.
+                      </p>
+                      <p className="mt-3">
+                        <strong>쉬운 예시:</strong> 카카오톡은 친구들이 많이
+                        사용할수록 더 유용해져요. 친구들이 아무도 사용하지
+                        않는다면 아무리 좋은 앱이라도 쓸모가 없어요.
+                      </p>
+                    </EconomicTermCard>
+
+                    <EconomicTermCard title="플랫폼 중심 (Platform-Centric)">
+                      <p>
+                        <Highlight>
+                          다른 사람들을 연결해주는 회사가 가장 큰 회사가 돼요.
+                        </Highlight>
+                      </p>
+                      <p className="mt-3">
+                        서로 다른 사용자 그룹(소비자와 생산자)을 연결하는 플랫폼
+                        비즈니스 모델이 중심이 됩니다. 양면 시장(Two-sided
+                        Market)을 형성하여 가치를 창출합니다.
+                      </p>
+                      <p className="mt-3">
+                        <strong>쉬운 예시:</strong> 배달의민족은 음식점과 배고픈
+                        사람들을 연결해 주는 플랫폼이에요. 직접 음식을 만들지
+                        않아도 연결해 주는 역할만으로 큰 회사가 되었어요.
+                      </p>
+                    </EconomicTermCard>
+
+                    <EconomicTermCard title="승자독식 (Winner-Takes-All)">
+                      <p>
+                        <Highlight>
+                          1등만 기억하고 2등은 잊혀져요. 1등이 거의 모든 이익을
+                          가져가요.
+                        </Highlight>
+                      </p>
+                      <p className="mt-3">
+                        네트워크 효과와 규모의 경제로 인해 시장을 선점한 기업이
+                        지배적 위치를 차지하고, 대부분의 시장 이익을 독차지하는
+                        현상입니다.
+                      </p>
+                      <p className="mt-3">
+                        <strong>쉬운 예시:</strong> 검색엔진을 생각해보세요.
+                        구글이 가장 많이 사용되고, 다른 검색엔진들은 훨씬 적게
+                        사용돼요. 1등 구글이 대부분의 광고 수익을 가져가요.
+                      </p>
+                    </EconomicTermCard>
+
+                    <EconomicTermCard title="무형자산 중심 (Intangible Assets)">
+                      <p>
+                        <Highlight>
+                          만질 수 없는 것들(지식, 데이터, 브랜드)이 가장 가치
+                          있어요.
+                        </Highlight>
+                      </p>
+                      <p className="mt-3">
+                        공장이나 기계 같은 물리적 자산보다 소프트웨어, 데이터,
+                        알고리즘, 브랜드, 특허 등 무형자산이 기업 가치의 핵심이
+                        됩니다.
+                      </p>
+                      <p className="mt-3">
+                        <strong>쉬운 예시:</strong> 애플은 스마트폰 공장보다
+                        아이폰 디자인과 iOS 운영체제라는 무형자산 때문에 가치가
+                        높아요. 삼성도 공장보다 기술과 브랜드가 더 가치 있어요.
+                      </p>
+                    </EconomicTermCard>
+
+                    <EconomicTermCard title="AI 지능화 (AI Intelligence)">
+                      <p>
+                        <Highlight>
+                          기계가 스스로 생각하고 배우면서 점점 더 똑똑해져요.
+                        </Highlight>
+                      </p>
+                      <p className="mt-3">
+                        인공지능 기술이 발전하면서 기계가 데이터로부터 학습하고,
+                        인간의 개입 없이도 의사결정을 내릴 수 있게 되었습니다.
+                      </p>
+                      <p className="mt-3">
+                        <strong>쉬운 예시:</strong> 넷플릭스는 내가 본 영화들을
+                        기억하고 배워서 내가 좋아할 만한 새로운 영화를 추천해
+                        줘요. 유튜브도 내가 좋아할 만한 영상을 계속 추천해 줘요.
+                      </p>
+                    </EconomicTermCard>
+
+                    <EconomicTermCard title="초개인화 (Hyper-Personalization)">
+                      <p>
+                        <Highlight>
+                          나에게 딱 맞는 서비스와 상품을 제공해요.
+                        </Highlight>
+                      </p>
+                      <p className="mt-3">
+                        AI와 빅데이터를 활용해 개인의 취향, 행동, 필요에 맞춘
+                        완전히 개인화된 상품과 서비스를 제공합니다.
+                      </p>
+                      <p className="mt-3">
+                        <strong>쉬운 예시:</strong> 내가 좋아하는 음악만 모아서
+                        틀어주는 개인 맞춤 플레이리스트, 내 피부 타입에 맞춘
+                        화장품, 내 공부 습관에 맞춘 학습 프로그램 등이 있어요.
+                      </p>
+                    </EconomicTermCard>
+
+                    <EconomicTermCard title="자동화 가속 (Automation Acceleration)">
+                      <p>
+                        <Highlight>
+                          사람이 하던 일을 점점 더 많이 기계가 대신해요.
+                        </Highlight>
+                      </p>
+                      <p className="mt-3">
+                        AI와 로봇 기술의 발전으로 단순 반복 업무뿐만 아니라
+                        복잡한 인지 업무까지 자동화되고 있습니다.
+                      </p>
+                      <p className="mt-3">
+                        <strong>쉬운 예시:</strong> 예전에는 계산원이 마트에서
+                        계산을 해 주었지만, 이제는 셀프 계산대가 많아졌어요.
+                        공장에서도 사람 대신 로봇이 물건을 만들고 있어요.
+                      </p>
+                    </EconomicTermCard>
+
+                    <EconomicTermCard title="데이터 가치화 (Data Valorization)">
+                      <p>
+                        <Highlight>
+                          많은 정보(데이터)가 새로운 돈이 되었어요.
+                        </Highlight>
+                      </p>
+                      <p className="mt-3">
+                        데이터가 핵심 경제 자원으로 부상하면서 수집, 분석,
+                        활용하는 능력이 기업과 국가의 경쟁력을 좌우합니다.
+                      </p>
+                      <p className="mt-3">
+                        <strong>쉬운 예시:</strong> 페이스북은 우리가 무엇을
+                        좋아하는지, 어떤 글을 읽는지 같은 정보를 모아서
+                        광고주에게 팔아 돈을 벌어요.
+                      </p>
+                    </EconomicTermCard>
+
+                    <EconomicTermCard title="예측 경제 (Prediction Economy)">
+                      <p>
+                        <Highlight>
+                          AI가 미래를 예측하고, 그 예측이 가치를 만들어요.
+                        </Highlight>
+                      </p>
+                      <p className="mt-3">
+                        AI 기술의 발전으로 소비자 행동, 시장 변화, 위험 요소
+                        등을 더 정확히 예측할 수 있게 되었습니다.
+                      </p>
+                      <p className="mt-3">
+                        <strong>쉬운 예시:</strong> 날씨 앱은 내일 비가 올지
+                        예측해 주고, 쇼핑몰은 내가 다음에 무엇을 살지 예측해요.
+                        은행은 누가 돈을 잘 갚을지 예측해서 돈을 빌려줘요.
+                      </p>
+                    </EconomicTermCard>
                   </div>
                 </div>
-                <div className="flex justify-center items-center">
-                  <div className="bg-gray-50 p-6 rounded-lg shadow-lg w-full h-full flex items-center justify-center">
-                    <div className="text-center text-gray-500">
-                      <p className="italic">
-                        디지털 경제 특성을 나타내는 이미지가 추가될 예정입니다.
+
+                <div className="bg-indigo-50 p-6 rounded-lg shadow-md my-6 mt-10">
+                  <h3 className="text-xl font-bold text-indigo-800 mb-3">
+                    디지털 경제와 AI의 도전 과제
+                  </h3>
+                  <div className="grid md:grid-cols-3 gap-4">
+                    <div className="bg-white p-4 rounded shadow">
+                      <h4 className="font-bold text-red-600">불평등 심화</h4>
+                      <p className="text-sm mt-2">
+                        디지털 기술과 AI에 접근할 수 있는 사람과 그렇지 못한
+                        사람들 사이의 격차가 더 커질 수 있어요. 기술을 가진
+                        사람들은 더 많은 기회를 얻고, 그렇지 못한 사람들은
+                        뒤처질 수 있어요.
+                      </p>
+                    </div>
+                    <div className="bg-white p-4 rounded shadow">
+                      <h4 className="font-bold text-orange-600">일자리 변화</h4>
+                      <p className="text-sm mt-2">
+                        로봇과 AI가 사람들의 일자리를 대체하면서 많은 직업이
+                        사라지고 새로운 직업이 생겨요. 하지만 새 일자리는 더
+                        많은 교육과 기술이 필요한 경우가 많아요.
+                      </p>
+                    </div>
+                    <div className="bg-white p-4 rounded shadow">
+                      <h4 className="font-bold text-blue-600">독점 문제</h4>
+                      <p className="text-sm mt-2">
+                        소수의 대형 기술 기업들이 시장을 지배하게 되면 경쟁이
+                        줄어들고 가격이 올라가거나 서비스 품질이 나빠질 수
+                        있어요. 이들의 권력을 적절히 조절하는 것이 중요해요.
                       </p>
                     </div>
                   </div>
