@@ -16,7 +16,10 @@ const EconomicFamilyTreeDiagram = () => {
               theme: "default",
               securityLevel: "loose",
             });
-            window.mermaid.init(undefined, document.querySelectorAll(".mermaid"));
+            window.mermaid.init(
+              undefined,
+              document.querySelectorAll(".mermaid")
+            );
           }
         };
         document.body.appendChild(script);
@@ -34,7 +37,7 @@ const EconomicFamilyTreeDiagram = () => {
   return (
     <div className="my-8 p-6 rounded-lg shadow-lg bg-gray-50">
       <div className="mermaid">
-      {`flowchart TD
+        {`flowchart TD
 
 classDef ancient fill:#e6f2ff,stroke:#0066cc,stroke-width:2px
 classDef classical fill:#fff2e6,stroke:#ff8c00,stroke-width:2px
@@ -47,10 +50,11 @@ classDef chicago fill:#e6ffe6,stroke:#009900,stroke-width:2px
 classDef behavioral fill:#f2e6ff,stroke:#6600cc,stroke-width:2px
 classDef modern fill:#f9f9f9,stroke:#333333,stroke-width:2px
 classDef gametheory fill:#e1f5fe,stroke:#039be5,stroke-width:2px
-classDef environmental fill:#e8f5e9,stroke:#43a047,stroke-width:2px
-classDef digital fill:#f3e5f5,stroke:#8e24aa,stroke-width:2px
-classDef development fill:#fff3e0,stroke:#fb8c00,stroke-width:2px
+classDef environmental fill:#f0f0f0,stroke:#808080,stroke-width:2px
+classDef digital fill:#f0f0f0,stroke:#808080,stroke-width:2px
+classDef development fill:#f0f0f0,stroke:#808080,stroke-width:2px
 classDef information fill:#e0f7fa,stroke:#00acc1,stroke-width:2px
+classDef happiness fill:#f0f0f0,stroke:#808080,stroke-width:2px
 
 
 Ancient["고대 및 중세 경제사상<br>(BC 350~1500년)<br>아리스토텔레스, 토마스 아퀴나스<br>이론: 공정가격론, 자연법<br><i>'공정한 가격이 있어요'</i>"]
@@ -133,7 +137,7 @@ NeoSynthesis:::neoclassical
 GameTheory:::gametheory
 Development:::development
 Environmental:::environmental
-Happiness:::behavioral
+Happiness:::happiness
 Information:::information
 Digital:::digital
 
