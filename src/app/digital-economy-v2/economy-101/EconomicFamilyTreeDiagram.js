@@ -5,31 +5,31 @@ import { useEffect } from "react";
 const EconomicFamilyTreeDiagram = () => {
   useEffect(() => {
     if (typeof window !== "undefined") {
+      // Helper function to initialize Mermaid with new configuration
+      const initializeMermaid = () => {
+        if (window.mermaid) {
+          window.mermaid.initialize({
+            startOnLoad: true,
+            theme: "default",
+            securityLevel: "loose",
+            flowchart: {
+              // Added for subgraph styling
+              clusterBkg: "#ffffff", // White background for subgraphs
+              clusterBorder: "#bbbbbb", // Light grey border for subgraphs
+            },
+          });
+          window.mermaid.init(undefined, document.querySelectorAll(".mermaid"));
+        }
+      };
+
       if (!window.mermaid) {
         const script = document.createElement("script");
         script.src = "https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js";
         script.async = true;
-        script.onload = () => {
-          if (window.mermaid) {
-            window.mermaid.initialize({
-              startOnLoad: true,
-              theme: "default",
-              securityLevel: "loose",
-            });
-            window.mermaid.init(
-              undefined,
-              document.querySelectorAll(".mermaid")
-            );
-          }
-        };
+        script.onload = initializeMermaid; // Use the helper function
         document.body.appendChild(script);
       } else {
-        window.mermaid.initialize({
-          startOnLoad: true,
-          theme: "default",
-          securityLevel: "loose",
-        });
-        window.mermaid.init(undefined, document.querySelectorAll(".mermaid"));
+        initializeMermaid(); // Use the helper function
       }
     }
   }, []);
@@ -50,11 +50,12 @@ classDef chicago fill:#e6ffe6,stroke:#009900,stroke-width:2px
 classDef behavioral fill:#f2e6ff,stroke:#6600cc,stroke-width:2px
 classDef modern fill:#f9f9f9,stroke:#333333,stroke-width:2px
 classDef gametheory fill:#e1f5fe,stroke:#039be5,stroke-width:2px
-classDef environmental fill:#f0f0f0,stroke:#808080,stroke-width:2px
-classDef digital fill:#f0f0f0,stroke:#808080,stroke-width:2px
-classDef development fill:#f0f0f0,stroke:#808080,stroke-width:2px
 classDef information fill:#e0f7fa,stroke:#00acc1,stroke-width:2px
-classDef happiness fill:#f0f0f0,stroke:#808080,stroke-width:2px
+
+classDef environmental fill:#e8f5e9,stroke:#66bb6a,stroke-width:2px
+classDef digital fill:#e3f2fd,stroke:#42a5f5,stroke-width:2px
+classDef development fill:#fff3e0,stroke:#ffa726,stroke-width:2px 
+classDef happiness fill:#fffde7,stroke:#ffee58,stroke-width:2px
 
 
 Ancient["고대 및 중세 경제사상<br>(BC 350~1500년)<br>아리스토텔레스, 토마스 아퀴나스<br>이론: 공정가격론, 자연법<br><i>'공정한 가격이 있어요'</i>"]
@@ -78,7 +79,6 @@ Happiness["행복경제학<br>(1970~현재)<br>리처드 이스털린, 브루노
 Information["정보경제학<br>(1970~현재)<br>조지 애컬로프, 조셉 스티글리츠<br>이론: 비대칭정보, 역선택<br><i>'정보가 누구에게 있는지가 중요해요'</i>"]
 Digital["디지털경제학<br>(1990~현재)<br>칼 샤피로, 홀 베리언<br>이론: 네트워크효과, 플랫폼경제<br><i>'디지털 세상은 다른 경제 규칙이 있어요'</i>"]
 PublicChoice["공공선택이론<br>(1960~현재)<br>제임스 뷰캐넌, 고든 털럭<br>이론: 지대추구, 투표역설<br><i>'정치인과 관료도 자기 이익을 추구해요'</i>"]
-FeministEcon["페미니스트 경제학<br>(1970~현재)<br>낸시 폴브레, 줄리 넬슨<br>이론: 돌봄노동경제학, 젠더예산<br><i>'경제에서 여성의 기여도 중요해요'</i>"]
 ComplexityEcon["복잡성 경제학<br>(1990~현재)<br>브라이언 아서, 도이네 파머<br>이론: 복잡적응시스템, 자기강화<br><i>'경제는 복잡하고 끊임없이 진화해요'</i>"]
 
 
@@ -127,8 +127,6 @@ Environmental --> Digital
 Chicago --> PublicChoice
 Austrian --> PublicChoice
 
-Institutional --> FeministEcon
-Marxist --> FeministEcon
 
 GameTheory --> ComplexityEcon
 Information --> ComplexityEcon
@@ -154,12 +152,51 @@ Happiness:::happiness
 Information:::information
 Digital:::digital
 PublicChoice:::chicago
-FeministEcon:::institutional
+%% FeministEcon class removed
 ComplexityEcon:::modern
 
 
 subgraph 경제학의 가계도
-end`}
+end
+
+subgraph "고대·중세 전통" 
+  Ancient
+  Mercantil
+end
+
+subgraph "고전학파 세대" 
+  Classical
+end
+
+subgraph "신고전·마르크스·오스트리아 세대"
+  Neoclassical
+  Marxist
+  Austrian
+end
+
+subgraph "케인즈·제도·시카고 세대"
+  Keynesian
+  Institutional
+  Chicago
+end
+
+subgraph "행동·신종합·신케인즈 세대"
+  Behavioral
+  NeoSynthesis
+  NewKeynesian
+end
+
+subgraph "기타 경제학파 상세 설명"
+  GameTheory
+  Development
+  Environmental
+  Happiness
+  Information
+  Digital
+  PublicChoice
+  ComplexityEcon 
+end
+`}
       </div>
     </div>
   );
