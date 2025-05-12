@@ -10,7 +10,7 @@ const EconomicFamilyTreeDiagram = () => {
         if (window.mermaid) {
           window.mermaid.initialize({
             startOnLoad: true,
-            theme: "default",
+            theme: "base", // Changed from "default" to "base"
             securityLevel: "loose",
             flowchart: {
               // Added for subgraph styling
