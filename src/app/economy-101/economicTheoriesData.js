@@ -307,6 +307,7 @@ export const theories = [
         nameKr: "존 힉스",
         nameEn: "John Hicks",
         achievements: "IS-LM 모형 개발",
+        nobelPrize: true,
       },
       {
         nameKr: "앨빈 핸슨",
@@ -328,7 +329,7 @@ export const theories = [
       {
         name: "IS-LM 모형",
         description:
-          "생산물 시장(IS)과 화폐 시장(LM)의 동시 균형을 분석하는 거시경제 모형",
+          "생산물 시장의 균형(IS: Investment-Saving)과 화폐 시장의 균형(LM: Liquidity preference-Money supply)을 동시에 분석하여 국민소득과 이자율이 결정되는 과정을 설명하는 거시경제 모형",
       },
       {
         name: "재정정책",
@@ -372,6 +373,7 @@ export const theories = [
         nameKr: "로널드 코즈",
         nameEn: "Ronald Coase",
         achievements: "거래비용, 코즈 정리 (신제도학파)",
+        nobelPrize: true,
       },
     ],
     keyConcepts: [
@@ -409,6 +411,7 @@ export const theories = [
         nameKr: "밀턴 프리드먼",
         nameEn: "Milton Friedman",
         achievements: "통화량이론, 자연실업률",
+        nobelPrize: true,
       },
       {
         nameKr: "조지 스티글러",
@@ -463,26 +466,31 @@ export const theories = [
         nameKr: "폴 새뮤얼슨",
         nameEn: "Paul Samuelson",
         achievements: "『경제학』, 경제학 대중화",
+        nobelPrize: true,
       },
       {
         nameKr: "존 힉스",
         nameEn: "John Hicks",
         achievements: "IS-LM 모형 개발",
+        nobelPrize: true,
       },
       {
         nameKr: "프랑코 모딜리아니",
         nameEn: "Franco Modigliani",
         achievements: "소비이론, 필립스 곡선",
+        nobelPrize: true,
       },
       {
         nameKr: "제임스 토빈",
         nameEn: "James Tobin",
         achievements: "금융시장 분석, 포트폴리오 이론",
+        nobelPrize: true,
       },
       {
         nameKr: "로버트 솔로우",
         nameEn: "Robert Solow",
         achievements: "경제 성장 이론",
+        nobelPrize: true,
       },
     ],
     keyConcepts: [
@@ -518,6 +526,7 @@ export const theories = [
         nameKr: "대니얼 카너먼",
         nameEn: "Daniel Kahneman",
         achievements: "전망이론, 제한된 합리성",
+        nobelPrize: true,
       },
       {
         nameKr: "아모스 트버스키",
@@ -528,6 +537,7 @@ export const theories = [
         nameKr: "리처드 탈러",
         nameEn: "Richard Thaler",
         achievements: "넛지, 행동경제학 확장",
+        nobelPrize: true,
       },
     ],
     keyConcepts: [
@@ -574,11 +584,13 @@ export const theories = [
         nameKr: "조지프 스티글리츠",
         nameEn: "Joseph Stiglitz",
         achievements: "정보 비대칭, 시장 실패",
+        nobelPrize: true,
       },
       {
         nameKr: "폴 크루그먼",
         nameEn: "Paul Krugman",
         achievements: "국제무역, 경제지리학",
+        nobelPrize: true,
       },
       {
         nameKr: "그레고리 맨큐",
@@ -642,16 +654,19 @@ export const theories = [
         nameKr: "존 내쉬",
         nameEn: "John Nash",
         achievements: "내쉬 균형, 전략적 상호작용",
+        nobelPrize: true,
       },
       {
         nameKr: "토마스 셸링",
         nameEn: "Thomas Schelling",
         achievements: "갈등과 협상 분석",
+        nobelPrize: true,
       },
       {
         nameKr: "라인하르트 젤텐",
         nameEn: "Reinhard Selten",
         achievements: "반복 게임, 제한된 합리성",
+        nobelPrize: true,
       },
     ],
     keyConcepts: [
@@ -693,6 +708,7 @@ export const theories = [
         nameKr: "아서 루이스",
         nameEn: "Arthur Lewis",
         achievements: "이중 경제 모델, 노벨 경제학상 수상",
+        nobelPrize: true,
       },
       {
         nameKr: "군나르 뮈르달",
@@ -703,6 +719,7 @@ export const theories = [
         nameKr: "아마티아 센",
         nameEn: "Amartya Sen",
         achievements: "인간 개발, 역량 이론",
+        nobelPrize: true,
       },
       {
         nameKr: "대런 애쓰모글루",
@@ -756,6 +773,7 @@ export const theories = [
         nameKr: "로널드 코즈",
         nameEn: "Ronald Coase",
         achievements: "코즈 정리, 거래비용",
+        nobelPrize: true,
       },
       {
         nameKr: "아서 세실 피구",
@@ -766,6 +784,7 @@ export const theories = [
         nameKr: "윌리엄 노드하우스",
         nameEn: "William Nordhaus",
         achievements: "기후변화 경제학, 통합평가모형",
+        nobelPrize: true,
       },
       {
         nameKr: "마틴 와이츠먼",
@@ -816,16 +835,19 @@ export const theories = [
         nameKr: "조지 애컬로프",
         nameEn: "George Akerlof",
         achievements: "역선택, 레몬 문제",
+        nobelPrize: true,
       },
       {
         nameKr: "마이클 스펜스",
         nameEn: "Michael Spence",
         achievements: "신호 발송 이론",
+        nobelPrize: true,
       },
       {
         nameKr: "조지프 스티글리츠",
         nameEn: "Joseph Stiglitz",
         achievements: "정보 비대칭, 선별 과정",
+        nobelPrize: true,
       },
       {
         nameKr: "케네스 애로우",
@@ -891,6 +913,7 @@ export const theories = [
         nameKr: "장 티롤",
         nameEn: "Jean Tirole",
         achievements: "양면시장, 플랫폼 지배력",
+        nobelPrize: true,
       },
     ],
     keyConcepts: [
@@ -940,6 +963,7 @@ export const theories = [
         nameKr: "제임스 뷰캐넌",
         nameEn: "James Buchanan",
         achievements: "정부 실패, 헌법 경제학",
+        nobelPrize: true,
       },
       {
         nameKr: "고든 털럭",
