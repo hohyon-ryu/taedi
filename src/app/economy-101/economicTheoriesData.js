@@ -44,6 +44,7 @@ export const theories = [
     quote:
       "시장은 '보이지 않는 손'에 의해 스스로 최적의 상태를 찾아가니, 정부는 간섭하지 말고 개인의 자유로운 경제활동을 최대한 보장해야 합니다. 이것이 국부를 증진하는 최선의 길입니다.",
     diagramClass: "classical",
+    image: "/static/images/scholars/adam_smith.png",
   },
   {
     id: "marxist",

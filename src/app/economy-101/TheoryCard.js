@@ -81,7 +81,7 @@ const TheoryCard = ({ theory }) => {
           : "transparent",
       }}
     >
-      <div className="p-5">
+      <div className="p-5 flex-grow">
         <div className="flex justify-between items-start mb-2">
           <h3 className="text-xl font-bold text-blue-700">{theory.name}</h3>
           {theory.status && (
@@ -95,6 +95,15 @@ const TheoryCard = ({ theory }) => {
         <p className="text-sm text-gray-500 font-normal mb-1">
           ({theory.period})
         </p>
+        {theory.image && (
+          <div className="my-4 flex justify-center">
+            <img
+              src={theory.image}
+              alt={`Image of ${theory.name}`}
+              className="w-32 h-32 object-cover rounded-full shadow-md"
+            />
+          </div>
+        )}
         <p className="text-xs text-gray-500 mb-3">
           <strong>주요 학자:</strong> {theory.scholars}
         </p>
