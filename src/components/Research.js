@@ -37,14 +37,9 @@ const Research = () => {
       link: "/digital-economy",
     },
     {
-      title: "디지털 전환과 사회변혁: 새로운 경제 질서의 설계",
-      description: "태재미래전략연구원 디지털 전환과 사회변혁 팀 연구 포스터",
-      link: "/digital-economy-v2",
-    },
-    {
       title: "경제학 기초 (Economy 101)",
       description: "디지털 시대의 경제 원리를 이해하기 위한 기초 개념 소개",
-      link: "/digital-economy-v2/economy-101",
+      link: "/economy-101",
     },
     {
       title: "디지털 시대 경제 질서의 제도화 - 경제 제도 (김민호)",
