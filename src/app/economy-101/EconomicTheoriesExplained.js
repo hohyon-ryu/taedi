@@ -26,7 +26,7 @@ const EconomicTheoriesExplained = () => {
   }
 
   return (
-    <div className="my-10">
+    <div className="my-10 container mx-auto px-4 sm:px-6 lg:px-8">
       {/* 타이틀 글씨 크기 text-3xl -> text-2xl로 수정 */}
       <h2 className="text-2xl font-extrabold mb-10 text-gray-800 text-center border-b-4 border-blue-600 pb-4">
         주요 경제학 이론 상세 설명

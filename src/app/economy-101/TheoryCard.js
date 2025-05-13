@@ -1,5 +1,8 @@
 "use client";
 
+import ConceptCard from "./ConceptCard";
+import ScholarCard from "./ScholarCard";
+
 const classColors = {
   ancient: "#0066cc",
   classical: "#ff8c00",
@@ -104,12 +107,32 @@ const TheoryCard = ({ theory }) => {
             />
           </div>
         )}
-        <p className="text-xs text-gray-500 mb-3">
-          <strong>주요 학자:</strong> {theory.scholars}
-        </p>
-        <p className="text-xs text-gray-600 mb-3 leading-relaxed">
-          <strong>주요 개념:</strong> {theory.keyConcepts}
-        </p>
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+          {theory.scholars && theory.scholars.length > 0 && (
+            <div className="md:col-span-7 mb-3">
+              <p className="text-sm font-semibold text-gray-600 mb-2">
+                주요 학자:
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {theory.scholars.map((scholar, index) => (
+                  <ScholarCard key={index} scholar={scholar} />
+                ))}
+              </div>
+            </div>
+          )}
+          {theory.keyConcepts && theory.keyConcepts.length > 0 && (
+            <div className="md:col-span-5 mb-3">
+              <p className="text-sm font-semibold text-gray-600 mb-2">
+                주요 개념:
+              </p>
+              <div className="flex flex-col gap-2">
+                {theory.keyConcepts.map((concept, index) => (
+                  <ConceptCard key={index} concept={concept} />
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
         <p className="text-sm text-gray-700 mb-4 leading-relaxed">
           {theory.summary}
         </p>

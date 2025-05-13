@@ -20,6 +20,7 @@ module.exports = {
         subtitle: "16px",
         body: "14px",
         small: "12px",
+        xxs: "0.625rem", // 10px
       },
       borderRadius: {
         card: "8px",
