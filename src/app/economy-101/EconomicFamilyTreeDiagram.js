@@ -55,8 +55,6 @@ classDef information fill:#e0f7fa,stroke:#00acc1,stroke-width:2px
 classDef environmental fill:#e8f5e9,stroke:#66bb6a,stroke-width:2px
 classDef digital fill:#e3f2fd,stroke:#42a5f5,stroke-width:2px
 classDef development fill:#fff3e0,stroke:#ffa726,stroke-width:2px 
-classDef happiness fill:#fffde7,stroke:#ffee58,stroke-width:2px
-
 
 Ancient["고대 및 중세 경제사상<br>(BC 350~1500년)<br>아리스토텔레스, 토마스 아퀴나스<br>공정가격론, 자연법<br><i>'공정한 가격이 있어요'</i>"]
 Mercantil["중상주의<br>(1500~1700년)<br>토마스 먼, 콜베르<br>무역차액설, 금은보유론<br><i>'금이랑 은이 많아야 국가가 부자예요'</i>"]
@@ -75,7 +73,6 @@ NeoSynthesis["신고전주의 종합<br>(1950~1970년)<br>솔로우, 새뮤얼�
 GameTheory["게임이론<br>(1950~현재)<br>존 내쉬, 토마스 셸링<br>내쉬균형, 죄수의 딜레마<br><i>'다른 사람의 선택도 중요해요'</i>"]
 Development["발전경제학<br>(1950~현재)<br>아마티아 센, 대니 로드릭<br>역량접근법, 산업정책<br><i>'가난한 나라가 잘 살게 하는 방법이 있어요'</i>"]
 Environmental["환경경제학<br>(1960~현재)<br>로널드 코스, 윌리엄 노드하우스<br>외부성, 탄소세<br><i>'환경도 경제에서 중요해요'</i>"]
-Happiness["행복경제학<br>(1970~현재)<br>리처드 이스털린, 브루노 프레이<br>이스털린 역설, 행복지수<br><i>'돈이 많다고 꼭 행복한 건 아니에요'</i>"]
 Information["정보경제학<br>(1970~현재)<br>조지 애컬로프, 조셉 스티글리츠<br>비대칭정보, 역선택<br><i>'정보가 누구에게 있는지가 중요해요'</i>"]
 Digital["디지털경제학<br>(1990~현재)<br>칼 샤피로, 홀 베리언<br>네트워크효과, 플랫폼경제<br><i>'디지털 세상은 다른 경제 규칙이 있어요'</i>"]
 PublicChoice["공공선택이론<br>(1960~현재)<br>제임스 뷰캐넌, 고든 털럭<br>지대추구, 투표역설<br><i>'정치인과 관료도 자기 이익을 추구해요'</i>"]
@@ -114,11 +111,7 @@ Institutional --> Development
 NeoSynthesis --> Environmental
 Chicago --> Environmental
 
-Behavioral --> Happiness
-Institutional --> Happiness
-
 NewKeynesian --> Information
-Chicago --> Information
 
 Information --> Digital
 GameTheory --> Digital
@@ -148,11 +141,9 @@ NeoSynthesis:::neoclassical
 GameTheory:::gametheory
 Development:::development
 Environmental:::environmental
-Happiness:::happiness
 Information:::information
 Digital:::digital
 PublicChoice:::chicago
-%% FeministEcon class removed
 ComplexityEcon:::modern
 
 
@@ -190,7 +181,6 @@ subgraph "현대 경제학"
   GameTheory
   Development
   Environmental
-  Happiness
   Information
   Digital
   PublicChoice
