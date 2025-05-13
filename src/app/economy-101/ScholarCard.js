@@ -8,8 +8,8 @@ const ScholarCard = ({ scholar }) => {
   return (
     <div className="border border-gray-200 rounded-lg bg-slate-50 shadow-sm w-40 flex-shrink-0 overflow-hidden relative">
       {scholar.nobelPrize && (
-        <div className="absolute -right-5 top-[6px] w-[80px] transform rotate-45 bg-yellow-500 text-white text-[10px] font-semibold text-center py-px shadow-md">
-          Nobel
+        <div className="absolute -right-5 top-[6px] w-[80px] transform rotate-45 bg-yellow-500 text-white text-[10px] font-semibold text-center py-px shadow-md flex items-center justify-center">
+          {`N ${scholar.nobelPrize}`}
         </div>
       )}
       {scholar.image && (
