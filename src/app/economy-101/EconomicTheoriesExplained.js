@@ -5,7 +5,8 @@ const theories = [
     id: "ancient",
     name: "고대 및 중세 경제사상",
     period: "BC 350 ~ 1500년",
-    era: "고대 ~ 중세",
+    era: "고대·중세 전통",
+    status: "고대 사상",
     scholars:
       "아리스토텔레스 (Aristotle): 재화 가치 구분, 공정가격 개념 제시. 토마스 아퀴나스 (Thomas Aquinas): 공정가격론 신학적 정당화, 고리대금업 비판.",
     keyConcepts: "공정가격론, 자연법, 이자 수취 비판",
@@ -19,7 +20,8 @@ const theories = [
     id: "mercantilism",
     name: "중상주의",
     period: "1500 ~ 1700년",
-    era: "근세",
+    era: "고대·중세 전통",
+    status: "근세 주류",
     scholars:
       "토마스 먼 (Thomas Mun): 『잉글랜드의 보물에 관한 담론』 저술, 무역흑자 강조. 장 바티스트 콜베르 (Jean-Baptiste Colbert): 프랑스 중상주의 정책(콜베르주의) 시행.",
     keyConcepts: "무역차액설, 금은보유론, 국가개입주의, 보호무역",
@@ -33,7 +35,8 @@ const theories = [
     id: "classical",
     name: "고전학파",
     period: "1776 ~ 1870년",
-    era: "근대",
+    era: "고전학파 세대",
+    status: "근대 주류",
     scholars:
       "애덤 스미스 (Adam Smith): 『국부론』 저술, '보이지 않는 손'. 데이비드 리카도 (David Ricardo): 비교우위론, 차액지대론. 토머스 맬서스 (Thomas Malthus): 『인구론』 저술. 존 스튜어트 밀 (John Stuart Mill): 고전학파 종합, 분배 문제 관심.",
     keyConcepts:
@@ -48,7 +51,8 @@ const theories = [
     id: "marxist",
     name: "마르크스주의",
     period: "1848 ~ 1917년",
-    era: "근대",
+    era: "신고전·마르크스·오스트리아 세대",
+    status: "근대 주요 비판 이론",
     scholars:
       "카를 마르크스 (Karl Marx): 『자본론』, 잉여가치론, 역사적 유물론. 프리드리히 엥겔스 (Friedrich Engels): 마르크스 협력자, 『공산당 선언』 공동 저술.",
     keyConcepts:
@@ -63,7 +67,8 @@ const theories = [
     id: "neoclassical",
     name: "신고전학파",
     period: "1870 ~ 1930년",
-    era: "근대",
+    era: "신고전·마르크스·오스트리아 세대",
+    status: "근대 후기 ~ 20세기 초 주류",
     scholars:
       "알프레드 마셜 (Alfred Marshall): 『경제학 원리』, 수요와 공급 분석. 레온 왈라스 (Léon Walras): 일반균형이론. 윌리엄 스탠리 제번스 (William Stanley Jevons): 한계효용이론 발전. 칼 멩거 (Carl Menger): 오스트리아학파 창시, 한계효용이론 발전.",
     keyConcepts:
@@ -78,7 +83,8 @@ const theories = [
     id: "austrian",
     name: "오스트리아학파",
     period: "1870 ~ 현재",
-    era: "근대 ~ 현대",
+    era: "신고전·마르크스·오스트리아 세대",
+    status: "독자적 학파 (비주류)",
     scholars:
       "칼 멩거 (Carl Menger): 오스트리아학파 창시, 한계효용이론 발전. 프리드리히 하이에크 (Friedrich Hayek): 시장의 자생적 질서, 정보의 분산. 루트비히 폰 미제스 (Ludwig von Mises): 인간 행동학, 경제 계산 문제.",
     keyConcepts: "주관적 가치론, 자생적 질서, 경제 계산 문제, 자유시장 옹호",
@@ -92,7 +98,8 @@ const theories = [
     id: "keynesian",
     name: "케인즈주의",
     period: "1936 ~ 1970년",
-    era: "현대",
+    era: "케인즈·제도·시카고 세대",
+    status: "20세기 중반 주류",
     scholars:
       "존 메이너드 케인즈 (John Maynard Keynes): 『고용, 이자 및 화폐에 관한 일반이론』, 유효수요이론. 존 힉스 (John Hicks): IS-LM 모형 개발. 앨빈 핸슨 (Alvin Hansen): 케인즈주의 확산, 장기 불황 이론.",
     keyConcepts: "유효수요이론, 승수효과, IS-LM 모형, 재정정책, 정부개입주의",
@@ -106,7 +113,8 @@ const theories = [
     id: "institutional",
     name: "제도주의",
     period: "1899 ~ 현재",
-    era: "근대 ~ 현대",
+    era: "케인즈·제도·시카고 세대",
+    status: "지속적 영향 (신제도학파로 발전)",
     scholars:
       "소스타인 베블런 (Thorstein Veblen): 『유한계급론』, 과시적 소비. 존 로저스 코먼스 (John Rogers Commons): 법과 집단행동 연구. 웨슬리 클레어 미첼 (Wesley Clair Mitchell): 경기변동 경험적 연구. 로널드 코즈 (Ronald Coase): 거래비용, 코즈 정리.",
     keyConcepts:
@@ -121,7 +129,8 @@ const theories = [
     id: "chicago",
     name: "시카고학파/통화주의",
     period: "1950 ~ 1990년",
-    era: "현대",
+    era: "케인즈·제도·시카고 세대",
+    status: "20세기 후반 주류 (신자유주의 토대)",
     scholars:
       "밀턴 프리드먼 (Milton Friedman): 통화량이론, 자연실업률. 조지 스티글러 (George Stigler): 정보경제학, 규제이론. 게리 베커 (Gary Becker): 비시장 영역 경제학 확장.",
     keyConcepts:
@@ -133,10 +142,26 @@ const theories = [
     diagramClass: "chicago",
   },
   {
+    id: "neosynthesis",
+    name: "신고전주의 종합 (Neoclassical Synthesis)",
+    period: "1950 ~ 1970년",
+    era: "행동·신종합·신케인즈 세대",
+    status: "20세기 중후반 주류 통합 시도",
+    scholars:
+      "폴 새뮤얼슨 (Paul Samuelson): 『경제학』, 경제학 대중화. 존 힉스 (John Hicks): IS-LM 모형 개발. 프랑코 모딜리아니 (Franco Modigliani): 소비이론, 필립스 곡선. 제임스 토빈 (James Tobin): 금융시장 분석, 포트폴리오 이론. 로버트 솔로우 (Robert Solow): 경제 성장 이론.",
+    keyConcepts: "IS-LM 모형, 필립스 곡선, 경제 성장 이론 (솔로우 모형)",
+    summary:
+      "제2차 세계대전 이후 케인즈주의가 거시경제 분석의 주류로 자리 잡으면서, 이를 신고전학파의 미시경제학적 원리와 통합하려는 시도였습니다. 즉, 단기적으로는 케인즈의 주장처럼 가격 경직성 등으로 인해 시장이 불완전하여 정부 개입이 유효할 수 있지만, 장기적으로는 신고전학파의 주장처럼 시장이 균형을 찾아간다고 보았습니다. 폴 새뮤얼슨은 그의 저서 『경제학』을 통해 이러한 종합을 대중화했으며, 존 힉스가 개발한 IS-LM 모형은 신고전파 종합의 핵심 분석 도구가 되었습니다. 로버트 솔로우는 경제 성장의 요인을 분석하는 신고전파 성장 모형을 제시하여 노벨 경제학상을 수상했습니다. 이 시기 경제학 교과서의 주류를 이루었으나, 1970년대 스태그플레이션 현상을 제대로 설명하지 못하면서 통화주의와 새고전학파의 도전을 받게 됩니다.",
+    quote:
+      "케인즈의 거시경제 이론과 신고전학파의 미시경제 원리를 하나로! 단기에는 정부가 경제를 조율할 수 있지만, 장기에는 시장이 제 갈 길을 간다. 이것이 경제학의 새로운 표준이다.",
+    diagramClass: "neoclassical",
+  },
+  {
     id: "behavioral",
     name: "행동경제학",
     period: "1979 ~ 현재",
-    era: "현대",
+    era: "행동·신종합·신케인즈 세대",
+    status: "현대 주요 흐름 (새로운 시도)",
     scholars:
       "대니얼 카너먼 (Daniel Kahneman): 전망이론, 제한된 합리성. 아모스 트버스키 (Amos Tversky): 전망이론 공동 개발. 리처드 탈러 (Richard Thaler): 넛지, 행동경제학 확장.",
     keyConcepts: "제한된 합리성, 전망이론, 프레이밍 효과, 손실 회피, 넛지",
@@ -150,7 +175,8 @@ const theories = [
     id: "newkeynesian",
     name: "신케인즈주의 (새케인즈학파)",
     period: "1980 ~ 현재",
-    era: "현대",
+    era: "행동·신종합·신케인즈 세대",
+    status: "현대 거시경제 주류",
     scholars:
       "조지프 스티글리츠 (Joseph Stiglitz): 정보 비대칭, 시장 실패. 폴 크루그먼 (Paul Krugman): 국제무역, 경제지리학. 그레고리 맨큐 (Gregory Mankiw): 가격 경직성, 효율성 임금. 재닛 옐런 (Janet Yellen): 노동시장 분석, 거시경제 정책.",
     keyConcepts:
@@ -162,24 +188,11 @@ const theories = [
     diagramClass: "keynesian",
   },
   {
-    id: "neosynthesis",
-    name: "신고전주의 종합 (Neoclassical Synthesis)",
-    period: "1950 ~ 1970년",
-    era: "현대",
-    scholars:
-      "폴 새뮤얼슨 (Paul Samuelson): 『경제학』, 경제학 대중화. 존 힉스 (John Hicks): IS-LM 모형 개발. 프랑코 모딜리아니 (Franco Modigliani): 소비이론, 필립스 곡선. 제임스 토빈 (James Tobin): 금융시장 분석, 포트폴리오 이론. 로버트 솔로우 (Robert Solow): 경제 성장 이론.",
-    keyConcepts: "IS-LM 모형, 필립스 곡선, 경제 성장 이론 (솔로우 모형)",
-    summary:
-      "제2차 세계대전 이후 케인즈주의가 거시경제 분석의 주류로 자리 잡으면서, 이를 신고전학파의 미시경제학적 원리와 통합하려는 시도였습니다. 즉, 단기적으로는 케인즈의 주장처럼 가격 경직성 등으로 인해 시장이 불완전하여 정부 개입이 유효할 수 있지만, 장기적으로는 신고전학파의 주장처럼 시장이 균형을 찾아간다고 보았습니다. 폴 새뮤얼슨은 그의 저서 『경제학』을 통해 이러한 종합을 대중화했으며, 존 힉스가 개발한 IS-LM 모형은 신고전파 종합의 핵심 분석 도구가 되었습니다. 로버트 솔로우는 경제 성장의 요인을 분석하는 신고전파 성장 모형을 제시하여 노벨 경제학상을 수상했습니다. 이 시기 경제학 교과서의 주류를 이루었으나, 1970년대 스태그플레이션 현상을 제대로 설명하지 못하면서 통화주의와 새고전학파의 도전을 받게 됩니다.",
-    quote:
-      "케인즈의 거시경제 이론과 신고전학파의 미시경제 원리를 하나로! 단기에는 정부가 경제를 조율할 수 있지만, 장기에는 시장이 제 갈 길을 간다. 이것이 경제학의 새로운 표준이다.",
-    diagramClass: "neoclassical",
-  },
-  {
     id: "gametheory",
     name: "게임이론",
     period: "1950 ~ 현재",
-    era: "현대",
+    era: "현대 경제학",
+    status: "현대 분석 도구 (응용 분야 다양)",
     scholars:
       "존 폰 노이만 (John von Neumann): 게임이론 창시, 수학적 분석. 오스카 모르겐슈테른 (Oskar Morgenstern): 『게임이론과 경제행동』 공동 저술. 존 내쉬 (John Nash): 내쉬 균형, 전략적 상호작용. 토마스 셸링 (Thomas Schelling): 갈등과 협상 분석. 라인하르트 젤텐 (Reinhard Selten): 반복 게임, 제한된 합리성.",
     keyConcepts:
@@ -194,7 +207,8 @@ const theories = [
     id: "development",
     name: "발전경제학",
     period: "1950 ~ 현재",
-    era: "현대",
+    era: "현대 경제학",
+    status: "현대 응용 분야",
     scholars:
       "아서 루이스 (Arthur Lewis): 이중 경제 모델, 노벨 경제학상 수상. 군나르 뮈르달 (Gunnar Myrdal): 누적적 인과관계, 불평등 심화. 아마티아 센 (Amartya Sen): 인간 개발, 역량 이론. 대런 애쓰모글루 (Daron Acemoglu): 제도와 성장 연구. 에스테르 뒤플로 (Esther Duflo): 무작위 통제 실험(RCT), 빈곤 연구.",
     keyConcepts:
@@ -209,7 +223,8 @@ const theories = [
     id: "environmental",
     name: "환경경제학",
     period: "1960 ~ 현재",
-    era: "현대",
+    era: "현대 경제학",
+    status: "현대 응용 분야 (정책 중요성 증대)",
     scholars:
       "로널드 코스 (Ronald Coase): 코즈 정리, 거래비용. 아서 세실 피구 (Arthur Cecil Pigou): 피구세, 외부효과 교정. 윌리엄 노드하우스 (William Nordhaus): 기후변화 경제학, 통합평가모형. 마틴 와이츠먼 (Martin Weitzman): 환경 정책 분석.",
     keyConcepts:
@@ -224,7 +239,8 @@ const theories = [
     id: "happiness",
     name: "행복경제학",
     period: "1970 ~ 현재",
-    era: "현대",
+    era: "현대 경제학",
+    status: "최신 동향 (새로운 시도)",
     scholars:
       "리처드 이스털린 (Richard Easterlin): 이스털린 역설, 행복 연구. 브루노 프레이 (Bruno Frey): 주관적 안녕감, 삶의 만족도. 앤드루 오스왈드 (Andrew Oswald): 적응 이론, 상대 소득 가설. 저스틴 울퍼스 (Justin Wolfers): 행복 지표 개발.",
     keyConcepts:
@@ -239,7 +255,8 @@ const theories = [
     id: "information",
     name: "정보경제학",
     period: "1970 ~ 현재",
-    era: "현대",
+    era: "현대 경제학",
+    status: "현대 주요 흐름 (디지털 경제와 연관)",
     scholars:
       "조지 애컬로프 (George Akerlof): 역선택, 레몬 문제. 마이클 스펜스 (Michael Spence): 신호 발송 이론. 조지프 스티글리츠 (Joseph Stiglitz): 정보 비대칭, 선별 과정. 케네스 애로우 (Kenneth Arrow): 정보의 역할, 시장 실패.",
     keyConcepts:
@@ -254,7 +271,8 @@ const theories = [
     id: "digital",
     name: "디지털경제학",
     period: "1990 ~ 현재",
-    era: "현대",
+    era: "현대 경제학",
+    status: "최신 핵심 분야",
     scholars:
       "칼 샤피로 (Carl Shapiro): 정보재, 네트워크 효과. 홀 베리언 (Hal Varian): 플랫폼 경제, 데이터 경제. 에릭 브린욜프슨 (Erik Brynjolfsson): 디지털 기술과 생산성. 장 티롤 (Jean Tirole): 양면시장, 플랫폼 지배력.",
     keyConcepts:
@@ -269,7 +287,8 @@ const theories = [
     id: "publicchoice",
     name: "공공선택이론",
     period: "1960 ~ 현재",
-    era: "현대",
+    era: "현대 경제학",
+    status: "현대 응용 분야 (정치경제학)",
     scholars:
       "제임스 뷰캐넌 (James Buchanan): 정부 실패, 헌법 경제학. 고든 털럭 (Gordon Tullock): 투표 규칙, 정치적 의사결정. 맨서 올슨 (Mancur Olson): 집단행동의 논리, 이익집단 분석. 앤서니 다운스 (Anthony Downs): 민주주의의 경제이론, 관료 행동 분석.",
     keyConcepts:
@@ -284,7 +303,8 @@ const theories = [
     id: "complexity",
     name: "복잡성 경제학",
     period: "1990 ~ 현재",
-    era: "현대",
+    era: "현대 경제학",
+    status: "최신 연구 경향 (새로운 시도)",
     scholars:
       "브라이언 아서 (W. Brian Arthur): 수확체증, 경로 의존성. 스튜어트 카우프만 (Stuart Kauffman): 자기조직화, 출현 현상. 도인 파머 (John H. Holland): 복잡적응시스템, 행위자 기반 모형. 에릭 바인하커 (Eric Beinhocker): 경제 진화론, 복잡성 이론.",
     keyConcepts:
@@ -298,24 +318,43 @@ const theories = [
 ];
 
 const eraSummaries = {
-  "고대 ~ 중세":
-    "경제 활동에 대한 윤리적, 철학적 접근이 주를 이루었으며, 공정 가격과 이자 수취 제한 등이 주요 논의 대상이었습니다. 아리스토텔레스와 토마스 아퀴나스가 대표적 학자입니다.",
-  근세: "국가 중심의 부국강병을 목표로 하는 중상주의가 등장했습니다. 무역 흑자와 금은 축적을 중요시했으며, 국가의 적극적인 경제 개입을 강조했습니다. 토마스 먼과 장 바티스트 콜베르가 이 시대를 대표합니다.",
-  근대: "개인의 자유로운 경제활동과 시장의 자율 조정 능력을 강조하는 고전학파가 등장하여 자유방임주의의 기초를 마련했습니다. 이후 자본주의의 모순을 지적하는 마르크스주의, 개인의 효용을 중시하는 신고전학파, 그리고 제도의 중요성을 강조하는 제도주의 등 다양한 사상이 발전했습니다. 오스트리아학파도 이 시기에 등장하여 개인의 주관적 가치와 자생적 질서를 강조했습니다.",
-  "근대 ~ 현대":
-    "근대의 경제 사상이 현대로 이어지며 발전하는 과도기적 시기입니다. 오스트리아학파와 제도주의는 이 시기에도 계속해서 영향력을 행사하며 현대 경제학의 다양한 분파에 영향을 미쳤습니다.",
-  현대: "대공황 이후 케인즈주의가 등장하여 정부의 적극적 시장 개입을 주장했고, 이에 대한 반론으로 시카고학파(통화주의)가 부상했습니다. 이후 경제 주체의 합리성에 의문을 제기하는 행동경제학, 정보의 중요성을 강조하는 정보경제학, 전략적 상호작용을 분석하는 게임이론, 저개발국의 빈곤 문제를 다루는 발전경제학, 환경 문제의 경제적 해법을 모색하는 환경경제학, 인간의 행복을 직접 연구하는 행복경제학 등 매우 다양하고 세분화된 경제학 분과들이 발전했습니다. 특히 디지털 기술의 발달로 디지털 경제학이 새롭게 부상했으며, 정치 과정을 경제학적으로 분석하는 공공선택이론과 경제를 복잡계로 파악하는 복잡성 경제학도 중요한 흐름으로 자리 잡았습니다. 신고전주의 종합과 신케인즈주의는 기존 이론들을 통합하고 발전시키려는 노력을 대표합니다.",
+  "고대·중세 전통":
+    "경제 활동에 대한 윤리적, 철학적 접근이 주를 이루었으며, 공정 가격과 이자 수취 제한 등이 주요 논의 대상이었습니다. 아리스토텔레스, 토마스 아퀴나스가 고대 사상을 대표하며, 이후 국가 중심의 부국강병을 목표로 한 중상주의(토마스 먼, 콜베르)가 등장하여 근세 경제 정책의 주류를 이루었습니다.",
+  "고전학파 세대":
+    "개인의 자유로운 경제활동과 시장의 자율 조정 능력을 강조하는 고전학파(애덤 스미스, 데이비드 리카도)가 등장하여 자유방임주의의 기초를 마련했습니다. 이 시기는 근대 경제학의 출발점으로 평가됩니다.",
+  "신고전·마르크스·오스트리아 세대":
+    "고전학파 이후 다양한 사상이 분화된 시기입니다. 자본주의의 모순을 지적하는 마르크스주의(카를 마르크스), 개인의 효용과 수학적 분석을 중시하는 신고전학파(알프레드 마셜, 레온 왈라스)가 근대 후기 주류를 형성했으며, 개인의 주관적 가치와 자생적 질서를 강조하는 오스트리아학파(칼 멩거, 하이에크)도 독자적인 흐름을 이어갔습니다.",
+  "케인즈·제도·시카고 세대":
+    "20세기 경제학의 주요 패러다임이 형성된 시기입니다. 대공황 이후 정부의 적극적 시장 개입을 주장한 케인즈주의(존 메이너드 케인즈)가 20세기 중반 주류로 부상했습니다. 이에 대한 반론으로 시카고학파/통화주의(밀턴 프리드먼)가 등장하여 20세기 후반 주류 및 신자유주의의 이론적 토대를 제공했습니다. 한편, 경제 현상에서 법, 관습 등 제도의 중요성을 강조하는 제도주의(소스타인 베블런, 로널드 코즈)도 꾸준히 발전하며 영향을 미쳤습니다.",
+  "행동·신종합·신케인즈 세대":
+    "기존 주류 이론들을 통합하거나 새로운 관점을 제시하려는 노력이 나타난 시기입니다. 신고전주의 종합(폴 새뮤얼슨, 로버트 솔로우)은 케인즈주의와 신고전학파를 통합하려 시도했습니다. 이후 케인즈주의의 핵심을 미시적으로 설명하려는 신케인즈주의(조지프 스티글리츠, 폴 크루그먼)가 현대 거시경제의 주류로 자리 잡았습니다. 또한, 인간의 심리적 측면을 경제 분석에 도입한 행동경제학(대니얼 카너먼, 리처드 탈러)이 새로운 주요 흐름으로 부상했습니다.",
+  "현대 경제학":
+    "경제학이 매우 다양하고 세분화된 분과들로 발전한 시기입니다. 게임이론(존 내쉬)은 전략적 상호작용 분석의 핵심 도구가 되었고, 정보경제학(조지 애컬로프, 조지프 스티글리츠)은 정보 비대칭 문제의 중요성을 밝혔습니다. 발전경제학(아마티아 센), 환경경제학(윌리엄 노드하우스), 공공선택이론(제임스 뷰캐넌) 등 특정 문제 영역을 다루는 응용 분야들이 발전했습니다. 최근에는 디지털 기술 발전에 따른 디지털경제학(칼 샤피로, 장 티롤), 인간의 행복을 직접 연구하는 행복경제학(리처드 이스털린), 경제를 복잡계로 파악하는 복잡성 경제학(브라이언 아서) 등 새로운 연구 경향과 시도들이 활발하게 이루어지고 있습니다.",
 };
 
 const TheoryCard = ({ theory }) => (
-  <div className="border border-gray-300 rounded-md mb-4 bg-white shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
+  <div
+    className={`border border-gray-300 rounded-md mb-4 bg-white shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full ${
+      theory.diagramClass ? "border-l-4" : ""
+    }`}
+    style={{
+      borderLeftColor: theory.diagramClass
+        ? getColorForClass(theory.diagramClass)
+        : "transparent",
+    }}
+  >
     <div className="p-5">
-      <h3 className="text-xl font-bold text-blue-700 mb-2">
-        {theory.name}{" "}
-        <span className="text-sm text-gray-500 font-normal">
-          ({theory.period})
-        </span>
-      </h3>
+      <div className="flex justify-between items-start mb-2">
+        <h3 className="text-xl font-bold text-blue-700">{theory.name}</h3>
+        {theory.status && (
+          <span className="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded-full ml-2 whitespace-nowrap">
+            {theory.status}
+          </span>
+        )}
+      </div>
+      <p className="text-sm text-gray-500 font-normal mb-1">
+        ({theory.period})
+      </p>
       <p className="text-xs text-gray-500 mb-3">
         <strong>주요 학자:</strong> {theory.scholars}
       </p>
@@ -334,6 +373,28 @@ const TheoryCard = ({ theory }) => (
   </div>
 );
 
+const getColorForClass = (diagramClass) => {
+  const classColors = {
+    ancient: "#0066cc",
+    classical: "#ff8c00",
+    marxist: "#cc0000",
+    neoclassical: "#ff8c00",
+    austrian: "#009900",
+    keynesian: "#0099cc",
+    institutional: "#6600cc",
+    chicago: "#009900",
+    behavioral: "#6600cc",
+    modern: "#333333",
+    gametheory: "#039be5",
+    information: "#00acc1",
+    environmental: "#66bb6a",
+    digital: "#42a5f5",
+    development: "#ffa726",
+    happiness: "#ffee58",
+  };
+  return classColors[diagramClass] || "#dddddd";
+};
+
 const EconomicTheoriesExplained = () => {
   const theoriesByEra = theories.reduce((acc, theory) => {
     const era = theory.era || "기타";
@@ -344,7 +405,14 @@ const EconomicTheoriesExplained = () => {
     return acc;
   }, {});
 
-  const eraOrder = ["고대 ~ 중세", "근세", "근대", "근대 ~ 현대", "현대"];
+  const eraOrder = [
+    "고대·중세 전통",
+    "고전학파 세대",
+    "신고전·마르크스·오스트리아 세대",
+    "케인즈·제도·시카고 세대",
+    "행동·신종합·신케인즈 세대",
+    "현대 경제학",
+  ];
   const sortedEras = eraOrder.filter((era) => theoriesByEra[era]);
 
   if (theoriesByEra["기타"]) {
