@@ -1,3 +1,4 @@
+import DigitalEconomyCharacteristicsWrapper from "./DigitalEconomyCharacteristicsWrapper";
 import EconomicFamilyTreeWrapper from "./EconomicFamilyTreeWrapper";
 import EconomicTheoriesExplained from "./EconomicTheoriesExplained";
 
@@ -220,7 +221,8 @@ export default function Economy101Page() {
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 border-b-4 border-blue-600 pb-3 mb-8 text-center">
                 3. 디지털 경제의 특징
               </h2>
-              <div className="grid md:grid-cols-2 gap-8">
+              <DigitalEconomyCharacteristicsWrapper />
+              <div>
                 <div className="prose prose-lg max-w-none">
                   <p className="text-lg text-gray-700">
                     디지털 경제는 전통적인 경제 모델과는 다른 독특한 특성을
@@ -254,15 +256,6 @@ export default function Economy101Page() {
                         효과로 인해 독점적 지위를 차지하기 쉬움
                       </li>
                     </ul>
-                  </div>
-                </div>
-                <div className="flex justify-center items-center">
-                  <div className="bg-gray-50 p-6 rounded-lg shadow-lg w-full h-full flex items-center justify-center">
-                    <div className="text-center text-gray-500">
-                      <p className="italic">
-                        디지털 경제 특성을 나타내는 이미지가 추가될 예정입니다.
-                      </p>
-                    </div>
                   </div>
                 </div>
               </div>

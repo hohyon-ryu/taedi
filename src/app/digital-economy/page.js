@@ -278,6 +278,22 @@ const DigitalEconomyPoster = () => {
           </div>
         </AnimateOnScroll>
 
+        {/* 디지털 경제의 특징 */}
+        <AnimateOnScroll animation="fade-in" delay={0.2}>
+          <div className="mb-2 bg-white overflow-hidden">
+            <div className="bg-gray-500 text-white p-2 relative overflow-hidden">
+              {/* You can add a background image here if needed, similar to other sections */}
+              {/* <div className="absolute inset-0"> ... </div> */}
+              <div className="relative z-10 flex justify-between items-center">
+                <h2 className="text-base font-bold">3. 디지털 경제의 특징</h2>
+              </div>
+            </div>
+            <div className="px-0 py-3">
+              {/* Removed DigitalEconomyCharacteristicsWrapper */}
+            </div>
+          </div>
+        </AnimateOnScroll>
+
         {/* 주요 연구 과제 */}
         <AnimateOnScroll animation="fade-in" delay={0.2}>
           <div className="mb-2 bg-white overflow-hidden">
@@ -298,7 +314,7 @@ const DigitalEconomyPoster = () => {
                 </div>
               </div>
               <div className="relative z-10 flex justify-between items-center">
-                <h2 className="text-base font-bold">3. 연구 과제</h2>
+                <h2 className="text-base font-bold">4. 연구 과제</h2>
               </div>
             </div>
 
@@ -579,7 +595,7 @@ const DigitalEconomyPoster = () => {
                 </div>
               </div>
               <div className="relative z-10 flex justify-between items-center">
-                <h2 className="text-base font-bold">4. 2025 분기별 계획</h2>
+                <h2 className="text-base font-bold">5. 2025 분기별 계획</h2>
               </div>
             </div>
 
