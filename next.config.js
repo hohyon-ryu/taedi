@@ -11,11 +11,11 @@ const nextConfig = {
     ],
   },
   // Explicitly configure i18n with only default locale to prevent redirects
-  i18n: {
-    locales: ["default"],
-    defaultLocale: "default",
-    localeDetection: false,
-  },
+  // i18n: {
+  //   locales: ["default"],
+  //   defaultLocale: "default",
+  //   localeDetection: false,
+  // },
   // Experimental features
   experimental: {
     // ppr: true, // Disabled as it requires Next.js canary version
