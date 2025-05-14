@@ -476,4 +476,153 @@ export const theories = [
     emergenceContext:
       "전통적인 경제 모델이 금융 위기나 급격한 기술 변화와 같은 현실 경제의 동태적이고 불확실한 측면을 설명하는 데 한계를 보이면서, 물리학, 생물학 등 자연과학의 복잡계 이론을 경제학에 도입하려는 시도에서 발전했습니다. 컴퓨터 기술의 발전으로 복잡한 시뮬레이션이 가능해진 것도 중요한 배경입니다.",
   },
+  {
+    id: "evolutionaryeconomics",
+    name: "진화 경제학",
+    period: "1980 ~ 현재", // Approximate, as it builds on earlier ideas
+    era: "현대 경제학",
+    status: "현대 경제학의 주요 흐름",
+    scholars: [
+      {
+        nameKr: "조지프 슘페터",
+        nameEn: "Joseph Schumpeter",
+        achievements: "창조적 파괴, 혁신 이론의 선구자 (사상적 기반 제공)",
+        image: "/static/images/scholars/Joseph_Schumpeter.jpg",
+      },
+      {
+        nameKr: "리처드 넬슨",
+        nameEn: "Richard R. Nelson",
+        achievements: "진화 경제학 정립, 『경제 변화의 진화 이론』 공동 저술",
+      },
+      {
+        nameKr: "시드니 윈터",
+        nameEn: "Sidney G. Winter",
+        achievements: "진화 경제학 정립, 『경제 변화의 진화 이론』 공동 저술",
+      },
+      {
+        nameKr: "조반니 도시",
+        nameEn: "Giovanni Dosi",
+        achievements: "기술 패러다임, 혁신 시스템 연구",
+      },
+      {
+        nameKr: "쿠르트 도플러",
+        nameEn: "Kurt Dopfer",
+        achievements: "미시-메조-매크로 프레임워크",
+      },
+    ],
+    keyConcepts: [
+      {
+        name: "창조적 파괴 (Creative Destruction)",
+        description:
+          "새로운 혁신이 기존의 기술, 기업, 산업 구조를 파괴하고 대체하는 과정",
+      },
+      {
+        name: "혁신 (Innovation)",
+        description:
+          "경제 발전의 핵심 동력으로, 새로운 기술, 제품, 프로세스, 시장, 조직 등을 도입하는 것",
+      },
+      {
+        name: "기업가 정신 (Entrepreneurship)",
+        description:
+          "혁신을 주도하고 새로운 기회를 포착하여 경제 변화를 이끄는 역할",
+      },
+      {
+        name: "경로 의존성 (Path Dependency)",
+        description:
+          "과거의 선택이나 사건이 현재와 미래의 경제 발전 경로에 지속적인 영향을 미치는 현상",
+      },
+      {
+        name: "다양성과 선택 (Variety and Selection)",
+        description:
+          "경제 내 다양한 행위자, 기술, 전략 등이 경쟁하고 환경에 적응하며 선택되는 과정",
+      },
+      {
+        name: "루틴 (Routines)",
+        description:
+          "기업 내에서 반복적으로 수행되는 행동 패턴으로, 지식과 역량의 저장소 역할",
+      },
+    ],
+    summary:
+      "경제를 생물학적 진화 과정에 유비하여 이해하려는 접근 방식입니다. 조지프 슘페터의 '창조적 파괴' 개념에서 중요한 영감을 받았으며, 기업, 기술, 제도 등이 시간의 흐름에 따라 어떻게 변화하고 적응하며 선택되는지에 초점을 맞춥니다. 신고전학파의 합리적 행위자와 균형 상태 가정에 비판적이며, 다양성, 혁신, 경로 의존성, 불확실성 하에서의 의사결정 등을 핵심 요소로 간주합니다. 리처드 넬슨과 시드니 윈터는 『경제 변화의 진화 이론』(An Evolutionary Theory of Economic Change, 1982)을 통해 이를 정형화하는 데 크게 기여했습니다. 진화 경제학은 기술 변화, 산업 동학, 경제 성장, 정책 등을 분석하는 데 중요한 관점을 제공합니다.",
+    quote:
+      "혁신은 낡은 것을 파괴하고 새로운 것을 창조하는 끊임없는 폭풍이다. 이것이 자본주의의 본질적 사실이다. - 조지프 슘페터 (유사 인용)",
+    diagramClass: "evolutionaryeconomics", // Add a specific class if needed for diagrams
+    emergenceContext:
+      "1970년대 이후 신고전학파 경제학의 정태적 균형 분석과 합리적 행위자 가정의 한계가 드러나면서, 경제 현상의 동태적 변화와 복잡성을 설명하려는 시도로 등장했습니다. 특히 기술 혁신과 산업 구조 변화의 중요성이 부각되면서 주목받기 시작했습니다.",
+  },
+  {
+    id: "systemseconomics",
+    name: "시스템 경제학",
+    period: "1970 ~ 현재", // Approximate
+    era: "현대 경제학",
+    status: "학제간 연구 분야",
+    scholars: [
+      {
+        nameKr: "케네스 볼딩",
+        nameEn: "Kenneth Boulding",
+        achievements: "일반 시스템 이론의 경제학 적용 선구자",
+      },
+      {
+        nameKr: "제이 포레스터",
+        nameEn: "Jay Wright Forrester",
+        achievements: "시스템 다이내믹스 창시, 산업 및 도시 동학 모델 개발",
+      },
+      {
+        nameKr: "허버트 사이먼",
+        nameEn: "Herbert A. Simon",
+        achievements: "제한된 합리성, 복잡계 연구, 노벨 경제학상 수상",
+        nobelPrize: 1978,
+        image: "/static/images/scholars/Herbert_A_Simon.jpg",
+      },
+      {
+        nameKr: "도넬라 메도우즈",
+        nameEn: "Donella H. Meadows",
+        achievements: "『성장의 한계』 공동 저자, 시스템 사고 대중화",
+      },
+      {
+        nameKr: "니콜라스 조르제스쿠-뢰겐",
+        nameEn: "Nicholas Georgescu-Roegen",
+        achievements: "생태 경제학의 선구자, 열역학 법칙의 경제학적 함의 연구",
+      },
+    ],
+    keyConcepts: [
+      {
+        name: "피드백 루프 (Feedback Loops)",
+        description:
+          "시스템 내에서 한 요소의 변화가 다른 요소에 영향을 미치고, 그 영향이 다시 원래 요소로 돌아오는 순환적 인과 관계 (양성 피드백, 음성 피드백)",
+      },
+      {
+        name: "비선형 동학 (Nonlinear Dynamics)",
+        description:
+          "원인과 결과 사이에 정비례 관계가 성립하지 않는 복잡한 시스템의 행동 양식",
+      },
+      {
+        name: "자기 조직화 (Self-Organization)",
+        description:
+          "외부의 직접적인 통제 없이 시스템 스스로 질서 있는 구조나 패턴을 형성하는 과정",
+      },
+      {
+        name: "창발성 (Emergence)",
+        description:
+          "하위 구성 요소들의 개별적 특성만으로는 예측할 수 없는 시스템 전체 수준의 새로운 특성이나 행동이 나타나는 현상",
+      },
+      {
+        name: "스톡과 플로우 (Stocks and Flows)",
+        description:
+          "시스템 내에 축적되는 양(스톡)과 시간에 따라 변화하는 양(플로우)을 통해 시스템 구조와 행동을 분석하는 개념",
+      },
+      {
+        name: "시스템 경계 (System Boundary)",
+        description:
+          "분석 대상 시스템과 그 외부 환경을 구분하는 경계로, 문제 정의에 중요",
+      },
+    ],
+    summary:
+      "경제를 상호 연결된 구성 요소들로 이루어진 복잡한 동적 시스템으로 파악하고 분석하는 학문입니다. 시스템 전체의 구조, 행동, 그리고 진화 과정에 주목하며, 피드백 루프, 비선형 관계, 자기 조직화, 창발적 속성 등 시스템 이론의 개념을 경제 현상 해석에 적용합니다. 경제 주체들 간의 상호작용과 환경과의 관계를 중시하며, 정책 결정 시 예기치 않은 결과를 고려하는 전체론적 관점을 제공합니다. 시스템 다이내믹스, 복잡계 경제학 등과 밀접한 관련이 있으며, 환경 문제, 금융 시스템 안정성, 도시 계획 등 다양한 분야에 응용됩니다.",
+    quote:
+      "우리는 세상을 조각내어 분석하려 하지만, 세상은 통합된 전체로서 작동한다. 시스템 사고는 이 전체를 보는 방법이다. - 도넬라 메도우즈 (유사 인용)",
+    diagramClass: "systemseconomics", // Add a specific class if needed for diagrams
+    emergenceContext:
+      "컴퓨터 기술의 발전과 함께 복잡한 시스템을 모델링하고 시뮬레이션할 수 있는 능력이 향상되면서 발전했습니다. 전통 경제학의 환원주의적 접근 방식으로는 설명하기 어려운 거시적 현상이나 예기치 않은 결과를 이해하려는 수요와 맞물려 성장했습니다.",
+  },
 ];
