@@ -30,13 +30,23 @@ export default function Economy101Page() {
     <div className="bg-gray-100 min-h-screen">
       <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <article className="bg-white shadow-2xl rounded-xl overflow-hidden">
-          <header className="p-8 bg-gradient-to-r from-blue-800 to-indigo-900 text-white text-center">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight">
-              경제학 기초 (Economy 101)
-            </h1>
-            <p className="mt-3 text-xl sm:text-2xl text-blue-200 font-medium">
-              디지털 시대의 경제 원리를 이해하기 위한 기초 개념
-            </p>
+          <header
+            className="p-8 bg-gradient-to-r from-blue-800 to-indigo-900 text-white text-center"
+            style={{
+              backgroundImage:
+                "url('/static/images/banners/Keynesian, Institutional & Chicago School Era.png')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
+            <div className="bg-black bg-opacity-50 p-4 rounded-md">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
+                경제학 기초 (Economy 101)
+              </h1>
+              <p className="mt-3 text-xl sm:text-2xl text-blue-200 font-medium">
+                디지털 시대의 경제 원리를 이해하기 위한 기초 개념
+              </p>
+            </div>
           </header>
 
           <div className="p-6 sm:p-10">
