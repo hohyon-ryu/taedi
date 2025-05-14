@@ -98,6 +98,16 @@ const TheoryCard = ({ theory }) => {
         <p className="text-sm text-gray-500 font-normal mb-1">
           ({theory.period})
         </p>
+        {theory.emergenceContext && (
+          <div className="mt-2 mb-3 p-3 bg-gray-50 rounded-md border border-gray-200">
+            <h5 className="text-sm font-semibold text-gray-700 mb-1">
+              등장 배경:
+            </h5>
+            <p className="text-xs text-gray-600 leading-relaxed">
+              {theory.emergenceContext}
+            </p>
+          </div>
+        )}
         {theory.image && (
           <div className="my-4 flex justify-center">
             <img
