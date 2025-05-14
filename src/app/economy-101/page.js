@@ -49,7 +49,7 @@ export default function Economy101Page() {
             </div>
           </header>
 
-          <div className="p-6">
+          <div className="p-8">
             {/* Section 1: 경제학 개요 */}
             <section className="mb-16">
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 border-b-4 border-blue-600 pb-3 mb-8 text-center">
