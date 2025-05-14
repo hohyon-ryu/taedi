@@ -10,7 +10,7 @@ export const theories = [
         nameKr: "애덤 스미스",
         nameEn: "Adam Smith",
         achievements: "국부론 저술, 보이지 않는 손, 분업 강조",
-        image: "/static/images/scholars/adam_smith.jpg",
+        image: "/static/images/scholars/adam_smith.png",
       },
       {
         nameKr: "데이비드 리카도",
@@ -34,7 +34,6 @@ export const theories = [
         nameKr: "장 바티스트 세이",
         nameEn: "Jean-Baptiste Say",
         achievements: "세이의 법칙(판로설) 주장",
-        image: "/static/images/scholars/jean_baptiste_say.jpg",
       },
     ],
     keyConcepts: [
