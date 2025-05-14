@@ -77,6 +77,21 @@ const EconomicTheoriesExplained = () => {
               {eraSummaries[era].summary}
             </p>
           )}
+
+          {/* 정책 적용 및 시대적 배경 이야기 표시로 변경 */}
+          {eraSummaries[era] &&
+            eraSummaries[era].realWorldApplication &&
+            eraSummaries[era].realWorldApplication.story && (
+              <div className="mb-6 p-4 bg-sky-50 rounded-md shadow-sm">
+                <h4 className="text-lg font-semibold text-sky-700 mb-2">
+                  정책 적용 및 시대적 배경:
+                </h4>
+                <p className="text-sm text-gray-700 whitespace-pre-line">
+                  {eraSummaries[era].realWorldApplication.story}
+                </p>
+              </div>
+            )}
+
           <div className="grid md:grid-cols-2 gap-x-8 gap-y-6">
             {theoriesByEra[era].map((theory) => (
               <TheoryCard key={theory.id} theory={theory} />
