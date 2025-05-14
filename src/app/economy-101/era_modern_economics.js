@@ -28,6 +28,7 @@ export const theories = [
         nameEn: "Thomas Schelling",
         achievements: "갈등과 협상 분석",
         nobelPrize: 2005,
+        image: "/static/images/scholars/thomas_schelling.png",
       },
       {
         nameKr: "라인하르트 젤텐",
@@ -351,7 +352,7 @@ export const theories = [
         achievements:
           "공공선택이론 발전, 재정학, 정치경제학, 노벨 경제학상 수상",
         nobelPrize: 1986,
-        // image: "/static/images/scholars/james_buchanan.jpg" // Image not downloaded yet
+        image: "/static/images/scholars/james_buchanan.jpg",
       },
       {
         nameKr: "고든 털럭",
@@ -410,12 +411,13 @@ export const theories = [
         nameKr: "브라이언 아서",
         nameEn: "W. Brian Arthur",
         achievements: "수익체증, 경로 의존성, 복잡계 경제학 선구자",
-        // image: "/static/images/scholars/brian_arthur.jpg" // Image not downloaded yet
+        image: "/static/images/scholars/brian_arthur.jpg",
       },
       {
         nameKr: "에릭 바인하커",
         nameEn: "Eric D. Beinhocker",
         achievements: "복잡계 경제학 대중화, 『부의 기원』 저술",
+        image: "/static/images/scholars/eric_beinhocker.jpg",
       },
       {
         nameKr: "도인 파머",
