@@ -10,11 +10,13 @@ export const theories = [
         nameKr: "카를 마르크스",
         nameEn: "Karl Marx",
         achievements: "『자본론』, 잉여가치론, 역사적 유물론",
+        image: "/static/images/scholars/karl_marx.jpg",
       },
       {
         nameKr: "프리드리히 엥겔스",
         nameEn: "Friedrich Engels",
         achievements: "마르크스 협력자, 『공산당 선언』 공동 저술",
+        image: "/static/images/scholars/friedrich_engels.jpg",
       },
     ],
     keyConcepts: [
@@ -61,6 +63,7 @@ export const theories = [
         nameKr: "알프레드 마셜",
         nameEn: "Alfred Marshall",
         achievements: "『경제학 원리』, 수요와 공급 분석",
+        image: "/static/images/scholars/alfred_marshall.jpg",
       },
       {
         nameKr: "레온 왈라스",
@@ -126,8 +129,8 @@ export const theories = [
       {
         nameKr: "프리드리히 하이에크",
         nameEn: "Friedrich Hayek",
-        achievements: "시장의 자생적 질서, 정보의 분산",
-        nobelPrize: 1974,
+        achievements: "자생적 질서, 지식의 분산 (노벨경제학상)",
+        image: "/static/images/scholars/friedrich_hayek.jpg",
       },
       {
         nameKr: "루트비히 폰 미제스",

@@ -21,6 +21,7 @@ export const theories = [
         nameEn: "John Nash",
         achievements: "내쉬 균형, 전략적 상호작용",
         nobelPrize: 1994,
+        image: "/static/images/scholars/john_nash.jpg",
       },
       {
         nameKr: "토마스 셸링",
@@ -95,6 +96,7 @@ export const theories = [
         nameEn: "Daron Acemoglu",
         achievements: "제도와 성장 연구",
         nobelPrize: 2024,
+        image: "/static/images/scholars/daron_acemoglu.jpg",
       },
       {
         nameKr: "에스테르 뒤플로",
@@ -223,6 +225,7 @@ export const theories = [
         nameEn: "Joseph Stiglitz",
         achievements: "정보 비대칭, 선별 과정",
         nobelPrize: 2001,
+        image: "/static/images/scholars/joseph_stiglitz.jpg",
       },
       {
         nameKr: "케네스 애로우",
@@ -276,6 +279,7 @@ export const theories = [
         nameKr: "칼 샤피로",
         nameEn: "Carl Shapiro",
         achievements: "정보재, 네트워크 효과",
+        image: "/static/images/scholars/carl_shapiro.jpg",
       },
       {
         nameKr: "홀 베리언",
@@ -286,12 +290,14 @@ export const theories = [
         nameKr: "에릭 브린욜프슨",
         nameEn: "Erik Brynjolfsson",
         achievements: "디지털 기술과 생산성",
+        image: "/static/images/scholars/erik_brynjolfsson.jpg",
       },
       {
         nameKr: "장 티롤",
         nameEn: "Jean Tirole",
         achievements: "양면시장, 플랫폼 지배력",
         nobelPrize: 2014,
+        image: "/static/images/scholars/jean_tirole.jpg",
       },
     ],
     keyConcepts: [
@@ -339,15 +345,127 @@ export const theories = [
     era: "현대 경제학",
     status: "현대 응용 분야 (정치경제학)",
     scholars: [
-      // The content for publicchoice scholars was cut off in the initial prompt.
-      // Assuming it might be empty or would be filled if more data was available.
+      {
+        nameKr: "제임스 뷰캐넌",
+        nameEn: "James M. Buchanan",
+        achievements:
+          "공공선택이론 발전, 재정학, 정치경제학, 노벨 경제학상 수상",
+        nobelPrize: 1986,
+        // image: "/static/images/scholars/james_buchanan.jpg" // Image not downloaded yet
+      },
+      {
+        nameKr: "고든 털럭",
+        nameEn: "Gordon Tullock",
+        achievements: "공공선택이론 공동 개척, 지대추구 이론",
+        // image: "/static/images/scholars/gordon_tullock.jpg" // Image not downloaded yet
+      },
+      {
+        nameKr: "맨서 올슨",
+        nameEn: "Mancur Olson",
+        achievements: "집단행동의 논리, 이익집단 연구",
+      },
     ],
     keyConcepts: [
-      // Assuming keyConcepts for publicchoice would be here if available.
+      {
+        name: "정치시장에서의 합리적 선택",
+        description:
+          "정치인, 관료, 유권자 등 정치 참여자들이 자신의 이익을 극대화하기 위해 행동한다는 가정",
+      },
+      {
+        name: "정부 실패",
+        description:
+          "정부의 개입이 자원 배분의 효율성을 오히려 저해하거나 사회 후생을 감소시키는 현상",
+      },
+      {
+        name: "지대추구 행위",
+        description:
+          "생산적인 활동보다는 정치적 로비 등을 통해 인위적으로 이익(지대)을 얻으려는 행위",
+      },
+      {
+        name: "투표의 역설과 유권자의 무관심",
+        description:
+          "개인 투표의 영향력이 미미하여 합리적인 유권자가 투표에 적극적으로 참여하지 않을 수 있는 현상",
+      },
+      {
+        name: "관료주의와 예산 극대화",
+        description: "관료들이 자신의 이익(권력, 예산)을 위해 행동하는 경향",
+      },
     ],
-    summary: "", // Assuming summary for publicchoice would be here if available.
-    quote: "", // Assuming quote for publicchoice would be here if available.
-    diagramClass: "", // Assuming diagramClass for publicchoice would be here if available.
-    emergenceContext: "", // Assuming emergenceContext for publicchoice would be here if available.
+    summary:
+      "정치적 의사결정 과정을 경제학적 방법론, 특히 합리적 선택 이론을 적용하여 분석하는 분야입니다. 전통적으로 정부를 공익 추구자로 간주했던 것과 달리, 공공선택이론은 정치인, 관료, 유권자, 이익집단 등 정치 과정 참여자들을 자신의 효용이나 이익을 극대화하려는 합리적 경제인으로 가정합니다. 이를 통해 '시장 실패'에 대응하는 '정부 실패'의 가능성을 경고하고, 지대추구 행위, 관료주의의 비효율, 투표 행태 등을 설명합니다. 제임스 뷰캐넌과 고든 털럭이 이 분야의 주요 개척자로 꼽히며, 뷰캐넌은 공공선택이론에 대한 공로로 노벨 경제학상을 수상했습니다.",
+    quote:
+      "정치인도 결국 사람이다! 공익이라는 허울 좋은 명분 뒤에는 각자의 이해관계가 숨어있다. 시장이 실패하듯 정부도 실패할 수 있음을 직시해야 한다.",
+    diagramClass: "political",
+    emergenceContext:
+      "1950년대와 60년대, 정부의 역할 확대와 그에 따른 비효율성에 대한 비판적 인식이 높아지면서 등장했습니다. 경제학의 분석 도구를 정치 현상에 적용하여 정부 정책과 정치 과정을 보다 현실적으로 이해하려는 시도에서 발전했습니다.",
+  },
+  {
+    id: "complexityeconomics",
+    name: "복잡계 경제학",
+    period: "1980 ~ 현재",
+    era: "현대 경제학",
+    status: "최신 연구 분야 (학제간 연구 활발)",
+    scholars: [
+      {
+        nameKr: "브라이언 아서",
+        nameEn: "W. Brian Arthur",
+        achievements: "수익체증, 경로 의존성, 복잡계 경제학 선구자",
+        // image: "/static/images/scholars/brian_arthur.jpg" // Image not downloaded yet
+      },
+      {
+        nameKr: "에릭 바인하커",
+        nameEn: "Eric D. Beinhocker",
+        achievements: "복잡계 경제학 대중화, 『부의 기원』 저술",
+      },
+      {
+        nameKr: "도인 파머",
+        nameEn: "J. Doyne Farmer",
+        achievements: "물리학 기반 경제 모델링, 시장 생태학",
+      },
+      {
+        nameKr: "새뮤얼 보울스",
+        nameEn: "Samuel Bowles",
+        achievements: "제도와 행동 경제학, 복잡계 관점 통합",
+      },
+    ],
+    keyConcepts: [
+      {
+        name: "행위자 기반 모형 (ABM)",
+        description:
+          "다양한 특성과 행동 규칙을 가진 행위자들의 상호작용을 시뮬레이션하는 분석 방법",
+      },
+      {
+        name: "창발적 현상",
+        description:
+          "개별 행위자 수준에서는 예측할 수 없었던 거시적 패턴이나 질서가 시스템 전체 수준에서 나타나는 현상",
+      },
+      {
+        name: "비선형 동학",
+        description:
+          "시스템의 반응이 입력에 정비례하지 않아 작은 변화가 큰 결과를 초래할 수 있는 특성",
+      },
+      {
+        name: "적응적 시스템",
+        description:
+          "행위자들이 환경 변화에 따라 학습하고 전략을 수정하며 시스템 전체가 진화하는 과정",
+      },
+      {
+        name: "네트워크 효과와 피드백 루프",
+        description:
+          "행위자 간 연결 구조와 상호작용이 시스템 전체의 동태적 변화에 영향을 미치는 과정",
+      },
+      {
+        name: "경로 의존성",
+        description:
+          "초기의 우연한 사건이나 선택이 장기적인 시스템의 발전 경로를 결정하는 현상",
+      },
+    ],
+    summary:
+      "경제를 끊임없이 진화하고 적응하는 복잡한 시스템으로 간주하는 경제학의 한 분야입니다. 전통 경제학의 합리적 개인과 시장 균형 가정에서 벗어나, 제한된 합리성을 가진 다양한 행위자들의 상호작용과 그로 인해 발생하는 창발적 현상에 주목합니다. 행위자 기반 모형(ABM)과 같은 컴퓨터 시뮬레이션 방법을 사용하여 금융 시장의 변동성, 기술 혁신의 확산, 도시 성장, 경제 위기 등 예측하기 어려운 동태적 과정을 연구합니다. 샌타페이 연구소가 복잡계 경제학 연구의 중심지 역할을 하고 있으며, 브라이언 아서 등이 주요 학자로 꼽힙니다. 이 접근법은 경제 현상의 불확실성과 예측 불가능성을 인정하고, 시스템 전체의 구조와 진화 과정을 이해하는 데 중점을 둡니다.",
+    quote:
+      "경제는 살아있는 유기체와 같다! 수많은 구성원들의 상호작용이 예측 불가능한 패턴을 만들고, 끊임없이 변화하고 진화한다. 단순한 균형이 아닌, 복잡한 질서의 춤이다.",
+    diagramClass: "complexity",
+    emergenceContext:
+      "전통적인 경제 모델이 금융 위기나 급격한 기술 변화와 같은 현실 경제의 동태적이고 불확실한 측면을 설명하는 데 한계를 보이면서, 물리학, 생물학 등 자연과학의 복잡계 이론을 경제학에 도입하려는 시도에서 발전했습니다. 컴퓨터 기술의 발전으로 복잡한 시뮬레이션이 가능해진 것도 중요한 배경입니다.",
   },
 ];

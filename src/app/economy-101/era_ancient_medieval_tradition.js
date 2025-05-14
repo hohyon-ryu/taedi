@@ -10,11 +10,13 @@ export const theories = [
         nameKr: "아리스토텔레스",
         nameEn: "Aristotle",
         achievements: "재화 가치 구분, 공정가격 개념 제시",
+        image: "/static/images/scholars/aristotle.jpg",
       },
       {
         nameKr: "토마스 아퀴나스",
         nameEn: "Thomas Aquinas",
         achievements: "공정가격론 신학적 정당화, 고리대금업 비판",
+        image: "/static/images/scholars/thomas_aquinas.png",
       },
     ],
     keyConcepts: [
@@ -44,11 +46,13 @@ export const theories = [
         nameKr: "토마스 먼",
         nameEn: "Thomas Mun",
         achievements: "『잉글랜드의 보물에 관한 담론』 저술, 무역흑자 강조",
+        image: "/static/images/scholars/thomas_mun.jpg",
       },
       {
         nameKr: "장 바티스트 콜베르",
         nameEn: "Jean-Baptiste Colbert",
         achievements: "프랑스 중상주의 정책(콜베르주의) 시행",
+        image: "/static/images/scholars/jean_baptiste_colbert.jpg",
       },
     ],
     keyConcepts: [

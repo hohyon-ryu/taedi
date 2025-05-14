@@ -17,6 +17,7 @@ export const theories = [
         nameEn: "John Hicks",
         achievements: "IS-LM 모형 개발",
         nobelPrize: 1972,
+        image: "/static/images/scholars/john_hicks.jpg",
       },
       {
         nameKr: "프랑코 모딜리아니",
@@ -73,17 +74,20 @@ export const theories = [
         nameEn: "Daniel Kahneman",
         achievements: "전망이론, 제한된 합리성",
         nobelPrize: 2002,
+        image: "/static/images/scholars/daniel_kahneman.jpg",
       },
       {
         nameKr: "아모스 트버스키",
         nameEn: "Amos Tversky",
         achievements: "전망이론 공동 개발",
+        image: "/static/images/scholars/amos_tversky.jpg",
       },
       {
         nameKr: "리처드 탈러",
         nameEn: "Richard Thaler",
         achievements: "넛지, 행동경제학 확장",
         nobelPrize: 2017,
+        image: "/static/images/scholars/richard_thaler.jpg",
       },
     ],
     keyConcepts: [
@@ -133,12 +137,14 @@ export const theories = [
         nameEn: "Joseph Stiglitz",
         achievements: "정보 비대칭, 시장 실패",
         nobelPrize: 2001,
+        image: "/static/images/scholars/joseph_stiglitz.jpg",
       },
       {
         nameKr: "폴 크루그먼",
         nameEn: "Paul Krugman",
         achievements: "국제무역, 경제지리학",
         nobelPrize: 2008,
+        image: "/static/images/scholars/paul_krugman.jpg",
       },
       {
         nameKr: "그레고리 맨큐",

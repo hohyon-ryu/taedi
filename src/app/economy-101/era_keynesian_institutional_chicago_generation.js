@@ -16,6 +16,7 @@ export const theories = [
         nameEn: "John Hicks",
         achievements: "IS-LM 모형 개발",
         nobelPrize: 1972,
+        image: "/static/images/scholars/john_hicks.jpg",
       },
       {
         nameKr: "앨빈 핸슨",
@@ -84,6 +85,7 @@ export const theories = [
         nameEn: "Ronald Coase",
         achievements: "거래비용, 코즈 정리 (신제도학파)",
         nobelPrize: 1991,
+        image: "/static/images/scholars/ronald_coase.jpg",
       },
     ],
     keyConcepts: [
@@ -124,6 +126,7 @@ export const theories = [
         nameEn: "Milton Friedman",
         achievements: "통화량이론, 자연실업률",
         nobelPrize: 1976,
+        image: "/static/images/scholars/milton_friedman.jpg",
       },
       {
         nameKr: "조지 스티글러",
@@ -136,6 +139,7 @@ export const theories = [
         nameEn: "Gary Becker",
         achievements: "비시장 영역 경제학 확장",
         nobelPrize: 1992,
+        image: "/static/images/scholars/gary_becker.jpg",
       },
     ],
     keyConcepts: [
