@@ -190,8 +190,7 @@ export default function DigitalEconomyFeatures() {
         },
         {
           category: "주요 연구자/기관",
-          detail:
-            "Paul Romer, Erik Brynjolfsson 등 생산성 및 기술 확산 연구자",
+          detail: "Paul Romer, Erik Brynjolfsson 등 생산성 및 기술 확산 연구자",
         },
         {
           category: "흐름",
@@ -447,7 +446,9 @@ export default function DigitalEconomyFeatures() {
           {tfpExplanation.formula_detail && (
             <p
               className="text-md font-mono text-center text-sky-600 bg-sky-100 p-2 rounded-md mb-4"
-              dangerouslySetInnerHTML={{ __html: tfpExplanation.formula_detail }}
+              dangerouslySetInnerHTML={{
+                __html: tfpExplanation.formula_detail,
+              }}
             />
           )}
           <div className="mb-4">
