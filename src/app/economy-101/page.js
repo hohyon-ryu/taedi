@@ -28,7 +28,7 @@ const ComparisonTable = ({ children }) => (
 export default function Economy101Page() {
   return (
     <div className="bg-gray-100 min-h-screen">
-      <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <main className="container mx-auto px-4">
         <article className="bg-white shadow-2xl rounded-xl overflow-hidden">
           <header
             className="p-8 bg-gradient-to-r from-blue-800 to-indigo-900 text-white text-center"
@@ -49,7 +49,7 @@ export default function Economy101Page() {
             </div>
           </header>
 
-          <div className="p-6 sm:p-10">
+          <div className="p-6">
             {/* Section 1: 경제학 개요 */}
             <section className="mb-16">
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 border-b-4 border-blue-600 pb-3 mb-8 text-center">

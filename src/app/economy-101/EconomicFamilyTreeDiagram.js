@@ -35,7 +35,7 @@ const EconomicFamilyTreeDiagram = () => {
   }, []);
 
   return (
-    <div className="my-8 p-6 rounded-lg shadow-lg bg-gray-50">
+    <div className="my-8 rounded-lg shadow-lg bg-gray-50">
       <div className="mermaid">
         {`flowchart TD
 
