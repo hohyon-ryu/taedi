@@ -300,6 +300,12 @@ export const theories = [
         nobelPrize: 2014,
         image: "/static/images/scholars/jean_tirole.jpg",
       },
+      {
+        nameKr: "존 폰 노이만",
+        nameEn: "John von Neumann",
+        achievements: "게임 이론 창시, 경제 행동의 수학적 모델 제시",
+        image: "/static/images/scholars/john_von_neumann.jpg",
+      },
     ],
     keyConcepts: [
       {

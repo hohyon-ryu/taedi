@@ -9,23 +9,32 @@ export const theories = [
       {
         nameKr: "애덤 스미스",
         nameEn: "Adam Smith",
-        achievements: "『국부론』 저술, '보이지 않는 손'",
-        image: "/static/images/scholars/adam_smith.png",
+        achievements: "국부론 저술, 보이지 않는 손, 분업 강조",
+        image: "/static/images/scholars/adam_smith.jpg",
       },
       {
         nameKr: "데이비드 리카도",
         nameEn: "David Ricardo",
-        achievements: "비교우위론, 차액지대론",
+        achievements: "비교우위론, 차액지대론 제시",
+        image: "/static/images/scholars/david_ricardo.jpg",
       },
       {
         nameKr: "토머스 맬서스",
         nameEn: "Thomas Malthus",
-        achievements: "『인구론』 저술",
+        achievements: "인구론 저술, 인구 증가와 식량 생산의 불균형 경고",
+        image: "/static/images/scholars/thomas_malthus.jpg",
       },
       {
         nameKr: "존 스튜어트 밀",
         nameEn: "John Stuart Mill",
-        achievements: "고전학파 종합, 분배 문제 관심",
+        achievements: "자유론, 공리주의 발전, 정치경제학 원리 저술",
+        image: "/static/images/scholars/john_stuart_mill.jpg",
+      },
+      {
+        nameKr: "장 바티스트 세이",
+        nameEn: "Jean-Baptiste Say",
+        achievements: "세이의 법칙(판로설) 주장",
+        image: "/static/images/scholars/jean_baptiste_say.jpg",
       },
     ],
     keyConcepts: [

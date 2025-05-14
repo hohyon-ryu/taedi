@@ -10,7 +10,7 @@ export const theories = [
         nameKr: "아리스토텔레스",
         nameEn: "Aristotle",
         achievements: "재화 가치 구분, 공정가격 개념 제시",
-        image: "/static/images/scholars/aristotle.jpg",
+        image: "/static/images/scholars/aristotle.webp",
       },
       {
         nameKr: "토마스 아퀴나스",
