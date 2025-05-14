@@ -34,7 +34,7 @@ export default function Economy101Page() {
             className="p-8 bg-gradient-to-r from-blue-800 to-indigo-900 text-white text-center"
             style={{
               backgroundImage:
-                "url('/static/images/banners/Keynesian, Institutional & Chicago School Era.png')",
+                "url('/static/images/banners/keynesian_institutional_chicago_school_era.png')",
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
