@@ -13,10 +13,6 @@ export const metadata = {
   },
   description:
     "Taejae Future Consensus Institute - Digital Transformation and Social Changes Team. Pioneering the future through digital transformation research and innovative governance solutions.",
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-  },
   robots: {
     index: true,
     follow: true,
@@ -28,7 +24,6 @@ export const metadata = {
     },
   },
   manifest: "/manifest.json",
-  themeColor: "#1a365d",
   icons: {
     icon: "/static/favicon.png",
     shortcut: "/static/favicon.png",
@@ -42,12 +37,6 @@ export const metadata = {
     google: "verification_token",
   },
   metadataBase: new URL("https://taedi.org"),
-};
-
-export const viewport = {
-  themeColor: "#1a365d",
-  width: "device-width",
-  initialScale: 1,
 };
 
 export default function RootLayout({ children }) {
