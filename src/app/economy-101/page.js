@@ -41,7 +41,7 @@ export default function Economy101Page() {
           >
             <div className="bg-black bg-opacity-50 p-4 rounded-md">
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
-                경제학 기초 (Economy 101)
+                경제학 기초
               </h1>
               <p className="mt-3 text-xl sm:text-2xl text-blue-200 font-medium">
                 디지털 시대의 경제 원리를 이해하기 위한 기초 개념
