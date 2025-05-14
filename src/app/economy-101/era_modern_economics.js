@@ -1,0 +1,353 @@
+export const theories = [
+  {
+    id: "gametheory",
+    name: "게임이론",
+    period: "1950 ~ 현재",
+    era: "현대 경제학",
+    status: "현대 분석 도구 (응용 분야 다양)",
+    scholars: [
+      {
+        nameKr: "존 폰 노이만",
+        nameEn: "John von Neumann",
+        achievements: "게임이론 창시, 수학적 분석",
+      },
+      {
+        nameKr: "오스카 모르겐슈테른",
+        nameEn: "Oskar Morgenstern",
+        achievements: "『게임이론과 경제행동』 공동 저술",
+      },
+      {
+        nameKr: "존 내쉬",
+        nameEn: "John Nash",
+        achievements: "내쉬 균형, 전략적 상호작용",
+        nobelPrize: 1994,
+      },
+      {
+        nameKr: "토마스 셸링",
+        nameEn: "Thomas Schelling",
+        achievements: "갈등과 협상 분석",
+        nobelPrize: 2005,
+      },
+      {
+        nameKr: "라인하르트 젤텐",
+        nameEn: "Reinhard Selten",
+        achievements: "반복 게임, 제한된 합리성",
+        nobelPrize: 1994,
+      },
+    ],
+    keyConcepts: [
+      {
+        name: "전략적 상호작용",
+        description:
+          "한 행위자의 결정이 다른 행위자의 결정에 영향을 미치는 상황",
+      },
+      {
+        name: "내쉬 균형",
+        description:
+          "모든 행위자가 상대방의 전략에 대해 최선의 전략을 선택하여 더 이상 전략을 바꿀 유인이 없는 상태",
+      },
+      {
+        name: "죄수의 딜레마",
+        description:
+          "개인의 합리적 선택이 집단 전체에는 비합리적인 결과를 초래하는 상황",
+      },
+      { name: "반복 게임", description: "동일한 게임이 여러 번 반복되는 상황" },
+      {
+        name: "정보의 역할",
+        description: "게임 상황에서 정보가 행위자의 전략과 결과에 미치는 영향",
+      },
+    ],
+    summary:
+      "여러 경제 주체(플레이어)들의 전략적 상호작용 상황을 수학적으로 분석하는 이론입니다. 즉, 한 주체의 의사결정이 다른 주체의 의사결정에 영향을 미치고, 그 반대도 성립하는 상황을 다룹니다. 존 폰 노이만과 오스카 모르겐슈테른의 『게임이론과 경제행동』이 그 시초로 평가받습니다. 존 내쉬는 상대방의 전략을 주어진 것으로 보고 자신의 최적 전략을 선택할 때 모든 참여자가 더 이상 전략을 바꿀 유인이 없는 상태인 '내쉬 균형' 개념을 정립하여 노벨 경제학상을 수상했습니다. 토마스 셸링은 갈등과 협상, 위협과 약속 등 전략적 행동을 분석하여 노벨 경제학상을 수상했습니다. 게임이론은 과점 시장 분석, 경매 이론, 국제 협상, 정치학 등 경제학뿐만 아니라 다양한 사회과학 분야에 광범위하게 응용되고 있습니다.",
+    quote:
+      "나의 선택이 너의 결과에, 너의 선택이 나의 결과에 영향을 미친다! 이 복잡한 상호작용 속에서 최적의 전략은 무엇일까? 이것이 바로 게임의 핵심이다.",
+    diagramClass: "gametheory",
+    emergenceContext:
+      "냉전 시대 전략적 사고의 중요성이 부각되고, 기업 간의 과점 경쟁 등 상호 의존적인 의사결정 상황을 분석할 필요성이 커지면서 발전했습니다. 수학적 모델을 통해 복잡한 전략적 상호작용과 그 결과를 예측하고 설명하는 강력한 분석 도구로 자리 잡았습니다.",
+  },
+  {
+    id: "development",
+    name: "발전경제학",
+    period: "1950 ~ 현재",
+    era: "현대 경제학",
+    status: "현대 응용 분야",
+    scholars: [
+      {
+        nameKr: "아서 루이스",
+        nameEn: "Arthur Lewis",
+        achievements: "이중 경제 모델, 노벨 경제학상 수상",
+        nobelPrize: 1979,
+      },
+      {
+        nameKr: "군나르 뮈르달",
+        nameEn: "Gunnar Myrdal",
+        achievements: "누적적 인과관계, 불평등 심화",
+        nobelPrize: 1974,
+      },
+      {
+        nameKr: "아마티아 센",
+        nameEn: "Amartya Sen",
+        achievements: "인간 개발, 역량 이론",
+        nobelPrize: 1998,
+      },
+      {
+        nameKr: "대런 애쓰모글루",
+        nameEn: "Daron Acemoglu",
+        achievements: "제도와 성장 연구",
+        nobelPrize: 2024,
+      },
+      {
+        nameKr: "에스테르 뒤플로",
+        nameEn: "Esther Duflo",
+        achievements: "무작위 통제 실험(RCT), 빈곤 연구",
+        nobelPrize: 2019,
+      },
+    ],
+    keyConcepts: [
+      {
+        name: "빈곤의 악순환",
+        description: "가난이 가난을 낳는 지속적인 빈곤 상태",
+      },
+      {
+        name: "이중 경제 모델",
+        description:
+          "전통 부문과 현대 부문으로 구성된 개발도상국의 경제 구조 모델",
+      },
+      {
+        name: "인간 개발",
+        description:
+          "소득뿐 아니라 교육, 건강, 자유 등 인간의 삶의 질 향상을 중시하는 발전 개념",
+      },
+      {
+        name: "제도와 성장",
+        description: "정치·경제 제도가 경제 성장에 미치는 영향",
+      },
+      {
+        name: "무작위 통제 실험(RCT)",
+        description: "정책 효과를 과학적으로 검증하기 위해 사용되는 실험 방법",
+      },
+    ],
+    summary:
+      "주로 저개발국가의 경제 발전과 빈곤 문제 해결을 연구하는 분야입니다. 초기에는 자본 축적과 산업화 전략에 초점을 맞추었습니다. 아서 루이스는 농촌의 잉여 노동력이 도시 산업 부문으로 이동하면서 경제가 발전한다는 이중 경제 모델을 제시하여 노벨 경제학상을 수상했습니다. 군나르 뮈르달은 선진국과 저개발국 간의 불평등 심화(누적적 인과관계)를 지적했습니다. 아마티아 센은 소득뿐만 아니라 교육, 건강, 자유 등 인간의 기본적인 '역량' 확충이 진정한 발전이라고 주장하며 인간개발지수(HDI)의 이론적 토대를 제공하여 노벨 경제학상을 수상했습니다. 최근에는 제도의 질, 거버넌스, 교육, 건강 등이 경제 성장에 미치는 영향에 대한 연구와 함께, 에스테르 뒤플로 등이 주도하는 무작위 통제 실험(RCT)을 통해 특정 정책의 효과를 엄밀하게 검증하려는 시도가 활발합니다.",
+    quote:
+      "왜 어떤 나라는 가난하고 어떤 나라는 부유한가? 가난의 덫에서 벗어나 지속적인 경제 발전을 이루려면 무엇이 필요한가? 단순히 돈을 넘어선 인간의 삶의 질 개선이 진정한 발전이다.",
+    diagramClass: "development",
+    emergenceContext:
+      "제2차 세계대전 이후 많은 식민지 국가들이 독립하면서 신생 저개발국들의 경제 발전과 빈곤 퇴치 문제가 국제적인 주요 과제로 떠올랐습니다. 이들 국가의 특수한 상황을 고려하여 경제 성장 전략과 정책 방안을 연구하는 과정에서 발전했습니다.",
+  },
+  {
+    id: "environmental",
+    name: "환경경제학",
+    period: "1960 ~ 현재",
+    era: "현대 경제학",
+    status: "현대 응용 분야 (정책 중요성 증대)",
+    scholars: [
+      {
+        nameKr: "로널드 코즈",
+        nameEn: "Ronald Coase",
+        achievements: "코즈 정리, 거래비용",
+        nobelPrize: 1991,
+      },
+      {
+        nameKr: "아서 세실 피구",
+        nameEn: "Arthur Cecil Pigou",
+        achievements: "피구세, 외부효과 교정",
+      },
+      {
+        nameKr: "윌리엄 노드하우스",
+        nameEn: "William Nordhaus",
+        achievements: "기후변화 경제학, 통합평가모형",
+        nobelPrize: 2018,
+      },
+      {
+        nameKr: "마틴 와이츠먼",
+        nameEn: "Martin Weitzman",
+        achievements: "환경 정책 분석",
+      },
+    ],
+    keyConcepts: [
+      {
+        name: "외부효과 (피구세, 코즈 정리)",
+        description:
+          "어떤 경제 주체의 행동이 다른 주체에게 의도치 않은 영향을 미치고 보상이 이루어지지 않는 현상",
+      },
+      {
+        name: "공유지의 비극",
+        description: "주인 없는 공유자원이 남용되어 고갈되는 현상",
+      },
+      {
+        name: "지속가능한 발전",
+        description:
+          "미래 세대의 필요를 충족시킬 능력을 저해하지 않으면서 현재 세대의 필요를 충족시키는 발전",
+      },
+      {
+        name: "탄소배출권 거래제",
+        description:
+          "온실가스 배출 권리를 사고팔 수 있도록 하여 시장 원리에 따라 배출량을 줄이는 제도",
+      },
+      {
+        name: "기후변화 경제학",
+        description:
+          "기후변화가 경제에 미치는 영향과 대응 방안을 연구하는 분야",
+      },
+    ],
+    summary:
+      "경제 활동이 환경에 미치는 영향과 환경 문제 해결을 위한 경제학적 접근을 연구합니다. 아서 세실 피구는 오염과 같은 부정적 외부효과를 교정하기 위해 세금을 부과(피구세)하거나 보조금을 지급할 것을 제안했습니다. 로널드 코스는 재산권이 명확하게 설정되고 거래비용이 낮다면 외부효과 문제가 시장 자율 협상을 통해 해결될 수 있다는 코즈 정리를 제시하여 노벨 경제학상을 수상했습니다. 환경경제학은 '공유지의 비극' 문제를 해결하고, 지속가능한 발전을 달성하기 위한 정책 수단으로 탄소세, 배출권 거래제 등을 분석합니다. 윌리엄 노드하우스는 기후변화가 경제에 미치는 장기적 영향을 분석하고 통합평가모형(IAM)을 개발한 공로로 노벨 경제학상을 수상했습니다.",
+    quote:
+      "깨끗한 공기와 물도 희소한 자원이다! 환경오염은 시장 실패의 대표적 사례이며, 이를 해결하기 위해 세금, 보조금, 재산권 설정 등 경제적 유인을 활용해야 지속가능한 발전을 이룰 수 있다.",
+    diagramClass: "environmental",
+    emergenceContext:
+      "1960년대 이후 산업화로 인한 환경오염과 자원 고갈 문제가 심각한 사회 문제로 인식되기 시작했습니다. 경제 성장과 환경 보존의 조화를 모색하고, 외부효과, 공유지의 비극 등 환경 문제 해결을 위한 경제학적 해법을 찾으려는 노력 속에서 발전했습니다.",
+  },
+  {
+    id: "information",
+    name: "정보경제학",
+    period: "1970 ~ 현재",
+    era: "현대 경제학",
+    status: "현대 주요 흐름 (디지털 경제와 연관)",
+    scholars: [
+      {
+        nameKr: "조지 애컬로프",
+        nameEn: "George Akerlof",
+        achievements: "역선택, 레몬 문제",
+        nobelPrize: 2001,
+      },
+      {
+        nameKr: "마이클 스펜스",
+        nameEn: "Michael Spence",
+        achievements: "신호 발송 이론",
+        nobelPrize: 2001,
+      },
+      {
+        nameKr: "조지프 스티글리츠",
+        nameEn: "Joseph Stiglitz",
+        achievements: "정보 비대칭, 선별 과정",
+        nobelPrize: 2001,
+      },
+      {
+        nameKr: "케네스 애로우",
+        nameEn: "Kenneth Arrow",
+        achievements: "정보의 역할, 시장 실패",
+        nobelPrize: 1972,
+      },
+    ],
+    keyConcepts: [
+      {
+        name: "정보 비대칭",
+        description: "거래 당사자 간에 정보가 불균등하게 분포된 상황",
+      },
+      {
+        name: "역선택",
+        description:
+          "정보가 부족한 쪽이 불리한 선택을 하게 되는 문제 (예: 불량품만 남는 중고차 시장)",
+      },
+      {
+        name: "도덕적 해이",
+        description:
+          "정보를 가진 쪽이 계약 후 상대방이 관찰할 수 없는 행동을 하여 자신의 이익을 추구하는 문제",
+      },
+      {
+        name: "신호 발송",
+        description:
+          "정보 우위에 있는 쪽이 자신의 특성을 알리기 위해 보내는 행동 (예: 학력, 자격증)",
+      },
+      {
+        name: "주인-대리인 문제",
+        description:
+          "주인(위임자)과 대리인(수임자) 간의 정보 비대칭과 이해상충으로 발생하는 문제",
+      },
+    ],
+    summary:
+      "경제 주체들 사이에 정보가 불균등하게 분포되어 있는 상황(정보 비대칭)이 시장과 경제 행동에 미치는 영향을 분석합니다. 조지 애컬로프는 중고차 시장의 '레몬(불량품)' 문제를 통해 정보가 부족한 쪽이 불리한 선택을 하게 되는 역선택 문제를 설명했습니다. 마이클 스펜스는 정보 우위에 있는 쪽이 자신의 특성을 알리기 위해 보내는 '신호 발송'(예: 학력)의 역할을 분석했습니다. 조지프 스티글리츠는 정보 비대칭이 시장 실패를 야기하고, 보험 시장 등에서 관찰되는 선별 과정 등을 연구했습니다. 이 세 학자는 정보 비대칭 시장 분석에 대한 공로로 함께 노벨 경제학상을 수상했습니다. 정보경제학은 계약이론, 금융시장 분석, 규제 정책 등 다양한 분야에 중요한 시사점을 제공하며, 특히 인터넷과 디지털 경제 시대에 그 중요성이 더욱 커지고 있습니다.",
+    quote:
+      "정보는 힘이다! 누가 무엇을 알고 모르는지가 시장 결과를 좌우한다. 정보 비대칭은 역선택과 도덕적 해이를 낳고, 시장을 왜곡시킬 수 있다.",
+    diagramClass: "digital",
+    emergenceContext:
+      "현실 경제에서 거래 당사자 간 정보가 불완전하거나 비대칭적으로 분포하는 경우가 많다는 인식이 확산되었습니다. 이러한 정보의 불균형이 시장의 효율성과 개인의 의사결정에 미치는 영향을 체계적으로 분석할 필요성이 제기되면서 발전했습니다.",
+  },
+  {
+    id: "digital",
+    name: "디지털경제학",
+    period: "1990 ~ 현재",
+    era: "현대 경제학",
+    status: "최신 핵심 분야",
+    scholars: [
+      {
+        nameKr: "칼 샤피로",
+        nameEn: "Carl Shapiro",
+        achievements: "정보재, 네트워크 효과",
+      },
+      {
+        nameKr: "홀 베리언",
+        nameEn: "Hal Varian",
+        achievements: "플랫폼 경제, 데이터 경제",
+      },
+      {
+        nameKr: "에릭 브린욜프슨",
+        nameEn: "Erik Brynjolfsson",
+        achievements: "디지털 기술과 생산성",
+      },
+      {
+        nameKr: "장 티롤",
+        nameEn: "Jean Tirole",
+        achievements: "양면시장, 플랫폼 지배력",
+        nobelPrize: 2014,
+      },
+    ],
+    keyConcepts: [
+      {
+        name: "네트워크 효과",
+        description:
+          "사용자가 증가할수록 서비스의 가치가 기하급수적으로 증가하는 현상",
+      },
+      {
+        name: "플랫폼 경제",
+        description:
+          "온라인 플랫폼을 통해 공급자와 수요자를 연결하는 경제 모델",
+      },
+      {
+        name: "정보재",
+        description: "소프트웨어, 디지털 콘텐츠 등 정보 형태로 존재하는 재화",
+      },
+      {
+        name: "한계비용 제로",
+        description: "디지털 제품의 추가 생산 비용이 거의 들지 않는 특성",
+      },
+      {
+        name: "양면시장",
+        description:
+          "서로 다른 두 사용자 집단이 플랫폼을 통해 상호작용하는 시장 (예: 쇼핑 플랫폼의 구매자와 판매자)",
+      },
+      {
+        name: "데이터 경제",
+        description:
+          "데이터의 수집, 분석, 활용이 핵심적인 가치를 창출하는 경제",
+      },
+    ],
+    summary:
+      "인터넷, 모바일, 빅데이터, 인공지능(AI) 등 디지털 기술이 경제 구조와 활동에 미치는 영향을 연구하는 비교적 새로운 분야입니다. 정보재(소프트웨어, 디지털 콘텐츠 등)는 초기 개발 비용은 높지만 복제 비용(한계비용)은 거의 0에 가깝다는 특징을 가집니다. 또한, 사용자가 많아질수록 서비스 가치가 증가하는 네트워크 효과가 강하게 나타나며, 이는 승자독식 시장을 형성하는 경향이 있습니다. 칼 샤피로와 홀 베리언은 『정보 경제학 입문』에서 이러한 디지털 경제의 특징을 분석했습니다. 장 티롤은 플랫폼 기업의 시장 지배력, 양면시장 특성 등을 분석하여 노벨 경제학상을 수상했습니다. 디지털경제학은 데이터의 가치, 프라이버시, 알고리즘 편향, 디지털 격차 등 새로운 경제적, 사회적 쟁점들을 다룹니다.",
+    quote:
+      "디지털 세상은 기존 경제 규칙을 뒤흔든다! 한계비용 제로, 강력한 네트워크 효과, 플랫폼의 지배력, 데이터의 폭발적 증가... 새로운 경제 패러다임이 펼쳐지고 있다.",
+    diagramClass: "digital",
+    emergenceContext:
+      "인터넷과 디지털 기술의 급격한 발전으로 전통적인 산업 구조와 경제 활동 방식에 근본적인 변화가 나타났습니다. 네트워크 효과, 플랫폼 경제, 정보재의 특성 등 디지털 환경 고유의 경제 현상을 분석하고 이해하기 위한 새로운 이론적 틀이 요구되었습니다.",
+  },
+  {
+    id: "publicchoice",
+    name: "공공선택이론",
+    period: "1960 ~ 현재",
+    era: "현대 경제학",
+    status: "현대 응용 분야 (정치경제학)",
+    scholars: [
+      // The content for publicchoice scholars was cut off in the initial prompt.
+      // Assuming it might be empty or would be filled if more data was available.
+    ],
+    keyConcepts: [
+      // Assuming keyConcepts for publicchoice would be here if available.
+    ],
+    summary: "", // Assuming summary for publicchoice would be here if available.
+    quote: "", // Assuming quote for publicchoice would be here if available.
+    diagramClass: "", // Assuming diagramClass for publicchoice would be here if available.
+    emergenceContext: "", // Assuming emergenceContext for publicchoice would be here if available.
+  },
+];
