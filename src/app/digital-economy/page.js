@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
 import AnimateOnScroll from "../../components/AnimateOnScroll";
+import DigitalEconomyCharacteristicsWrapper from "../economy-101/DigitalEconomyCharacteristicsWrapper";
 
 const DigitalEconomyPoster = () => {
   return (
@@ -266,10 +266,10 @@ const DigitalEconomyPoster = () => {
                       TO-DO (핵심 연구 과제)
                     </h4>
                     <ul className="text-xs space-y-1 text-gray-700">
-                      <li>1. 개인의 강화와 공동체 변화 연구</li>
-                      <li>2. 국가 개념의 변화와 역할 재정의</li>
-                      <li>3. 디지털 시대 규제와 조세 체계 구축</li>
-                      <li>4. 디지털 자산의 소유·분배 원칙 재설계</li>
+                      <li>1. 개인의 강화와 공동체 변화</li>
+                      <li>2. 국가 기능의 재편과 도시-개인의 부상</li>
+                      <li>3. 규제와 조세의 변화</li>
+                      <li>4. 디지털 자산 및 소유권 개념</li>
                     </ul>
                   </div>
                 </AnimateOnScroll>
@@ -289,7 +289,7 @@ const DigitalEconomyPoster = () => {
               </div>
             </div>
             <div className="px-0 py-3">
-              {/* Removed DigitalEconomyCharacteristicsWrapper */}
+              <DigitalEconomyCharacteristicsWrapper />
             </div>
           </div>
         </AnimateOnScroll>
@@ -465,7 +465,7 @@ const DigitalEconomyPoster = () => {
                     <h4 className="text-sm font-bold text-gray-800 mb-2">
                       과제 3. 규제와 조세의 변화{" "}
                       <span className="text-2xs font-normal text-gray-500">
-                        (김민호)
+                        (연구진 미정)
                       </span>
                     </h4>
                     <p className="text-xs text-gray-700 mb-2">
@@ -612,12 +612,11 @@ const DigitalEconomyPoster = () => {
                       1분기
                     </h4>
                     <h5 className="text-xs font-semibold text-gray-700 mb-1">
-                      팀 구성 및 기초 연구
+                      팀 빌딩 및 기초 연구
                     </h5>
                     <ul className="text-xs space-y-1 text-gray-700">
-                      <li>• 연구팀 구성 및 역할 분담</li>
-                      <li>• 디지털 변혁 관련 기초 문헌 조사</li>
-                      <li>• 연구 프레임워크 구축</li>
+                      <li>• 연구 주제 관련 핵심 문헌 분석</li>
+                      <li>• 연구 방향 및 주요 질문 구체화</li>
                     </ul>
                   </div>
                 </AnimateOnScroll>
@@ -629,12 +628,11 @@ const DigitalEconomyPoster = () => {
                       2분기
                     </h4>
                     <h5 className="text-xs font-semibold text-gray-700 mb-1">
-                      공동 연구진 구성
+                      국내외 전문가 네트워크 구축
                     </h5>
                     <ul className="text-xs space-y-1 text-gray-700">
-                      <li>• 연구 계획 구체화</li>
-                      <li>• 국내외 연구 협력자 섭외</li>
-                      <li>• 연구 주제별 프레임워크 수립</li>
+                      <li>• 연구 방법론 정립 및 데이터 수집 계획</li>
+                      <li>• 세부 연구 계획 확정</li>
                     </ul>
                   </div>
                 </AnimateOnScroll>
@@ -650,12 +648,11 @@ const DigitalEconomyPoster = () => {
                       3분기
                     </h4>
                     <h5 className="text-xs font-semibold text-gray-700 mb-1">
-                      공동 연구 진행
+                      심층 연구 및 사례 분석
                     </h5>
                     <ul className="text-xs space-y-1 text-gray-700">
-                      <li>• 각 연구 주제 심화 분석</li>
-                      <li>• 국제 컨퍼런스 참가</li>
-                      <li>• 중간 연구 결과 발표회</li>
+                      <li>• 중간 결과 공유 및 피드백</li>
+                      <li>• 국제 학술대회 발표 준비</li>
                     </ul>
                   </div>
                 </AnimateOnScroll>
@@ -671,12 +668,11 @@ const DigitalEconomyPoster = () => {
                       4분기
                     </h4>
                     <h5 className="text-xs font-semibold text-gray-700 mb-1">
-                      최종 보고서 작성
+                      연구 결과 종합 및 정책 제언 도출
                     </h5>
                     <ul className="text-xs space-y-1 text-gray-700">
-                      <li>• 연구 결과 종합 및 분석</li>
-                      <li>• 최종 보고서 작성</li>
-                      <li>• 디지털 경제 포럼 개최</li>
+                      <li>• 최종 보고서 작성 및 발표</li>
+                      <li>• 차년도 연구 계획 수립</li>
                     </ul>
                   </div>
                 </AnimateOnScroll>
