@@ -9,10 +9,9 @@ const DigitalEconomyPage = () => {
   A[개인 역량 강화와 격차 발생] --> B(공동체 변화);
   B --> D1[소유와 분배 질서];
   B --> D2[도시 중심 무역 질서];
-  D1 & D2 --> E(지속가능한 경제질서);
 
   classDef highlight fill:#e6fffa,stroke:#00b5d8,stroke-width:2px,color:#007a7a;
-  class A,B,D1,D2,E highlight;
+  class A,B,D1,D2 highlight;
 `;
 
   return (

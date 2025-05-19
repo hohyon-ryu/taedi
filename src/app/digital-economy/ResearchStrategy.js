@@ -20,19 +20,24 @@ const ResearchStrategy = () => {
               분화를 야기합니다. 디지털 리터러시 강화와 균형 발전 지원이
               필요합니다.
             </p>
-            <p className="text-sm text-gray-600 mb-3">
-              <strong className="font-semibold">현상:</strong> AI 기반 개인 역량
-              및 생산성 증대
-              <br />
-              <strong className="font-semibold">계층 분화:</strong>
-              <ul className="list-disc list-inside ml-4">
-                <li>소득 증가 집단 (상위 10%): 자본/전문성 보유</li>
-                <li>비용 절감 집단 (중간 30-70%): AI 활용</li>
-                <li>기술 소외 집단: 디지털 접근/활용 취약</li>
-              </ul>
-              <strong className="font-semibold">과제:</strong> 디지털 리터러시,
-              균형 발전, 기술 접근성 보장
-            </p>
+            <div className="text-sm text-gray-600 mb-3">
+              <p>
+                <strong className="font-semibold">현상:</strong> AI 기반 개인
+                역량 및 생산성 증대
+              </p>
+              <div className="mt-1">
+                <strong className="font-semibold">계층 분화:</strong>
+                <ul className="list-disc list-inside ml-4 mt-1">
+                  <li>소득 증가 집단 (상위 10%): 자본/전문성 보유</li>
+                  <li>비용 절감 집단 (중간 30-70%): AI 활용</li>
+                  <li>기술 소외 집단: 디지털 접근/활용 취약</li>
+                </ul>
+              </div>
+              <p className="mt-1">
+                <strong className="font-semibold">과제:</strong> 디지털
+                리터러시, 균형 발전, 기술 접근성 보장
+              </p>
+            </div>
           </div>
 
           {/* 공동체의 변화 */}
@@ -44,6 +49,13 @@ const ResearchStrategy = () => {
               디지털 전환은 가정 내 역할 변화, 지역 공동체 연결 방식 변화,
               도시의 창조 플랫폼화, 국가 역할의 조정자/촉진자 전환 등 공동체
               전반에 걸친 재편을 촉진합니다.
+            </p>
+            <p className="text-sm text-gray-600 mb-4">
+              현재 경제 시스템의 한계 속에서, 절제와 균형에 기반한 새로운 경제
+              생태계가 부상하고 있습니다. 이는 이윤 추구를 넘어 공동체 가치와
+              지속가능성을 중시하며, 다양한 이해관계자 참여를 통해 장기적 가치를
+              창출하는 모델로, 산업사회의 욕망 중심에서 절제와 균형의 경제로
+              전환을 모색합니다.
             </p>
             <p className="text-sm text-gray-600 mb-3">
               <strong className="font-semibold">가정:</strong> AI 활용 역할
