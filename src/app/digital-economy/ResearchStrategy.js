@@ -117,6 +117,22 @@ const ResearchStrategy = () => {
             </div>
           </div>
         </div>
+        {/* 연구 과제 및 진행 상황 - 유재연 */}
+        <div className="mt-6 pt-4 border-t border-gray-200">
+          <h4 className="text-md font-semibold text-gray-700 mb-2">
+            연구 과제 및 진행 상황
+          </h4>
+          <ul className="list-disc list-inside text-sm text-gray-600 space-y-1">
+            <li>
+              디지털 기술로 인한 개인 역량 강화와 계층 분화 현상 분석 (진행상황:
+              3/4 - 연구 완료)
+            </li>
+            <li>
+              욕망과 절제의 균형을 통한 지속가능한 가치 창출 메커니즘 연구
+              (social impact) (진행상황: 1/4 - 개념 설정)
+            </li>
+          </ul>
+        </div>
       </div>
       {/* 2. 소유와 분배 질서 - 노가빈 */}
       <div className="mb-6 p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
@@ -147,6 +163,26 @@ const ResearchStrategy = () => {
               <strong className="font-semibold">분배 시스템:</strong> 디지털
               경제 이익의 공정한 분배 메커니즘 개발
             </p>
+            {/* 연구 과제 및 진행 상황 - 노가빈 */}
+            <div className="mt-6 pt-4 border-t border-gray-200">
+              <h4 className="text-md font-semibold text-gray-700 mb-2">
+                연구 과제 및 진행 상황
+              </h4>
+              <ul className="list-disc list-inside text-sm text-gray-600 space-y-1">
+                <li>
+                  디지털 자산과 데이터의 소유권 개념 변화 연구 (진행상황: 0/4 -
+                  미시작)
+                </li>
+                <li>
+                  무형 자산 가치 측정과 공정한 분배 메커니즘 개발 (진행상황: 2/4
+                  - 기본 연구)
+                </li>
+                <li>
+                  개인의 자유가 최대한 보장되면서, 공공의 질서를 위해 최소한의
+                  거버넌스 (진행상황: 0/4 - 미시작)
+                </li>
+              </ul>
+            </div>
           </div>
           {/* 희망 공동연구자 - Right Column */}
           <div>
@@ -261,26 +297,87 @@ const ResearchStrategy = () => {
         <h3 className="text-xl font-bold text-indigo-700 mb-4 pb-2 border-b border-indigo-200">
           3. 도시 중심 무역 질서 - 윤준영
         </h3>
-        <div className="mb-4">
-          <p className="text-sm text-gray-600 mb-1">
-            <strong className="font-semibold">현상:</strong> 국경을 초월한
-            디지털 무역 확대, 데이터 패권 경쟁
-          </p>
-          <h4 className="text-lg font-semibold my-2 text-gray-700">
-            핵심 변화 영역: 무역 패러다임 전환
-          </h4>
-          <ul className="list-disc list-inside text-sm text-gray-600 space-y-1 mb-3">
-            <li>물리적 상품에서 무형 자산 중심으로 전환</li>
-            <li>도시 간 무역 네트워크의 중요성 증대</li>
-            <li>디지털 인프라의 전략적 가치 상승</li>
-          </ul>
-          <h4 className="text-lg font-semibold my-2 text-gray-700">
-            거버넌스 과제:
+        <div className="grid md:grid-cols-2 gap-6">
+          {/* Left Column Content */}
+          <div className="mb-4 md:mb-0">
+            <p className="text-sm text-gray-600 mb-1">
+              <strong className="font-semibold">현상:</strong> 국경을 초월한
+              디지털 무역 확대, 데이터 패권 경쟁
+            </p>
+            <h4 className="text-lg font-semibold my-2 text-gray-700">
+              핵심 변화 영역: 무역 패러다임 전환
+            </h4>
+            <ul className="list-disc list-inside text-sm text-gray-600 space-y-1 mb-3">
+              <li>물리적 상품에서 무형 자산 중심으로 전환</li>
+              <li>도시 간 무역 네트워크의 중요성 증대</li>
+              <li>디지털 인프라의 전략적 가치 상승</li>
+            </ul>
+            <h4 className="text-lg font-semibold my-2 text-gray-700">
+              거버넌스 과제:
+            </h4>
+            <ul className="list-disc list-inside text-sm text-gray-600 space-y-1">
+              <li>국가 주권과 글로벌 협력의 새로운 균형</li>
+              <li>넥스트 WTO 같은 새로운 글로벌 무역 체계 필요</li>
+              <li>데이터 흐름과 디지털 인프라에 관한 공정한 국제 질서 구축</li>
+            </ul>
+          </div>
+
+          {/* Right Column - 글로벌 공동연구 후보 - 윤준영 */}
+          <div>
+            <h4 className="text-base font-semibold text-gray-700 mb-3">
+              {" "}
+              {/* Adjusted heading style to match section 2 */}
+              글로벌 공동연구 후보
+            </h4>
+            <div className="space-y-4">
+              {" "}
+              {/* Removed border-t and mt-6, pt-4 to align with section 2 style */}
+              {/* Parag Khanna */}
+              <div>
+                <h5 className="text-sm font-semibold text-gray-800">
+                  Parag Khanna (파라그 카나)
+                </h5>
+                <p className="text-xs text-gray-600 ml-4">
+                  인도계 미국인 미래학자, AlphaGeo 및 Climate Alpha 창립자 겸
+                  CEO. 인프라 네트워크와 도시 간 연결성이 국가를 초월하는 새로운
+                  질서의 핵심이며, 국가는 플랫폼화되고 도시는 실질적 전략 단위가
+                  된다고 주장. 도시 중심의 경제 연계가 지역 블록을 형성하는
+                  방식을 탐구.
+                </p>
+                <p className="text-xs text-gray-600 ml-4 mt-1">
+                  <strong className="font-semibold">협업 아젠다 제안:</strong>
+                  <ul className="list-disc list-inside ml-2 mt-1">
+                    <li>
+                      도시의 물리적·디지털 인프라 기반 새로운 ‘공간적 질서’ 창출
+                      방안
+                    </li>
+                    <li>
+                      도시 간 무역 네트워크의 지정학적 충돌 완충/회피 기능
+                    </li>
+                    <li>
+                      국가와 도시 경제주권의 제도적 협력모델 및 분권적 연합을
+                      통한 재구조화
+                    </li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* 연구 과제 및 진행 상황 - 윤준영 */}
+        <div className="mt-6 pt-4 border-t border-gray-200">
+          <h4 className="text-md font-semibold text-gray-700 mb-2">
+            연구 과제 및 진행 상황 (국가의 역할 재편과 글로벌 거버넌스)
           </h4>
           <ul className="list-disc list-inside text-sm text-gray-600 space-y-1">
-            <li>국가 주권과 글로벌 협력의 새로운 균형</li>
-            <li>넥스트 WTO 같은 새로운 글로벌 무역 체계 필요</li>
-            <li>데이터 흐름과 디지털 인프라에 관한 공정한 국제 질서 구축</li>
+            <li>
+              디지털 시대 국가의 역할 변화와 새로운 글로벌 거버넌스의 주체 정립
+              (진행상황: 3/4 - 연구 완료)
+            </li>
+            <li>
+              거시 경제의 주요 개념들 - 통화, 금융, 무역, 데이터, 기술 권력의
+              이동과 경쟁 (진행상황: 1/4 - 개념 설정)
+            </li>
           </ul>
         </div>
       </div>
