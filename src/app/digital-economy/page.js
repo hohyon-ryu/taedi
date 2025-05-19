@@ -17,12 +17,11 @@ const DigitalEconomyPage = () => {
     D5[경제 규제 및 정책의 변화];
     D6[경제 주체 간의 관계 변화];
 
-    D1 --> D3;
-    D2 --> D3;
-    D1 --> D4;
-    D1 --> D5;
     D1 --> D6;
     D2 --> D6;
+    D6 --> D3;
+    D6 --> D4;
+    D6 --> D5
   end
 
   classDef highlight fill:#e6fffa,stroke:#00b5d8,stroke-width:2px,color:#007a7a;
