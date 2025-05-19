@@ -326,49 +326,27 @@ const ResearchStrategy = () => {
           </ul>
         </div>
 
-        {/* 연구 과제 및 진행 상황 (도시 중심 무역 질서) */}
+        {/* 연구 과제 및 진행 상황 (도시 중심 무역 질서) - REFORMATTED */}
         <div className="mt-6 pt-4 border-t border-gray-200">
           <h4 className="text-md font-semibold text-gray-700 mb-2">
-            연구 과제 및 진행 상황 (도시 중심 무역 질서)
+            연구 과제 및 진행 상황
           </h4>
-          <p className="text-sm text-gray-600 mb-2">
-            <strong className="font-semibold">
-              디지털 시대 사회구조와 경제질서 변화
-            </strong>
-          </p>
-          <ul className="list-disc list-inside text-sm text-gray-600 space-y-2">
+          <ul className="list-disc list-inside text-sm text-gray-600 space-y-1">
             <li>
-              <strong className="font-semibold">신규 연구 과제 선정:</strong>
-              <ul className="list-disc list-inside ml-4 mt-1">
-                <li>
-                  국가 역할 축소에 따른 글로벌 경제질서 재편: 도시 간 무역을
-                  중심으로
-                </li>
-              </ul>
+              국가 역할 축소에 따른 글로벌 경제질서 재편: 도시 간 무역을
+              중심으로 (상태: 과제 선정 완료)
             </li>
             <li>
-              <strong className="font-semibold">
-                세부 연구 과제 탐색 (계속):
-              </strong>
-              <ul className="list-disc list-inside ml-4 mt-1 space-y-1">
-                <li>
-                  국가 역할 축소에 따른 글로벌 경제질서 (무역, 통화, 금융 등) 중
-                  연구 우선순위 검토
-                </li>
-                <li>관련 학계 논의 흐름 파악</li>
-                <li>역사적 사례 조사</li>
-              </ul>
+              글로벌 경제질서 (무역, 통화, 금융 등) 연구 우선순위 검토 (상태:
+              세부 연구 과제 탐색 - 진행중)
             </li>
             <li>
-              <strong className="font-semibold">
-                연구 계획(안) 작성 및 제출 (계속):
-              </strong>
-              <ul className="list-disc list-inside ml-4 mt-1 space-y-1">
-                <li>
-                  연구 배경 (과제 선정 이유), 연구 목표, 연구 질문, 연구 개요,
-                  해외 석학 리스트 등
-                </li>
-              </ul>
+              관련 학계 논의 흐름 파악 (상태: 세부 연구 과제 탐색 - 진행중)
+            </li>
+            <li>역사적 사례 조사 (상태: 세부 연구 과제 탐색 - 진행중)</li>
+            <li>
+              연구 계획(안) 작성 및 제출: 연구 배경, 목표, 질문, 개요, 석학
+              리스트 등 (상태: 계획안 작성 - 진행중)
             </li>
           </ul>
         </div>
