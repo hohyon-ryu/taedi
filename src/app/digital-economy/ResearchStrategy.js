@@ -116,91 +116,91 @@ const ResearchStrategy = () => {
               <h5 className="text-sm font-semibold text-gray-800">
                 다론 아세모글루 (Daron Acemoglu, b. 1967)
               </h5>
-              <ul className="list-disc list-inside text-xs text-gray-600 mt-1 ml-4 space-y-1">
-                <li>
+              <div className="text-xs text-gray-600 mt-1 space-y-1">
+                <p>
                   <strong className="font-semibold">소속:</strong> MIT 경제학과
                   인스티튜트 교수, 노벨 경제학상 수상자
-                </li>
-                <li>
+                </p>
+                <p>
                   <strong className="font-semibold">학력:</strong> 런던 정경대학
                   경제학 박사
-                </li>
-                <li>
+                </p>
+                <p>
                   <strong className="font-semibold">전문 분야:</strong> 기술
                   편향적 변화 (SBTC), 노동 경제학, 제도 경제학
-                </li>
-                <li>
+                </p>
+                <p>
                   <strong className="font-semibold">대표 저서:</strong>{" "}
                   <em>Why Nations Fail</em> (2012), <em>Power and Progress</em>{" "}
                   (2023)
-                </li>
-                <li>
+                </p>
+                <p>
                   <strong className="font-semibold">소개:</strong> 기술 편향적
                   변화 및 과업 기반 프레임워크 개발, AI의 생산성 향상 효과와
                   불평등 심화 가능성 분석 연구
-                </li>
-              </ul>
+                </p>
+              </div>
             </div>
             {/* Erik Brynjolfsson */}
             <div className="border border-gray-200 rounded-md p-4 shadow-sm bg-white">
               <h5 className="text-sm font-semibold text-gray-800">
                 에릭 브린욜프슨 (Erik Brynjolfsson, b. 1962)
               </h5>
-              <ul className="list-disc list-inside text-xs text-gray-600 mt-1 ml-4 space-y-1">
-                <li>
+              <div className="text-xs text-gray-600 mt-1 space-y-1">
+                <p>
                   <strong className="font-semibold">소속:</strong>{" "}
                   스탠포드대학교 HAI 디지털 경제 연구소 소장
-                </li>
-                <li>
+                </p>
+                <p>
                   <strong className="font-semibold">학력:</strong> 하버드대학교
                   경영학 박사
-                </li>
-                <li>
+                </p>
+                <p>
                   <strong className="font-semibold">전문 분야:</strong> 디지털
                   경제학, 생산성 패러독스, 기술 혁신
-                </li>
-                <li>
+                </p>
+                <p>
                   <strong className="font-semibold">대표 저서:</strong>{" "}
                   <em>The Second Machine Age</em> (2014),{" "}
                   <em>Machine, Platform, Crowd</em> (2017)
-                </li>
-                <li>
+                </p>
+                <p>
                   <strong className="font-semibold">소개:</strong>{" "}
                   생산-분배-소비의 경제 기본 구조가 디지털화로 변화하는 과정
                   연구, '생산성의 역설'(Productivity Paradox) 개념 개발
-                </li>
-              </ul>
+                </p>
+              </div>
             </div>
             {/* Stuart Russell */}
             <div className="border border-gray-200 rounded-md p-4 shadow-sm bg-white">
               <h5 className="text-sm font-semibold text-gray-800">
                 스튜어트 러셀 (Stuart Russell, b. 1962)
               </h5>
-              <ul className="list-disc list-inside text-xs text-gray-600 mt-1 ml-4 space-y-1">
-                <li>
+              <div className="text-xs text-gray-600 mt-1 space-y-1">
+                <p>
                   <strong className="font-semibold">소속:</strong> UC 버클리
                   컴퓨터공학과 교수
-                </li>
-                <li>
+                </p>
+                <p>
                   <strong className="font-semibold">학력:</strong>{" "}
                   스탠포드대학교 컴퓨터 과학 박사
-                </li>
-                <li>
+                </p>
+                <p>
                   <strong className="font-semibold">전문 분야:</strong>{" "}
                   인공지능, 기계학습, AI 안전성
-                </li>
-                <li>
+                </p>
+                <p>
                   <strong className="font-semibold">대표 저서:</strong>{" "}
                   <em>Artificial Intelligence: A Modern Approach</em> (1995),{" "}
                   <em>Human Compatible</em> (2019)
-                </li>
-                <li>
+                </p>
+                <p>
                   <strong className="font-semibold">소개:</strong> 인간 중심 AI
                   설계 및 통제 가능성 강조. AI 시스템의 사회적 위험과 윤리적
                   설계에 대한 국제적 자문 활동, Human-compatible AI 연구 프레임
                   제안
-                </li>
-              </ul>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -288,93 +288,93 @@ const ResearchStrategy = () => {
               <h5 className="text-sm font-semibold text-gray-800">
                 조지프 스티글리츠 (Joseph Stiglitz, b. 1943)
               </h5>
-              <ul className="list-disc list-inside text-xs text-gray-600 mt-1 ml-4 space-y-1">
-                <li>
+              <div className="text-xs text-gray-600 mt-1 space-y-1">
+                <p>
                   <strong className="font-semibold">소속:</strong> 미국
                   컬럼비아대학교 경제학과 석좌교수
-                </li>
-                <li>
+                </p>
+                <p>
                   <strong className="font-semibold">학력:</strong> MIT 경제학
                   박사
-                </li>
-                <li>
+                </p>
+                <p>
                   <strong className="font-semibold">주요 경력:</strong> 노벨
                   경제학상(2001), 전 세계은행 수석 부총재 겸 수석이코노미스트
-                </li>
-                <li>
+                </p>
+                <p>
                   <strong className="font-semibold">전문 분야:</strong>{" "}
                   정보경제학, 불평등, 공공경제, 시장실패 이론
-                </li>
-                <li>
+                </p>
+                <p>
                   <strong className="font-semibold">대표 저서:</strong>{" "}
                   <em>The Price of Inequality</em> (2012),{" "}
                   <em>People, Power, and Profits</em> (2019)
-                </li>
-                <li>
+                </p>
+                <p>
                   <strong className="font-semibold">소개:</strong> 현대
                   자본주의의 불평등과 시장 실패를 정치철학적 정의 기준에서
                   비판하는 대표 경제학자.
-                </li>
-              </ul>
+                </p>
+              </div>
             </div>
             {/* T. M. 스캔런 */}
             <div className="border border-gray-200 rounded-md p-4 shadow-sm bg-white">
               <h5 className="text-sm font-semibold text-gray-800">
                 토마스 스캔런 (Thomas M. Scanlon, b. 1940)
               </h5>
-              <ul className="list-disc list-inside text-xs text-gray-600 mt-1 ml-4 space-y-1">
-                <li>
+              <div className="text-xs text-gray-600 mt-1 space-y-1">
+                <p>
                   <strong className="font-semibold">소속:</strong> 하버드대학교
                   철학과 명예교수
-                </li>
-                <li>
+                </p>
+                <p>
                   <strong className="font-semibold">학력:</strong>{" "}
                   프린스턴대학교 철학 박사
-                </li>
-                <li>
+                </p>
+                <p>
                   <strong className="font-semibold">전문 분야:</strong>{" "}
                   도덕철학, 계약주의, 정치철학
-                </li>
-                <li>
+                </p>
+                <p>
                   <strong className="font-semibold">대표 저서:</strong>{" "}
                   <em>What We Owe to Each Other</em> (1998),{" "}
                   <em>The Difficulty of Tolerance</em> (2003)
-                </li>
-                <li>
+                </p>
+                <p>
                   <strong className="font-semibold">소개:</strong> 존 롤스 이후
                   계약주의 윤리학을 재정의한 대표적 철학자로, 정의와 공정성의
                   기준이 되는 ‘도덕적 정당화’의 조건을 이론화.
-                </li>
-              </ul>
+                </p>
+              </div>
             </div>
             {/* 데브라 사츠 */}
             <div className="border border-gray-200 rounded-md p-4 shadow-sm bg-white">
               <h5 className="text-sm font-semibold text-gray-800">
                 데브라 사츠 (Debra Satz)
               </h5>
-              <ul className="list-disc list-inside text-xs text-gray-600 mt-1 ml-4 space-y-1">
-                <li>
+              <div className="text-xs text-gray-600 mt-1 space-y-1">
+                <p>
                   <strong className="font-semibold">소속:</strong> 미국
                   스탠퍼드대학교 정치철학 교수, 인문대학 학장
-                </li>
-                <li>
+                </p>
+                <p>
                   <strong className="font-semibold">학력:</strong> MIT 정치철학
                   박사
-                </li>
-                <li>
+                </p>
+                <p>
                   <strong className="font-semibold">전문 분야:</strong> 불평등,
                   시장윤리, 도덕철학, 교육정책
-                </li>
-                <li>
+                </p>
+                <p>
                   <strong className="font-semibold">대표 저서:</strong>{" "}
                   <em>Why Some Things Should Not Be for Sale</em> (2010)
-                </li>
-                <li>
+                </p>
+                <p>
                   <strong className="font-semibold">소개:</strong> 시장의 도덕적
                   한계를 분석하고, 공정한 분배를 위협하는 경제적·사회적 조건을
                   비판적으로 성찰.
-                </li>
-              </ul>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -442,36 +442,74 @@ const ResearchStrategy = () => {
         {/* 글로벌 공동연구 후보 - 윤준영 */}
         <div className="mt-6 pt-4 border-t border-gray-200">
           <h4 className="text-md font-semibold text-gray-700 mb-2">
-            {" "}
-            {/* Adjusted to match styling of other H4s */}
             글로벌 공동연구 후보
           </h4>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {/* Parag Khanna */}
             <div className="border border-gray-200 rounded-md p-4 shadow-sm bg-white">
               <h5 className="text-sm font-semibold text-gray-800">
-                Parag Khanna (파라그 카나)
+                파라그 카나 (Parag Khanna, b. 1977)
               </h5>
-              <p className="text-xs text-gray-600 ml-4">
-                인도계 미국인 미래학자, AlphaGeo 및 Climate Alpha 창립자 겸 CEO.
-                인프라 네트워크와 도시 간 연결성이 국가를 초월하는 새로운 질서의
-                핵심이며, 국가는 플랫폼화되고 도시는 실질적 전략 단위가 된다고
-                주장. 도시 중심의 경제 연계가 지역 블록을 형성하는 방식을 탐구.
-              </p>
-              <p className="text-xs text-gray-600 ml-4 mt-1">
-                <strong className="font-semibold">협업 아젠다 제안:</strong>
-                <ul className="list-disc list-inside ml-2 mt-1">
-                  <li>
-                    도시의 물리적·디지털 인프라 기반 새로운 ‘공간적 질서’ 창출
-                    방안
-                  </li>
-                  <li>도시 간 무역 네트워크의 지정학적 충돌 완충/회피 기능</li>
-                  <li>
-                    국가와 도시 경제주권의 제도적 협력모델 및 분권적 연합을 통한
-                    재구조화
-                  </li>
-                </ul>
-              </p>
+              <div className="text-xs text-gray-600 mt-1 space-y-1">
+                <p>
+                  <strong className="font-semibold">소속:</strong> AlphaGeo CEO
+                  (AI 지리공간 분석), Climate Alpha CEO (AI 기후 리스크/부동산
+                  투자), Future Map 매니징 파트너 (데이터 기반 전략 분석)
+                </p>
+                <p>
+                  <strong className="font-semibold">학력:</strong> 조지타운대
+                  지정학∙외교학∙철학 학∙석사, 런던정경대 국제관계학 박사
+                </p>
+                <p>
+                  <strong className="font-semibold">전문 분야:</strong>{" "}
+                  미래학자, 경영∙비즈니스, 지경학, 안보∙평화
+                </p>
+                <p>
+                  <strong className="font-semibold">주요 경력:</strong> 리콴유
+                  공공정책대학원 선임연구원(2013-2018), 미국 국가정보위원회(NIC)
+                  자문(2012), 버락 오바마 선거캠프 대외정책팀(2008), New
+                  American Foundation 선임연구원(2006-2015), 미국 특수작전부대
+                  고문(2007)
+                </p>
+                <p>
+                  <strong className="font-semibold">수상:</strong> 에스콰이어지
+                  ‘21세기 가장 영향력 있는 인물 75인’(2008), 와이어드 ‘가장
+                  명석한 인물 1위’(2008), 세계경제포럼 ‘차세대 글로벌
+                  리더’(2009)
+                </p>
+                <p>
+                  <strong className="font-semibold">대표 저서:</strong>{" "}
+                  <em>MOVE: Where People Are Going for a Better Future</em>{" "}
+                  (2021), <em>The Future is Asian</em> (2019),{" "}
+                  <em>Connectography</em> (2016)
+                </p>
+                <p>
+                  <strong className="font-semibold">소개:</strong> 인프라
+                  네트워크와 도시 간 연결성이 국가를 뛰어넘는 새로운 질서의
+                  핵심이라 주장한 인물로, 도시 중심의 경제 연계가 어떻게 지역
+                  블록을 형성하는지 탐구해 온 인물. “국가는 점점 플랫폼이 되고
+                  있으며, 실질적 전략 단위는 도시”라고 보는 대표적인 네트워크
+                  중심의 지정학 이론가
+                </p>
+                <p>
+                  <strong className="font-semibold">협업 아젠다 제안:</strong>
+                  <div className="space-y-1 mt-1 pl-4">
+                    <p>
+                      국가의 주권적 기능이 축소되는 시대에, 도시는 어떻게
+                      물리적·디지털 인프라를 기반으로 새로운 '공간적 질서'를
+                      창출하고 있는가?
+                    </p>
+                    <p>
+                      도시 간 무역 네트워크는 어떻게 지정학적 충돌의 완충지대
+                      혹은 회피 경로로 기능하는가?
+                    </p>
+                    <p>
+                      국가와 도시 경제주권의 제도적 협력모델 및 분권적 연합을
+                      통한 재구조화
+                    </p>
+                  </div>
+                </p>
+              </div>
             </div>
           </div>
         </div>
