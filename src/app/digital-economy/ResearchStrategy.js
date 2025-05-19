@@ -6,7 +6,7 @@ const ResearchStrategy = () => {
       {/* 시대적 배경 섹션 */}
       <div className="mb-8 p-6 bg-slate-50 rounded-xl shadow-lg">
         <h3 className="text-2xl font-extrabold text-gray-800 mb-6 pb-3 border-b-2 border-gray-300">
-          시대적 배경: 디지털 전환과 공동체 변화의 양상
+          디지털 시대의 공동체 변화의 양상
         </h3>
         <div className="grid md:grid-cols-2 gap-6">
           {/* 개인 역량 강화와 격차 발생 */}
@@ -20,24 +20,19 @@ const ResearchStrategy = () => {
               분화를 야기합니다. 디지털 리터러시 강화와 균형 발전 지원이
               필요합니다.
             </p>
-            <ul className="list-disc list-inside text-sm text-gray-600 space-y-1">
-              <li>
-                <strong className="font-semibold">현상:</strong> AI 기반 개인
-                역량 및 생산성 증대
-              </li>
-              <li>
-                <strong className="font-semibold">계층 분화:</strong>
-                <ul className="list-disc list-inside ml-4">
-                  <li>소득 증가 집단 (상위 10%): 자본/전문성 보유</li>
-                  <li>비용 절감 집단 (중간 30-70%): AI 활용</li>
-                  <li>기술 소외 집단: 디지털 접근/활용 취약</li>
-                </ul>
-              </li>
-              <li>
-                <strong className="font-semibold">과제:</strong> 디지털
-                리터러시, 균형 발전, 기술 접근성 보장
-              </li>
-            </ul>
+            <p className="text-sm text-gray-600 mb-3">
+              <strong className="font-semibold">현상:</strong> AI 기반 개인 역량
+              및 생산성 증대
+              <br />
+              <strong className="font-semibold">계층 분화:</strong>
+              <ul className="list-disc list-inside ml-4">
+                <li>소득 증가 집단 (상위 10%): 자본/전문성 보유</li>
+                <li>비용 절감 집단 (중간 30-70%): AI 활용</li>
+                <li>기술 소외 집단: 디지털 접근/활용 취약</li>
+              </ul>
+              <strong className="font-semibold">과제:</strong> 디지털 리터러시,
+              균형 발전, 기술 접근성 보장
+            </p>
           </div>
 
           {/* 공동체의 변화 */}
@@ -50,28 +45,22 @@ const ResearchStrategy = () => {
               도시의 창조 플랫폼화, 국가 역할의 조정자/촉진자 전환 등 공동체
               전반에 걸친 재편을 촉진합니다.
             </p>
-            <ul className="list-disc list-inside text-sm text-gray-600 space-y-1">
-              <li>
-                <strong className="font-semibold">가정:</strong> AI 활용 역할
-                변화, 원격 생활로 공간 재구성, 디지털 격차 발생
-              </li>
-              <li>
-                <strong className="font-semibold">이웃/지역:</strong> 디지털
-                플랫폼 연결, 공유경제 확산, 온-오프라인 혼합 커뮤니티
-              </li>
-              <li>
-                <strong className="font-semibold">도시:</strong> 개인 경제
-                자율성 공간, 창조 플랫폼, 초국경 네트워크
-              </li>
-              <li>
-                <strong className="font-semibold">국가:</strong> 통제자 →
-                조정자/촉진자, 폭력의 독점 및 관리
-              </li>
-              <li>
-                <strong className="font-semibold">과제:</strong> 도시 간 협력,
-                디지털 공공재 확충
-              </li>
-            </ul>
+            <p className="text-sm text-gray-600 mb-3">
+              <strong className="font-semibold">가정:</strong> AI 활용 역할
+              변화, 원격 생활로 공간 재구성, 디지털 격차 발생
+              <br />
+              <strong className="font-semibold">이웃/지역:</strong> 디지털
+              플랫폼 연결, 공유경제 확산, 온-오프라인 혼합 커뮤니티
+              <br />
+              <strong className="font-semibold">도시:</strong> 개인 경제 자율성
+              공간, 창조 플랫폼, 초국경 네트워크
+              <br />
+              <strong className="font-semibold">국가:</strong> 통제자 →
+              조정자/촉진자, 폭력의 독점 및 관리
+              <br />
+              <strong className="font-semibold">과제:</strong> 도시 간 협력,
+              디지털 공공재 확충
+            </p>
           </div>
         </div>
       </div>
