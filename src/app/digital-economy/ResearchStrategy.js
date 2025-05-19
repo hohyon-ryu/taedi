@@ -81,14 +81,24 @@ const ResearchStrategy = () => {
           <h4 className="text-md font-semibold text-gray-700 mb-2">
             연구 과제 및 진행 상황
           </h4>
-          <ul className="list-disc list-inside text-sm text-gray-600 space-y-1">
-            <li>
-              디지털 기술로 인한 개인 역량 강화와 계층 분화 현상 분석 (진행상황:
-              3/4 - 연구 완료)
+          <ul className="list-none text-sm text-gray-600 space-y-3">
+            <li className="flex items-center">
+              <div className="flex space-x-1 mr-2">
+                <div className="w-3 h-3 rounded-full bg-indigo-500"></div>
+                <div className="w-3 h-3 rounded-full bg-indigo-500"></div>
+                <div className="w-3 h-3 rounded-full bg-indigo-500"></div>
+                <div className="w-3 h-3 rounded-full bg-gray-200 border border-gray-300"></div>
+              </div>
+              디지털 기술로 인한 개인 역량 강화와 계층 분화 현상 분석 (연구 완료)
             </li>
-            <li>
-              욕망과 절제의 균형을 통한 지속가능한 가치 창출 메커니즘 연구
-              (social impact) (진행상황: 1/4 - 개념 설정)
+            <li className="flex items-center">
+              <div className="flex space-x-1 mr-2">
+                <div className="w-3 h-3 rounded-full bg-indigo-500"></div>
+                <div className="w-3 h-3 rounded-full bg-gray-200 border border-gray-300"></div>
+                <div className="w-3 h-3 rounded-full bg-gray-200 border border-gray-300"></div>
+                <div className="w-3 h-3 rounded-full bg-gray-200 border border-gray-300"></div>
+              </div>
+              욕망과 절제의 균형을 통한 지속가능한 가치 창출 메커니즘 연구 (social impact) (개념 설정)
             </li>
           </ul>
         </div>
@@ -98,38 +108,81 @@ const ResearchStrategy = () => {
           <h4 className="text-md font-semibold text-gray-700 mb-2">
             글로벌 공동연구 후보
           </h4>
-          <div className="space-y-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {/* Daron Acemoglu */}
-            <div>
+            <div className="border border-gray-200 rounded-md p-4 shadow-sm bg-white">
               <h5 className="text-sm font-semibold text-gray-800">
-                Daron Acemoglu (MIT 인스티튜트 교수, 노벨 경제학상 수상자)
+                다론 아세모글루 (Daron Acemoglu, b. 1967)
               </h5>
-              <p className="text-xs text-gray-600 ml-4">
-                기술 편향적 변화 (SBTC) 및 과업 기반 프레임워크 개발, AI의
-                생산성 향상 효과와 불평등 심화 가능성 분석
-              </p>
+              <ul className="list-disc list-inside text-xs text-gray-600 mt-1 ml-4 space-y-1">
+                <li>
+                  <strong className="font-semibold">소속:</strong> MIT 경제학과 인스티튜트 교수, 노벨 경제학상 수상자
+                </li>
+                <li>
+                  <strong className="font-semibold">학력:</strong> 런던 정경대학 경제학 박사
+                </li>
+                <li>
+                  <strong className="font-semibold">전문 분야:</strong> 기술 편향적 변화 (SBTC), 노동 경제학, 제도 경제학
+                </li>
+                <li>
+                  <strong className="font-semibold">대표 저서:</strong>{" "}
+                  <em>Why Nations Fail</em> (2012), <em>Power and Progress</em> (2023)
+                </li>
+                <li>
+                  <strong className="font-semibold">소개:</strong> 기술 편향적 변화 및 과업 기반 프레임워크 개발, AI의
+                  생산성 향상 효과와 불평등 심화 가능성 분석 연구
+                </li>
+              </ul>
             </div>
             {/* Erik Brynjolfsson */}
-            <div>
+            <div className="border border-gray-200 rounded-md p-4 shadow-sm bg-white">
               <h5 className="text-sm font-semibold text-gray-800">
-                Erik Brynjolfsson (스탠포드 HAI 디지털 경제 연구소 소장)
+                에릭 브린욜프슨 (Erik Brynjolfsson, b. 1962)
               </h5>
-              <p className="text-xs text-gray-600 ml-4">
-                생산-분배-소비의 경제 기본 구조가 디지털화로 변화하는 과정 연구,
-                '생산성의 역설'(Productivity Paradox) 개념 개발
-              </p>
+              <ul className="list-disc list-inside text-xs text-gray-600 mt-1 ml-4 space-y-1">
+                <li>
+                  <strong className="font-semibold">소속:</strong> 스탠포드대학교 HAI 디지털 경제 연구소 소장
+                </li>
+                <li>
+                  <strong className="font-semibold">학력:</strong> 하버드대학교 경영학 박사
+                </li>
+                <li>
+                  <strong className="font-semibold">전문 분야:</strong> 디지털 경제학, 생산성 패러독스, 기술 혁신
+                </li>
+                <li>
+                  <strong className="font-semibold">대표 저서:</strong>{" "}
+                  <em>The Second Machine Age</em> (2014), <em>Machine, Platform, Crowd</em> (2017)
+                </li>
+                <li>
+                  <strong className="font-semibold">소개:</strong> 생산-분배-소비의 경제 기본 구조가 디지털화로 변화하는 과정 연구,
+                  '생산성의 역설'(Productivity Paradox) 개념 개발
+                </li>
+              </ul>
             </div>
             {/* Stuart Russell */}
-            <div>
+            <div className="border border-gray-200 rounded-md p-4 shadow-sm bg-white">
               <h5 className="text-sm font-semibold text-gray-800">
-                Stuart Russell (UC 버클리 컴퓨터공학과 교수, 『인공지능: 현대적
-                접근』 공동 저자)
+                스튜어트 러셀 (Stuart Russell, b. 1962)
               </h5>
-              <p className="text-xs text-gray-600 ml-4">
-                인간 중심 AI 설계 및 통제 가능성 강조. AI 시스템의 사회적 위험과
-                윤리적 설계에 대한 국제적 자문 활동, Human-compatible AI 연구
-                프레임 제안
-              </p>
+              <ul className="list-disc list-inside text-xs text-gray-600 mt-1 ml-4 space-y-1">
+                <li>
+                  <strong className="font-semibold">소속:</strong> UC 버클리 컴퓨터공학과 교수
+                </li>
+                <li>
+                  <strong className="font-semibold">학력:</strong> 스탠포드대학교 컴퓨터 과학 박사
+                </li>
+                <li>
+                  <strong className="font-semibold">전문 분야:</strong> 인공지능, 기계학습, AI 안전성
+                </li>
+                <li>
+                  <strong className="font-semibold">대표 저서:</strong>{" "}
+                  <em>Artificial Intelligence: A Modern Approach</em> (1995), <em>Human Compatible</em> (2019)
+                </li>
+                <li>
+                  <strong className="font-semibold">소개:</strong> 인간 중심 AI 설계 및 통제 가능성 강조. AI 시스템의 사회적 위험과
+                  윤리적 설계에 대한 국제적 자문 활동, Human-compatible AI 연구 프레임 제안
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -172,18 +225,34 @@ const ResearchStrategy = () => {
           <h4 className="text-md font-semibold text-gray-700 mb-2">
             연구 과제 및 진행 상황
           </h4>
-          <ul className="list-disc list-inside text-sm text-gray-600 space-y-1">
-            <li>
-              디지털 자산과 데이터의 소유권 개념 변화 연구 (진행상황: 0/4 -
-              미시작)
+          <ul className="list-none text-sm text-gray-600 space-y-3">
+            <li className="flex items-center">
+              <div className="flex space-x-1 mr-2">
+                <div className="w-3 h-3 rounded-full bg-gray-200 border border-gray-300"></div>
+                <div className="w-3 h-3 rounded-full bg-gray-200 border border-gray-300"></div>
+                <div className="w-3 h-3 rounded-full bg-gray-200 border border-gray-300"></div>
+                <div className="w-3 h-3 rounded-full bg-gray-200 border border-gray-300"></div>
+              </div>
+              디지털 자산과 데이터의 소유권 개념 변화 연구 (미시작)
             </li>
-            <li>
-              무형 자산 가치 측정과 공정한 분배 메커니즘 개발 (진행상황: 2/4 -
-              기본 연구)
+            <li className="flex items-center">
+              <div className="flex space-x-1 mr-2">
+                <div className="w-3 h-3 rounded-full bg-indigo-500"></div>
+                <div className="w-3 h-3 rounded-full bg-indigo-500"></div>
+                <div className="w-3 h-3 rounded-full bg-gray-200 border border-gray-300"></div>
+                <div className="w-3 h-3 rounded-full bg-gray-200 border border-gray-300"></div>
+              </div>
+              무형 자산 가치 측정과 공정한 분배 메커니즘 개발 (기본 연구)
             </li>
-            <li>
+            <li className="flex items-center">
+              <div className="flex space-x-1 mr-2">
+                <div className="w-3 h-3 rounded-full bg-gray-200 border border-gray-300"></div>
+                <div className="w-3 h-3 rounded-full bg-gray-200 border border-gray-300"></div>
+                <div className="w-3 h-3 rounded-full bg-gray-200 border border-gray-300"></div>
+                <div className="w-3 h-3 rounded-full bg-gray-200 border border-gray-300"></div>
+              </div>
               개인의 자유가 최대한 보장되면서, 공공의 질서를 위해 최소한의
-              거버넌스 (진행상황: 0/4 - 미시작)
+              거버넌스 (미시작)
             </li>
           </ul>
         </div>
@@ -195,13 +264,11 @@ const ResearchStrategy = () => {
             {/* Adjusted to match styling of other H4s */}
             글로벌 공동연구 후보
           </h4>
-          <div className="space-y-6">
-            {" "}
-            {/* Was space-y-6, kept it */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {/* 조지프 스티글리츠 */}
-            <div>
+            <div className="border border-gray-200 rounded-md p-4 shadow-sm bg-white">
               <h5 className="text-sm font-semibold text-gray-800">
-                조지프 스티글리츠 (Joseph Stiglitz)
+                조지프 스티글리츠 (Joseph Stiglitz, b. 1943)
               </h5>
               <ul className="list-disc list-inside text-xs text-gray-600 mt-1 ml-4 space-y-1">
                 <li>
@@ -233,9 +300,9 @@ const ResearchStrategy = () => {
               </ul>
             </div>
             {/* T. M. 스캔런 */}
-            <div>
+            <div className="border border-gray-200 rounded-md p-4 shadow-sm bg-white">
               <h5 className="text-sm font-semibold text-gray-800">
-                T. M. 스캔런 (T. M. Scanlon)
+                토마스 스캔런 (Thomas M. Scanlon, b. 1940)
               </h5>
               <ul className="list-disc list-inside text-xs text-gray-600 mt-1 ml-4 space-y-1">
                 <li>
@@ -263,7 +330,7 @@ const ResearchStrategy = () => {
               </ul>
             </div>
             {/* 데브라 사츠 */}
-            <div>
+            <div className="border border-gray-200 rounded-md p-4 shadow-sm bg-white">
               <h5 className="text-sm font-semibold text-gray-800">
                 데브라 사츠 (Debra Satz)
               </h5>
@@ -331,22 +398,25 @@ const ResearchStrategy = () => {
           <h4 className="text-md font-semibold text-gray-700 mb-2">
             연구 과제 및 진행 상황
           </h4>
-          <ul className="list-disc list-inside text-sm text-gray-600 space-y-1">
-            <li>
+          <ul className="list-none text-sm text-gray-600 space-y-3">
+            <li className="flex items-center">
+              <div className="flex space-x-1 mr-2">
+                <div className="w-3 h-3 rounded-full bg-indigo-500"></div>
+                <div className="w-3 h-3 rounded-full bg-indigo-500"></div>
+                <div className="w-3 h-3 rounded-full bg-indigo-500"></div>
+                <div className="w-3 h-3 rounded-full bg-indigo-500"></div>
+              </div>
+              글로벌 경제질서 (무역, 통화, 금융 등) 연구 우선순위 검토 (완료)
+            </li>
+            <li className="flex items-center">
+              <div className="flex space-x-1 mr-2">
+                <div className="w-3 h-3 rounded-full bg-indigo-500"></div>
+                <div className="w-3 h-3 rounded-full bg-indigo-500"></div>
+                <div className="w-3 h-3 rounded-full bg-gray-200 border border-gray-300"></div>
+                <div className="w-3 h-3 rounded-full bg-gray-200 border border-gray-300"></div>
+              </div>
               국가 역할 축소에 따른 글로벌 경제질서 재편: 도시 간 무역을
-              중심으로 (상태: 과제 선정 완료)
-            </li>
-            <li>
-              글로벌 경제질서 (무역, 통화, 금융 등) 연구 우선순위 검토 (상태:
-              세부 연구 과제 탐색 - 진행중)
-            </li>
-            <li>
-              관련 학계 논의 흐름 파악 (상태: 세부 연구 과제 탐색 - 진행중)
-            </li>
-            <li>역사적 사례 조사 (상태: 세부 연구 과제 탐색 - 진행중)</li>
-            <li>
-              연구 계획(안) 작성 및 제출: 연구 배경, 목표, 질문, 개요, 석학
-              리스트 등 (상태: 계획안 작성 - 진행중)
+              중심으로 (기본 연구)
             </li>
           </ul>
         </div>
@@ -358,11 +428,9 @@ const ResearchStrategy = () => {
             {/* Adjusted to match styling of other H4s */}
             글로벌 공동연구 후보
           </h4>
-          <div className="space-y-4">
-            {" "}
-            {/* Was space-y-4, kept it */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {/* Parag Khanna */}
-            <div>
+            <div className="border border-gray-200 rounded-md p-4 shadow-sm bg-white">
               <h5 className="text-sm font-semibold text-gray-800">
                 Parag Khanna (파라그 카나)
               </h5>
