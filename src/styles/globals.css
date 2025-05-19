@@ -5,7 +5,9 @@
 
 /* Global styles for Next.js app */
 /* Reset CSS */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,8 +15,8 @@
 
 /* Global styles */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -30,11 +32,16 @@ body {
 }
 
 main {
-  flex:.1;
+  flex: 0.1;
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 1.2;
 }
 
@@ -74,7 +81,7 @@ html {
 
 /* Selection color */
 ::selection {
-  background: #C7CEEA;
+  background: #c7ceea;
   color: #333;
 }
 
@@ -112,6 +119,31 @@ img {
 @media (max-width: 768px) {
   body {
     font-size: 14px;
+  }
+}
+
+/* Print-specific styles */
+@media print {
+  .page-break-before {
+    page-break-before: always;
+  }
+  body {
+    font-size: 10pt; /* Adjust base font size for print if needed */
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    page-break-after: avoid;
+  }
+  a {
+    color: #000 !important; /* Ensure links are black for print */
+    text-decoration: none !important;
+  }
+  .no-print {
+    display: none !important;
   }
 }
 

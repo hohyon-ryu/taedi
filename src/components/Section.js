@@ -1,7 +1,7 @@
 const Section = ({ title, children, titleLevel = 2 }) => {
   const titleClassName =
-    "font-bold mb-3 text-gray-800 border-b pb-2 " +
-    (titleLevel === 2 ? "text-2xl" : "text-xl");
+    "font-bold mb-2 text-gray-800 border-b border-gray-300 pb-1 " +
+    (titleLevel === 2 ? "text-xl" : "text-lg");
 
   let TitleComponent;
   if (titleLevel === 1) {
@@ -20,9 +20,9 @@ const Section = ({ title, children, titleLevel = 2 }) => {
   }
 
   return (
-    <div className="mb-8 p-4 bg-gray-50 rounded-lg shadow">
+    <div className="mb-4 p-2 rounded-sm shadow-sm">
       {TitleComponent}
-      <div className="space-y-2 text-gray-700">{children}</div>
+      <div className="space-y-1 text-gray-700 text-sm">{children}</div>
     </div>
   );
 };
