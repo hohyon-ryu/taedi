@@ -89,7 +89,8 @@ const ResearchStrategy = () => {
                 <div className="w-3 h-3 rounded-full bg-indigo-500"></div>
                 <div className="w-3 h-3 rounded-full bg-gray-200 border border-gray-300"></div>
               </div>
-              디지털 기술로 인한 개인 역량 강화와 계층 분화 현상 분석 (연구 완료)
+              디지털 기술로 인한 개인 역량 강화와 계층 분화 현상 분석 (연구
+              완료)
             </li>
             <li className="flex items-center">
               <div className="flex space-x-1 mr-2">
@@ -98,7 +99,8 @@ const ResearchStrategy = () => {
                 <div className="w-3 h-3 rounded-full bg-gray-200 border border-gray-300"></div>
                 <div className="w-3 h-3 rounded-full bg-gray-200 border border-gray-300"></div>
               </div>
-              욕망과 절제의 균형을 통한 지속가능한 가치 창출 메커니즘 연구 (social impact) (개념 설정)
+              욕망과 절제의 균형을 통한 지속가능한 가치 창출 메커니즘 연구
+              (social impact) (개념 설정)
             </li>
           </ul>
         </div>
@@ -116,21 +118,26 @@ const ResearchStrategy = () => {
               </h5>
               <ul className="list-disc list-inside text-xs text-gray-600 mt-1 ml-4 space-y-1">
                 <li>
-                  <strong className="font-semibold">소속:</strong> MIT 경제학과 인스티튜트 교수, 노벨 경제학상 수상자
+                  <strong className="font-semibold">소속:</strong> MIT 경제학과
+                  인스티튜트 교수, 노벨 경제학상 수상자
                 </li>
                 <li>
-                  <strong className="font-semibold">학력:</strong> 런던 정경대학 경제학 박사
+                  <strong className="font-semibold">학력:</strong> 런던 정경대학
+                  경제학 박사
                 </li>
                 <li>
-                  <strong className="font-semibold">전문 분야:</strong> 기술 편향적 변화 (SBTC), 노동 경제학, 제도 경제학
+                  <strong className="font-semibold">전문 분야:</strong> 기술
+                  편향적 변화 (SBTC), 노동 경제학, 제도 경제학
                 </li>
                 <li>
                   <strong className="font-semibold">대표 저서:</strong>{" "}
-                  <em>Why Nations Fail</em> (2012), <em>Power and Progress</em> (2023)
+                  <em>Why Nations Fail</em> (2012), <em>Power and Progress</em>{" "}
+                  (2023)
                 </li>
                 <li>
-                  <strong className="font-semibold">소개:</strong> 기술 편향적 변화 및 과업 기반 프레임워크 개발, AI의
-                  생산성 향상 효과와 불평등 심화 가능성 분석 연구
+                  <strong className="font-semibold">소개:</strong> 기술 편향적
+                  변화 및 과업 기반 프레임워크 개발, AI의 생산성 향상 효과와
+                  불평등 심화 가능성 분석 연구
                 </li>
               </ul>
             </div>
@@ -141,21 +148,26 @@ const ResearchStrategy = () => {
               </h5>
               <ul className="list-disc list-inside text-xs text-gray-600 mt-1 ml-4 space-y-1">
                 <li>
-                  <strong className="font-semibold">소속:</strong> 스탠포드대학교 HAI 디지털 경제 연구소 소장
+                  <strong className="font-semibold">소속:</strong>{" "}
+                  스탠포드대학교 HAI 디지털 경제 연구소 소장
                 </li>
                 <li>
-                  <strong className="font-semibold">학력:</strong> 하버드대학교 경영학 박사
+                  <strong className="font-semibold">학력:</strong> 하버드대학교
+                  경영학 박사
                 </li>
                 <li>
-                  <strong className="font-semibold">전문 분야:</strong> 디지털 경제학, 생산성 패러독스, 기술 혁신
+                  <strong className="font-semibold">전문 분야:</strong> 디지털
+                  경제학, 생산성 패러독스, 기술 혁신
                 </li>
                 <li>
                   <strong className="font-semibold">대표 저서:</strong>{" "}
-                  <em>The Second Machine Age</em> (2014), <em>Machine, Platform, Crowd</em> (2017)
+                  <em>The Second Machine Age</em> (2014),{" "}
+                  <em>Machine, Platform, Crowd</em> (2017)
                 </li>
                 <li>
-                  <strong className="font-semibold">소개:</strong> 생산-분배-소비의 경제 기본 구조가 디지털화로 변화하는 과정 연구,
-                  '생산성의 역설'(Productivity Paradox) 개념 개발
+                  <strong className="font-semibold">소개:</strong>{" "}
+                  생산-분배-소비의 경제 기본 구조가 디지털화로 변화하는 과정
+                  연구, '생산성의 역설'(Productivity Paradox) 개념 개발
                 </li>
               </ul>
             </div>
@@ -166,21 +178,27 @@ const ResearchStrategy = () => {
               </h5>
               <ul className="list-disc list-inside text-xs text-gray-600 mt-1 ml-4 space-y-1">
                 <li>
-                  <strong className="font-semibold">소속:</strong> UC 버클리 컴퓨터공학과 교수
+                  <strong className="font-semibold">소속:</strong> UC 버클리
+                  컴퓨터공학과 교수
                 </li>
                 <li>
-                  <strong className="font-semibold">학력:</strong> 스탠포드대학교 컴퓨터 과학 박사
+                  <strong className="font-semibold">학력:</strong>{" "}
+                  스탠포드대학교 컴퓨터 과학 박사
                 </li>
                 <li>
-                  <strong className="font-semibold">전문 분야:</strong> 인공지능, 기계학습, AI 안전성
+                  <strong className="font-semibold">전문 분야:</strong>{" "}
+                  인공지능, 기계학습, AI 안전성
                 </li>
                 <li>
                   <strong className="font-semibold">대표 저서:</strong>{" "}
-                  <em>Artificial Intelligence: A Modern Approach</em> (1995), <em>Human Compatible</em> (2019)
+                  <em>Artificial Intelligence: A Modern Approach</em> (1995),{" "}
+                  <em>Human Compatible</em> (2019)
                 </li>
                 <li>
-                  <strong className="font-semibold">소개:</strong> 인간 중심 AI 설계 및 통제 가능성 강조. AI 시스템의 사회적 위험과
-                  윤리적 설계에 대한 국제적 자문 활동, Human-compatible AI 연구 프레임 제안
+                  <strong className="font-semibold">소개:</strong> 인간 중심 AI
+                  설계 및 통제 가능성 강조. AI 시스템의 사회적 위험과 윤리적
+                  설계에 대한 국제적 자문 활동, Human-compatible AI 연구 프레임
+                  제안
                 </li>
               </ul>
             </div>
