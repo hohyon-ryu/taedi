@@ -2,7 +2,7 @@ import Section from "@/components/Section";
 
 const TransformationFramework = () => {
   return (
-    <Section title="디지털 전환과 사회변혁: 패러다임의 재설계">
+    <Section title="3. 변화 프레임워크: AS-IS, TO-BE, TO-DO">
       <div className="overflow-x-auto">
         <table className="min-w-full bg-white border border-gray-300">
           <thead>
@@ -28,69 +28,62 @@ const TransformationFramework = () => {
           <tbody>
             <tr className="hover:bg-gray-50">
               <td className="py-3 px-4 border-b border-gray-300 align-top text-sm font-semibold text-gray-800">
-                소유 질서
+                공동체 변화
               </td>
               <td className="py-3 px-4 border-b border-gray-300 align-top text-sm text-gray-700">
-                <div>무형자산 중심</div>
-                <div>데이터 독점</div>
-                <div>개인 데이터 기업 소유</div>
-                <div>지식재산권 한계</div>
+                {/* AS-IS for 공동체 변화 - Placeholder */}
+                <div>기존 공동체 구조의 약화</div>
+                <div>디지털 격차 심화</div>
               </td>
               <td className="py-3 px-4 border-b border-gray-300 align-top text-sm text-gray-700">
-                <div>공동 창작물 공정 소유</div>
-                <div>데이터 민주적 관리</div>
-                <div>디지털 공유재 (접근/사용권) 확대</div>
+                {/* TO-BE for 공동체 변화 - Placeholder */}
+                <div>포용적 디지털 공동체</div>
+                <div>새로운 연결과 협력</div>
               </td>
               <td className="py-3 px-4 border-b border-gray-300 align-top text-sm text-gray-700">
-                <div>디지털 자산 공동소유 모델</div>
-                <div>개인 데이터 통제권 법제화</div>
-                <div>오픈소스 인센티브</div>
-                <div>공유 IP 플랫폼</div>
+                {/* TO-DO for 공동체 변화 - Placeholder */}
+                <div>디지털 리터러시 교육 강화</div>
+                <div>온-오프라인 연계 플랫폼 구축</div>
               </td>
             </tr>
             <tr className="hover:bg-gray-50">
               <td className="py-3 px-4 border-b border-gray-300 align-top text-sm font-semibold text-gray-800">
-                분배 질서
+                소유와 분배 질서
               </td>
               <td className="py-3 px-4 border-b border-gray-300 align-top text-sm text-gray-700">
-                <div>디지털 이익 소수 집중</div>
-                <div>노동-소득 연결 약화</div>
-                <div>플랫폼 독점으로 부 이전</div>
+                {/* AS-IS for 소유와 분배 질서 - Placeholder */}
+                <div>데이터 및 무형자산 가치 독점</div>
+                <div>소득 불평등 심화</div>
               </td>
               <td className="py-3 px-4 border-b border-gray-300 align-top text-sm text-gray-700">
-                <div>기여 기반 분배</div>
-                <div>최소 안전망</div>
-                <div>불평등 완화</div>
-                <div>기본 자원권 보장</div>
+                {/* TO-BE for 소유와 분배 질서 - Placeholder */}
+                <div>데이터 주권 확립 및 공유</div>
+                <div>공정한 가치 분배 시스템</div>
               </td>
               <td className="py-3 px-4 border-b border-gray-300 align-top text-sm text-gray-700">
-                <div>사회적 기여 지표 개발</div>
-                <div>기본소득 실험</div>
-                <div>데이터 생산자 보상</div>
-                <div>알고리즘 공정성 감사</div>
+                {/* TO-DO for 소유와 분배 질서 - Placeholder */}
+                <div>데이터 공유 플랫폼 구축</div>
+                <div>새로운 분배 모델(기본소득 등) 연구</div>
               </td>
             </tr>
             <tr className="hover:bg-gray-50">
               <td className="py-3 px-4 border-b border-gray-300 align-top text-sm font-semibold text-gray-800">
-                시장 질서
+                도시 중심 무역 질서
               </td>
               <td className="py-3 px-4 border-b border-gray-300 align-top text-sm text-gray-700">
-                <div>승자독식</div>
-                <div>지속불가능 소비</div>
-                <div>시장 독점</div>
-                <div>규제 사각지대</div>
+                {/* AS-IS for 도시 중심 무역 질서 - Placeholder */}
+                <div>국가 중심의 전통적 무역 질서</div>
+                <div>디지털 무역 장벽 존재</div>
               </td>
               <td className="py-3 px-4 border-b border-gray-300 align-top text-sm text-gray-700">
-                <div>소셜 임팩트 투자</div>
-                <div>문제 해결 중심 비즈니스</div>
-                <div>지속가능 가치 창출</div>
-                <div>공정 경쟁</div>
+                {/* TO-BE for 도시 중심 무역 질서 - Placeholder */}
+                <div>도시 간 직접적인 디지털 무역 활성화</div>
+                <div>개방적이고 공정한 데이터 흐름</div>
               </td>
               <td className="py-3 px-4 border-b border-gray-300 align-top text-sm text-gray-700">
-                <div>사회문제 해결형 비즈니스 인센티브</div>
-                <div>지역 가치 토큰</div>
-                <div>ESG 재구성</div>
-                <div>디지털 반독점 규제</div>
+                {/* TO-DO for 도시 중심 무역 질서 - Placeholder */}
+                <div>도시 간 무역 협정 지원</div>
+                <div>글로벌 디지털 무역 규범 수립 참여</div>
               </td>
             </tr>
           </tbody>

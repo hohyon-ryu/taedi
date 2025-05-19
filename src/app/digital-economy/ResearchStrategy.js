@@ -4,9 +4,9 @@ const ResearchStrategy = () => {
   return (
     <Section title="4. 연구 주제 및 전략">
       {/* 1. 시대적 배경: 디지털 전환과 공동체 변화의 양상 - 유재연 */}
-      <div className="mb-8 p-6 bg-slate-50 rounded-xl shadow-lg">
+      <div className="mb-8 p-6 bg-white rounded-xl shadow-lg">
         <h3 className="text-xl font-bold text-indigo-700 mb-4 pb-2 border-b border-indigo-200">
-          1. 시대적 배경: 디지털 전환과 공동체 변화의 양상 - 유재연
+          1. 디지털 전환과 공동체 변화의 양상 - 유재연
         </h3>
         <div className="grid md:grid-cols-2 gap-6">
           {/* 개인 역량 강화와 격차 발생 */}
