@@ -8,6 +8,7 @@ const ResearchStrategy = () => {
         <h3 className="text-xl font-bold text-indigo-700 mb-4 pb-2 border-b border-indigo-200">
           1. 디지털 전환과 공동체 변화의 양상 - 유재연
         </h3>
+        {/* Main Descriptive Content for Sec 1 */}
         <div className="grid md:grid-cols-2 gap-6">
           {/* 개인 역량 강화와 격차 발생 */}
           <div className="mb-6 md:mb-0">
@@ -39,7 +40,6 @@ const ResearchStrategy = () => {
               </p>
             </div>
           </div>
-
           {/* 공동체의 변화 */}
           <div>
             <h4 className="text-lg font-semibold mb-2 text-gray-700">
@@ -76,12 +76,28 @@ const ResearchStrategy = () => {
           </div>
         </div>
 
-        {/* 과제 1. 개인의 강화와 공동체 변화 (유재연) */}
+        {/* 연구 과제 및 진행 상황 - 유재연 */}
+        <div className="mt-6 pt-4 border-t border-gray-200">
+          <h4 className="text-md font-semibold text-gray-700 mb-2">
+            연구 과제 및 진행 상황
+          </h4>
+          <ul className="list-disc list-inside text-sm text-gray-600 space-y-1">
+            <li>
+              디지털 기술로 인한 개인 역량 강화와 계층 분화 현상 분석 (진행상황:
+              3/4 - 연구 완료)
+            </li>
+            <li>
+              욕망과 절제의 균형을 통한 지속가능한 가치 창출 메커니즘 연구
+              (social impact) (진행상황: 1/4 - 개념 설정)
+            </li>
+          </ul>
+        </div>
+
+        {/* 글로벌 공동연구 후보 - 유재연 */}
         <div className="mt-6 pt-4 border-t border-gray-200">
           <h4 className="text-md font-semibold text-gray-700 mb-2">
             글로벌 공동연구 후보
           </h4>
-
           <div className="space-y-4">
             {/* Daron Acemoglu */}
             <div>
@@ -117,253 +133,199 @@ const ResearchStrategy = () => {
             </div>
           </div>
         </div>
-        {/* 연구 과제 및 진행 상황 - 유재연 */}
+      </div>
+
+      {/* 2. 소유와 분배 질서 - 노가빈 */}
+      <div className="mb-6 p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+        <h3 className="text-xl font-bold text-indigo-700 mb-4 pb-2 border-b border-indigo-200">
+          2. 소유와 분배 질서 - 노가빈
+        </h3>
+        {/* Main Descriptive Content for Sec 2 */}
+        <div className="mb-4 md:mb-0">
+          {" "}
+          {/* This div now primarily holds descriptive content */}
+          <p className="text-sm text-gray-600 mb-1">
+            <strong className="font-semibold">현상:</strong> 무형자산 가치
+            증대와 노동-소득 연결 약화
+          </p>
+          <h4 className="text-lg font-semibold my-2 text-gray-700">
+            철학적 방향:
+          </h4>
+          <ul className="list-disc list-inside text-sm text-gray-600 space-y-1 mb-3">
+            <li>모든 사람은 공동 자원과 부에 대한 권리를 가짐</li>
+            <li>기본적 생활을 영위할 수 있는 권리 보장</li>
+            <li>경제적 안전망이 있을 때 진정한 선택의 자유 가능</li>
+            <li>부의 극단적 불평등 완화 필요</li>
+          </ul>
+          <p className="text-sm text-gray-600 mb-1">
+            <strong className="font-semibold">새로운 소유권 모델:</strong>{" "}
+            개인의 창의적 기여와 공공 이익의 균형 보장
+          </p>
+          <p className="text-sm text-gray-600 mb-1">
+            <strong className="font-semibold">분배 시스템:</strong> 디지털 경제
+            이익의 공정한 분배 메커니즘 개발
+          </p>
+        </div>
+
+        {/* 연구 과제 및 진행 상황 - 노가빈 */}
         <div className="mt-6 pt-4 border-t border-gray-200">
           <h4 className="text-md font-semibold text-gray-700 mb-2">
             연구 과제 및 진행 상황
           </h4>
           <ul className="list-disc list-inside text-sm text-gray-600 space-y-1">
             <li>
-              디지털 기술로 인한 개인 역량 강화와 계층 분화 현상 분석 (진행상황:
-              3/4 - 연구 완료)
+              디지털 자산과 데이터의 소유권 개념 변화 연구 (진행상황: 0/4 -
+              미시작)
             </li>
             <li>
-              욕망과 절제의 균형을 통한 지속가능한 가치 창출 메커니즘 연구
-              (social impact) (진행상황: 1/4 - 개념 설정)
+              무형 자산 가치 측정과 공정한 분배 메커니즘 개발 (진행상황: 2/4 -
+              기본 연구)
+            </li>
+            <li>
+              개인의 자유가 최대한 보장되면서, 공공의 질서를 위해 최소한의
+              거버넌스 (진행상황: 0/4 - 미시작)
             </li>
           </ul>
         </div>
-      </div>
-      {/* 2. 소유와 분배 질서 - 노가빈 */}
-      <div className="mb-6 p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
-        <h3 className="text-xl font-bold text-indigo-700 mb-4 pb-2 border-b border-indigo-200">
-          2. 소유와 분배 질서 - 노가빈
-        </h3>
-        <div className="grid md:grid-cols-2 gap-6">
-          {/* Original Content - Left Column */}
-          <div className="mb-4 md:mb-0">
-            <p className="text-sm text-gray-600 mb-1">
-              <strong className="font-semibold">현상:</strong> 무형자산 가치
-              증대와 노동-소득 연결 약화
-            </p>
-            <h4 className="text-lg font-semibold my-2 text-gray-700">
-              철학적 방향:
-            </h4>
-            <ul className="list-disc list-inside text-sm text-gray-600 space-y-1 mb-3">
-              <li>모든 사람은 공동 자원과 부에 대한 권리를 가짐</li>
-              <li>기본적 생활을 영위할 수 있는 권리 보장</li>
-              <li>경제적 안전망이 있을 때 진정한 선택의 자유 가능</li>
-              <li>부의 극단적 불평등 완화 필요</li>
-            </ul>
-            <p className="text-sm text-gray-600 mb-1">
-              <strong className="font-semibold">새로운 소유권 모델:</strong>{" "}
-              개인의 창의적 기여와 공공 이익의 균형 보장
-            </p>
-            <p className="text-sm text-gray-600 mb-1">
-              <strong className="font-semibold">분배 시스템:</strong> 디지털
-              경제 이익의 공정한 분배 메커니즘 개발
-            </p>
-            {/* 연구 과제 및 진행 상황 - 노가빈 */}
-            <div className="mt-6 pt-4 border-t border-gray-200">
-              <h4 className="text-md font-semibold text-gray-700 mb-2">
-                연구 과제 및 진행 상황
-              </h4>
-              <ul className="list-disc list-inside text-sm text-gray-600 space-y-1">
+
+        {/* 글로벌 공동연구 후보 - 노가빈 */}
+        <div className="mt-6 pt-4 border-t border-gray-200">
+          <h4 className="text-md font-semibold text-gray-700 mb-2">
+            {" "}
+            {/* Adjusted to match styling of other H4s */}
+            글로벌 공동연구 후보
+          </h4>
+          <div className="space-y-6">
+            {" "}
+            {/* Was space-y-6, kept it */}
+            {/* 조지프 스티글리츠 */}
+            <div>
+              <h5 className="text-sm font-semibold text-gray-800">
+                조지프 스티글리츠 (Joseph Stiglitz)
+              </h5>
+              <ul className="list-disc list-inside text-xs text-gray-600 mt-1 ml-4 space-y-1">
                 <li>
-                  디지털 자산과 데이터의 소유권 개념 변화 연구 (진행상황: 0/4 -
-                  미시작)
+                  <strong className="font-semibold">소속:</strong> 미국
+                  컬럼비아대학교 경제학과 석좌교수
                 </li>
                 <li>
-                  무형 자산 가치 측정과 공정한 분배 메커니즘 개발 (진행상황: 2/4
-                  - 기본 연구)
+                  <strong className="font-semibold">학력:</strong> MIT 경제학
+                  박사
                 </li>
                 <li>
-                  개인의 자유가 최대한 보장되면서, 공공의 질서를 위해 최소한의
-                  거버넌스 (진행상황: 0/4 - 미시작)
+                  <strong className="font-semibold">주요 경력:</strong> 노벨
+                  경제학상(2001), 전 세계은행 수석 부총재 겸 수석이코노미스트
+                </li>
+                <li>
+                  <strong className="font-semibold">전문 분야:</strong>{" "}
+                  정보경제학, 불평등, 공공경제, 시장실패 이론
+                </li>
+                <li>
+                  <strong className="font-semibold">대표 저서:</strong>{" "}
+                  <em>The Price of Inequality</em> (2012),{" "}
+                  <em>People, Power, and Profits</em> (2019)
+                </li>
+                <li>
+                  <strong className="font-semibold">소개:</strong> 현대
+                  자본주의의 불평등과 시장 실패를 정치철학적 정의 기준에서
+                  비판하는 대표 경제학자.
+                </li>
+              </ul>
+            </div>
+            {/* T. M. 스캔런 */}
+            <div>
+              <h5 className="text-sm font-semibold text-gray-800">
+                T. M. 스캔런 (T. M. Scanlon)
+              </h5>
+              <ul className="list-disc list-inside text-xs text-gray-600 mt-1 ml-4 space-y-1">
+                <li>
+                  <strong className="font-semibold">소속:</strong> 하버드대학교
+                  철학과 명예교수
+                </li>
+                <li>
+                  <strong className="font-semibold">학력:</strong>{" "}
+                  프린스턴대학교 철학 박사
+                </li>
+                <li>
+                  <strong className="font-semibold">전문 분야:</strong>{" "}
+                  도덕철학, 계약주의, 정치철학
+                </li>
+                <li>
+                  <strong className="font-semibold">대표 저서:</strong>{" "}
+                  <em>What We Owe to Each Other</em> (1998),{" "}
+                  <em>The Difficulty of Tolerance</em> (2003)
+                </li>
+                <li>
+                  <strong className="font-semibold">소개:</strong> 존 롤스 이후
+                  계약주의 윤리학을 재정의한 대표적 철학자로, 정의와 공정성의
+                  기준이 되는 ‘도덕적 정당화’의 조건을 이론화.
+                </li>
+              </ul>
+            </div>
+            {/* 데브라 사츠 */}
+            <div>
+              <h5 className="text-sm font-semibold text-gray-800">
+                데브라 사츠 (Debra Satz)
+              </h5>
+              <ul className="list-disc list-inside text-xs text-gray-600 mt-1 ml-4 space-y-1">
+                <li>
+                  <strong className="font-semibold">소속:</strong> 미국
+                  스탠퍼드대학교 정치철학 교수, 인문대학 학장
+                </li>
+                <li>
+                  <strong className="font-semibold">학력:</strong> MIT 정치철학
+                  박사
+                </li>
+                <li>
+                  <strong className="font-semibold">전문 분야:</strong> 불평등,
+                  시장윤리, 도덕철학, 교육정책
+                </li>
+                <li>
+                  <strong className="font-semibold">대표 저서:</strong>{" "}
+                  <em>Why Some Things Should Not Be for Sale</em> (2010)
+                </li>
+                <li>
+                  <strong className="font-semibold">소개:</strong> 시장의 도덕적
+                  한계를 분석하고, 공정한 분배를 위협하는 경제적·사회적 조건을
+                  비판적으로 성찰.
                 </li>
               </ul>
             </div>
           </div>
-          {/* 희망 공동연구자 - Right Column */}
-          <div>
-            <h4 className="text-base font-semibold mb-3 text-gray-700">
-              글로벌 공동연구 후보
-            </h4>
-            <div className="space-y-6">
-              {/* 조지프 스티글리츠 */}
-              <div>
-                <h5 className="text-sm font-semibold text-gray-800">
-                  조지프 스티글리츠 (Joseph Stiglitz)
-                </h5>
-                <ul className="list-disc list-inside text-xs text-gray-600 mt-1 ml-4 space-y-1">
-                  <li>
-                    <strong className="font-semibold">소속:</strong> 미국
-                    컬럼비아대학교 경제학과 석좌교수
-                  </li>
-                  <li>
-                    <strong className="font-semibold">학력:</strong> MIT 경제학
-                    박사
-                  </li>
-                  <li>
-                    <strong className="font-semibold">주요 경력:</strong> 노벨
-                    경제학상(2001), 전 세계은행 수석 부총재 겸 수석이코노미스트
-                  </li>
-                  <li>
-                    <strong className="font-semibold">전문 분야:</strong>{" "}
-                    정보경제학, 불평등, 공공경제, 시장실패 이론
-                  </li>
-                  <li>
-                    <strong className="font-semibold">대표 저서:</strong>{" "}
-                    <em>The Price of Inequality</em> (2012),{" "}
-                    <em>People, Power, and Profits</em> (2019)
-                  </li>
-                  <li>
-                    <strong className="font-semibold">소개:</strong> 현대
-                    자본주의의 불평등과 시장 실패를 정치철학적 정의 기준에서
-                    비판하는 대표 경제학자.
-                  </li>
-                </ul>
-              </div>
+        </div>
+      </div>
 
-              {/* T. M. 스캔런 */}
-              <div>
-                <h5 className="text-sm font-semibold text-gray-800">
-                  T. M. 스캔런 (T. M. Scanlon)
-                </h5>
-                <ul className="list-disc list-inside text-xs text-gray-600 mt-1 ml-4 space-y-1">
-                  <li>
-                    <strong className="font-semibold">소속:</strong>{" "}
-                    하버드대학교 철학과 명예교수
-                  </li>
-                  <li>
-                    <strong className="font-semibold">학력:</strong>{" "}
-                    프린스턴대학교 철학 박사
-                  </li>
-                  <li>
-                    <strong className="font-semibold">전문 분야:</strong>{" "}
-                    도덕철학, 계약주의, 정치철학
-                  </li>
-                  <li>
-                    <strong className="font-semibold">대표 저서:</strong>{" "}
-                    <em>What We Owe to Each Other</em> (1998),{" "}
-                    <em>The Difficulty of Tolerance</em> (2003)
-                  </li>
-                  <li>
-                    <strong className="font-semibold">소개:</strong> 존 롤스
-                    이후 계약주의 윤리학을 재정의한 대표적 철학자로, 정의와
-                    공정성의 기준이 되는 ‘도덕적 정당화’의 조건을 이론화.
-                  </li>
-                </ul>
-              </div>
-
-              {/* 데브라 사츠 */}
-              <div>
-                <h5 className="text-sm font-semibold text-gray-800">
-                  데브라 사츠 (Debra Satz)
-                </h5>
-                <ul className="list-disc list-inside text-xs text-gray-600 mt-1 ml-4 space-y-1">
-                  <li>
-                    <strong className="font-semibold">소속:</strong> 미국
-                    스탠퍼드대학교 정치철학 교수, 인문대학 학장
-                  </li>
-                  <li>
-                    <strong className="font-semibold">학력:</strong> MIT
-                    정치철학 박사
-                  </li>
-                  <li>
-                    <strong className="font-semibold">전문 분야:</strong>{" "}
-                    불평등, 시장윤리, 도덕철학, 교육정책
-                  </li>
-                  <li>
-                    <strong className="font-semibold">대표 저서:</strong>{" "}
-                    <em>Why Some Things Should Not Be for Sale</em> (2010)
-                  </li>
-                  <li>
-                    <strong className="font-semibold">소개:</strong> 시장의
-                    도덕적 한계를 분석하고, 공정한 분배를 위협하는 경제적·사회적
-                    조건을 비판적으로 성찰.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>{" "}
-          {/* End of Right Column's content div */}
-        </div>{" "}
-        {/* End of Grid div */}
-      </div>{" "}
-      {/* End of "노가빈" section div */}
       {/* 3. 도시 중심 무역 질서 - 윤준영 */}
       <div className="mb-6 p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
         <h3 className="text-xl font-bold text-indigo-700 mb-4 pb-2 border-b border-indigo-200">
           3. 도시 중심 무역 질서 - 윤준영
         </h3>
-        <div className="grid md:grid-cols-2 gap-6">
-          {/* Left Column Content */}
-          <div className="mb-4 md:mb-0">
-            <p className="text-sm text-gray-600 mb-1">
-              <strong className="font-semibold">현상:</strong> 국경을 초월한
-              디지털 무역 확대, 데이터 패권 경쟁
-            </p>
-            <h4 className="text-lg font-semibold my-2 text-gray-700">
-              핵심 변화 영역: 무역 패러다임 전환
-            </h4>
-            <ul className="list-disc list-inside text-sm text-gray-600 space-y-1 mb-3">
-              <li>물리적 상품에서 무형 자산 중심으로 전환</li>
-              <li>도시 간 무역 네트워크의 중요성 증대</li>
-              <li>디지털 인프라의 전략적 가치 상승</li>
-            </ul>
-            <h4 className="text-lg font-semibold my-2 text-gray-700">
-              거버넌스 과제:
-            </h4>
-            <ul className="list-disc list-inside text-sm text-gray-600 space-y-1">
-              <li>국가 주권과 글로벌 협력의 새로운 균형</li>
-              <li>넥스트 WTO 같은 새로운 글로벌 무역 체계 필요</li>
-              <li>데이터 흐름과 디지털 인프라에 관한 공정한 국제 질서 구축</li>
-            </ul>
-          </div>
-
-          {/* Right Column - 글로벌 공동연구 후보 - 윤준영 */}
-          <div>
-            <h4 className="text-base font-semibold text-gray-700 mb-3">
-              {" "}
-              {/* Adjusted heading style to match section 2 */}
-              글로벌 공동연구 후보
-            </h4>
-            <div className="space-y-4">
-              {" "}
-              {/* Removed border-t and mt-6, pt-4 to align with section 2 style */}
-              {/* Parag Khanna */}
-              <div>
-                <h5 className="text-sm font-semibold text-gray-800">
-                  Parag Khanna (파라그 카나)
-                </h5>
-                <p className="text-xs text-gray-600 ml-4">
-                  인도계 미국인 미래학자, AlphaGeo 및 Climate Alpha 창립자 겸
-                  CEO. 인프라 네트워크와 도시 간 연결성이 국가를 초월하는 새로운
-                  질서의 핵심이며, 국가는 플랫폼화되고 도시는 실질적 전략 단위가
-                  된다고 주장. 도시 중심의 경제 연계가 지역 블록을 형성하는
-                  방식을 탐구.
-                </p>
-                <p className="text-xs text-gray-600 ml-4 mt-1">
-                  <strong className="font-semibold">협업 아젠다 제안:</strong>
-                  <ul className="list-disc list-inside ml-2 mt-1">
-                    <li>
-                      도시의 물리적·디지털 인프라 기반 새로운 ‘공간적 질서’ 창출
-                      방안
-                    </li>
-                    <li>
-                      도시 간 무역 네트워크의 지정학적 충돌 완충/회피 기능
-                    </li>
-                    <li>
-                      국가와 도시 경제주권의 제도적 협력모델 및 분권적 연합을
-                      통한 재구조화
-                    </li>
-                  </ul>
-                </p>
-              </div>
-            </div>
-          </div>
+        {/* Main Descriptive Content for Sec 3 */}
+        <div className="mb-4 md:mb-0">
+          {" "}
+          {/* This div now primarily holds descriptive content */}
+          <p className="text-sm text-gray-600 mb-1">
+            <strong className="font-semibold">현상:</strong> 국경을 초월한
+            디지털 무역 확대, 데이터 패권 경쟁
+          </p>
+          <h4 className="text-lg font-semibold my-2 text-gray-700">
+            핵심 변화 영역: 무역 패러다임 전환
+          </h4>
+          <ul className="list-disc list-inside text-sm text-gray-600 space-y-1 mb-3">
+            <li>물리적 상품에서 무형 자산 중심으로 전환</li>
+            <li>도시 간 무역 네트워크의 중요성 증대</li>
+            <li>디지털 인프라의 전략적 가치 상승</li>
+          </ul>
+          <h4 className="text-lg font-semibold my-2 text-gray-700">
+            거버넌스 과제:
+          </h4>
+          <ul className="list-disc list-inside text-sm text-gray-600 space-y-1">
+            <li>국가 주권과 글로벌 협력의 새로운 균형</li>
+            <li>넥스트 WTO 같은 새로운 글로벌 무역 체계 필요</li>
+            <li>데이터 흐름과 디지털 인프라에 관한 공정한 국제 질서 구축</li>
+          </ul>
         </div>
+
         {/* 연구 과제 및 진행 상황 (도시 중심 무역 질서) */}
         <div className="mt-6 pt-4 border-t border-gray-200">
           <h4 className="text-md font-semibold text-gray-700 mb-2">
@@ -409,6 +371,45 @@ const ResearchStrategy = () => {
               </ul>
             </li>
           </ul>
+        </div>
+
+        {/* 글로벌 공동연구 후보 - 윤준영 */}
+        <div className="mt-6 pt-4 border-t border-gray-200">
+          <h4 className="text-md font-semibold text-gray-700 mb-2">
+            {" "}
+            {/* Adjusted to match styling of other H4s */}
+            글로벌 공동연구 후보
+          </h4>
+          <div className="space-y-4">
+            {" "}
+            {/* Was space-y-4, kept it */}
+            {/* Parag Khanna */}
+            <div>
+              <h5 className="text-sm font-semibold text-gray-800">
+                Parag Khanna (파라그 카나)
+              </h5>
+              <p className="text-xs text-gray-600 ml-4">
+                인도계 미국인 미래학자, AlphaGeo 및 Climate Alpha 창립자 겸 CEO.
+                인프라 네트워크와 도시 간 연결성이 국가를 초월하는 새로운 질서의
+                핵심이며, 국가는 플랫폼화되고 도시는 실질적 전략 단위가 된다고
+                주장. 도시 중심의 경제 연계가 지역 블록을 형성하는 방식을 탐구.
+              </p>
+              <p className="text-xs text-gray-600 ml-4 mt-1">
+                <strong className="font-semibold">협업 아젠다 제안:</strong>
+                <ul className="list-disc list-inside ml-2 mt-1">
+                  <li>
+                    도시의 물리적·디지털 인프라 기반 새로운 ‘공간적 질서’ 창출
+                    방안
+                  </li>
+                  <li>도시 간 무역 네트워크의 지정학적 충돌 완충/회피 기능</li>
+                  <li>
+                    국가와 도시 경제주권의 제도적 협력모델 및 분권적 연합을 통한
+                    재구조화
+                  </li>
+                </ul>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </Section>
