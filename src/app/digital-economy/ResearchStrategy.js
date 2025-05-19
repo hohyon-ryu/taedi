@@ -3,6 +3,125 @@ import Section from "@/components/Section";
 const ResearchStrategy = () => {
   return (
     <Section title="4. 연구 주제 및 전략">
+      {/* 진행 상황 범례 */}
+      <div className="mb-10 p-4 border rounded-lg bg-gray-50">
+        <h3 className="text-lg font-semibold mb-3 text-gray-800">
+          진행 상황 범례:
+        </h3>
+        <div className="flex flex-wrap items-center text-sm">
+          {/* 준비 중 */}
+          <div className="flex items-center mr-6 mb-2">
+            <div className="flex space-x-1 mr-2">
+              <div
+                className="w-3 h-3 rounded-full border border-gray-300"
+                style={{ backgroundColor: "#E5E7EB" }}
+              ></div>
+              <div
+                className="w-3 h-3 rounded-full border border-gray-300"
+                style={{ backgroundColor: "#E5E7EB" }}
+              ></div>
+              <div
+                className="w-3 h-3 rounded-full border border-gray-300"
+                style={{ backgroundColor: "#E5E7EB" }}
+              ></div>
+              <div
+                className="w-3 h-3 rounded-full border border-gray-300"
+                style={{ backgroundColor: "#E5E7EB" }}
+              ></div>
+            </div>
+            <span>준비 중</span>
+          </div>
+          {/* 개념 설정 */}
+          <div className="flex items-center mr-6 mb-2">
+            <div className="flex space-x-1 mr-2">
+              <div
+                className="w-3 h-3 rounded-full"
+                style={{ backgroundColor: "#6366F1" }}
+              ></div>
+              <div
+                className="w-3 h-3 rounded-full border border-gray-300"
+                style={{ backgroundColor: "#E5E7EB" }}
+              ></div>
+              <div
+                className="w-3 h-3 rounded-full border border-gray-300"
+                style={{ backgroundColor: "#E5E7EB" }}
+              ></div>
+              <div
+                className="w-3 h-3 rounded-full border border-gray-300"
+                style={{ backgroundColor: "#E5E7EB" }}
+              ></div>
+            </div>
+            <span>개념 설정</span>
+          </div>
+          {/* 기본 연구 */}
+          <div className="flex items-center mr-6 mb-2">
+            <div className="flex space-x-1 mr-2">
+              <div
+                className="w-3 h-3 rounded-full"
+                style={{ backgroundColor: "#6366F1" }}
+              ></div>
+              <div
+                className="w-3 h-3 rounded-full"
+                style={{ backgroundColor: "#6366F1" }}
+              ></div>
+              <div
+                className="w-3 h-3 rounded-full border border-gray-300"
+                style={{ backgroundColor: "#E5E7EB" }}
+              ></div>
+              <div
+                className="w-3 h-3 rounded-full border border-gray-300"
+                style={{ backgroundColor: "#E5E7EB" }}
+              ></div>
+            </div>
+            <span>기본 연구</span>
+          </div>
+          {/* 연구 완료 */}
+          <div className="flex items-center mr-6 mb-2">
+            <div className="flex space-x-1 mr-2">
+              <div
+                className="w-3 h-3 rounded-full"
+                style={{ backgroundColor: "#6366F1" }}
+              ></div>
+              <div
+                className="w-3 h-3 rounded-full"
+                style={{ backgroundColor: "#6366F1" }}
+              ></div>
+              <div
+                className="w-3 h-3 rounded-full"
+                style={{ backgroundColor: "#6366F1" }}
+              ></div>
+              <div
+                className="w-3 h-3 rounded-full border border-gray-300"
+                style={{ backgroundColor: "#E5E7EB" }}
+              ></div>
+            </div>
+            <span>연구 완료</span>
+          </div>
+          {/* 작성 완료 */}
+          <div className="flex items-center mr-6 mb-2">
+            <div className="flex space-x-1 mr-2">
+              <div
+                className="w-3 h-3 rounded-full"
+                style={{ backgroundColor: "#6366F1" }}
+              ></div>
+              <div
+                className="w-3 h-3 rounded-full"
+                style={{ backgroundColor: "#6366F1" }}
+              ></div>
+              <div
+                className="w-3 h-3 rounded-full"
+                style={{ backgroundColor: "#6366F1" }}
+              ></div>
+              <div
+                className="w-3 h-3 rounded-full"
+                style={{ backgroundColor: "#6366F1" }}
+              ></div>
+            </div>
+            <span>작성 완료</span>
+          </div>
+        </div>
+      </div>
+
       {/* 1. 시대적 배경: 디지털 전환과 공동체 변화의 양상 - 유재연 */}
       <div className="p-6 bg-white rounded-xl shadow-lg">
         <h3 className="text-xl font-bold text-indigo-700 mb-4 pb-2 border-b border-indigo-200">
@@ -452,44 +571,22 @@ const ResearchStrategy = () => {
               </h5>
               <div className="text-xs text-gray-600 mt-1 space-y-1">
                 <p>
-                  <strong className="font-semibold">소속:</strong> AlphaGeo CEO
-                  (AI 지리공간 분석), Climate Alpha CEO (AI 기후 리스크/부동산
-                  투자), Future Map 매니징 파트너 (데이터 기반 전략 분석)
+                  <strong className="font-semibold">현직:</strong> AlphaGeo CEO,
+                  Climate Alpha CEO, FutureMap 매니징 파트너
                 </p>
                 <p>
-                  <strong className="font-semibold">학력:</strong> 조지타운대
-                  지정학∙외교학∙철학 학∙석사, 런던정경대 국제관계학 박사
-                </p>
-                <p>
-                  <strong className="font-semibold">전문 분야:</strong>{" "}
-                  미래학자, 경영∙비즈니스, 지경학, 안보∙평화
-                </p>
-                <p>
-                  <strong className="font-semibold">주요 경력:</strong> 리콴유
-                  공공정책대학원 선임연구원(2013-2018), 미국 국가정보위원회(NIC)
-                  자문(2012), 버락 오바마 선거캠프 대외정책팀(2008), New
-                  American Foundation 선임연구원(2006-2015), 미국 특수작전부대
-                  고문(2007)
-                </p>
-                <p>
-                  <strong className="font-semibold">수상:</strong> 에스콰이어지
-                  ‘21세기 가장 영향력 있는 인물 75인’(2008), 와이어드 ‘가장
-                  명석한 인물 1위’(2008), 세계경제포럼 ‘차세대 글로벌
-                  리더’(2009)
+                  <strong className="font-semibold">전문 분야:</strong> 미래학,
+                  지경학, 도시 네트워크, AI 기반 분석
                 </p>
                 <p>
                   <strong className="font-semibold">대표 저서:</strong>{" "}
-                  <em>MOVE: Where People Are Going for a Better Future</em>{" "}
-                  (2021), <em>The Future is Asian</em> (2019),{" "}
-                  <em>Connectography</em> (2016)
+                  <em>Connectography</em> (2016), <em>The Future is Asian</em>{" "}
+                  (2019), <em>MOVE</em> (2021)
                 </p>
                 <p>
-                  <strong className="font-semibold">소개:</strong> 인프라
-                  네트워크와 도시 간 연결성이 국가를 뛰어넘는 새로운 질서의
-                  핵심이라 주장한 인물로, 도시 중심의 경제 연계가 어떻게 지역
-                  블록을 형성하는지 탐구해 온 인물. “국가는 점점 플랫폼이 되고
-                  있으며, 실질적 전략 단위는 도시”라고 보는 대표적인 네트워크
-                  중심의 지정학 이론가
+                  <strong className="font-semibold">핵심 주장:</strong> 인프라
+                  네트워크와 도시 간 연결성이 국가를 초월하는 새로운 질서의
+                  핵심. 국가는 플랫폼화되고, 실질적 전략 단위는 도시.
                 </p>
                 <p>
                   <strong className="font-semibold">협업 아젠다 제안:</strong>
