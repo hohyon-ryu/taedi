@@ -75,6 +75,48 @@ const ResearchStrategy = () => {
             </p>
           </div>
         </div>
+
+        {/* 과제 1. 개인의 강화와 공동체 변화 (유재연) */}
+        <div className="mt-6 pt-4 border-t border-gray-200">
+          <h4 className="text-md font-semibold text-gray-700 mb-2">
+            글로벌 공동연구 후보
+          </h4>
+
+          <div className="space-y-4">
+            {/* Daron Acemoglu */}
+            <div>
+              <h5 className="text-sm font-semibold text-gray-800">
+                Daron Acemoglu (MIT 인스티튜트 교수, 노벨 경제학상 수상자)
+              </h5>
+              <p className="text-xs text-gray-600 ml-4">
+                기술 편향적 변화 (SBTC) 및 과업 기반 프레임워크 개발, AI의
+                생산성 향상 효과와 불평등 심화 가능성 분석
+              </p>
+            </div>
+            {/* Erik Brynjolfsson */}
+            <div>
+              <h5 className="text-sm font-semibold text-gray-800">
+                Erik Brynjolfsson (스탠포드 HAI 디지털 경제 연구소 소장)
+              </h5>
+              <p className="text-xs text-gray-600 ml-4">
+                생산-분배-소비의 경제 기본 구조가 디지털화로 변화하는 과정 연구,
+                '생산성의 역설'(Productivity Paradox) 개념 개발
+              </p>
+            </div>
+            {/* Stuart Russell */}
+            <div>
+              <h5 className="text-sm font-semibold text-gray-800">
+                Stuart Russell (UC 버클리 컴퓨터공학과 교수, 『인공지능: 현대적
+                접근』 공동 저자)
+              </h5>
+              <p className="text-xs text-gray-600 ml-4">
+                인간 중심 AI 설계 및 통제 가능성 강조. AI 시스템의 사회적 위험과
+                윤리적 설계에 대한 국제적 자문 활동, Human-compatible AI 연구
+                프레임 제안
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
       {/* 2. 소유와 분배 질서 - 노가빈 */}
       <div className="mb-6 p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
