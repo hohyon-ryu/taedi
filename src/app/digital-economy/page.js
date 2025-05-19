@@ -6,14 +6,13 @@ import Section from "@/components/Section";
 
 const DigitalEconomyPage = () => {
   const mermaidChartString = `graph LR
-  A[개인 역량 강화와 격차 발생] --> B(공동체의 변화);
-  B --> D1[소유질서의 재정립];
-  B --> D2[분배 질서의 재정립];
-  B --> D3[시장 질서의 재정립];
-  D1 & D2 & D3 --> E(지속가능한 경제질서);
+  A[개인 역량 강화와 격차 발생] --> B(공동체 변화);
+  B --> D1[소유와 분배 질서];
+  B --> D2[도시 중심 무역 질서];
+  D1 & D2 --> E(지속가능한 경제질서);
 
   classDef highlight fill:#e6fffa,stroke:#00b5d8,stroke-width:2px,color:#007a7a;
-  class A,B,D1,D2,D3,E highlight;
+  class A,B,D1,D2,E highlight;
 `;
 
   return (
