@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
+const path = require("path");
+
 const nextConfig = {
   reactStrictMode: true,
   images: {
@@ -22,6 +24,12 @@ const nextConfig = {
     optimizePackageImports: ["react-icons"],
   },
   // The swcMinify option has been removed as it's enabled by default in Next.js 15.3.1
+
+  // Configure webpack to resolve paths with @ alias
+  webpack: (config) => {
+    config.resolve.alias["@"] = path.resolve(__dirname, "src");
+    return config;
+  },
 };
 
 module.exports = nextConfig;
