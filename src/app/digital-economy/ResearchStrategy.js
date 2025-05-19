@@ -76,37 +76,144 @@ const ResearchStrategy = () => {
           </div>
         </div>
       </div>
-
       {/* 2. 소유와 분배 질서 - 노가빈 */}
       <div className="mb-6 p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
         <h3 className="text-xl font-bold text-indigo-700 mb-4 pb-2 border-b border-indigo-200">
           2. 소유와 분배 질서 - 노가빈
         </h3>
-        <div className="mb-4">
-          <p className="text-sm text-gray-600 mb-1">
-            <strong className="font-semibold">현상:</strong> 무형자산 가치
-            증대와 노동-소득 연결 약화
-          </p>
-          <h4 className="text-lg font-semibold my-2 text-gray-700">
-            철학적 방향:
-          </h4>
-          <ul className="list-disc list-inside text-sm text-gray-600 space-y-1 mb-3">
-            <li>모든 사람은 공동 자원과 부에 대한 권리를 가짐</li>
-            <li>기본적 생활을 영위할 수 있는 권리 보장</li>
-            <li>경제적 안전망이 있을 때 진정한 선택의 자유 가능</li>
-            <li>부의 극단적 불평등 완화 필요</li>
-          </ul>
-          <p className="text-sm text-gray-600 mb-1">
-            <strong className="font-semibold">새로운 소유권 모델:</strong>{" "}
-            개인의 창의적 기여와 공공 이익의 균형 보장
-          </p>
-          <p className="text-sm text-gray-600 mb-1">
-            <strong className="font-semibold">분배 시스템:</strong> 디지털 경제
-            이익의 공정한 분배 메커니즘 개발
-          </p>
-        </div>
-      </div>
+        <div className="grid md:grid-cols-2 gap-6">
+          {/* Original Content - Left Column */}
+          <div className="mb-4 md:mb-0">
+            <p className="text-sm text-gray-600 mb-1">
+              <strong className="font-semibold">현상:</strong> 무형자산 가치
+              증대와 노동-소득 연결 약화
+            </p>
+            <h4 className="text-lg font-semibold my-2 text-gray-700">
+              철학적 방향:
+            </h4>
+            <ul className="list-disc list-inside text-sm text-gray-600 space-y-1 mb-3">
+              <li>모든 사람은 공동 자원과 부에 대한 권리를 가짐</li>
+              <li>기본적 생활을 영위할 수 있는 권리 보장</li>
+              <li>경제적 안전망이 있을 때 진정한 선택의 자유 가능</li>
+              <li>부의 극단적 불평등 완화 필요</li>
+            </ul>
+            <p className="text-sm text-gray-600 mb-1">
+              <strong className="font-semibold">새로운 소유권 모델:</strong>{" "}
+              개인의 창의적 기여와 공공 이익의 균형 보장
+            </p>
+            <p className="text-sm text-gray-600 mb-1">
+              <strong className="font-semibold">분배 시스템:</strong> 디지털
+              경제 이익의 공정한 분배 메커니즘 개발
+            </p>
+          </div>
+          {/* 희망 공동연구자 - Right Column */}
+          <div>
+            <h4 className="text-base font-semibold mb-3 text-gray-700">
+              글로벌 공동연구 후보
+            </h4>
+            <div className="space-y-6">
+              {/* 조지프 스티글리츠 */}
+              <div>
+                <h5 className="text-sm font-semibold text-gray-800">
+                  조지프 스티글리츠 (Joseph Stiglitz)
+                </h5>
+                <ul className="list-disc list-inside text-xs text-gray-600 mt-1 ml-4 space-y-1">
+                  <li>
+                    <strong className="font-semibold">소속:</strong> 미국
+                    컬럼비아대학교 경제학과 석좌교수
+                  </li>
+                  <li>
+                    <strong className="font-semibold">학력:</strong> MIT 경제학
+                    박사
+                  </li>
+                  <li>
+                    <strong className="font-semibold">주요 경력:</strong> 노벨
+                    경제학상(2001), 전 세계은행 수석 부총재 겸 수석이코노미스트
+                  </li>
+                  <li>
+                    <strong className="font-semibold">전문 분야:</strong>{" "}
+                    정보경제학, 불평등, 공공경제, 시장실패 이론
+                  </li>
+                  <li>
+                    <strong className="font-semibold">대표 저서:</strong>{" "}
+                    <em>The Price of Inequality</em> (2012),{" "}
+                    <em>People, Power, and Profits</em> (2019)
+                  </li>
+                  <li>
+                    <strong className="font-semibold">소개:</strong> 현대
+                    자본주의의 불평등과 시장 실패를 정치철학적 정의 기준에서
+                    비판하는 대표 경제학자.
+                  </li>
+                </ul>
+              </div>
 
+              {/* T. M. 스캔런 */}
+              <div>
+                <h5 className="text-sm font-semibold text-gray-800">
+                  T. M. 스캔런 (T. M. Scanlon)
+                </h5>
+                <ul className="list-disc list-inside text-xs text-gray-600 mt-1 ml-4 space-y-1">
+                  <li>
+                    <strong className="font-semibold">소속:</strong>{" "}
+                    하버드대학교 철학과 명예교수
+                  </li>
+                  <li>
+                    <strong className="font-semibold">학력:</strong>{" "}
+                    프린스턴대학교 철학 박사
+                  </li>
+                  <li>
+                    <strong className="font-semibold">전문 분야:</strong>{" "}
+                    도덕철학, 계약주의, 정치철학
+                  </li>
+                  <li>
+                    <strong className="font-semibold">대표 저서:</strong>{" "}
+                    <em>What We Owe to Each Other</em> (1998),{" "}
+                    <em>The Difficulty of Tolerance</em> (2003)
+                  </li>
+                  <li>
+                    <strong className="font-semibold">소개:</strong> 존 롤스
+                    이후 계약주의 윤리학을 재정의한 대표적 철학자로, 정의와
+                    공정성의 기준이 되는 ‘도덕적 정당화’의 조건을 이론화.
+                  </li>
+                </ul>
+              </div>
+
+              {/* 데브라 사츠 */}
+              <div>
+                <h5 className="text-sm font-semibold text-gray-800">
+                  데브라 사츠 (Debra Satz)
+                </h5>
+                <ul className="list-disc list-inside text-xs text-gray-600 mt-1 ml-4 space-y-1">
+                  <li>
+                    <strong className="font-semibold">소속:</strong> 미국
+                    스탠퍼드대학교 정치철학 교수, 인문대학 학장
+                  </li>
+                  <li>
+                    <strong className="font-semibold">학력:</strong> MIT
+                    정치철학 박사
+                  </li>
+                  <li>
+                    <strong className="font-semibold">전문 분야:</strong>{" "}
+                    불평등, 시장윤리, 도덕철학, 교육정책
+                  </li>
+                  <li>
+                    <strong className="font-semibold">대표 저서:</strong>{" "}
+                    <em>Why Some Things Should Not Be for Sale</em> (2010)
+                  </li>
+                  <li>
+                    <strong className="font-semibold">소개:</strong> 시장의
+                    도덕적 한계를 분석하고, 공정한 분배를 위협하는 경제적·사회적
+                    조건을 비판적으로 성찰.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>{" "}
+          {/* End of Right Column's content div */}
+        </div>{" "}
+        {/* End of Grid div */}
+      </div>{" "}
+      {/* End of "노가빈" section div */}
       {/* 3. 도시 중심 무역 질서 - 윤준영 */}
       <div className="mb-6 p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
         <h3 className="text-xl font-bold text-indigo-700 mb-4 pb-2 border-b border-indigo-200">
