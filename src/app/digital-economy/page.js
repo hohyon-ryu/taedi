@@ -1,693 +1,367 @@
-"use client";
+import MermaidRenderer from "../../components/MermaidRenderer";
 
-import Image from "next/image";
-import AnimateOnScroll from "../../components/AnimateOnScroll";
-import DigitalEconomyCharacteristicsWrapper from "../economy-101/DigitalEconomyCharacteristicsWrapper";
+// Helper component for sections to avoid repetition, can be moved to a separate file
+const Section = ({ title, children, titleLevel = 2 }) => {
+  const titleClassName =
+    "font-bold mb-3 text-gray-800 border-b pb-2 " +
+    (titleLevel === 2 ? "text-2xl" : "text-xl");
 
-const DigitalEconomyPoster = () => {
+  let TitleComponent;
+  if (titleLevel === 1) {
+    TitleComponent = <h1 className={titleClassName}>{title}</h1>;
+  } else if (titleLevel === 3) {
+    TitleComponent = <h3 className={titleClassName}>{title}</h3>;
+  } else if (titleLevel === 4) {
+    TitleComponent = <h4 className={titleClassName}>{title}</h4>;
+  } else if (titleLevel === 5) {
+    TitleComponent = <h5 className={titleClassName}>{title}</h5>;
+  } else if (titleLevel === 6) {
+    TitleComponent = <h6 className={titleClassName}>{title}</h6>;
+  } else {
+    // Default to h2
+    TitleComponent = <h2 className={titleClassName}>{title}</h2>;
+  }
+
   return (
-    <div className="bg-white min-h-screen py-8 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <div className="mb-8 p-4 bg-gray-50 rounded-lg shadow">
+      {TitleComponent}
+      <div className="space-y-2 text-gray-700">{children}</div>
+    </div>
+  );
+};
+
+// Original SubSection component with bullet points
+const SubSection = ({ title, items, boldPoints = false }) => (
+  <div className="mb-4 pl-4">
+    <h4 className="text-lg font-semibold mb-2 text-gray-700">{title}</h4>
+    <ul className="list-disc pl-5 space-y-1 text-sm">
+      {items.map((item, index) => (
+        <li key={index}>
+          {boldPoints && typeof item === "object" ? (
+            <>
+              <strong>{item.bold}:</strong> {item.text}
+            </>
+          ) : (
+            item
+          )}
+        </li>
+      ))}
+    </ul>
+  </div>
+);
+
+// New component for paragraph-style content
+const TextSection = ({ title, paragraphs }) => (
+  <div className="mb-4 pl-4">
+    <h4 className="text-lg font-semibold mb-3 text-gray-700">{title}</h4>
+    <div className="space-y-3 text-sm text-gray-700">
+      {paragraphs.map((paragraph, index) => (
+        <p key={index}>{paragraph}</p>
+      ))}
+    </div>
+  </div>
+);
+
+const DigitalEconomyPage = () => {
+  const mermaidChartString = `
+graph LR
+  A[개인 역량 강화] --> B(새로운 공동체 필요성 대두);
+  B --> C{가정, 도시, 국가 역할 재편};
+  C -- 국가 기능 약화 --> D[새로운 경제 질서 수립];
+  D -- 소유와 분배 재정립 --> E(지속가능한 사회경제 시스템);
+
+  classDef highlight fill:#e6fffa,stroke:#00b5d8,stroke-width:2px,color:#007a7a;
+  class A,B,C,D,E highlight;
+`;
+
+  return (
+    <div className="bg-white min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto">
         {/* 헤더 */}
-        <AnimateOnScroll animation="scale-in">
-          <div className="text-center mb-6">
-            <h1 className="text-3xl font-extrabold mb-2 text-gray-900 tracking-tight">
-              디지털 시대의 경제 질서 연구 기획안
-            </h1>
-            <div className="bg-gray-100 p-3 rounded-lg inline-block">
-              <p className="text-sm text-gray-800 italic font-medium">
-                "디지털 전환이 가속화됨에 따라 사회 구조는 어떻게 변화하며,
-                이러한 변화는 기존 경제 질서에 어떤 영향을 미치는가?"
-              </p>
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-extrabold mb-4 text-gray-900 tracking-tight">
+            AI 시대의 새로운 경제 질서와 사회변혁 프레임워크
+          </h1>
+          <div className="bg-gray-100 p-4 rounded-lg inline-block shadow">
+            <p className="text-md text-gray-800 italic font-medium">
+              태재미래전략연구원 디지털 전환과 사회변혁 팀 연구 기반
+            </p>
+          </div>
+        </div>
+
+        {/* 1. 디지털 전환과 문명 전환의 맥락 */}
+        <Section title="1. 디지털 전환과 문명 전환의 맥락">
+          <SubSection
+            title="역사적 전환기의 특성"
+            items={[
+              "기존 질서의 한계와 모순 표면화",
+              "혁신적 기술의 등장과 급속한 확산",
+              "권력 구조와 소유 개념의 근본적 재편",
+              "인간 존재 방식과 정체성의 변화",
+              "기존 체제와 새로운 질서 간 충돌",
+              "변방에서 시작된 혁신이 중심부로 확산",
+            ]}
+          />
+          <SubSection
+            title="디지털 전환의 경제적 특수성"
+            items={[
+              "무형자산 중심 경제로의 급속한 전환",
+              "AI가 노동을 대체하는 새로운 생산 패러다임",
+              "데이터 자본주의와 감시 경제의 확산",
+              "디지털 격차에 따른 새로운 경제적 불평등",
+              "국경을 초월하는 거래와 조세 체계의 붕괴",
+            ]}
+          />
+        </Section>
+
+        {/* 2. 전환의 핵심 영역과 변화 메커니즘 */}
+        <Section title="2. 전환의 핵심 영역과 변화 메커니즘">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {/* Card 1 */}
+            <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <TextSection
+                title="A. 개인 역량의 강화와 새로운 계층 분화"
+                paragraphs={[
+                  "AI 기술은 개인의 역량을 크게 강화하고 생산성을 향상시키는 잠재력을 가지고 있습니다. 그러나 이러한 기술 발전은 사회 내 새로운 계층 분화를 야기할 수 있습니다.",
+                  "기존 자본과 전문성을 보유한 소수(약 10%)는 AI를 활용해 소득을 크게 증가시킬 것으로 예상됩니다. 중간층(30~70%)은 AI를 통해 비용을 절감하고 효율성을 높일 수 있지만, 소득 증가는 제한적일 수 있습니다. 반면 디지털 접근성과 활용 능력이 취약한 계층은 기술 소외를 경험할 위험이 있습니다.",
+                  "이러한 격차를 해소하기 위해 디지털 리터러시 강화, 균형 있는 발전 지원, 기술 접근성 보장 등의 과제가 중요해지고 있습니다. 모든 사회 구성원이 AI 시대의 혜택을 고르게 누릴 수 있는 포용적 접근이 필요합니다.",
+                ]}
+              />
+            </div>
+
+            {/* Card 2 */}
+            <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <TextSection
+                title="B. 마켓의 가치 변화와 절제 기반 경제 생태계"
+                paragraphs={[
+                  "현재 경제 시스템은 경제적 양극화 심화와 지속가능성 위기에 직면해 있습니다. 무한 성장과 소비 중심의 경제 패러다임은 환경적, 사회적 한계에 도달하고 있습니다.",
+                  "이러한 상황에서 절제와 균형에 기반한 새로운 경제 생태계가 등장하고 있습니다. 이는 단순한 이윤 추구를 넘어 공동체의 필요와 환경적 지속가능성을 고려하는 비즈니스 모델을 지향합니다.",
+                  "이 새로운 경제 생태계의 특징은 경제적 가치와 공동체적 가치의 통합, 다양한 이해관계자의 참여, 그리고 장기적 관점에서의 지속가능한 가치 창출 메커니즘 구축입니다. 이는 산업사회의 욕망 중심 체제에서 절제와 균형의 경제로 전환하는 과정을 반영합니다.",
+                ]}
+              />
+            </div>
+
+            {/* Card 3 */}
+            <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <TextSection
+                title="C. 소유와 분배 질서의 재정립"
+                paragraphs={[
+                  "디지털 경제에서는 무형자산의 가치가 크게 증대되고, 전통적인 노동과 소득의 연결이 약화되고 있습니다. 이는 소유와 분배에 관한 근본적인 질문을 제기합니다.",
+                  "새로운 소유와 분배 질서는 몇 가지 철학적 방향을 기반으로 합니다. 모든 사람은 공동 자원과 부에 대한 권리를 가지며, 기본적 생활을 영위할 수 있는 권리가 보장되어야 합니다. 경제적 안전망이 있을 때 진정한 선택의 자유가 가능하며, 부의 극단적 불평등은 완화될 필요가 있습니다.",
+                  "이를 위해 개인의 창의적 기여와 공공 이익의 균형을 보장하는 새로운 소유권 모델과, 디지털 경제 이익의 공정한 분배 메커니즘 개발이 중요한 과제로 대두되고 있습니다.",
+                ]}
+              />
+            </div>
+
+            {/* Card 4 */}
+            <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <TextSection
+                title="D. 공동체, 도시, 국가 역할의 재편"
+                paragraphs={[
+                  "디지털 전환 시대에는 국가 주권의 개념이 변화하고, 도시 네트워크의 중요성이 부상하고 있습니다. 이는 공동체, 도시, 국가의 역할 재정립을 요구합니다.",
+                  "도시는 개인이 경제적 자율성을 추구하고 실현하는 공간으로서의 역할이 강화되고 있습니다. 창조 플랫폼으로서의 도시 개념이 중요해지고, 물리적 경계를 넘어선 도시 간 협력 네트워크가 형성되고 있습니다.",
+                ]}
+                boldPoints={true}
+              />
+            </div>
+
+            {/* Card 3 */}
+            <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <SubSection
+                title="C. 소유와 분배 질서의 재정립"
+                items={[
+                  {
+                    bold: "현상",
+                    text: "무형자산 가치 증대와 노동-소득 연결 약화",
+                  },
+                  { bold: "철학적 방향", text: "" },
+                  "모든 사람은 공동 자원과 부에 대한 권리를 가짐",
+                  "기본적 생활을 영위할 수 있는 권리 보장",
+                  "경제적 안전망이 있을 때 진정한 선택의 자유 가능",
+                  "부의 극단적 불평등 완화 필요",
+                  {
+                    bold: "새로운 소유권 모델",
+                    text: "개인의 창의적 기여와 공공 이익의 균형 보장",
+                  },
+                  {
+                    bold: "분배 시스템",
+                    text: "디지털 경제 이익의 공정한 분배 메커니즘 개발",
+                  },
+                ]}
+                boldPoints={true}
+              />
+            </div>
+
+            {/* Card 4 */}
+            <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <SubSection
+                title="D. 공동체, 도시, 국가 역할의 재편"
+                items={[
+                  {
+                    bold: "현상",
+                    text: "국가 주권의 변화, 도시 네트워크의 부상",
+                  },
+                  { bold: "도시의 새로운 역할", text: "" },
+                  "개인이 경제적 자율성을 추구하고 실현하는 공간",
+                  "창조 플랫폼으로서의 도시 개념 강화",
+                  "물리적 경계를 넘어선 도시 간 협력 네트워크",
+                  { bold: "국가 역할의 재정의", text: "" },
+                  "통제자에서 조정자, 촉진자로 전환",
+                  "디지털 평화 체계 구축",
+                  "국가 안보 개념의 확장(디지털, 환경, 보건 등 포괄)",
+                  {
+                    bold: "과제",
+                    text: "도시 간 협력 체계 구축, 디지털 공공재 확충",
+                  },
+                ]}
+                boldPoints={true}
+              />
+            </div>
+
+            {/* Card 5 */}
+            <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow md:col-span-2">
+              <SubSection
+                title="E. 글로벌 경제 질서의 변화"
+                items={[
+                  {
+                    bold: "현상",
+                    text: "국경을 초월한 디지털 무역 확대, 데이터 패권 경쟁",
+                  },
+                  { bold: "핵심 변화 영역", text: "무역 패러다임 전환" },
+                  "물리적 상품에서 무형 자산 중심으로 전환",
+                  "도시 간 무역 네트워크의 중요성 증대",
+                  "디지털 인프라의 전략적 가치 상승",
+                  { bold: "거버넌스 과제", text: "" },
+                  "국가 주권과 글로벌 협력의 새로운 균형",
+                  "넥스트 WTO 같은 새로운 글로벌 무역 체계 필요",
+                  "데이터 흐름과 디지털 인프라에 관한 공정한 국제 질서 구축",
+                ]}
+                boldPoints={true}
+              />
             </div>
           </div>
-        </AnimateOnScroll>
+        </Section>
 
-        {/* 디지털 혁명과 사회적 파급 효과 */}
-        <AnimateOnScroll animation="fade-in" delay={0.2}>
-          <div className="mb-2 bg-white overflow-hidden">
-            <div className="bg-gray-500 text-white p-2 relative overflow-hidden">
-              <div className="absolute inset-0">
-                <div className="absolute inset-0 bg-gradient-to-r from-gray-500/90 via-gray-500/85 to-gray-500/80">
-                  <Image
-                    src="/static/images/posters/digital_economy/section2.png"
-                    alt=""
-                    width={800}
-                    height={200}
-                    className="w-full h-full object-cover opacity-40 mix-blend-overlay"
-                    style={{
-                      maskImage:
-                        "linear-gradient(to right, transparent 20%, black 50%)",
-                    }}
-                  />
-                </div>
-              </div>
-              <div className="relative z-10 flex justify-between items-center">
-                <h2 className="text-base font-bold">
-                  1. 디지털 시대 사회 변혁
-                </h2>
-              </div>
-            </div>
-
-            <div className="px-0 py-3">
-              <div className="grid grid-cols-3 gap-3 mb-4">
-                <AnimateOnScroll
-                  animation="fade-in-left"
-                  delay={0.1}
-                  duration={0.5}
-                >
-                  <div className="bg-gray-50 p-2 rounded-lg">
-                    <h4 className="text-sm font-bold text-gray-800 mb-1">
-                      개인
-                    </h4>
-                    <ul className="text-xs space-y-0.5 text-gray-700">
-                      <li>• AI로 인한 슈퍼 휴먼의 등장</li>
-                      <li>• AI로 소득이 높아지는 사람들 (사업가, 전문가)</li>
-                      <li>
-                        • AI로 비용을 줄이는 사람들 (배관공 없이 AI 도움으로
-                        수리)
-                      </li>
-                      <li>
-                        • 소비가 자동화된 서비스와 전문적 판단을 제공하는
-                        사람들에게 집중
-                      </li>
-                    </ul>
-                  </div>
-                </AnimateOnScroll>
-
-                <AnimateOnScroll animation="fade-in" delay={0.2} duration={0.5}>
-                  <div className="bg-gray-50 p-2 rounded-lg">
-                    <h4 className="text-sm font-bold text-gray-800 mb-1">
-                      가정
-                    </h4>
-                    <ul className="text-xs space-y-0.5 text-gray-700">
-                      <li>
-                        • 생존과 보호 중심이던 가정의 기능이 약화하고 책임의
-                        역할이 강화함
-                      </li>
-                      <li>
-                        • 상호 책임의 관계 형성에 대한 개인의 선택이 분화하며
-                        혼인율 및 출산율이 감소함
-                      </li>
-                      <li>
-                        • 자녀의 성장에 대한 책임을 더 효율적으로 수행할 수 있는
-                        기술적 저변이 확대됨
-                      </li>
-                    </ul>
-                  </div>
-                </AnimateOnScroll>
-
-                <AnimateOnScroll
-                  animation="fade-in-right"
-                  delay={0.3}
-                  duration={0.5}
-                >
-                  <div className="bg-gray-50 p-2 rounded-lg">
-                    <h4 className="text-sm font-bold text-gray-800 mb-1">
-                      커뮤니티
-                    </h4>
-                    <ul className="text-xs space-y-0.5 text-gray-700">
-                      <li>
-                        • 기능적인 필요보다 감정적, 사회적 맥락에서 의존하는
-                        형태의 공동체로 발전
-                      </li>
-                      <li>
-                        • 물리적으로 가까이 분포해야 했던 외주 기능의 수가 크게
-                        줄고, 개인의 이동 거리도 축소함
-                      </li>
-                      <li>
-                        • 집단 의사결정이 필요한 주제에 따라 공동체의 경계가
-                        유연하게 변화함
-                      </li>
-                    </ul>
-                  </div>
-                </AnimateOnScroll>
-
-                <AnimateOnScroll
-                  animation="fade-in-left"
-                  delay={0.1}
-                  duration={0.5}
-                >
-                  <div className="bg-gray-50 p-2 rounded-lg">
-                    <h4 className="text-sm font-bold text-gray-800 mb-1">
-                      도시
-                    </h4>
-                    <ul className="text-xs space-y-0.5 text-gray-700">
-                      <li>
-                        • 기능별로 전문화된 도시 발전 - 교육, 의료도시 등으로
-                        특화
-                      </li>
-                      <li>
-                        • 개인이 필요에 따라 도시를 선택하는 구독형 도시 개념
-                        등장
-                      </li>
-                      <li>
-                        • 국가 기능의 90%가 도시로 이전, 도시 중심의 행정 체계
-                        구축
-                      </li>
-                    </ul>
-                  </div>
-                </AnimateOnScroll>
-
-                <AnimateOnScroll animation="fade-in" delay={0.2} duration={0.5}>
-                  <div className="bg-gray-50 p-2 rounded-lg">
-                    <h4 className="text-sm font-bold text-gray-800 mb-1">
-                      국가
-                    </h4>
-                    <ul className="text-xs space-y-0.5 text-gray-700">
-                      <li>
-                        • 개인과 국가의 관계 재정립 - 국가 역할 축소와 분권화
-                      </li>
-                      <li>
-                        • 조세 체계의 변화 - 로봇세 등 새로운 과세 대상과 방식
-                        등장
-                      </li>
-                      <li>• 국경의 중요성 감소와 도시 중심의 국제 질서 형성</li>
-                    </ul>
-                  </div>
-                </AnimateOnScroll>
-
-                <AnimateOnScroll
-                  animation="fade-in-right"
-                  delay={0.3}
-                  duration={0.5}
-                >
-                  <div className="bg-gray-50 p-2 rounded-lg">
-                    <h4 className="text-sm font-bold text-gray-800 mb-1">
-                      소유와 분배
-                    </h4>
-                    <ul className="text-xs space-y-0.5 text-gray-700">
-                      <li>
-                        • 지식재산권과 데이터 소유권에 대한 새로운 개념 정립
-                        필요
-                      </li>
-                      <li>
-                        • 개인 생산성 향상으로 소유 개념의 변화와 공유경제 확산
-                      </li>
-                      <li>• 국가의 분배 기능 약화와 새로운 경제 질서 형성</li>
-                    </ul>
-                  </div>
-                </AnimateOnScroll>
-              </div>
-            </div>
+        {/* 새로운 섹션: 핵심 변화의 흐름 */}
+        <Section title="3. 핵심 변화의 흐름">
+          <p className="text-sm text-gray-600 mb-4">
+            아래 다이어그램은 AI 시대의 주요 사회경제적 변화 요소들 간의 상호
+            연관성을 보여줍니다. 개인 역량 강화에서 시작하여 새로운 공동체의
+            필요성을 거쳐, 기존 사회 구조(가정, 도시, 국가)의 변화를 이끌고,
+            궁극적으로 새로운 경제 질서(소유와 분배)의 수립으로 이어지는 과정을
+            나타냅니다.
+          </p>
+          <div className="bg-gray-100 p-4 rounded-md shadow-inner overflow-hidden">
+            <MermaidRenderer chartDefinition={mermaidChartString} />
           </div>
-        </AnimateOnScroll>
+        </Section>
 
-        {/* AS-IS, TO-BE, TO-DO 섹션 */}
-        <AnimateOnScroll animation="fade-in" delay={0.2}>
-          <div className="mb-2 bg-white overflow-hidden">
-            <div className="bg-gray-500 text-white p-2 relative overflow-hidden">
-              <div className="absolute inset-0">
-                <div className="absolute inset-0 bg-gradient-to-r from-gray-500/90 via-gray-500/85 to-gray-500/80">
-                  <Image
-                    src="/static/images/posters/digital_economy/section5.png"
-                    alt=""
-                    width={800}
-                    height={200}
-                    className="w-full h-full object-cover opacity-40 mix-blend-overlay"
-                    style={{
-                      maskImage:
-                        "linear-gradient(to right, transparent 20%, black 50%)",
-                    }}
-                  />
-                </div>
-              </div>
-              <div className="relative z-10 flex justify-between items-center">
-                <h2 className="text-base font-bold">
-                  2. 안전하고 건강한 공동체와 경제 질서
-                </h2>
-              </div>
-            </div>
+        {/* 4. 통합적 비전과 실행 과제 (기존 3) */}
+        <Section title="4. 통합적 비전과 실행 과제">
+          <SubSection
+            title="사회-경제적 비전"
+            items={[
+              {
+                bold: "안전하고 건강한 미래",
+                text: "디지털 기술이 인간의 존엄성과 환경의 지속가능성을 높이는 방향",
+              },
+              {
+                bold: "절제와 균형의 경제",
+                text: "산업사회 욕망 중심 체제에서 절제와 균형의 경제로 전환",
+              },
+              {
+                bold: "공정하고 포용적인 제도",
+                text: "디지털 격차 해소와 모두를 위한 기술 혜택 보장",
+              },
+            ]}
+            boldPoints={true}
+          />
+          <SubSection
+            title="실행 과제"
+            items={[
+              {
+                bold: "개인 차원",
+                text: "디지털 리터러시 강화, 균형 있는 발전 지원",
+              },
+              {
+                bold: "공동체 차원",
+                text: "새로운 공동체 모델 개발, 디지털-아날로그 연계",
+              },
+              {
+                bold: "도시 차원",
+                text: "창조 플랫폼 도시 설계, 포용적 혁신 생태계 구축",
+              },
+              {
+                bold: "국가 차원",
+                text: "디지털 평화 체계 구축, 국가 역할 재정립",
+              },
+              {
+                bold: "글로벌 차원",
+                text: "다층적 거버넌스 개발, 디지털 인프라 공유 체계",
+              },
+              {
+                bold: "경제 질서 차원",
+                text: "균형 있는 소유권 모델 개발, 공정한 분배 시스템 구축",
+              },
+            ]}
+            boldPoints={true}
+          />
+          <SubSection
+            title="새로운 사회 계약을 향하여"
+            items={[
+              "디지털 시대에 맞는, 개인의 자율성과 공동체적 가치의 균형을 이루는 새로운 사회 계약의 필요성",
+              "인간-AI 협력 시대의 사회 계약은 단순한 안전과 보호를 넘어, 창의성, 자율성, 그리고 지속가능성을 중심으로 재구성될 필요",
+            ]}
+          />
+        </Section>
 
-            <div className="px-0 py-3">
-              <div className="grid grid-cols-3 gap-4">
-                {/* AS-IS */}
-                <AnimateOnScroll
-                  animation="fade-in-left"
-                  delay={0.1}
-                  duration={0.5}
-                >
-                  <div className="bg-gray-50 p-3 rounded-lg border-l-4 border-gray-400">
-                    <h4 className="text-sm font-bold text-gray-800 mb-2">
-                      AS-IS (현 문제점)
-                    </h4>
-                    <ul className="text-xs space-y-1 text-gray-700">
-                      <li>• 개인 역량 강화와 공동체의 통제 사이의 갈등</li>
-                      <li>• 국가 단위 경제 구조와 규제의 한계</li>
-                      <li>• 디지털 경제에 맞지 않는 조세 체계</li>
-                      <li>• 디지털 자산 소유·분배 기준 부재</li>
-                    </ul>
-                  </div>
-                </AnimateOnScroll>
-
-                {/* TO-BE */}
-                <AnimateOnScroll animation="fade-in" delay={0.2} duration={0.5}>
-                  <div className="bg-gray-50 p-3 rounded-lg border-l-4 border-gray-400">
-                    <h4 className="text-sm font-bold text-gray-800 mb-2">
-                      TO-BE (바람직한 미래)
-                    </h4>
-                    <ul className="text-xs space-y-1 text-gray-700">
-                      <li>• 개인 강화와 공동체의 조화로운 성장</li>
-                      <li>• 도시 중심 협력 네트워크 경제 구조</li>
-                      <li>• 공정하고 효율적인 디지털 조세 체계</li>
-                      <li>• 정의로운 디지털 자산 소유·분배 체계 확립</li>
-                    </ul>
-                  </div>
-                </AnimateOnScroll>
-
-                {/* TO-DO */}
-                <AnimateOnScroll
-                  animation="fade-in-right"
-                  delay={0.3}
-                  duration={0.5}
-                >
-                  <div className="bg-gray-50 p-3 rounded-lg border-l-4 border-gray-400">
-                    <h4 className="text-sm font-bold text-gray-800 mb-2">
-                      TO-DO (핵심 연구 과제)
-                    </h4>
-                    <ul className="text-xs space-y-1 text-gray-700">
-                      <li>1. 개인의 강화와 공동체 변화</li>
-                      <li>2. 국가 기능의 재편과 도시-개인의 부상</li>
-                      <li>3. 규제와 조세의 변화</li>
-                      <li>4. 디지털 자산 및 소유권 개념</li>
-                    </ul>
-                  </div>
-                </AnimateOnScroll>
-              </div>
-            </div>
+        {/* 5. 연구 추진 방향과 국제 협력 (기존 4) */}
+        <Section title="5. 연구 추진 방향과 국제 협력">
+          <SubSection
+            title="연구 주제별 접근"
+            items={[
+              {
+                bold: "A 영역(개인 역량 강화)",
+                text: "유재연 연구원 주도, HCI 및 AI 윤리 전문가와 협력",
+              },
+              {
+                bold: "B 영역(마켓과 소셜 임팩트)",
+                text: "소셜 임팩트 측정 및 평가 전문가와 협력",
+              },
+              {
+                bold: "C 영역(소유와 분배)",
+                text: "노가빈 연구원 주도, 정치경제철학자 및 사회적 가치 연구 전문가와 협력",
+              },
+              {
+                bold: "D & E 영역(도시, 국가, 글로벌)",
+                text: "윤준영 연구원 주도, 브루스 카츠 등 도시-글로벌 거버넌스 전문가와 협력",
+              },
+            ]}
+            boldPoints={true}
+          />
+          <SubSection
+            title="국제 협력 방안"
+            items={[
+              "각 연구 영역별 글로벌 석학 초청 및 공동 연구",
+              "정기적 국제 워크숍 및 포럼 개최",
+              "글로벌 사례 조사 및 데이터 수집",
+            ]}
+          />
+          <div className="mt-4 text-sm">
+            이 프레임워크는 태재미래전략연구원의 비전과 연구팀의 전문성을
+            바탕으로, 디지털 전환이 가져올 사회-경제적 변화를 통합적 관점에서
+            연구하고 바람직한 미래를 설계하기 위한 체계적인 접근법을 제시합니다.
           </div>
-        </AnimateOnScroll>
-
-        {/* 디지털 경제의 특징 */}
-        <AnimateOnScroll animation="fade-in" delay={0.2}>
-          <div className="mb-2 bg-white overflow-hidden">
-            <div className="bg-gray-500 text-white p-2 relative overflow-hidden">
-              {/* You can add a background image here if needed, similar to other sections */}
-              {/* <div className="absolute inset-0"> ... </div> */}
-              <div className="relative z-10 flex justify-between items-center">
-                <h2 className="text-base font-bold">3. 디지털 경제의 특징</h2>
-              </div>
-            </div>
-            <div className="px-0 py-3">
-              <DigitalEconomyCharacteristicsWrapper />
-            </div>
-          </div>
-        </AnimateOnScroll>
-
-        {/* 주요 연구 과제 */}
-        <AnimateOnScroll animation="fade-in" delay={0.2}>
-          <div className="mb-2 bg-white overflow-hidden">
-            <div className="bg-gray-500 text-white p-2 relative overflow-hidden">
-              <div className="absolute inset-0">
-                <div className="absolute inset-0 bg-gradient-to-r from-gray-500/90 via-gray-500/85 to-gray-500/80">
-                  <Image
-                    src="/static/images/posters/digital_economy/section5.png"
-                    alt=""
-                    width={800}
-                    height={200}
-                    className="w-full h-full object-cover opacity-40 mix-blend-overlay"
-                    style={{
-                      maskImage:
-                        "linear-gradient(to right, transparent 20%, black 50%)",
-                    }}
-                  />
-                </div>
-              </div>
-              <div className="relative z-10 flex justify-between items-center">
-                <h2 className="text-base font-bold">4. 연구 과제</h2>
-              </div>
-            </div>
-
-            <div className="px-0 py-3">
-              <div className="grid grid-cols-2 gap-4">
-                {/* 과제 1: 개인의 강화와 공동체 변화 */}
-                <AnimateOnScroll
-                  animation="fade-in-left"
-                  delay={0.1}
-                  duration={0.5}
-                >
-                  <div className="bg-gray-50 p-3 rounded-lg border-l-4 border-gray-300">
-                    <h4 className="text-sm font-bold text-gray-800 mb-2">
-                      과제 1. 개인의 강화와 공동체 변화{" "}
-                      <span className="text-2xs font-normal text-gray-500">
-                        (유재연)
-                      </span>
-                    </h4>
-                    <p className="text-xs text-gray-700 mb-2">
-                      디지털 기술은 어떻게 슈퍼휴먼을 만드는가, 그리고
-                      슈퍼휴먼은 공동체와 도시를 어떻게 변화시키는가?
-                    </p>
-
-                    <ul className="text-xs space-y-1 text-gray-700">
-                      <li className="flex items-start">
-                        <span className="mr-1">•</span>
-                        <div>
-                          <span className="font-medium">Daron Acemoglu</span>{" "}
-                          (MIT 인스티튜트 교수, 노벨 경제학상 수상자) -
-                          <span className="text-gray-600 italic">
-                            {" "}
-                            기술 편향적 변화(SBTC) 및 과업 기반 프레임워크 개발,
-                            AI의 생산성 향상 효과와 불평등 심화 가능성 분석
-                          </span>
-                        </div>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="mr-1">•</span>
-                        <div>
-                          <span className="font-medium">Erik Brynjolfsson</span>{" "}
-                          (스탠포드 HAI 디지털 경제 연구소 소장) -
-                          <span className="text-gray-600 italic">
-                            {" "}
-                            생산-분배-소비의 경제 기본 구조가 디지털화로
-                            변화하는 과정 연구, '생산성의 역설'(Productivity
-                            Paradox) 개념 개발
-                          </span>
-                        </div>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="mr-1">•</span>
-                        <div>
-                          <span className="font-medium">Stuart Russell</span>{" "}
-                          (UC 버클리 컴퓨터공학과 교수, 『인공지능: 현대적
-                          접근』 공동 저자) -
-                          <span className="text-gray-600 italic">
-                            {" "}
-                            인간 중심 AI 설계 및 통제 가능성 강조. AI 시스템의
-                            사회적 위험과 윤리적 설계에 대한 국제적 자문 활동,
-                            Human-compatible AI 연구 프레임 제안
-                          </span>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </AnimateOnScroll>
-
-                {/* 과제 2: 국가 개념의 변화 */}
-                <AnimateOnScroll animation="fade-in" delay={0.2} duration={0.5}>
-                  <div className="bg-gray-50 p-3 rounded-lg border-l-4 border-gray-300">
-                    <h4 className="text-sm font-bold text-gray-800 mb-2">
-                      과제 2. 국가 기능의 재편과 도시-개인의 부상{" "}
-                      <span className="text-2xs font-normal text-gray-500">
-                        (윤준영)
-                      </span>
-                    </h4>
-                    <p className="text-xs text-gray-700 mb-2">
-                      국가의 전통적 기능이 어떻게 도시와 개인에게 재분배되고,
-                      이것이 미래 사회의 권력구조와 의사결정 메커니즘을 재편할
-                      것인가?
-                    </p>
-
-                    <ul className="text-xs space-y-1 text-gray-700">
-                      <li className="flex items-start">
-                        <span className="mr-1">•</span>
-                        <div>
-                          <span className="font-medium">Simon Curtis</span>{" "}
-                          (University of East Anglia, 4-50대) -
-                          <span className="text-gray-600 italic">
-                            {" "}
-                            도시가 국가의 부속물이 아니라 국제질서를 재편하는
-                            독립 행위자라는 점을 이론적으로 정립한 도시
-                            국제관계학(Urban IR)의 선구자
-                          </span>
-                        </div>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="mr-1">•</span>
-                        <div>
-                          <span className="font-medium">Aihwa Ong</span>{" "}
-                          (University of California, Berkeley, 70대) -
-                          <span className="text-gray-600 italic">
-                            {" "}
-                            시민권과 주권의 경계가 유동화되는 글로벌 시대의 권력
-                            재편을 설명하는 '유연한 시민권'과 '점진적 주권'
-                            개념의 창시자
-                          </span>
-                        </div>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="mr-1">•</span>
-                        <div>
-                          <span className="font-medium">Saskia Sassen</span>{" "}
-                          (Columbia University, 70대) -
-                          <span className="text-gray-600 italic">
-                            {" "}
-                            '글로벌 도시'와 '탈국가화'를 통해 자본주의와 권력이
-                            도시를 중심으로 재배치되는 매커니즘을 설명한
-                            도시사회학자
-                          </span>
-                        </div>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="mr-1">•</span>
-                        <div>
-                          <span className="font-medium">
-                            Global Parliament of Mayors
-                          </span>{" "}
-                          (네덜란드, 2016-현재) -
-                          <span className="text-gray-600 italic">
-                            {" "}
-                            Benjamin Barber가 설립한 글로벌 시장 의회로, 도시
-                            정부(city government) 간 국제적 협의체
-                          </span>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </AnimateOnScroll>
-
-                {/* 과제 3: 규제와 조세의 변화 */}
-                <AnimateOnScroll
-                  animation="fade-in-left"
-                  delay={0.1}
-                  duration={0.5}
-                >
-                  <div className="bg-gray-50 p-3 rounded-lg border-l-4 border-gray-300">
-                    <h4 className="text-sm font-bold text-gray-800 mb-2">
-                      과제 3. 규제와 조세의 변화{" "}
-                      <span className="text-2xs font-normal text-gray-500">
-                        (연구진 미정)
-                      </span>
-                    </h4>
-                    <p className="text-xs text-gray-700 mb-2">
-                      디지털 시대의 규제와 조세는 어떻게 달라지는가?
-                    </p>
-
-                    <ul className="text-xs space-y-1 text-gray-700">
-                      <li className="flex items-start">
-                        <span className="mr-1">•</span>
-                        <div>
-                          <span className="font-medium">Lawrence Lessig</span>{" "}
-                          (하버드 로스쿨 교수) -
-                          <span className="text-gray-600 italic">
-                            {" "}
-                            '코드가 법이다(Code is Law)' 개념 창시자, 디지털
-                            아키텍처가 새로운 형태의 규제로 작용하는 방식 연구
-                          </span>
-                        </div>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="mr-1">•</span>
-                        <div>
-                          <span className="font-medium">Gabriel Zucman</span>{" "}
-                          (UC 버클리 경제학 교수) -
-                          <span className="text-gray-600 italic">
-                            {" "}
-                            글로벌 조세 회피와 불평등 전문가, 디지털 경제의 조세
-                            정의 문제 연구
-                          </span>
-                        </div>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="mr-1">•</span>
-                        <div>
-                          <span className="font-medium">Julie Cohen</span>{" "}
-                          (조지타운 로스쿨 교수) -
-                          <span className="text-gray-600 italic">
-                            {" "}
-                            정보 자본주의 법적 구조 전문가, 디지털 기술과 사회
-                            변화를 위한 규제 프레임워크 연구
-                          </span>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </AnimateOnScroll>
-
-                {/* 과제 4: 디지털 자산 및 소유권 개념 */}
-                <AnimateOnScroll animation="fade-in" delay={0.2} duration={0.5}>
-                  <div className="bg-gray-50 p-3 rounded-lg border-l-4 border-gray-300">
-                    <h4 className="text-sm font-bold text-gray-800 mb-2">
-                      과제 4. 디지털 자산 및 소유권 개념{" "}
-                      <span className="text-2xs font-normal text-gray-500">
-                        (노가빈)
-                      </span>
-                    </h4>
-                    <p className="text-xs text-gray-700 mb-2">
-                      슈퍼휴먼이 생산하는 디지털 생산물의 소유와 분배 질서는
-                      어떻게 정립되어야 하는가?
-                    </p>
-
-                    <ul className="text-xs space-y-1 text-gray-700">
-                      <li className="flex items-start">
-                        <span className="mr-1">•</span>
-                        <div>
-                          <span className="font-medium">
-                            Viktor Mayer-Schönberger
-                          </span>{" "}
-                          (옥스퍼드 인터넷 연구소 교수) -
-                          <span className="text-gray-600 italic">
-                            {" "}
-                            데이터 소유권과 개인정보보호 전문가, 빅데이터가
-                            만드는 새로운 경제 가치와 권력 관계 연구
-                          </span>
-                        </div>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="mr-1">•</span>
-                        <div>
-                          <span className="font-medium">Arun Sundararajan</span>{" "}
-                          (NYU 경영대학원 교수) -
-                          <span className="text-gray-600 italic">
-                            {" "}
-                            공유 경제와 디지털 소유권 전문가, 디지털 플랫폼이
-                            가치 창출과 소유권 개념에 미치는 영향 연구
-                          </span>
-                        </div>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="mr-1">•</span>
-                        <div>
-                          <span className="font-medium">Nick Srnicek</span>{" "}
-                          (킹스칼리지 런던 정치경제학과 교수) -
-                          <span className="text-gray-600 italic">
-                            {" "}
-                            플랫폼 자본주의 이론가, 디지털 경제에서 데이터의
-                            수집·통제·축적을 통해 형성되는 권력 구조와 소유의
-                            정치 분석
-                          </span>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </AnimateOnScroll>
-              </div>
-            </div>
-          </div>
-        </AnimateOnScroll>
-
-        {/* 2025 분기별 계획 */}
-        <AnimateOnScroll animation="fade-in" delay={0.2}>
-          <div className="mb-2 bg-white overflow-hidden">
-            <div className="bg-gray-500 text-white p-2 relative overflow-hidden">
-              <div className="absolute inset-0">
-                <div className="absolute inset-0 bg-gradient-to-r from-gray-500/90 via-gray-500/85 to-gray-500/80">
-                  <Image
-                    src="/static/images/posters/digital_economy/section3.png"
-                    alt=""
-                    width={800}
-                    height={200}
-                    className="w-full h-full object-cover opacity-40 mix-blend-overlay"
-                    style={{
-                      maskImage:
-                        "linear-gradient(to right, transparent 20%, black 50%)",
-                    }}
-                  />
-                </div>
-              </div>
-              <div className="relative z-10 flex justify-between items-center">
-                <h2 className="text-base font-bold">5. 2025 분기별 계획</h2>
-              </div>
-            </div>
-
-            <div className="px-0 py-3">
-              <div className="grid grid-cols-4 gap-3">
-                {/* 1분기 */}
-                <AnimateOnScroll
-                  animation="fade-in-left"
-                  delay={0.1}
-                  duration={0.5}
-                >
-                  <div className="bg-gray-50 p-3 rounded-lg border-l-4 border-gray-300">
-                    <h4 className="text-sm font-bold text-gray-800 mb-2">
-                      1분기
-                    </h4>
-                    <h5 className="text-xs font-semibold text-gray-700 mb-1">
-                      팀 빌딩 및 기초 연구
-                    </h5>
-                    <ul className="text-xs space-y-1 text-gray-700">
-                      <li>• 연구 주제 관련 핵심 문헌 분석</li>
-                      <li>• 연구 방향 및 주요 질문 구체화</li>
-                    </ul>
-                  </div>
-                </AnimateOnScroll>
-
-                {/* 2분기 */}
-                <AnimateOnScroll animation="fade-in" delay={0.2} duration={0.5}>
-                  <div className="bg-gray-50 p-3 rounded-lg border-l-4 border-gray-300">
-                    <h4 className="text-sm font-bold text-gray-800 mb-2">
-                      2분기
-                    </h4>
-                    <h5 className="text-xs font-semibold text-gray-700 mb-1">
-                      국내외 전문가 네트워크 구축
-                    </h5>
-                    <ul className="text-xs space-y-1 text-gray-700">
-                      <li>• 연구 방법론 정립 및 데이터 수집 계획</li>
-                      <li>• 세부 연구 계획 확정</li>
-                    </ul>
-                  </div>
-                </AnimateOnScroll>
-
-                {/* 3분기 */}
-                <AnimateOnScroll
-                  animation="fade-in-right"
-                  delay={0.3}
-                  duration={0.5}
-                >
-                  <div className="bg-gray-50 p-3 rounded-lg border-l-4 border-gray-300">
-                    <h4 className="text-sm font-bold text-gray-800 mb-2">
-                      3분기
-                    </h4>
-                    <h5 className="text-xs font-semibold text-gray-700 mb-1">
-                      심층 연구 및 사례 분석
-                    </h5>
-                    <ul className="text-xs space-y-1 text-gray-700">
-                      <li>• 중간 결과 공유 및 피드백</li>
-                      <li>• 국제 학술대회 발표 준비</li>
-                    </ul>
-                  </div>
-                </AnimateOnScroll>
-
-                {/* 4분기 */}
-                <AnimateOnScroll
-                  animation="fade-in-left"
-                  delay={0.1}
-                  duration={0.5}
-                >
-                  <div className="bg-gray-50 p-3 rounded-lg border-l-4 border-gray-300">
-                    <h4 className="text-sm font-bold text-gray-800 mb-2">
-                      4분기
-                    </h4>
-                    <h5 className="text-xs font-semibold text-gray-700 mb-1">
-                      연구 결과 종합 및 정책 제언 도출
-                    </h5>
-                    <ul className="text-xs space-y-1 text-gray-700">
-                      <li>• 최종 보고서 작성 및 발표</li>
-                      <li>• 차년도 연구 계획 수립</li>
-                    </ul>
-                  </div>
-                </AnimateOnScroll>
-              </div>
-            </div>
-          </div>
-        </AnimateOnScroll>
+        </Section>
 
         {/* 푸터 */}
-        <div className="mt-3 text-right text-xs text-gray-600">
-          © 2025 태재미래전략연구원 디지털 전환과 사회변혁 팀
+        <div className="mt-12 pt-8 border-t border-gray-200 text-center text-sm text-gray-500">
+          © {new Date().getFullYear()} 태재미래전략연구원 디지털 전환과 사회변혁
+          팀
         </div>
       </div>
     </div>
   );
 };
 
-export default DigitalEconomyPoster;
+export default DigitalEconomyPage;
