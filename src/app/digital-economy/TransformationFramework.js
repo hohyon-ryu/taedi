@@ -7,17 +7,21 @@ const TransformationFramework = () => {
         <table className="min-w-full bg-white border border-gray-300">
           <thead>
             <tr className="bg-indigo-100">
+              <th className="py-3 px-4 border-b border-gray-300 text-indigo-700 font-bold text-left text-sm"></th>
               <th className="py-3 px-4 border-b border-gray-300 text-indigo-700 font-bold text-left text-sm">
-                분류
+                AS-IS:
+                <br />
+                산업화 시대 체제의 한계
               </th>
               <th className="py-3 px-4 border-b border-gray-300 text-indigo-700 font-bold text-left text-sm">
-                AS-IS: 현재 상태
+                TO-BE:
+                <br />
+                안전하고 건강한 미래
               </th>
               <th className="py-3 px-4 border-b border-gray-300 text-indigo-700 font-bold text-left text-sm">
-                TO-BE: 재정의된 미래상
-              </th>
-              <th className="py-3 px-4 border-b border-gray-300 text-indigo-700 font-bold text-left text-sm">
-                TO-DO: 혁신적 실행 과제
+                TO-DO:
+                <br />
+                실행 과제
               </th>
             </tr>
           </thead>

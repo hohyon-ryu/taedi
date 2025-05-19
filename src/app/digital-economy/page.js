@@ -1,5 +1,4 @@
 import DigitalEconomyCharacteristics from "@/app/digital-economy/DigitalEconomyCharacteristics";
-import IntegratedVision from "@/app/digital-economy/IntegratedVision";
 import ResearchStrategy from "@/app/digital-economy/ResearchStrategy";
 import TransformationFramework from "@/app/digital-economy/TransformationFramework";
 import MermaidRenderer from "@/components/MermaidRenderer";
@@ -50,9 +49,6 @@ const DigitalEconomyPage = () => {
 
         {/* 4. 연구 주제 연구 전략 */}
         <ResearchStrategy />
-
-        {/* 5. 통합적 비전과 실행 과제 */}
-        <IntegratedVision />
 
         {/* 푸터 */}
         <div className="mt-12 pt-8 border-t border-gray-200 text-center text-sm text-gray-500">
