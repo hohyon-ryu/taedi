@@ -588,7 +588,7 @@ const ResearchStrategy = () => {
                   네트워크와 도시 간 연결성이 국가를 초월하는 새로운 질서의
                   핵심. 국가는 플랫폼화되고, 실질적 전략 단위는 도시.
                 </p>
-                <p>
+                <div>
                   <strong className="font-semibold">협업 아젠다 제안:</strong>
                   <div className="space-y-1 mt-1 pl-4">
                     <p>
@@ -605,7 +605,7 @@ const ResearchStrategy = () => {
                       통한 재구조화
                     </p>
                   </div>
-                </p>
+                </div>
               </div>
             </div>
           </div>
