@@ -1,0 +1,135 @@
+/* Default styles for screen will be overridden by these print styles */
+
+@media print {
+  @page {
+    size: A3;
+    margin: 2cm; /* Adjust margins as needed */
+  }
+
+  body {
+    font-family: "Times New Roman", Times, serif; /* Serif fonts are often better for print */
+    font-size: 12pt; /* Adjust font size for A3 readability */
+    color: #000000; /* Ensure text is black for printing */
+    background-color: #ffffff !important; /* Ensure background is white */
+    -webkit-print-color-adjust: exact !important; /* Enforce printing of background colors and images if explicitly set */
+    print-color-adjust: exact !important;
+  }
+
+  /* Hide elements not suitable for printing */
+  header,
+  nav,
+  footer,
+  aside,
+  form,
+  button,
+  iframe,
+  .no-print, /* Add this class to elements you want to hide in print */
+  [data-no-print="true"] {
+    /* Alternative way to mark elements for non-printing */
+    display: none !important;
+  }
+
+  /* Ensure links are distinguishable, but not necessarily blue/underlined if not desired */
+  a {
+    color: #000000;
+    text-decoration: none; /* Remove underline for cleaner print, or keep if preferred */
+  }
+
+  /* Display URL for links (optional, can be verbose) */
+  /*
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    color: #333333;
+  }
+  */
+
+  /* Image handling */
+  img {
+    max-width: 100% !important; /* Ensure images don't overflow page */
+    height: auto !important;
+    page-break-inside: avoid; /* Try to keep images on the same page as surrounding text */
+  }
+
+  /* Page breaks */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    page-break-after: avoid; /* Avoid page breaks immediately after headings */
+    page-break-inside: avoid; /* Avoid page breaks within headings */
+  }
+
+  p,
+  blockquote,
+  ul,
+  ol,
+  dl {
+    page-break-inside: avoid; /* Avoid page breaks within these elements where possible */
+  }
+
+  /* Specific overrides for economy-101 page elements */
+  /* You'll need to inspect the economy-101 page and add specific selectors here */
+  /* For example, if there's a sidebar with class .sidebar: */
+  /* .sidebar { display: none !important; } */
+
+  /* Ensure main content area takes up full width */
+  main,
+  .main-content,
+  #main-content {
+    /* Adjust selector as per your HTML structure */
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    float: none !important;
+  }
+
+  /* Remove box shadows, unnecessary borders, etc. */
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    border-color: #cccccc !important; /* Lighten borders or remove them */
+  }
+
+  /* Expand any accordions or tabbed content if necessary */
+  /* .accordion-content, .tab-panel { display: block !important; } */
+
+  /* Tailwind CSS specific overrides if used heavily for layout/visibility */
+  .hidden,
+  [hidden],
+  .invisible {
+    /* If Tailwind's .hidden or .invisible are used to hide content for screen,
+       you might need to override them for print if that content IS needed.
+       However, usually, these are things you also want hidden in print.
+       If something is hidden by Tailwind and you NEED it for print,
+       you'll have to make it visible:
+       .print-visible { display: block !important; } or similar
+    */
+  }
+
+  /* Ensure dark mode styles are reverted for print */
+  body.dark,
+  .dark body,
+  [data-theme="dark"] body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+  .dark *,
+  [data-theme="dark"] * {
+    background-color: transparent !important; /* Reset background on child elements */
+    color: inherit !important; /* Inherit black color from body */
+    border-color: #cccccc !important;
+  }
+
+  /* Example: If ConceptCard, ScholarCard, TheoryCard have specific print needs */
+  .concept-card-class,
+  .scholar-card-class,
+  .theory-card-class {
+    /* Replace with actual classes */
+    border: 1px solid #ccc;
+    page-break-inside: avoid;
+    margin-bottom: 1em;
+  }
+}

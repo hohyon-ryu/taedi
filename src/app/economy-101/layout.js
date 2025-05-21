@@ -1,3 +1,5 @@
+import "@/styles/print-economy-101.css";
+
 export const metadata = {
   title: "경제학 기초 | 디지털 전환과 사회변혁 | 태재미래전략연구원",
   description:
