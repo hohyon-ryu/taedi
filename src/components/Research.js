@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import React from "react";
 import { useInView } from "react-intersection-observer";
 import "../styles/Research.css";
 
@@ -35,6 +34,12 @@ const Research = () => {
       description:
         "디지털 전환이 가속화됨에 따라 사회 구조와 경제 질서의 변화 연구",
       link: "/digital-economy",
+    },
+    {
+      title: "디지털 시대의 경제 질서 마스터플랜",
+      description:
+        "디지털 전환이 가속화됨에 따라 사회 구조와 경제 질서에 미치는 영향에 대한 마스터플랜",
+      link: "/digital-economy-masterplan",
     },
     {
       title: "경제학 기초 (Economy 101)",
