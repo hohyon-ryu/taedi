@@ -196,84 +196,7 @@ graph LR
 
       <section className="mb-12">
         <h2 className="text-2xl font-bold mb-4 border-b pb-2">
-          3. 디지털 시대의 사회 변화
-        </h2>
-        <p className="mb-4">
-          AI 기술은 개인의 역량을 전문가 수준으로 강화하고, 가정, 도시, 국가 등
-          사회 구조 전반에 근본적인 변화를 가져오고 있습니다. 이는 과거
-          산업혁명보다 더 광범위한 영향을 미칠 것으로 예상됩니다.
-        </p>
-        <MermaidRenderer
-          chart={`
-graph TD
-    SA["디지털 시대의 사회 변화 (Social Changes in Digital Age)"] --> SAI["AI의 개인 역량 강화 (AI Individual Empowerment)"];
-    SAI --> SAI1["전문가 수준 능력 부여 (Expert-level Capabilities)"];
-    SAI --> SAI2["지식 접근성 민주화 (Democratization of Knowledge Access)"];
-    SAI --> SAI3["인간-AI 협업 증강 (Enhanced Human-AI Collaboration)"];
-    SAI -- 주의 --> SAI4["고숙련 지식 노동자 편중 혜택 가능성 (Risk of benefiting high-skilled workers disproportionately)"];
-
-    SA --> SR["사회 구조 변화 (Social Structure Transformation)"];
-    SR --> SRF["가정 (Family)"];
-    SRF --> SRF1["정체성 발견 및 맞춤형 양육 (Identity Discovery & Personalized Parenting)"];
-    SRF --> SRF2["AI 튜터 및 가정 내 교육 변화 (AI Tutors & Home Education Change)"];
-    SRF --> SRF3["경제 생산 참여 증가 (Increased Participation in Economic Production)"];
-
-    SR --> SRC["도시 (City)"];
-    SRC --> SRC1["창조 플랫폼으로 진화 (Evolution to Creative Platform)"];
-    SRC --> SRC2["디지털 트윈 및 예측 거버넌스 (Digital Twins & Predictive Governance)"];
-    SRC --> SRC3["공간 활용 및 경제 모델 변화 (Changes in Space Utilization & Economic Models)"];
-
-    SR --> SRN["국가 (Nation)"];
-    SRN --> SRN1["주권 AI 전략 (Sovereign AI Strategy)"];
-    SRN --> SRN2["AI 거버넌스 및 규제 프레임워크 (AI Governance & Regulatory Frameworks)"];
-    SRN --> SRN3["복지 시스템 재고 및 데이터 정책 (Rethinking Welfare & Data Policies)"];
-    SRN --> SRN4["국가 권력 기반 변화 (Shift in National Power Base - Data, AI Capability)"];
-    SRN --> SRN5["기술 중심 경제 동맹 (Tech-centric Economic Alliances)"];
-
-    classDef category fill:#ccf,stroke:#333,stroke-width:2px;
-    class SAI,SR category;
-        `}
-          id="socialChangesDiagram"
-        />
-        <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="p-4 border rounded-lg bg-gray-50">
-            <h4 className="font-semibold">AI의 개인 역량 강화</h4>
-            <p>
-              AI는 개인에게 전문가 수준의 의사결정 능력을 부여하고, 지식
-              접근성을 민주화하며, 인간-AI 협업을 통해 생산성을 향상시킵니다.
-              단, 고숙련 노동자에게 혜택이 편중될 가능성에 유의해야 합니다.
-            </p>
-          </div>
-          <div className="p-4 border rounded-lg bg-gray-50">
-            <h4 className="font-semibold">가정의 역할 변화</h4>
-            <p>
-              가정은 AI를 통해 맞춤형 양육 및 교육의 중심지가 되며, 원격 근무 및
-              AI 지원 기업가 정신을 통해 경제 생산에 더 직접적으로 참여하게
-              됩니다.
-            </p>
-          </div>
-          <div className="p-4 border rounded-lg bg-gray-50">
-            <h4 className="font-semibold">도시의 진화</h4>
-            <p>
-              도시는 물리적 공간과 디지털 레이어가 융합된 창조 플랫폼으로
-              변모합니다. 디지털 트윈, 예측 거버넌스, 창의적 상호작용을 촉진하는
-              공간이 중요해집니다.
-            </p>
-          </div>
-          <div className="p-4 border rounded-lg bg-gray-50 md:col-span-2 lg:col-span-3">
-            <h4 className="font-semibold">국가의 재정의</h4>
-            <p>
-              국가는 '주권 AI' 전략을 추구하며 AI 거버넌스 체계를 구축합니다.
-              데이터 정책이 국가 주권의 핵심이 되며, 복지 시스템 재편 및 기술
-              중심의 국제 관계가 모색됩니다.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="mb-12">
-        <h2 className="text-2xl font-bold mb-4 border-b pb-2">
-          4. 디지털 시대의 경제 질서 변화
+          3. 디지털 시대의 경제 질서 변화
         </h2>
         <p className="mb-4">
           AI와 자동화는 노동 시장, 소득 분배, 그리고 생산·소유·분배·소비의
@@ -346,13 +269,87 @@ graph TD
 
       <section className="mb-12">
         <h2 className="text-2xl font-bold mb-4 border-b pb-2">
-          5. 디지털 시대 공동체의 경제 질서
+          4. 디지털 시대의 사회 변화와 공동체 경제 질서
         </h2>
         <p className="mb-4">
-          AI 혁명은 가정, 지역사회, 도시, 국가의 경제적 역할을 재편하고 있으며,
-          글로벌 경제 질서에도 근본적인 변화를 가져오고 있습니다. 각 공동체
-          단위는 새로운 경제 모델과 거버넌스 구조를 모색하고 있습니다.
+          AI 기술은 개인의 역량을 전문가 수준으로 강화하고, 가정, 도시, 국가 등
+          사회 구조 전반에 근본적인 변화를 가져오고 있습니다. 이는 과거
+          산업혁명보다 더 광범위한 영향을 미칠 것으로 예상됩니다. AI 혁명은 또한
+          가정, 지역사회, 도시, 국가의 경제적 역할을 재편하고 있으며, 글로벌
+          경제 질서에도 근본적인 변화를 가져오고 있습니다. 각 공동체 단위는
+          새로운 경제 모델과 거버넌스 구조를 모색하고 있습니다.
         </p>
+        <h3 className="text-xl font-semibold mt-6 mb-3">사회 변화 측면</h3>
+        <MermaidRenderer
+          chart={`
+graph TD
+    SA["디지털 시대의 사회 변화 (Social Changes in Digital Age)"] --> SAI["AI의 개인 역량 강화 (AI Individual Empowerment)"];
+    SAI --> SAI1["전문가 수준 능력 부여 (Expert-level Capabilities)"];
+    SAI --> SAI2["지식 접근성 민주화 (Democratization of Knowledge Access)"];
+    SAI --> SAI3["인간-AI 협업 증강 (Enhanced Human-AI Collaboration)"];
+    SAI -- 주의 --> SAI4["고숙련 지식 노동자 편중 혜택 가능성 (Risk of benefiting high-skilled workers disproportionately)"];
+
+    SA --> SR["사회 구조 변화 (Social Structure Transformation)"];
+    SR --> SRF["가정 (Family)"];
+    SRF --> SRF1["정체성 발견 및 맞춤형 양육 (Identity Discovery & Personalized Parenting)"];
+    SRF --> SRF2["AI 튜터 및 가정 내 교육 변화 (AI Tutors & Home Education Change)"];
+    SRF --> SRF3["경제 생산 참여 증가 (Increased Participation in Economic Production)"];
+
+    SR --> SRC["도시 (City)"];
+    SRC --> SRC1["창조 플랫폼으로 진화 (Evolution to Creative Platform)"];
+    SRC --> SRC2["디지털 트윈 및 예측 거버넌스 (Digital Twins & Predictive Governance)"];
+    SRC --> SRC3["공간 활용 및 경제 모델 변화 (Changes in Space Utilization & Economic Models)"];
+
+    SR --> SRN["국가 (Nation)"];
+    SRN --> SRN1["주권 AI 전략 (Sovereign AI Strategy)"];
+    SRN --> SRN2["AI 거버넌스 및 규제 프레임워크 (AI Governance & Regulatory Frameworks)"];
+    SRN --> SRN3["복지 시스템 재고 및 데이터 정책 (Rethinking Welfare & Data Policies)"];
+    SRN --> SRN4["국가 권력 기반 변화 (Shift in National Power Base - Data, AI Capability)"];
+    SRN --> SRN5["기술 중심 경제 동맹 (Tech-centric Economic Alliances)"];
+
+    classDef category fill:#ccf,stroke:#333,stroke-width:2px;
+    class SAI,SR category;
+        `}
+          id="socialChangesDiagram"
+        />
+        <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="p-4 border rounded-lg bg-gray-50">
+            <h4 className="font-semibold">AI의 개인 역량 강화</h4>
+            <p>
+              AI는 개인에게 전문가 수준의 의사결정 능력을 부여하고, 지식
+              접근성을 민주화하며, 인간-AI 협업을 통해 생산성을 향상시킵니다.
+              단, 고숙련 노동자에게 혜택이 편중될 가능성에 유의해야 합니다.
+            </p>
+          </div>
+          <div className="p-4 border rounded-lg bg-gray-50">
+            <h4 className="font-semibold">가정의 역할 변화</h4>
+            <p>
+              가정은 AI를 통해 맞춤형 양육 및 교육의 중심지가 되며, 원격 근무 및
+              AI 지원 기업가 정신을 통해 경제 생산에 더 직접적으로 참여하게
+              됩니다.
+            </p>
+          </div>
+          <div className="p-4 border rounded-lg bg-gray-50">
+            <h4 className="font-semibold">도시의 진화</h4>
+            <p>
+              도시는 물리적 공간과 디지털 레이어가 융합된 창조 플랫폼으로
+              변모합니다. 디지털 트윈, 예측 거버넌스, 창의적 상호작용을 촉진하는
+              공간이 중요해집니다.
+            </p>
+          </div>
+          <div className="p-4 border rounded-lg bg-gray-50 md:col-span-2 lg:col-span-3">
+            <h4 className="font-semibold">국가의 재정의</h4>
+            <p>
+              국가는 '주권 AI' 전략을 추구하며 AI 거버넌스 체계를 구축합니다.
+              데이터 정책이 국가 주권의 핵심이 되며, 복지 시스템 재편 및 기술
+              중심의 국제 관계가 모색됩니다.
+            </p>
+          </div>
+        </div>
+
+        <h3 className="text-xl font-semibold mt-8 mb-3">
+          공동체 경제 질서 측면
+        </h3>
         <MermaidRenderer
           chart={`
 graph TD
@@ -423,62 +420,7 @@ graph TD
 
       <section className="mb-12">
         <h2 className="text-2xl font-bold mb-4 border-b pb-2">
-          6. 디지털 전환과 새로운 공동체의 부상
-        </h2>
-        <p className="mb-4">
-          디지털 전환은 전통적인 공동체 경제 개발(CED)의 개념을 재해석하고
-          확장합니다. 지리적 한계를 넘어선 디지털 공동체는 '지역'을 '네트워크'나
-          '플랫폼'으로 확장하며, CED의 핵심 원칙인 주민 역량 강화, 부의 구축,
-          공동체 비전 실현 등을 새로운 방식으로 모색합니다.
-        </p>
-        <MermaidRenderer
-          chart={`
-graph TD
-    DTNC["디지털 전환과 새로운 공동체 (Digital Transformation & New Communities)"] --> TCED["전통적 공동체 경제 개발 (Traditional CED)"];
-    TCED --> TCED1["지리적 커뮤니티 기반 (Geographic Community-based)"];
-    TCED --> TCED2["목표: 경제 자립, 발전 (Goal: Economic Self-reliance, Development)"];
-    TCED --> TCED3["방법: 일자리 창출, 생활 임금 (Methods: Job Creation, Living Wages)"];
-
-    DTNC --> DCED["디지털 공동체 경제 개발 (Digital CED)"];
-    DCED --> DCED1["네트워크/플랫폼 기반 (Network/Platform-based)"];
-    DCED --> DCED2["참여자 배경 다양화 (Diverse Participant Backgrounds)"];
-    DCED --> DCED3["핵심 원칙 재해석 (Reinterpretation of Core Principles)"];
-    DCED3 --> DCED3a["주민 통제 → 데이터 소유권, 플랫폼 거버넌스 (Community Control → Data Ownership, Platform Governance)"];
-    DCED3 --> DCED3b["부의 구축 → 디지털 자산, 토큰 경제 (Wealth Building → Digital Assets, Token Economy)"];
-
-    DTNC -- 결과 --> RNC["새로운 가능성과 도전 과제 (New Possibilities & Challenges)"];
-    
-    classDef concept fill:#d4fcd7,stroke:#333,stroke-width:2px;
-    class TCED,DCED concept;
-        `}
-          id="digitalCommunitiesDiagram"
-        />
-        <div className="mt-6 p-4 border rounded-lg bg-gray-50">
-          <h4 className="font-semibold">디지털 공동체의 CED 재해석</h4>
-          <ul className="list-disc list-inside mt-2 space-y-1">
-            <li>
-              <strong>'지역'의 확장:</strong> 지리적 커뮤니티 → 네트워크/플랫폼
-              기반 공동체
-            </li>
-            <li>
-              <strong>'주민 통제'의 변화:</strong> 데이터 소유권, 플랫폼
-              거버넌스 참여, 탈중앙화된 의사결정
-            </li>
-            <li>
-              <strong>'부의 구축' 방식 다양화:</strong> 디지털 자산 생성, 토큰
-              경제 참여, 온라인 비즈니스 창출
-            </li>
-          </ul>
-          <p className="mt-2">
-            디지털 기술은 공동체의 정의와 경제 활동 방식을 근본적으로 변화시키며
-            새로운 가능성과 도전 과제를 동시에 제시합니다.
-          </p>
-        </div>
-      </section>
-
-      <section className="mb-12">
-        <h2 className="text-2xl font-bold mb-4 border-b pb-2">
-          7. 디지털 경제의 핵심 주체와 관계망
+          5. 디지털 경제의 핵심 주체와 관계망
         </h2>
         <p className="mb-4">
           디지털 경제는 개인 이용자, 콘텐츠 크리에이터, 플랫폼 기업, AI 시스템,
@@ -589,119 +531,180 @@ graph TD
 
       <section className="mb-12">
         <h2 className="text-2xl font-bold mb-4 border-b pb-2">
-          8. 디지털 경제의 가치 창출 및 돈의 흐름
+          6. 디지털 시대의 가치 창출, 소유권, 분배 패러다임 전환
         </h2>
         <p className="mb-4">
-          디지털 경제는 데이터, 기술, 네트워크, 참여자 상호작용을 기반으로
-          플랫폼 경제, Web3, 메타버스 등 다양한 모델을 통해 가치를 창출합니다.
-          창출된 가치는 여러 수익 모델과 분배 메커니즘, 그리고 새로운 디지털
-          화폐를 통해 다양한 주체에게 흘러갑니다.
+          디지털 기술과 AI의 발전은 경제의 근간을 이루는 가치 창출 방식,
+          소유권의 개념, 그리고 부의 분배 구조에 전례 없는 변화를 가져오고
+          있습니다. 데이터가 핵심 생산요소로 부상하고, 지능형 자동화가 생산성을
+          극대화하며, 플랫폼과 디지털 자산이 새로운 경제 모델을 형성함에 따라,
+          전통적인 패러다임은 도전을 받고 새로운 질서가 모색되고 있습니다.
         </p>
         <MermaidRenderer
           chart={`
 graph TD
-    VC["디지털 경제 가치 창출 및 돈의 흐름 (Value Creation & Money Flow)"]
+    A["디지털/AI 시대 패러다임 전환"] --> VC["가치 창출 방식 변화"];
+    A --> OS["소유권 개념 변화"];
+    A --> DS["분배 구조 변화"];
 
-    subgraph 가치 창출 메커니즘 (Value Creation Mechanisms)
+    subgraph "가치 창출 (Value Creation)"
         direction LR
-        P_VC["플랫폼 경제 (Platform Economy)"]
-        P_VC --> P_VC1["데이터 분석 기반 맞춤형 서비스/광고 (Data-driven Services/Ads)"]
-        P_VC --> P_VC2["네트워크 효과 (Network Effects)"]
-        P_VC --> P_VC3["생태계 조성 (Ecosystem Building)"]
-
-        W3_VC["Web3 경제 (Web3 Economy)"]
-        W3_VC --> W3_VC1["탈중앙화 및 사용자 소유권 (Decentralization & User Ownership)"]
-        W3_VC --> W3_VC2["토크노믹스 (Tokenomics)"]
-        W3_VC --> W3_VC3["커뮤니티 참여 및 공동 창조 (Community & Co-creation)"]
-        W3_VC --> W3_VC4["NFT (NFTs)"]
-
-        M_VC["메타버스 경제 (Metaverse Economy)"]
-        M_VC --> M_VC1["몰입형 경험 제공 (Immersive Experiences)"]
-        M_VC --> M_VC2["가상 자산 거래 (Virtual Asset Trading)"]
-        M_VC --> M_VC3["크리에이터 경제 확장 (Expansion of Creator Economy)"]
+        VC --> VC1["데이터 기반 가치 (Data-driven Value)"];
+        VC1 --> VC1a["AI 분석 및 예측 (AI Analytics & Prediction)"];
+        VC1 --> VC1b["초개인화 서비스 (Hyper-personalized Services)"];
+        VC --> VC2["지능형 자동화 (Intelligent Automation)"];
+        VC2 --> VC2a["스마트 팩토리, 휴머노이드 (Smart Factories, Humanoids)"];
+        VC2 --> VC2b["생산성 향상 및 비용 절감 (Productivity & Cost Reduction)"];
+        VC --> VC3["플랫폼 경제 (Platform Economy)"];
+        VC3 --> VC3a["네트워크 효과 (Network Effects)"];
+        VC3 --> VC3b["생태계 구축 (Ecosystem Building)"];
+        VC --> VC4["새로운 디지털 경험 (New Digital Experiences)"];
+        VC4 --> VC4a["서비스화, 구독 경제 (Servitization, Subscription)"];
+        VC4 --> VC4b["메타버스, Web3 (Metaverse, Web3)"];
     end
 
-    subgraph 수익 분배 및 돈의 흐름 (Revenue Distribution & Money Flow)
+    subgraph "소유권 (Ownership)"
         direction LR
-        RM["주요 수익 모델 (Key Revenue Models)"]
-        RM --> RM1["광고 (Advertising)"]
-        RM --> RM2["구독 (Subscription)"]
-        RM --> RM3["거래 수수료 (Transaction Fees)"]
-        RM --> RM4["디지털 자산 판매 (Digital Asset Sales)"]
-
-        CD["크리에이터/사용자 수익 분배 (Creator/User Revenue Share)"]
-        CD --> CD1["플랫폼 수익 공유 (Platform Revenue Sharing)"]
-        CD --> CD2["Web3 직접 보상 (Web3 Direct Rewards - NFT, Tokens)"]
-        CD --> CD3["P2E (Play-to-Earn)"]
-
-        NC["새로운 화폐 형태 (New Forms of Currency)"]
-        NC --> NC1["암호화폐 (Cryptocurrencies)"]
-        NC --> NC2["스테이블코인 (Stablecoins)"]
-        NC --> NC3["CBDC (Central Bank Digital Currencies)"]
-        NC --> NC4["국제 금융 질서 변화 가능성 (Potential Shift in Int'l Financial Order)"]
-        NC --> NC5["탈중앙화의 이상과 현실 (Ideal vs. Reality of Decentralization)"]
+        OS --> OS1["AI 인프라 집중 (AI Infrastructure Concentration)"];
+        OS1 --> OS1a["소수 기업 독점 우려 (Monopoly Concerns)"];
+        OS --> OS2["지식재산권 재정의 (IP Redefinition)"];
+        OS2 --> OS2a["AI 생성 창작물 (AI-generated Creations)"];
+        OS2 --> OS2b["AI 시스템 자체 IP (IP of AI Systems)"];
+        OS --> OS3["데이터 소유권 및 거버넌스 (Data Ownership & Governance)"];
+        OS3 --> OS3a["개인 데이터 주권 (Personal Data Sovereignty)"];
+        OS3 --> OS3b["데이터 협동조합/신탁 (Data Cooperatives/Trusts)"];
+        OS3 --> OS3c["공공 데이터 개방 (Open Public Data)"];
     end
 
-    VC --> P_VC
-    VC --> W3_VC
-    VC --> M_VC
-    VC --> RM
-    VC --> CD
-    VC --> NC
+    subgraph "분배 (Distribution)"
+        direction LR
+        DS --> DS1["노동 소득 변화 (Labor Income Changes)"];
+        DS1 --> DS1a["노동소득분배율 하락 가능성 (Potential Decline in Labor Share)"];
+        DS1 --> DS1b["임금 격차 확대 (Widening Wage Gap)"];
+        DS --> DS2["전통적 조세 한계 (Limits of Traditional Taxation)"];
+        DS2 --> DS2a["소득세 기반 약화 (Weakening Income Tax Base)"];
+        DS2 --> DS2b["자본 과세 강화 논의 (Debate on Capital Taxation)"];
+        DS --> DS3["새로운 분배 메커니즘 (New Distribution Mechanisms)"];
+        DS3 --> DS3a["보편적 기본소득 (UBI)"];
+        DS3 --> DS3b["데이터/기술 배당 (Data/Tech Dividends)"];
+        DS3 --> DS3c["로봇세 논쟁 (Robot Tax Debate)"];
+    end
 
-    classDef model fill:#e0f2f7,stroke:#333,stroke-width:2px;
-    class P_VC,W3_VC,M_VC,RM,CD,NC model;
+    classDef main_pillar fill:#e6f7ff,stroke:#0077cc,stroke-width:2px,color:#000;
+    class VC,OS,DS main_pillar;
         `}
-          id="valueCreationFlowDiagram"
+          id="digitalParadigmShiftDiagram"
         />
-        <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="p-4 border rounded-lg bg-gray-50">
-            <h4 className="font-semibold">플랫폼 경제 가치 창출</h4>
-            <p>
-              데이터 분석, 네트워크 효과, 생태계 조성을 통해 가치 창출. 광고,
-              구독, 수수료 등 수익.
-            </p>
+
+        <div className="mt-8 space-y-8">
+          <div>
+            <h3 className="text-xl font-semibold mb-3 text-blue-700">
+              1. 디지털 시대의 가치 창출 혁신
+            </h3>
+            <div className="space-y-4">
+              <div className="p-4 border rounded-lg bg-blue-50">
+                <h4 className="font-semibold">
+                  데이터 기반 가치와 지능형 자동화
+                </h4>
+                <p>
+                  AI 시대의 핵심 생산요소는 데이터입니다. AI는 방대한 데이터를
+                  분석하여 개인화된 서비스, 정교한 예측, 최적화된 의사결정을
+                  가능하게 하며, 이는 새로운 부가가치 창출의 원천이 됩니다.
+                  스마트 팩토리와 휴머노이드 로봇으로 대표되는 지능형 자동화는
+                  제조 공정을 혁신하고, 생산성을 비약적으로 향상시키며, 대량
+                  맞춤 생산과 같은 새로운 생산 방식을 현실화합니다.
+                </p>
+              </div>
+              <div className="p-4 border rounded-lg bg-blue-50">
+                <h4 className="font-semibold">
+                  플랫폼 경제와 새로운 디지털 경험
+                </h4>
+                <p>
+                  디지털 플랫폼은 네트워크 효과를 통해 참여자를 연결하고
+                  상호작용을 촉진하며, 이를 통해 막대한 가치를 창출합니다. 광고,
+                  구독, 거래 수수료 등 다양한 수익 모델이 플랫폼 생태계를
+                  뒷받침합니다. 또한, AI는 서비스화(Servitization)와 구독 경제를
+                  가속화하고, 메타버스, Web3, NFT와 같은 기술은 몰입형 경험과
+                  새로운 형태의 디지털 자산 거래를 통해 이전에는 없던 가치 창출
+                  기회를 제공합니다.
+                </p>
+              </div>
+            </div>
           </div>
-          <div className="p-4 border rounded-lg bg-gray-50">
-            <h4 className="font-semibold">Web3 경제 가치 창출</h4>
-            <p>
-              탈중앙화, 사용자 소유권, 토크노믹스, NFT, 커뮤니티 참여를 통해
-              가치 창출 및 분배.
-            </p>
+
+          <div>
+            <h3 className="text-xl font-semibold mb-3 text-green-700">
+              2. 디지털 시대의 소유권 패러다임 전환
+            </h3>
+            <div className="space-y-4">
+              <div className="p-4 border rounded-lg bg-green-50">
+                <h4 className="font-semibold">AI 인프라 집중과 지식재산권</h4>
+                <p>
+                  AI 개발에 필수적인 컴퓨팅 자원, 데이터센터, AI 칩은 소수 거대
+                  기업에 집중되는 경향을 보이며, 이는 기술 접근성 불균형과 시장
+                  독점 우려를 낳습니다. 한편, AI가 생성한 창작물과 발명에 대한
+                  저작권 및 특허 귀속 문제는 전통적인 지식재산권 체계에 새로운
+                  도전을 제기하며, AI 시스템 자체의 IP 보호 또한 중요한
+                  쟁점입니다.
+                </p>
+              </div>
+              <div className="p-4 border rounded-lg bg-green-50">
+                <h4 className="font-semibold">데이터 소유권과 거버넌스</h4>
+                <p>
+                  데이터가 핵심 자산으로 부상함에 따라 개인 데이터 주권, 데이터
+                  협동조합, 데이터 신탁 등 다양한 데이터 소유권 및 거버넌스
+                  모델이 논의되고 있습니다. 이는 개인 프라이버시 보호, 데이터의
+                  공정한 가치 배분, 그리고 데이터의 공익적 활용이라는 다층적
+                  목표 사이의 균형을 찾는 과정입니다. 공공 데이터의 개방과 활용
+                  또한 중요한 과제입니다.
+                </p>
+              </div>
+            </div>
           </div>
-          <div className="p-4 border rounded-lg bg-gray-50">
-            <h4 className="font-semibold">메타버스 경제 가치 창출</h4>
-            <p>
-              몰입형 경험, 가상 자산 거래, 크리에이터 경제 확장을 통해 가치
-              창출.
-            </p>
-          </div>
-          <div className="p-4 border rounded-lg bg-gray-50">
-            <h4 className="font-semibold">수익 분배</h4>
-            <p>
-              플랫폼은 크리에이터와 수익 공유. Web3는 NFT, 토큰, P2E 등으로 직접
-              보상 강화.
-            </p>
-          </div>
-          <div className="p-4 border rounded-lg bg-gray-50 md:col-span-2 lg:col-span-3">
-            <h4 className="font-semibold">새로운 화폐와 돈의 흐름</h4>
-            <p>
-              암호화폐, 스테이블코인, CBDC 등 디지털 화폐 등장. 국경 간 송금
-              효율화, 국제 금융 질서 변화 가능성. 탈중앙화의 이상과 현실적 제약
-              공존.
-            </p>
+
+          <div>
+            <h3 className="text-xl font-semibold mb-3 text-purple-700">
+              3. 디지털 시대의 분배 구조 변화
+            </h3>
+            <div className="space-y-4">
+              <div className="p-4 border rounded-lg bg-purple-50">
+                <h4 className="font-semibold">
+                  노동 소득 변화와 불평등 심화 가능성
+                </h4>
+                <p>
+                  AI와 자동화는 노동소득분배율을 하락시키고, 고숙련-저숙련
+                  노동자 간 임금 격차를 확대하여 소득 불평등을 심화시킬 수
+                  있습니다. 이는 기존의 노동 기반 복지 시스템과 소득세 중심의
+                  재정 구조에 큰 부담으로 작용할 수 있습니다.
+                </p>
+              </div>
+              <div className="p-4 border rounded-lg bg-purple-50">
+                <h4 className="font-semibold">
+                  새로운 분배 메커니즘 및 재원 확보 방안
+                </h4>
+                <p>
+                  전통적 조세 시스템의 한계에 직면하여, 자본 과세 강화, 로봇세
+                  도입 논쟁과 함께 보편적 기본소득(UBI), 데이터 배당, 기술 배당,
+                  시민 자본 기금 등 새로운 가치 분배 메커니즘이 활발히 탐색되고
+                  있습니다. 이는 AI 시대의 경제적 풍요를 어떻게 공정하게 공유할
+                  것인가에 대한 근본적인 질문에 답하려는 시도입니다.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <p className="mt-6">
-          디지털 경제는 가치 창출 및 분배 방식의 혁신을 가져오지만, 가치 포착
-          불균형, 새로운 불평등, 규제 공백 등의 문제도 수반합니다. 공정한 분배와
-          투명한 운영, 참여 기회 보장이 중요합니다.
+        <p className="mt-8">
+          디지털 시대의 가치 창출, 소유권, 분배 패러다임 전환은 경제 시스템
+          전반에 걸쳐 혁신적 기회와 심각한 도전을 동시에 제기합니다. 데이터의
+          윤리적 활용, 공정한 경쟁 환경 조성, 기술 발전의 혜택 공유, 그리고
+          사회적 안전망 강화는 지속 가능하고 포용적인 디지털 경제 질서를
+          구축하기 위한 핵심 과제입니다.
         </p>
       </section>
 
       <section className="mb-12">
         <h2 className="text-2xl font-bold mb-4 border-b pb-2">
-          9. 새로운 디지털 경제 질서의 문제점
+          7. 새로운 디지털 경제 질서의 문제점
         </h2>
         <p className="mb-4">
           새로운 디지털 경제 질서는 혁신과 편의를 가져다주는 동시에 경제적
@@ -808,7 +811,7 @@ graph TD
 
       <section className="mb-12">
         <h2 className="text-2xl font-bold mb-4 border-b pb-2">
-          10. 건강하고 안전한 디지털 사회를 위한 연구 과제
+          8. 건강하고 안전한 디지털 사회를 위한 연구 과제
         </h2>
         <p className="mb-4">
           새로운 디지털 경제 질서의 문제점을 해결하고 모든 구성원이 혜택을
