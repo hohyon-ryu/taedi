@@ -5,7 +5,6 @@ import { useEffect, useRef, useState } from "react";
 const MermaidRenderer = ({ chartDefinition }) => {
   const containerRef = useRef(null);
   const [isMermaidLoaded, setIsMermaidLoaded] = useState(false);
-  const [svgContent, setSvgContent] = useState("");
 
   useEffect(() => {
     const initializeMermaid = () => {
@@ -50,13 +49,19 @@ const MermaidRenderer = ({ chartDefinition }) => {
       // Mermaid will parse it.
 
       try {
-        // Initialize Mermaid for the specific element referred to by containerRef.current
-        // The second argument to init can be a single DOM element or a NodeList.
-        window.mermaid.init(undefined, containerRef.current);
+        // Remove data-processed attribute to allow re-rendering if chartDefinition changes
+        containerRef.current.removeAttribute("data-processed");
+
+        // Use mermaid.run() instead of deprecated mermaid.init()
+        // mermaid.run() expects the node itself to contain the definition.
+        // React ensures `chartDefinition` is a child of `containerRef.current`.
+        window.mermaid.run({
+          nodes: [containerRef.current],
+        });
       } catch (error) {
-        console.error("Error initializing Mermaid diagram:", error);
+        console.error("Error rendering Mermaid diagram:", error);
         if (containerRef.current) {
-          containerRef.current.innerHTML = // Use innerHTML here for formatted error
+          containerRef.current.innerHTML =
             "<pre>Error rendering diagram: " + error.message + "</pre>";
         }
       }

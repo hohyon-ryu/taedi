@@ -1,43 +1,8 @@
 "use client";
 
-import { useEffect } from "react";
+import MermaidRenderer from "@/components/MermaidRenderer";
 
-const EconomicFamilyTreeDiagram = () => {
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      // Helper function to initialize Mermaid with new configuration
-      const initializeMermaid = () => {
-        if (window.mermaid) {
-          window.mermaid.initialize({
-            startOnLoad: true,
-            theme: "base", // Changed from "default" to "base"
-            securityLevel: "loose",
-            flowchart: {
-              // Added for subgraph styling
-              clusterBkg: "#ffffff", // White background for subgraphs
-              clusterBorder: "#bbbbbb", // Light grey border for subgraphs
-            },
-          });
-          window.mermaid.init(undefined, document.querySelectorAll(".mermaid"));
-        }
-      };
-
-      if (!window.mermaid) {
-        const script = document.createElement("script");
-        script.src = "https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js";
-        script.async = true;
-        script.onload = initializeMermaid; // Use the helper function
-        document.body.appendChild(script);
-      } else {
-        initializeMermaid(); // Use the helper function
-      }
-    }
-  }, []);
-
-  return (
-    <div className="my-8 rounded-lg shadow-lg bg-gray-50">
-      <div className="mermaid">
-        {`flowchart TD
+const chartDefinition = `flowchart TD
 
 classDef ancient fill:#e6f2ff,stroke:#0066cc,stroke-width:2px
 classDef classical fill:#fff2e6,stroke:#ff8c00,stroke-width:2px
@@ -180,8 +145,12 @@ subgraph "현대 경제학"
   EvolutionaryEcon
   SystemsEcon
 end
-`}
-      </div>
+`;
+
+const EconomicFamilyTreeDiagram = () => {
+  return (
+    <div className="my-8 rounded-lg shadow-lg bg-gray-50">
+      <MermaidRenderer chartDefinition={chartDefinition} />
     </div>
   );
 };
