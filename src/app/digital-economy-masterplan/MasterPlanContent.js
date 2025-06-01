@@ -1,197 +1,586 @@
-import MermaidRenderer from "@/components/MermaidRenderer"; // Assuming this path is correct
+import MermaidRenderer from "@/components/MermaidRenderer";
 
 const MasterPlanContent = () => {
-  const section1Diagram = `
-graph TD
-    A["디지털 전환 (Digital Transformation)"] --> B["근대 질서 해체 (Deconstruction of Modern Order)"];
-    A --> C["새로운 패러다임 모색 (Seeking New Paradigm)"];
-
-    B --> B1["민주주의 위기 (Democracy in Crisis)"];
-    B1 --> B1a["대의 민주주의 한계 (Limits of Rep. Dem.)"];
-    B1 --> B1b["정보 가속화 & 개인 역량 강화 (Info Acceleration & Indiv. Empowerment)"];
-    B1 -- 사례 --> B1c["브렉시트, 트럼프, 케임브리지 애널리티카 (Brexit, Trump, CA)"];
-    B1 -- 새로운 가능성 --> B1d["e-Estonia (디지털 시민권, i-Voting)"];
-
-    B --> B2["경제 질서 대전환 (Economic Order Transformation)"];
-    B2 --> B2a["노동 가치 변화 (AI 대체) (Changing Labor Value - AI)"];
-    B2 --> B2b["생산 방식 변화 (맞춤형, 분산형) (Changing Production - Custom, Distributed)"];
-    B2 --> B2c["소유 개념 변화 (공유경제, NFT, DAO) (Changing Ownership - Sharing, NFT, DAO)"];
-
-    B --> B3["공동체 재구성 (Community Reconstruction)"];
-    B3 --> B3a["전통 공동체 변화 (가정, 도시, 국가) (Traditional Communities Changing)"];
-    B3 --> B3b["유연/분산 네트워크 (Flexible/Distributed Networks)"];
-    B3 -- 예시 --> B3c["가정: AI튜터, 원격교육 (Family: AI Tutors, Remote Ed)"];
-    B3 -- 예시 --> B3d["도시: 스마트시티 (City: Smart Cities)"];
-    B3 -- 예시 --> B3e["국가: 디지털노마드 비자 (Nation: Digital Nomad Visa)"];
-
-    C --> C1["인간 가치 재정의 (Redefinition of Human Value)"];
-    C1 --> C1a["'생각하는 존재' 지위 도전 (Challenge to 'Thinking Being' Status)"];
-    C1 --> C1b["AI와 공존 (Coexistence with AI)"];
-    C1 --> C1c["새로운 가치: 공감, 창의성, 윤리 (New Values: Empathy, Creativity, Ethics)"];
-
-    A -- 궁극적 질문 --> Q["인간 번영과 공동체 가치 중심의 새 패러다임 구축? (New Paradigm for Human Prosperity & Community Values?)"];
+  const researchPlanOverview = `
+gantt
+    title 2025년 디지털 전환과 사회변혁팀 연구 계획
+    dateFormat  X
+    axisFormat %s
+    
+    section 연구 전체 일정
+    내부 전략 수립     :done, q2, 0, 3
+    협업 기관 선별     :done, q3, 3, 6
+    연구 제안서 작성   :active, q4_1, 6, 9
+    국내 협업 기관 접촉 :q4_2, 9, 12
+    연구그룹 확정      :26q1, 12, 15
+    최종 프레임워크 구축 :26q2, 15, 18
+    해외 석학 접촉     :26h2, 18, 24
+    Master Plan 수립   :26h2_end, 24, 30
   `;
 
-  // Placeholder for more diagrams and content
-  // const section2Diagram = \`...\`;
+  const researchFramework = `
+graph TB
+    subgraph "연구 목표"
+        A["산업사회 지속불가능성 극복을 위한<br/>디지털 시대 경제 주권과 질서 재편"]
+    end
+    
+    subgraph "핵심 연구 축"
+        B1["생산 (누가 경제 주체가 되는가?)"]
+        B2["소유 (무엇을 어떻게 소유할 것인가?)"]
+        B3["분배 (어떻게 공정하게 나눌 것인가?)"]
+    end
+    
+    subgraph "연구진별 세부 과제"
+        C1["유재연 연구원<br/>디지털 시대 경제 주체 변화<br/>- AI 강화된 개인<br/>- 경제활동 단위로서의 공동체"]
+        C2["노가빈 연구원<br/>디지털 시대 경제 권리<br/>- 디지털 자산과 개인 데이터 소유권<br/>- 탈물질화 이후 소유 개념"]
+        C3["윤준영 연구원<br/>디지털 시대 경제 권력<br/>- 데이터 기반 보상체계<br/>- 분배 권한 재배치<br/>- 욕망과 절제의 균형"]
+    end
+    
+    A --> B1
+    A --> B2  
+    A --> B3
+    B1 --> C1
+    B2 --> C2
+    B3 --> C3
+    
+    classDef goal fill:#e1f5fe,stroke:#01579b,stroke-width:3px
+    classDef axis fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
+    classDef researcher fill:#e8f5e9,stroke:#1b5e20,stroke-width:2px
+    
+    class A goal
+    class B1,B2,B3 axis
+    class C1,C2,C3 researcher
+  `;
 
   return (
     <article className="prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-none bg-white p-4 sm:p-6 md:p-8 rounded-lg shadow-lg">
       <section className="mb-12">
-        <h2 className="text-2xl font-bold mb-4 border-b pb-2">
-          1. 디지털 전환: 근대 질서의 종언과 새로운 패러다임
+        <h2 className="text-3xl font-bold mb-6 text-center text-blue-800">
+          2025년 디지털 전환과 사회변혁팀 연구 계획
         </h2>
-        <p className="mb-4">
-          디지털 전환은 단순한 기술 변화를 넘어, 지난 300년간 확립된 근대의
-          정치·경제 질서와 인간 가치의 근본을 뒤흔드는 패러다임의 대변혁입니다.
-          이는 계몽주의와 산업혁명으로 시작된 근대 패러다임의 해체를 의미하며,
-          우리 사회 전반에 걸쳐 새로운 질서 모색을 요구하고 있습니다.
-        </p>
 
-        <MermaidRenderer chart={section1Diagram} id="section1Diagram" />
+        <div className="mb-8 p-6 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+          <h3 className="text-xl font-semibold mb-4 text-blue-700">
+            연구 전체 일정
+          </h3>
+          <MermaidRenderer
+            chart={researchPlanOverview}
+            id="researchPlanOverview"
+          />
+        </div>
 
-        <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="p-4 border rounded-lg bg-gray-50">
-            <h3 className="font-semibold text-lg mb-2">
-              민주주의의 위기와 변화
-            </h3>
-            <p>
-              디지털 기술은 정보 전달 속도를 높이고 개인의 역량을 강화하여, 기존
-              대의 민주주의의 한계를 드러내고 있습니다. 시민들은 실시간 소통,
-              투명성, 직접 참여를 요구하며, 에스토니아의 'e-Estonia'와 같은
-              모델은 분산형 직접 참여의 가능성을 시사합니다.
-            </p>
-          </div>
-          <div className="p-4 border rounded-lg bg-gray-50">
-            <h3 className="font-semibold text-lg mb-2">경제 질서의 대전환</h3>
-            <p>
-              AI와 자동화는 노동 중심의 산업 경제를 근본적으로 변화시키고
-              있습니다. 생산 방식(맞춤형 분산 생산), 소유 개념(공유 경제, NFT),
-              분배 메커니즘이 재정의되며 인간 노동의 가치가 재평가되고 있습니다.
-            </p>
-          </div>
-          <div className="p-4 border rounded-lg bg-gray-50">
-            <h3 className="font-semibold text-lg mb-2">공동체의 재구성</h3>
-            <p>
-              가정, 도시, 국가 등 전통적 공동체가 유연하고 분산된 네트워크
-              형태로 변화하고 있습니다. 개인은 지리적 제약을 넘어 소속감을
-              형성하며, 물리적 공간과 디지털 공간의 경계가 모호해지고 있습니다.
-            </p>
-          </div>
-          <div className="p-4 border rounded-lg bg-gray-50">
-            <h3 className="font-semibold text-lg mb-2">인간 가치의 재정의</h3>
-            <p>
-              AI의 등장은 인간 고유의 가치에 대한 성찰을 요구합니다. 단순 정보
-              처리 능력을 넘어 공감, 창의성, 윤리적 판단, 의미 창출 능력이
-              중요해지며, 인간과 AI의 협업이 새로운 표준으로 자리 잡고 있습니다.
-            </p>
+        <div className="mb-8 p-6 bg-gray-50 rounded-lg">
+          <h3 className="text-xl font-semibold mb-4">연구 프레임워크</h3>
+          <MermaidRenderer chart={researchFramework} id="researchFramework" />
+        </div>
+
+        <div className="mb-8">
+          <h3 className="text-xl font-bold mb-4 text-purple-700">
+            연구진별 주요 과제
+          </h3>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+            <div className="p-4 bg-green-50 rounded-lg border border-green-200">
+              <h4 className="font-semibold text-green-800 mb-2">
+                유재연 연구원
+              </h4>
+              <h5 className="font-medium text-green-700 mb-2">
+                디지털 시대 경제 주체 변화 (생산)
+              </h5>
+              <ul className="text-sm text-green-600 space-y-1">
+                <li>• 디지털 기술로 강화된 개인: 새로운 생산 단위의 형성</li>
+                <li>• 경제 활동 단위로서의 공동체</li>
+              </ul>
+            </div>
+
+            <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
+              <h4 className="font-semibold text-blue-800 mb-2">
+                노가빈 연구원
+              </h4>
+              <h5 className="font-medium text-blue-700 mb-2">
+                디지털 시대 경제 권리 (소유)
+              </h5>
+              <ul className="text-sm text-blue-600 space-y-1">
+                <li>• 디지털 자산과 '개인 데이터'의 소유권 구조</li>
+                <li>• 정보 자원의 탈물질화와 탈산업화 이후의 소유 개념</li>
+              </ul>
+            </div>
+
+            <div className="p-4 bg-purple-50 rounded-lg border border-purple-200">
+              <h4 className="font-semibold text-purple-800 mb-2">
+                윤준영 연구원
+              </h4>
+              <h5 className="font-medium text-purple-700 mb-2">
+                디지털 시대 경제 권력 (분배)
+              </h5>
+              <ul className="text-sm text-purple-600 space-y-1">
+                <li>• 개인 및 공동체發 데이터 기반 보상체계</li>
+                <li>• 분배 권한 귀속 문제 (국가, 도시, 개인 권한 재배치)</li>
+                <li>• 개인과 공동체의 욕망과 절제의 균형을 위한 통제 구조</li>
+              </ul>
+            </div>
           </div>
         </div>
-        <p className="mt-6 font-semibold text-center">
-          이러한 대전환기에 우리는 기술 결정론을 넘어, 인간 번영과 공동체적
-          가치를 중심에 둔 새로운 패러다임을 어떻게 구축할 것인지에 대한 깊은
-          성찰과 집단적 선택이 필요합니다.
-        </p>
       </section>
 
-      {/* Further sections will be added here with summaries and diagrams */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold mb-4 border-b pb-2">
-          2. 경제 질서의 진화: 개인 역량 강화와 공동체 변화
+        <h2 className="text-2xl font-bold mb-6 border-b pb-2 text-gray-800">
+          연구 배경: 팀장 유호현의 메시지
         </h2>
-        <p className="mb-4">
-          인류의 경제 질서는 농업, 산업, 정보 시대를 거쳐 디지털/AI 패러다임으로
-          전환하며 지속적으로 재구성되어 왔습니다. 각 시대는 가치 생산, 소유권,
-          분배, 공간 조직의 개념을 변화시키며 개인의 역량과 공동체 구조에 영향을
-          미쳤습니다.
-        </p>
-        <MermaidRenderer
-          chart={`
-graph LR
-    subgraph 농업 사회 (Agricultural Society)
-        direction LR
-        A1["토지 기반 경제 (Land-based Economy)"]
-        A2["계층적 공동체 (Hierarchical Community)"]
-        A3["제한된 개인 자율성 (Limited Autonomy)"]
-        A1 --> A2
-        A1 --> A3
-    end
 
-    subgraph 산업 혁명 (Industrial Revolution)
-        direction LR
-        B1["자본 중심 경제 (Capital-centric Economy)"]
-        B2["도시화 및 임금 노동 (Urbanization & Wage Labor)"]
-        B3["개인 정체성 변화 (Changing Identity - Occupation)"]
-        B1 --> B2
-        B1 --> B3
-    end
+        <div className="mb-6 p-6 bg-amber-50 rounded-lg border-l-4 border-amber-500">
+          <p className="font-semibold text-amber-800 mb-4">
+            안녕하세요. 디지털 전환과 사회변혁팀 유호현입니다.
+          </p>
+          <p className="mb-4 text-gray-700">
+            저희 팀의 연구 목표는{" "}
+            <span className="font-semibold text-amber-700">
+              "산업사회 지속불가능성 극복을 위한 디지털 시대 경제 주권과 질서
+              재편"
+            </span>
+            입니다.
+          </p>
+        </div>
 
-    subgraph 정보 경제 (Information Economy)
-        direction LR
-        C1["지식 중심 경제 (Knowledge-centric Economy)"]
-        C2["네트워크화 및 서비스업 부상 (Networking & Rise of Services)"]
-        C3["지식 노동자 등장 (Emergence of Knowledge Workers)"]
-        C1 --> C2
-        C1 --> C3
-    end
-
-    subgraph 디지털/AI 경제 (Digital/AI Economy)
-        direction LR
-        D1["데이터/알고리즘 중심 (Data/Algorithm-centric)"]
-        D2["플랫폼 경제 및 자동화 (Platform Economy & Automation)"]
-        D3["디지털 정체성 및 초개인화 (Digital Identity & Hyper-personalization)"]
-        D1 --> D2
-        D1 --> D3
-    end
-    
-    A1 --> B1 --> C1 --> D1
-
-    X["경제 질서 진화 (Evolution of Economic Order)"] --> A1
-    X --> Note1["각 시대는 가치, 소유, 분배, 공간 개념 재정의"]
-    D1 --> Q1["미래: 개인과 집단의 균형, 지속가능성 (Future: Balance, Sustainability)"]
-
-    Note1 -.-> A1
-    Note1 -.-> B1
-    Note1 -.-> C1
-    Note1 -.-> D1
-
-    classDef era fill:#f9f,stroke:#333,stroke-width:2px;
-    class A1,B1,C1,D1 era;
-        `}
-          id="economicEvolutionDiagram"
-        />
-
-        <div className="mt-6 space-y-4">
-          <div className="p-4 border rounded-lg bg-gray-50">
-            <h4 className="font-semibold">농업 사회</h4>
-            <p>
-              토지 소유 중심, 계층적 공동체, 제한된 개인 자율성, 자급자족 경제.
+        <div className="space-y-6">
+          <div className="p-5 bg-gray-50 rounded-lg">
+            <h4 className="font-semibold text-lg mb-3 text-gray-800">
+              큰 그림: 문명의 전환점
+            </h4>
+            <p className="text-gray-700 leading-relaxed">
+              산업사회는 인류 역사상 처음으로 절대 빈곤을 극복한 위대한 성취를
+              이뤘습니다. 하지만 이는 마치 평생 굶주렸던 사람이 갑자기 무한정의
+              음식을 얻게 된 것과 같습니다. 처음엔 닥치는 대로 먹지만, 결국
+              비만과 성인병으로 고통받게 되죠. 그리고 그 이후에는 어떻게 덜
+              먹을까, 어떻게 건강을 되찾을까를 고민하게 되고, 그쪽으로
+              경제활동을 하게 됩니다.
+            </p>
+            <p className="text-gray-700 leading-relaxed mt-3">
+              지금 인류도 같은 상황입니다. 무한 성장과 탐욕이 기후위기, 극심한
+              양극화, 자원고갈이라는 '문명의 성인병'을 만들었습니다. 이제 미래
+              경제질서의 질문은{" "}
+              <span className="font-semibold">
+                "어떻게 더 많이 가질까"에서 "어떻게 절제하며 지속가능하게 살
+                것인가"
+              </span>
+              로 자연스럽게 바뀔 것입니다.
             </p>
           </div>
-          <div className="p-4 border rounded-lg bg-gray-50">
-            <h4 className="font-semibold">산업 혁명</h4>
-            <p>자본 중심, 공장 시스템, 임금 노동, 도시화, 고전 경제학 등장.</p>
-          </div>
-          <div className="p-4 border rounded-lg bg-gray-50">
-            <h4 className="font-semibold">정보 경제</h4>
-            <p>
-              지식 중심, 네트워크화, 서비스업 부상, 지식 노동자, 복지국가와
-              신자유주의.
-            </p>
-          </div>
-          <div className="p-4 border rounded-lg bg-gray-50">
-            <h4 className="font-semibold">디지털/AI 경제</h4>
-            <p>
-              데이터/알고리즘 중심, 플랫폼 경제, 자동화, 디지털 정체성, 분배
-              문제 심화.
+
+          <div className="p-5 bg-blue-50 rounded-lg">
+            <h4 className="font-semibold text-lg mb-3 text-blue-800">
+              디지털 전환의 새로운 가능성
+            </h4>
+            <p className="text-gray-700 leading-relaxed">
+              여기서 디지털 전환이 새로운 가능성을 열어줍니다. 디지털 기술은
+              생산, 분배, 소비를 증폭시킬 수도 있지만 생산, 분배, 소비를 최적화
+              시킬수도 있습니다. 어느쪽의 경제질서를 선택하는지는 우리가
+              선택하고 만들 수 있는 미래입니다.
             </p>
           </div>
         </div>
-        <p className="mt-6 font-semibold text-center">
-          디지털/AI 전환은 개인 역량 강화와 공동체 복지의 균형, 이익의 광범위한
-          분배, 인간 자율성 보존 등 중요한 질문을 제기하며, 경제 질서의 다음
-          진화를 모색해야 합니다.
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-6 border-b pb-2">
+          연구의 세 가지 축
+        </h2>
+
+        <p className="mb-6 text-gray-700">
+          저희는 이 전환을 세 가지 축으로 분석합니다:
         </p>
+
+        <div className="space-y-8">
+          <div className="p-6 bg-green-50 rounded-lg border border-green-200">
+            <h3 className="text-xl font-semibold mb-4 text-green-800">
+              첫째, 생산 - 누가 경제의 주체가 되는가?
+            </h3>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              산업화 시대에는 가정, 기업, 국가가 경제 주체였습니다. 디지털
+              시대에는 AI로 전문가 수준의 능력을 갖출 수 있는 개인, 1인 기업,
+              비슷한 관심을 가진 사람들이 모이는 공동체, 그리고 역할이 강화된
+              강소 도시가 새로운 경제 주체로 등장합니다.
+            </p>
+          </div>
+
+          <div className="p-6 bg-blue-50 rounded-lg border border-blue-200">
+            <h3 className="text-xl font-semibold mb-4 text-blue-800">
+              둘째, 소유 - 무엇을 어떻게 소유할 것인가?
+            </h3>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              무한 복제가 가능한 디지털 자산과 데이터에 대한 소유권과 소유에
+              대한 개념을 어떻게 확립할 것인지에 대해서도 사회적 합의와 제도화가
+              필요한 시점입니다.
+            </p>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              예를 들어, 내가 고기집에서 5명이 모여 갈비를 시켜 먹었다는 비자
+              카드의 결제 데이터는 생성과 동시에 나의 데이터이기도 하지만 비자
+              카드의 데이터이기도 합니다. 또한 국세청의 데이터이기도 합니다.
+              이것은 이전에 한 사람이 하나의 생산물을 소유하는 개념으로는 설명할
+              수 없는 문제입니다.
+            </p>
+          </div>
+
+          <div className="p-6 bg-purple-50 rounded-lg border border-purple-200">
+            <h3 className="text-xl font-semibold mb-4 text-purple-800">
+              셋째, 분배 - 어떻게 공정하게 나눌 것인가?
+            </h3>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              지금까지 데이터의 제공자인 우리 모두는 우리가 제공한 데이터에
+              대해서 직접적인 보상을 받지 못하였습니다. 데이터의 가치가 더
+              높아지고 있는 지금, 저작권과 같이 직접적인 보상이 필요한 시대로
+              접어들고 있습니다.
+            </p>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              또한 지금까지 국가가 주도해온 분배의 문제도 다양한 경제 주체의
+              등장으로 양상이 달라지고 있습니다. 개인과 공동체가 경쟁적으로 대량
+              생산 대량 소비를 하는 것이 아니라, 욕망과 절제의 균형을 이룰 수
+              있는 새로운 분배 질서를 만들어야 합니다.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-8 p-6 bg-amber-50 rounded-lg border border-amber-200">
+          <p className="text-center text-lg font-semibold text-amber-800">
+            이 세 가지 연구를 통해 저희는{" "}
+            <span className="text-amber-900">
+              탐욕의 경제에서 절제의 경제로, 경쟁의 경제에서 협력의 경제로
+            </span>{" "}
+            전환하는 마스터플랜을 제시하고자 합니다.
+          </p>
+        </div>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-6 border-b pb-2 text-green-800">
+          1. 유재연 연구원 - 디지털 시대 경제 주체 변화 연구
+        </h2>
+
+        <div className="mb-6 p-6 bg-green-50 rounded-lg border-l-4 border-green-500">
+          <h3 className="text-xl font-semibold mb-4 text-green-800">
+            연구 목표
+          </h3>
+          <p className="text-gray-700 mb-4">
+            디지털 기술로 강화된 개인과 공동체가 새로운 경제주체로 전환되는 과정
+            분석
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="p-4 bg-white rounded border">
+              <h4 className="font-semibold text-green-700 mb-2">
+                세부 과제 (1)
+              </h4>
+              <h5 className="font-medium mb-2">
+                디지털 기술로 강화된 개인: 새로운 생산 단위의 형성
+              </h5>
+              <p className="text-sm text-gray-600">
+                AI 기반 전문화된 개인은 기존의 '노동자'와 어떤 점에서 다른 생산
+                주체인가?
+              </p>
+            </div>
+
+            <div className="p-4 bg-white rounded border">
+              <h4 className="font-semibold text-green-700 mb-2">
+                세부 과제 (2)
+              </h4>
+              <h5 className="font-medium mb-2">경제 활동 단위로서의 공동체</h5>
+              <p className="text-sm text-gray-600">
+                디지털 공동체는 어떤 공통점을 바탕으로 사람들이 함께 모여 경제
+                활동을 하게 되는가?
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="mb-6">
+          <h3 className="text-lg font-semibold mb-4 text-green-700">
+            연구 배경 및 철학
+          </h3>
+          <div className="space-y-4">
+            <div className="p-4 bg-gray-50 rounded-lg">
+              <h4 className="font-semibold mb-2">
+                AI 시대의 개인: 새로운 생산 단위
+              </h4>
+              <p className="text-gray-700">
+                한 명이 마케터, 개발자, 디자이너의 역할을 동시에 수행할 수
+                있습니다. 이들은 더 이상 회사에 고용된 '노동자'가 아니라
+                독립적인 '생산 단위'로 기능합니다. 이러한 변화가 고용 관계와
+                노동 시장을 어떻게 재편할지 연구합니다.
+              </p>
+            </div>
+
+            <div className="p-4 bg-gray-50 rounded-lg">
+              <h4 className="font-semibold mb-2">
+                디지털 공동체의 경제적 역할
+              </h4>
+              <p className="text-gray-700">
+                이전에 공동체는 능력이 부족한 개인을 묶어서 사회를 발전시키는
+                역할을 했습니다. 개인의 가치는 미약했었고 기술의 발전으로 꾸준히
+                상승하였습니다. 이제 개인의 가치가 어느때보다도 더 커지고
+                있습니다.
+              </p>
+              <p className="text-gray-700 mt-2">
+                앞으로의 공동체는 이러한 개인들이 시너지를 통해 더 큰 일을 함께
+                이룰 수 있는 경제활동의 중요한 주체가 될 것입니다. 강화된 개인이
+                시너지를 내도록 하기 위해서는 개인의 자유가 더 많이 보장되어야
+                합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="p-4 border rounded-lg bg-green-50">
+            <h4 className="font-semibold text-green-800 mb-2">연구 의의</h4>
+            <ul className="text-sm text-gray-700 space-y-1">
+              <li>• 산업화 시대 노동 개념의 재정의</li>
+              <li>• 개인 역량 강화와 경제 주체 변화 분석</li>
+              <li>• 새로운 공동체 경제 모델 탐구</li>
+              <li>• 개인과 공동체의 균형점 모색</li>
+            </ul>
+          </div>
+
+          <div className="p-4 border rounded-lg bg-green-50">
+            <h4 className="font-semibold text-green-800 mb-2">기대 성과</h4>
+            <ul className="text-sm text-gray-700 space-y-1">
+              <li>• 디지털 시대 생산 주체 변화 모델 제시</li>
+              <li>• 개인-공동체 관계 재편 방향성 도출</li>
+              <li>• 새로운 경제 주체 육성 정책 방안</li>
+              <li>• 협력적 경제 생태계 구축 전략</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-6 border-b pb-2 text-blue-800">
+          2. 노가빈 연구원 - 디지털 시대 경제 권리 연구
+        </h2>
+
+        <div className="mb-6 p-6 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+          <h3 className="text-xl font-semibold mb-4 text-blue-800">
+            연구 목표
+          </h3>
+          <p className="text-gray-700 mb-4">
+            탈산업사회의 소유 개념 재정립: 개인 데이터와 디지털 자산의 경제 권리
+            체계 설계
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="p-4 bg-white rounded border">
+              <h4 className="font-semibold text-blue-700 mb-2">
+                세부 과제 (1)
+              </h4>
+              <h5 className="font-medium mb-2">
+                디지털 자산과 '개인 데이터'의 소유권 구조
+              </h5>
+              <p className="text-sm text-gray-600">
+                개인 데이터는 사유재산인가, 공동 자산인가, 혹은 제3의 구조인가?
+                공동체 기반 계약 모델은 데이터 소유와 활용에 어떤 새로운 질서를
+                만들 수 있나?
+              </p>
+            </div>
+
+            <div className="p-4 bg-white rounded border">
+              <h4 className="font-semibold text-blue-700 mb-2">
+                세부 과제 (2)
+              </h4>
+              <h5 className="font-medium mb-2">
+                정보 자원의 탈물질화와 탈산업화 이후의 소유 개념
+              </h5>
+              <p className="text-sm text-gray-600">
+                기존 산업사회 자산(토지, 부동산, 금융자본)은 디지털 사회에서
+                어떤 방식으로 대체되는가? 희소성 없는 디지털 정보가 어떻게
+                자산화 되는가?
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="mb-6">
+          <h3 className="text-lg font-semibold mb-4 text-blue-700">
+            연구 배경 및 철학
+          </h3>
+          <div className="space-y-4">
+            <div className="p-4 bg-gray-50 rounded-lg">
+              <h4 className="font-semibold mb-2">
+                데이터 소유권의 새로운 구조
+              </h4>
+              <p className="text-gray-700">
+                현재 우리가 생성하는 데이터는 대부분 플랫폼 기업이 소유하고
+                수익화합니다. 개인의 데이터는 완전한 사유재산일까요, 아니면
+                공동체가 함께 관리해야 할 공동 자산일까요? 혹은 전혀 새로운
+                제3의 소유 구조가 필요할까요?
+              </p>
+              <p className="text-gray-700 mt-2">
+                특히 공동체 기반 계약 모델이 어떻게 개인의 권리를 보호하면서도
+                데이터의 사회적 가치를 극대화할 수 있을지 탐구합니다.
+              </p>
+            </div>
+
+            <div className="p-4 bg-gray-50 rounded-lg">
+              <h4 className="font-semibold mb-2">정보 자원의 탈물질화</h4>
+              <p className="text-gray-700">
+                전통적인 토지, 부동산, 금융자본이 디지털 세계에서 어떤 형태로
+                진화할지 예측하고 대안을 제시합니다. 그리고 NFT, 가상부동산,
+                디지털 저작권 등 새로운 자산 형태가 등장하면서 "희소성 없는 것을
+                어떻게 자산화할 것인가"라는 근본적 질문에 대한 탐구를
+                해나갑니다.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="p-4 border rounded-lg bg-blue-50">
+            <h4 className="font-semibold text-blue-800 mb-2">연구 의의</h4>
+            <ul className="text-sm text-gray-700 space-y-1">
+              <li>• 디지털 시대 소유권 개념 재정립</li>
+              <li>• 개인 데이터 주권 확립 방안 도출</li>
+              <li>• 새로운 자산 형태 분석 및 정책 제안</li>
+              <li>• 공동체 기반 데이터 거버넌스 모델 개발</li>
+            </ul>
+          </div>
+
+          <div className="p-4 border rounded-lg bg-blue-50">
+            <h4 className="font-semibold text-blue-800 mb-2">기대 성과</h4>
+            <ul className="text-sm text-gray-700 space-y-1">
+              <li>• 디지털 자산 소유권 체계 설계</li>
+              <li>• 개인 데이터 보호 및 활용 모델</li>
+              <li>• 탈물질화 사회의 자산 개념 정립</li>
+              <li>• 공정한 디지털 경제 권리 체계 구축</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-6 border-b pb-2 text-purple-800">
+          3. 윤준영 연구원 - 디지털 시대 경제 권력 연구
+        </h2>
+
+        <div className="mb-6 p-6 bg-purple-50 rounded-lg border-l-4 border-purple-500">
+          <h3 className="text-xl font-semibold mb-4 text-purple-800">
+            연구 목표
+          </h3>
+          <p className="text-gray-700 mb-4">
+            디지털 시대 경제권력 재편: 극단적 시장주의/국가주의를 넘어선 중용적
+            분배 질서 설계
+          </p>
+
+          <div className="grid grid-cols-1 gap-4">
+            <div className="p-4 bg-white rounded border">
+              <h4 className="font-semibold text-purple-700 mb-2">
+                세부 과제 (1)
+              </h4>
+              <h5 className="font-medium mb-2">
+                개인 및 공동체發 데이터 기반 보상체계
+              </h5>
+              <p className="text-sm text-gray-600">
+                기여 기반 분배를 위해 어떠한 측정 기준과 판단 절차를 갖추어야
+                공정한 보상체계로 기능할 수 있는가?
+              </p>
+            </div>
+
+            <div className="p-4 bg-white rounded border">
+              <h4 className="font-semibold text-purple-700 mb-2">
+                세부 과제 (2)
+              </h4>
+              <h5 className="font-medium mb-2">
+                분배 권한 귀속 문제 (국가, 도시, 개인 권한 재배치)
+              </h5>
+              <p className="text-sm text-gray-600">
+                디지털 사회에서 분배의 권한은 누구에게 귀속되어야 하는가?
+              </p>
+            </div>
+
+            <div className="p-4 bg-white rounded border">
+              <h4 className="font-semibold text-purple-700 mb-2">
+                세부 과제 (3)
+              </h4>
+              <h5 className="font-medium mb-2">
+                개인과 공동체의 욕망과 절제의 균형을 위한 통제 구조
+              </h5>
+              <p className="text-sm text-gray-600">
+                산업사회에서의 경제적 욕망을 해체하고 통제하기 위한 중용적 분배
+                메커니즘은 무엇인가?
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="mb-6">
+          <h3 className="text-lg font-semibold mb-4 text-purple-700">
+            연구 배경 및 철학
+          </h3>
+          <div className="space-y-4">
+            <div className="p-4 bg-gray-50 rounded-lg">
+              <h4 className="font-semibold mb-2">
+                데이터 경제에서의 공정한 보상 체계
+              </h4>
+              <p className="text-gray-700">
+                우리가 일상에서 생성하는 데이터가 막대한 경제적 가치를
+                만들어내는데, 그 보상은 어떻게 이뤄져야 할까요? 단순히 클릭 수나
+                체류 시간이 아닌, 실질적 기여도를 측정하고 보상하는 새로운
+                메커니즘이 필요합니다.
+              </p>
+              <p className="text-gray-700 mt-2">
+                지금까지 서비스의 사용 대가로 무료로 제공해온 우리의 데이터에
+                대한 공정한 보상이 없이는 노동이 없는 미래에서의 경제적 양극화는
+                걷잡을 수 없이 심해질 수 있습니다.
+              </p>
+            </div>
+
+            <div className="p-4 bg-gray-50 rounded-lg">
+              <h4 className="font-semibold mb-2">분배 권한의 다층적 재구성</h4>
+              <p className="text-gray-700">
+                중앙정부가 모든 것을 결정하는 것도, 시장이 모든 것을 해결하는
+                것도 한계가 명확합니다. 국가-도시-기업-개인 사이에서 분배 권한을
+                어떻게 효과적으로 배분할지, 각 층위가 어떤 역할을 담당해야 할지
+                연구합니다.
+              </p>
+            </div>
+
+            <div className="p-4 bg-gray-50 rounded-lg">
+              <h4 className="font-semibold mb-2">
+                새로운 시대가치: 절제와 협력
+              </h4>
+              <p className="text-gray-700">
+                더 많이 소유하고 소비하는 것이 성공이라는 산업시대의 가치관은
+                역사 전체를 놓고 보면 지난 200년간의 시대가치일 뿐입니다. 농업
+                시대에는 근면, 절약, 협력이, 상업 시대에는 모험정신과 신용이
+                핵심 가치였습니다.
+              </p>
+              <p className="text-gray-700 mt-2">
+                앞으로 절제가 미덕이 되고, 공유가 풍요가 되는 새로운 경제 문화를
+                어떻게 만들 것인가? 이를 위한 제도적, 기술적 통제 구조를
+                개발합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="p-4 border rounded-lg bg-purple-50">
+            <h4 className="font-semibold text-purple-800 mb-2">연구 의의</h4>
+            <ul className="text-sm text-gray-700 space-y-1">
+              <li>• 중용적 분배 질서 모델 개발</li>
+              <li>• 데이터 기반 공정 보상 체계 설계</li>
+              <li>• 다층적 분배 권한 재구성 방안</li>
+              <li>• 절제와 협력의 경제 문화 조성</li>
+            </ul>
+          </div>
+
+          <div className="p-4 border rounded-lg bg-purple-50">
+            <h4 className="font-semibold text-purple-800 mb-2">기대 성과</h4>
+            <ul className="text-sm text-gray-700 space-y-1">
+              <li>• 극단적 시장/국가주의 대안 제시</li>
+              <li>• 디지털 시대 분배 정의 구현</li>
+              <li>• 욕망과 절제의 균형 메커니즘</li>
+              <li>• 지속가능한 경제 질서 구축</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <section className="mb-12">
