@@ -26,9 +26,7 @@ const MermaidRenderer = ({ chartDefinition, id }) => {
             },
           });
           setIsMermaidLoaded(true);
-          console.log("Mermaid initialized successfully");
         } catch (err) {
-          console.error("Error initializing Mermaid:", err);
           setError(err.message);
         }
       }
@@ -41,7 +39,6 @@ const MermaidRenderer = ({ chartDefinition, id }) => {
         script.async = true;
         script.onload = initializeMermaid;
         script.onerror = () => {
-          console.error("Failed to load Mermaid library");
           setError("Failed to load Mermaid library");
         };
         document.body.appendChild(script);
@@ -53,11 +50,6 @@ const MermaidRenderer = ({ chartDefinition, id }) => {
 
   useEffect(() => {
     if (isMermaidLoaded && chartDefinition && containerRef.current) {
-      console.log(
-        `Attempting to render Mermaid chart [${uniqueId}]:`,
-        chartDefinition.substring(0, 50) + "..."
-      );
-
       try {
         // Clear any previous content and error state
         setError(null);
@@ -76,19 +68,7 @@ const MermaidRenderer = ({ chartDefinition, id }) => {
         window.mermaid.run({
           nodes: [containerRef.current],
         });
-
-        console.log(`Mermaid chart rendered successfully [${uniqueId}]`);
       } catch (error) {
-        console.group(`🚨 Mermaid Syntax Error [${uniqueId}]`);
-        console.error("Error object:", error);
-        console.error("Error message:", error.message);
-        console.error("Error stack:", error.stack);
-        console.log("Chart definition that caused the error:");
-        console.log("=".repeat(50));
-        console.log(chartDefinition);
-        console.log("=".repeat(50));
-        console.groupEnd();
-        
         setError(error.message);
         if (containerRef.current) {
           containerRef.current.innerHTML =
@@ -115,42 +95,50 @@ const MermaidRenderer = ({ chartDefinition, id }) => {
           margin: "10px 0",
         }}
       >
-        <h4 style={{ color: "#c62828", margin: "0 0 15px 0", fontSize: "16px" }}>
+        <h4
+          style={{ color: "#c62828", margin: "0 0 15px 0", fontSize: "16px" }}
+        >
           🚨 Mermaid Syntax Error
         </h4>
         <div style={{ marginBottom: "15px" }}>
           <strong style={{ color: "#d32f2f" }}>Error Message:</strong>
-          <pre style={{ 
-            color: "#666", 
-            margin: "5px 0", 
-            fontSize: "12px",
-            background: "#fff",
-            padding: "8px",
-            borderRadius: "3px",
-            border: "1px solid #e0e0e0",
-            whiteSpace: "pre-wrap",
-            wordBreak: "break-word"
-          }}>
+          <pre
+            style={{
+              color: "#666",
+              margin: "5px 0",
+              fontSize: "12px",
+              background: "#fff",
+              padding: "8px",
+              borderRadius: "3px",
+              border: "1px solid #e0e0e0",
+              whiteSpace: "pre-wrap",
+              wordBreak: "break-word",
+            }}
+          >
             {error}
           </pre>
         </div>
         <details style={{ marginTop: "10px" }}>
-          <summary style={{ color: "#d32f2f", cursor: "pointer", fontWeight: "bold" }}>
+          <summary
+            style={{ color: "#d32f2f", cursor: "pointer", fontWeight: "bold" }}
+          >
             View Chart Definition
           </summary>
-          <pre style={{ 
-            color: "#333", 
-            margin: "10px 0 0 0", 
-            fontSize: "11px",
-            background: "#fff",
-            padding: "10px",
-            borderRadius: "3px",
-            border: "1px solid #e0e0e0",
-            whiteSpace: "pre-wrap",
-            wordBreak: "break-word",
-            maxHeight: "300px",
-            overflow: "auto"
-          }}>
+          <pre
+            style={{
+              color: "#333",
+              margin: "10px 0 0 0",
+              fontSize: "11px",
+              background: "#fff",
+              padding: "10px",
+              borderRadius: "3px",
+              border: "1px solid #e0e0e0",
+              whiteSpace: "pre-wrap",
+              wordBreak: "break-word",
+              maxHeight: "300px",
+              overflow: "auto",
+            }}
+          >
             {chartDefinition}
           </pre>
         </details>

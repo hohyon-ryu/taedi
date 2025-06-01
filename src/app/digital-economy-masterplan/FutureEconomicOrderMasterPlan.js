@@ -296,7 +296,7 @@ graph TD
             id="research-roadmap"
           />
         </div>
-        
+
         <div className="space-y-6">
           {/* 로드맵 개요 설명 */}
           <div className="p-6 bg-white rounded-lg border border-gray-200 shadow-sm">
@@ -304,13 +304,20 @@ graph TD
               연구에서 실현까지의 체계적 로드맵
             </h3>
             <p className="text-gray-700 leading-relaxed mb-4">
-              현재 진행하는 세 가지 핵심 연구가 단계적으로 발전하여 
-              2035년 <span className="font-semibold text-gray-900">안전하고 건강한 디지털 경제 질서</span>를 완성합니다.
+              현재 진행하는 세 가지 핵심 연구가 단계적으로 발전하여 2035년{" "}
+              <span className="font-semibold text-gray-900">
+                안전하고 건강한 디지털 경제 질서
+              </span>
+              를 완성합니다.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
               <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
-                <h4 className="font-semibold text-blue-900 mb-2">디지털 경제 주체</h4>
-                <p className="text-sm text-blue-700 mb-2">AI와 인간의 협력 기반 생산</p>
+                <h4 className="font-semibold text-blue-900 mb-2">
+                  디지털 경제 주체
+                </h4>
+                <p className="text-sm text-blue-700 mb-2">
+                  AI와 인간의 협력 기반 생산
+                </p>
                 <ul className="text-xs text-blue-600">
                   <li>• 1인 기업가와 AI 결합</li>
                   <li>• 데이터 협동조합 모델</li>
@@ -318,8 +325,12 @@ graph TD
                 </ul>
               </div>
               <div className="p-4 bg-purple-50 rounded-lg border border-purple-200">
-                <h4 className="font-semibold text-purple-900 mb-2">디지털 경제 권리</h4>
-                <p className="text-sm text-purple-700 mb-2">개인 데이터 주권 확립</p>
+                <h4 className="font-semibold text-purple-900 mb-2">
+                  디지털 경제 권리
+                </h4>
+                <p className="text-sm text-purple-700 mb-2">
+                  개인 데이터 주권 확립
+                </p>
                 <ul className="text-xs text-purple-600">
                   <li>• 데이터 신탁 제도</li>
                   <li>• 동적 소유권 모델</li>
@@ -327,8 +338,12 @@ graph TD
                 </ul>
               </div>
               <div className="p-4 bg-orange-50 rounded-lg border border-orange-200">
-                <h4 className="font-semibold text-orange-900 mb-2">디지털 경제 권력</h4>
-                <p className="text-sm text-orange-700 mb-2">플랫폼 권력의 민주적 분산</p>
+                <h4 className="font-semibold text-orange-900 mb-2">
+                  디지털 경제 권력
+                </h4>
+                <p className="text-sm text-orange-700 mb-2">
+                  플랫폼 권력의 민주적 분산
+                </p>
                 <ul className="text-xs text-orange-600">
                   <li>• 데이터 배당 시스템</li>
                   <li>• 기여 기반 보상</li>
@@ -337,9 +352,11 @@ graph TD
               </div>
             </div>
             <p className="text-gray-700 leading-relaxed">
-              <span className="font-semibold text-gray-900">생산-소유-분배</span>의 
-              디지털 전환을 통해 탐욕 경제에서 절제 경제로, 경쟁 경제에서 협력 경제로의 
-              패러다임 전환을 실현합니다.
+              <span className="font-semibold text-gray-900">
+                생산-소유-분배
+              </span>
+              의 디지털 전환을 통해 탐욕 경제에서 절제 경제로, 경쟁 경제에서
+              협력 경제로의 패러다임 전환을 실현합니다.
             </p>
           </div>
 
@@ -348,7 +365,7 @@ graph TD
             <h3 className="text-xl font-semibold mb-4 text-gray-900">
               🗺️ 로드맵 단계별 상세 설명
             </h3>
-            
+
             {/* 현재 연구 단계 */}
             <div className="mb-6 p-4 bg-blue-50 rounded-lg border-l-4 border-blue-500">
               <h4 className="text-lg font-semibold text-blue-900 mb-3">
@@ -356,9 +373,12 @@ graph TD
               </h4>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div className="bg-white p-3 rounded-lg">
-                  <h5 className="font-semibold text-blue-800 mb-2">디지털 시대 경제 주체 변화</h5>
+                  <h5 className="font-semibold text-blue-800 mb-2">
+                    디지털 시대 경제 주체 변화
+                  </h5>
                   <p className="text-sm text-blue-700 mb-2">
-                    <strong>핵심 질문:</strong> 누가 새로운 경제의 주체가 될 것인가?
+                    <strong>핵심 질문:</strong> 누가 새로운 경제의 주체가 될
+                    것인가?
                   </p>
                   <ul className="text-xs text-blue-600">
                     <li>• AI 기술로 역량이 강화된 개인</li>
@@ -367,7 +387,9 @@ graph TD
                   </ul>
                 </div>
                 <div className="bg-white p-3 rounded-lg">
-                  <h5 className="font-semibold text-purple-800 mb-2">디지털 시대 경제 권리</h5>
+                  <h5 className="font-semibold text-purple-800 mb-2">
+                    디지털 시대 경제 권리
+                  </h5>
                   <p className="text-sm text-purple-700 mb-2">
                     <strong>핵심 질문:</strong> 무엇을 어떻게 소유할 것인가?
                   </p>
@@ -378,7 +400,9 @@ graph TD
                   </ul>
                 </div>
                 <div className="bg-white p-3 rounded-lg">
-                  <h5 className="font-semibold text-orange-800 mb-2">디지털 시대 경제 권력</h5>
+                  <h5 className="font-semibold text-orange-800 mb-2">
+                    디지털 시대 경제 권력
+                  </h5>
                   <p className="text-sm text-orange-700 mb-2">
                     <strong>핵심 질문:</strong> 어떻게 공정하게 분배할 것인가?
                   </p>
@@ -398,7 +422,9 @@ graph TD
               </h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="bg-white p-3 rounded-lg">
-                  <h5 className="font-semibold text-green-800 mb-2">📈 생산성 혁명</h5>
+                  <h5 className="font-semibold text-green-800 mb-2">
+                    📈 생산성 혁명
+                  </h5>
                   <ul className="text-sm text-green-700 space-y-1">
                     <li>• AI가 인간의 인지적 한계를 보완</li>
                     <li>• 개인이 전문가 수준의 결과물 생산</li>
@@ -406,7 +432,9 @@ graph TD
                   </ul>
                 </div>
                 <div className="bg-white p-3 rounded-lg">
-                  <h5 className="font-semibold text-green-800 mb-2">⚖️ 불평등 해소</h5>
+                  <h5 className="font-semibold text-green-800 mb-2">
+                    ⚖️ 불평등 해소
+                  </h5>
                   <ul className="text-sm text-green-700 space-y-1">
                     <li>• 소수 거대 기업의 독점 방지</li>
                     <li>• 개인과 소규모 공동체 역량 강화</li>
@@ -414,7 +442,9 @@ graph TD
                   </ul>
                 </div>
                 <div className="bg-white p-3 rounded-lg">
-                  <h5 className="font-semibold text-green-800 mb-2">🌍 지속가능성</h5>
+                  <h5 className="font-semibold text-green-800 mb-2">
+                    🌍 지속가능성
+                  </h5>
                   <ul className="text-sm text-green-700 space-y-1">
                     <li>• 자원 효율적인 생산 방식</li>
                     <li>• 개인 맞춤형 서비스로 낭비 최소화</li>
@@ -422,7 +452,9 @@ graph TD
                   </ul>
                 </div>
                 <div className="bg-white p-3 rounded-lg">
-                  <h5 className="font-semibold text-green-800 mb-2">🛡️ 안전성 확보</h5>
+                  <h5 className="font-semibold text-green-800 mb-2">
+                    🛡️ 안전성 확보
+                  </h5>
                   <ul className="text-sm text-green-700 space-y-1">
                     <li>• 인간 중심 AI 거버넌스</li>
                     <li>• 투명하고 책임감 있는 AI 활용</li>
@@ -439,21 +471,49 @@ graph TD
               </h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="bg-white p-3 rounded-lg">
-                  <h5 className="font-semibold text-purple-800 mb-2">심화 연구 (2025-2027)</h5>
+                  <h5 className="font-semibold text-purple-800 mb-2">
+                    심화 연구 (2025-2027)
+                  </h5>
                   <ul className="text-sm text-purple-700 space-y-1">
-                    <li>• <strong>데이터 소유권 법제화:</strong> 개인 데이터 주권 확립을 위한 법적 프레임워크</li>
-                    <li>• <strong>공동체 경제 모델:</strong> 협력 기반 경제 생태계 설계</li>
-                    <li>• <strong>AI-인간 협력 플랫폼:</strong> 기술적 구현과 윤리적 가이드라인</li>
-                    <li>• <strong>기여 기반 분배 시스템:</strong> 공정한 가치 평가와 보상 메커니즘</li>
+                    <li>
+                      • <strong>데이터 소유권 법제화:</strong> 개인 데이터 주권
+                      확립을 위한 법적 프레임워크
+                    </li>
+                    <li>
+                      • <strong>공동체 경제 모델:</strong> 협력 기반 경제 생태계
+                      설계
+                    </li>
+                    <li>
+                      • <strong>AI-인간 협력 플랫폼:</strong> 기술적 구현과
+                      윤리적 가이드라인
+                    </li>
+                    <li>
+                      • <strong>기여 기반 분배 시스템:</strong> 공정한 가치
+                      평가와 보상 메커니즘
+                    </li>
                   </ul>
                 </div>
                 <div className="bg-white p-3 rounded-lg">
-                  <h5 className="font-semibold text-orange-800 mb-2">실증 검증 (2027-2030)</h5>
+                  <h5 className="font-semibold text-orange-800 mb-2">
+                    실증 검증 (2027-2030)
+                  </h5>
                   <ul className="text-sm text-orange-700 space-y-1">
-                    <li>• <strong>파일럿 프로그램:</strong> 소규모 실험을 통한 모델 검증</li>
-                    <li>• <strong>정책 프레임워크:</strong> 정부와 협력한 제도 설계</li>
-                    <li>• <strong>국제 협력 모델:</strong> 글로벌 표준 개발과 협력 체계</li>
-                    <li>• <strong>효과성 평가:</strong> 데이터 기반 성과 측정과 개선</li>
+                    <li>
+                      • <strong>파일럿 프로그램:</strong> 소규모 실험을 통한
+                      모델 검증
+                    </li>
+                    <li>
+                      • <strong>정책 프레임워크:</strong> 정부와 협력한 제도
+                      설계
+                    </li>
+                    <li>
+                      • <strong>국제 협력 모델:</strong> 글로벌 표준 개발과 협력
+                      체계
+                    </li>
+                    <li>
+                      • <strong>효과성 평가:</strong> 데이터 기반 성과 측정과
+                      개선
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -466,9 +526,12 @@ graph TD
               </h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="bg-white p-3 rounded-lg">
-                  <h5 className="font-semibold text-green-800 mb-2">🌐 글로벌 거버넌스</h5>
+                  <h5 className="font-semibold text-green-800 mb-2">
+                    🌐 글로벌 거버넌스
+                  </h5>
                   <p className="text-sm text-green-700 mb-2">
-                    국경을 초월한 디지털 경제 질서의 안정적 운영을 위한 국제적 거버넌스 체계
+                    국경을 초월한 디지털 경제 질서의 안정적 운영을 위한 국제적
+                    거버넌스 체계
                   </p>
                   <ul className="text-xs text-green-600">
                     <li>• 다국가 간 디지털 경제 정책 조율</li>
@@ -477,7 +540,9 @@ graph TD
                   </ul>
                 </div>
                 <div className="bg-white p-3 rounded-lg">
-                  <h5 className="font-semibold text-green-800 mb-2">📋 통합 정책 체계</h5>
+                  <h5 className="font-semibold text-green-800 mb-2">
+                    📋 통합 정책 체계
+                  </h5>
                   <p className="text-sm text-green-700 mb-2">
                     디지털 시대에 맞는 새로운 경제 정책과 사회 보장 시스템
                   </p>
@@ -488,7 +553,9 @@ graph TD
                   </ul>
                 </div>
                 <div className="bg-white p-3 rounded-lg">
-                  <h5 className="font-semibold text-green-800 mb-2">⚖️ 안전하고 건강한 미래</h5>
+                  <h5 className="font-semibold text-green-800 mb-2">
+                    ⚖️ 안전하고 건강한 미래
+                  </h5>
                   <p className="text-sm text-green-700 mb-2">
                     인간 존엄성과 개인 권리를 보장하는 디지털 경제의 기본 원칙
                   </p>
@@ -499,7 +566,9 @@ graph TD
                   </ul>
                 </div>
                 <div className="bg-white p-3 rounded-lg">
-                  <h5 className="font-semibold text-green-800 mb-2">🏛️ 국제 협력 기구</h5>
+                  <h5 className="font-semibold text-green-800 mb-2">
+                    🏛️ 국제 협력 기구
+                  </h5>
                   <p className="text-sm text-green-700 mb-2">
                     디지털 경제 질서의 지속가능한 운영을 위한 국제 기구와 제도
                   </p>
@@ -519,19 +588,25 @@ graph TD
               </h4>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div className="bg-white p-3 rounded-lg text-center">
-                  <h5 className="font-semibold text-yellow-800 mb-2">🔬 연구의 힘</h5>
+                  <h5 className="font-semibold text-yellow-800 mb-2">
+                    🔬 연구의 힘
+                  </h5>
                   <p className="text-sm text-yellow-700">
                     실증적 데이터와 과학적 방법론을 통한 정책 설계
                   </p>
                 </div>
                 <div className="bg-white p-3 rounded-lg text-center">
-                  <h5 className="font-semibold text-yellow-800 mb-2">🤝 협력의 힘</h5>
+                  <h5 className="font-semibold text-yellow-800 mb-2">
+                    🤝 협력의 힘
+                  </h5>
                   <p className="text-sm text-yellow-700">
                     시민, 학계, 정부, 기업의 협력적 거버넌스
                   </p>
                 </div>
                 <div className="bg-white p-3 rounded-lg text-center">
-                  <h5 className="font-semibold text-yellow-800 mb-2">🌱 실현의 힘</h5>
+                  <h5 className="font-semibold text-yellow-800 mb-2">
+                    🌱 실현의 힘
+                  </h5>
                   <p className="text-sm text-yellow-700">
                     단계적 실행을 통한 지속가능한 변화
                   </p>
@@ -749,15 +824,23 @@ graph TD
                 <div className="flex items-start">
                   <span className="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                   <div>
-                    <h4 className="font-semibold text-gray-900">연구 기반 정책 개발</h4>
-                    <p className="text-sm text-gray-600">실증 데이터와 시뮬레이션 결과를 바탕으로 한 정책 설계</p>
+                    <h4 className="font-semibold text-gray-900">
+                      연구 기반 정책 개발
+                    </h4>
+                    <p className="text-sm text-gray-600">
+                      실증 데이터와 시뮬레이션 결과를 바탕으로 한 정책 설계
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <span className="inline-block w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                   <div>
-                    <h4 className="font-semibold text-gray-900">시민 참여와 공동 설계</h4>
-                    <p className="text-sm text-gray-600">경제 주체들의 직접 참여를 통한 민주적 거버넌스</p>
+                    <h4 className="font-semibold text-gray-900">
+                      시민 참여와 공동 설계
+                    </h4>
+                    <p className="text-sm text-gray-600">
+                      경제 주체들의 직접 참여를 통한 민주적 거버넌스
+                    </p>
                   </div>
                 </div>
               </div>
@@ -765,15 +848,23 @@ graph TD
                 <div className="flex items-start">
                   <span className="inline-block w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                   <div>
-                    <h4 className="font-semibold text-gray-900">국제 협력과 표준화</h4>
-                    <p className="text-sm text-gray-600">글로벌 차원의 협력을 통한 경제 질서 표준 확립</p>
+                    <h4 className="font-semibold text-gray-900">
+                      국제 협력과 표준화
+                    </h4>
+                    <p className="text-sm text-gray-600">
+                      글로벌 차원의 협력을 통한 경제 질서 표준 확립
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <span className="inline-block w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                   <div>
-                    <h4 className="font-semibold text-gray-900">기술과 제도의 균형</h4>
-                    <p className="text-sm text-gray-600">기술 혁신과 사회 제도 개선의 조화로운 발전</p>
+                    <h4 className="font-semibold text-gray-900">
+                      기술과 제도의 균형
+                    </h4>
+                    <p className="text-sm text-gray-600">
+                      기술 혁신과 사회 제도 개선의 조화로운 발전
+                    </p>
                   </div>
                 </div>
               </div>
@@ -807,7 +898,7 @@ graph TD
                   → 디지털 경제의 글로벌 표준과 규범 확립
                 </p>
               </div>
-              
+
               <div className="p-4 bg-purple-50 rounded-lg border border-purple-200">
                 <h4 className="font-semibold text-purple-900 mb-3">
                   📋 통합 경제 정책 프레임워크
@@ -861,19 +952,25 @@ graph TD
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="text-center p-4 bg-white rounded-lg border border-gray-200">
-                <h4 className="font-semibold text-gray-900 mb-2">🛡️ 안전한 경제</h4>
+                <h4 className="font-semibold text-gray-900 mb-2">
+                  🛡️ 안전한 경제
+                </h4>
                 <p className="text-sm text-gray-600">
                   플랫폼 독점과 AI 리스크로부터 보호받는 경제 환경
                 </p>
               </div>
               <div className="text-center p-4 bg-white rounded-lg border border-gray-200">
-                <h4 className="font-semibold text-gray-900 mb-2">💚 건강한 경제</h4>
+                <h4 className="font-semibold text-gray-900 mb-2">
+                  💚 건강한 경제
+                </h4>
                 <p className="text-sm text-gray-600">
                   절제와 협력을 통한 지속가능한 성장 모델
                 </p>
               </div>
               <div className="text-center p-4 bg-white rounded-lg border border-gray-200">
-                <h4 className="font-semibold text-gray-900 mb-2">⚖️ 공정한 경제</h4>
+                <h4 className="font-semibold text-gray-900 mb-2">
+                  ⚖️ 공정한 경제
+                </h4>
                 <p className="text-sm text-gray-600">
                   기여에 따른 정당한 보상과 균등한 기회 보장
                 </p>
@@ -894,8 +991,11 @@ graph TD
               연구가 만드는 미래: 안전하고 건강한 디지털 경제
             </h3>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
-              현재의 연구가 <span className="font-semibold text-gray-900">미래의 경제 질서</span>를 
-              설계하고 구현하는 구체적인 로드맵입니다.
+              현재의 연구가{" "}
+              <span className="font-semibold text-gray-900">
+                미래의 경제 질서
+              </span>
+              를 설계하고 구현하는 구체적인 로드맵입니다.
             </p>
           </div>
 
@@ -927,29 +1027,45 @@ graph TD
             <div className="space-y-3 text-sm text-gray-700">
               <div className="flex items-start">
                 <span className="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                <span><strong>디지털 경제 주체 연구</strong> → 글로벌 디지털 경제 거버넌스 체계 구축</span>
+                <span>
+                  <strong>디지털 경제 주체 연구</strong> → 글로벌 디지털 경제
+                  거버넌스 체계 구축
+                </span>
               </div>
               <div className="flex items-start">
                 <span className="inline-block w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                <span><strong>디지털 경제 권리 연구</strong> → 통합 경제 정책 프레임워크와 안전하고 건강한 미래 완성</span>
+                <span>
+                  <strong>디지털 경제 권리 연구</strong> → 통합 경제 정책
+                  프레임워크와 안전하고 건강한 미래 완성
+                </span>
               </div>
               <div className="flex items-start">
                 <span className="inline-block w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                <span><strong>디지털 경제 권력 연구</strong> → 국제 디지털 경제 기구와 공정한 분배 시스템 실현</span>
+                <span>
+                  <strong>디지털 경제 권력 연구</strong> → 국제 디지털 경제
+                  기구와 공정한 분배 시스템 실현
+                </span>
               </div>
             </div>
           </div>
 
           <div className="text-center">
             <p className="text-gray-700 leading-relaxed mb-4">
-              이 로드맵은 추상적 비전이 아닌 <span className="font-semibold text-gray-900">구체적이고 실현 가능한 실행 계획</span>입니다. 
-              각 단계의 연구 성과가 축적되어 궁극적으로 <span className="font-semibold text-gray-900">글로벌 디지털 경제 거버넌스, 
-              통합 경제 정책 프레임워크, 안전하고 건강한 미래, 국제 디지털 경제 기구</span>를 완성하여 
-              탐욕과 경쟁의 경제에서 절제와 협력의 경제로 전환하는 새로운 문명을 열어갈 것입니다.
+              이 로드맵은 추상적 비전이 아닌{" "}
+              <span className="font-semibold text-gray-900">
+                구체적이고 실현 가능한 실행 계획
+              </span>
+              입니다. 각 단계의 연구 성과가 축적되어 궁극적으로{" "}
+              <span className="font-semibold text-gray-900">
+                글로벌 디지털 경제 거버넌스, 통합 경제 정책 프레임워크, 안전하고
+                건강한 미래, 국제 디지털 경제 기구
+              </span>
+              를 완성하여 탐욕과 경쟁의 경제에서 절제와 협력의 경제로 전환하는
+              새로운 문명을 열어갈 것입니다.
             </p>
             <p className="text-xl font-semibold text-gray-900">
-              연구에서 시작되어 글로벌 거버넌스로 완성되는 
-              인간 중심 디지털 경제 질서 혁명이 지금 시작됩니다.
+              연구에서 시작되어 글로벌 거버넌스로 완성되는 인간 중심 디지털 경제
+              질서 혁명이 지금 시작됩니다.
             </p>
           </div>
         </div>
