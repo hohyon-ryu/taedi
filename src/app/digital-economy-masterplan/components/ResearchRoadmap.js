@@ -5,58 +5,58 @@ const ResearchRoadmap = () => {
   const researchRoadmapChart = `
 graph TD
     subgraph "현재 연구 (2025-2026)"
-        R1["디지털 경제 주체<br/>(생산: AI-인간 협력)"]
-        R2["디지털 경제 권리<br/>(소유: 데이터 주권)"]
-        R3["디지털 경제 권력<br/>(분배: 플랫폼 거버넌스)"]
+        R1["디지털 경제 주체<br/>(생산)"]
+        R2["디지털 경제 권리<br/>(소유)"]
+        R3["디지털 경제 권력<br/>(분배)"]
+        R4["디지털 화폐 질서<br/>(교환)"]
     end
     
-    subgraph "심화 연구 (2025-2027)"
-        S1["데이터 소유권 법제화"]
+    subgraph "심화 연구 (2027-2028)"
         S2["공동체 경제 모델"]
-        S3["AI-인간 협력 플랫폼"]
+        S3["AI 기반 가치 생산"]
+        S1["데이터 소유권 법제화"]
         S4["기여 기반 분배 시스템"]
+        S5["디지털 화폐 시스템"]
     end
     
-    subgraph "실증 검증 (2027-2030)"
-        E1["파일럿 프로그램"]
-        E2["정책 프레임워크"]
-        E3["국제 협력 모델"]
+    subgraph "실증 검증 (2028-2030)"
+        E1["소규모 실증 실험"]
+        E2["정책 제도 설계"]
+        E3["글로벌 표준 개발"]
     end
     
     subgraph "실현 (2030-2035)"
         F1["글로벌 디지털 경제 거버넌스<br/>(Global Digital Economic Governance)"]
-        F2["통합 경제 정책 프레임워크<br/>(Integrated Economic Policy Framework)"]
+        F2["통합 경제 질서 프레임워크<br/>(Integrated Economic Order Framework)"]
         F3["안전하고 건강한 미래<br/>(Safe & Healthy Future)"]
-        F4["국제 디지털 경제 기구<br/>(International Digital Economy Organization)"]
     end
     
-    R1 --> S1
+    R1 --> S2
     R1 --> S3
     R2 --> S1
-    R2 --> S2
-    R3 --> S3
+    R3 --> S2
     R3 --> S4
+    R4 --> S5
     
-    S1 -.-> E1
+    S1 -.-> E2
     S2 -.-> E1
     S3 -.-> E2
     S4 -.-> E3
+    S5 -.-> E3
     
     E1 -.-> F1
     E1 -.-> F2
     E2 -.-> F2
     E3 -.-> F1
-    E3 -.-> F4
     
     F1 -.-> F3
     F2 -.-> F3
-    F4 -.-> F3
     
     classDef current fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
     classDef future fill:#f5f5f5,stroke:#9e9e9e,stroke-width:1px,stroke-dasharray: 5 5,color:#666666
     
-    class R1,R2,R3 current
-    class S1,S2,S3,S4,E1,E2,E3,F1,F2,F3,F4 future
+    class R1,R2,R3,R4 current
+    class S1,S2,S3,S4,S5,E1,E2,E3,F1,F2,F3 future
   `;
 
   return (
@@ -78,13 +78,13 @@ graph TD
             연구에서 실현까지의 체계적 로드맵
           </h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            현재 진행하는 세 가지 핵심 연구가 단계적으로 발전하여 2035년{" "}
+            현재 진행하는 네 가지 핵심 연구가 단계적으로 발전하여 2035년{" "}
             <span className="font-semibold text-gray-900">
               안전하고 건강한 디지털 경제 질서
             </span>
             를 완성합니다.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
             <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
               <h4 className="font-semibold text-blue-900 mb-2">
                 디지털 경제 주체
@@ -116,17 +116,32 @@ graph TD
                 디지털 경제 권력
               </h4>
               <p className="text-sm text-orange-700 mb-2">
-                플랫폼 권력의 민주적 분산
+                데이터 기반 공정한 분배 체계
               </p>
               <ul className="text-xs text-orange-600">
-                <li>• 데이터 배당 시스템</li>
-                <li>• 기여 기반 보상</li>
-                <li>• 공동체 거버넌스</li>
+                <li>• 개인 데이터 기여도 보상</li>
+                <li>• 분배 권한 재배치</li>
+                <li>• 욕망과 절제의 균형</li>
+              </ul>
+            </div>
+            <div className="p-4 bg-green-50 rounded-lg border border-green-200">
+              <h4 className="font-semibold text-green-900 mb-2">
+                디지털 화폐 질서
+              </h4>
+              <p className="text-sm text-green-700 mb-2">
+                탈중앙화 디지털 교환 시스템
+              </p>
+              <ul className="text-xs text-green-600">
+                <li>• 중앙은행 디지털화폐(CBDC)</li>
+                <li>• 탈중앙화 자율조직(DAO)</li>
+                <li>• 스마트 계약 기반 거래</li>
               </ul>
             </div>
           </div>
           <p className="text-gray-700 leading-relaxed">
-            <span className="font-semibold text-gray-900">생산-소유-분배</span>
+            <span className="font-semibold text-gray-900">
+              생산-소유-분배-교환
+            </span>
             의 디지털 전환을 통해 탐욕 경제에서 절제 경제로, 경쟁 경제에서 협력
             경제로의 패러다임 전환을 실현합니다.
           </p>
@@ -143,7 +158,7 @@ graph TD
             <h4 className="text-lg font-semibold text-blue-900 mb-3">
               📘 1단계: 현재 연구 (2024-2025)
             </h4>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
               <div className="bg-white p-3 rounded-lg">
                 <h5 className="font-semibold text-blue-800 mb-2">
                   디지털 시대 경제 주체 변화
@@ -179,9 +194,22 @@ graph TD
                   <strong>핵심 질문:</strong> 어떻게 공정하게 분배할 것인가?
                 </p>
                 <ul className="text-xs text-orange-600">
-                  <li>• 플랫폼 독점력의 분산</li>
-                  <li>• 기여 기반 보상 시스템</li>
-                  <li>• 디지털 경제 이익의 사회 환원</li>
+                  <li>• 데이터 기여도 기반 보상</li>
+                  <li>• 국가-도시-개인 권한 재배치</li>
+                  <li>• 중용적 분배 메커니즘</li>
+                </ul>
+              </div>
+              <div className="bg-white p-3 rounded-lg">
+                <h5 className="font-semibold text-green-800 mb-2">
+                  디지털 시대 화폐 질서
+                </h5>
+                <p className="text-sm text-green-700 mb-2">
+                  <strong>핵심 질문:</strong> 어떤 교환 수단을 사용할 것인가?
+                </p>
+                <ul className="text-xs text-green-600">
+                  <li>• 탈중앙화 디지털 화폐</li>
+                  <li>• 탈중앙화 금융(DeFi) 시스템</li>
+                  <li>• 프로그래머블 머니</li>
                 </ul>
               </div>
             </div>
@@ -239,12 +267,12 @@ graph TD
           {/* 심화 연구와 실증 검증 */}
           <div className="mb-6 p-4 bg-purple-50 rounded-lg border-l-4 border-purple-500">
             <h4 className="text-lg font-semibold text-purple-900 mb-3">
-              🔬 2-3단계: 심화 연구 → 실증 검증 (2025-2030)
+              🔬 2-3단계: 심화 연구 → 실증 검증 (2027-2030)
             </h4>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="bg-white p-3 rounded-lg">
                 <h5 className="font-semibold text-purple-800 mb-2">
-                  심화 연구 (2025-2027)
+                  심화 연구 (2027-2028)
                 </h5>
                 <ul className="text-sm text-purple-700 space-y-1">
                   <li>
@@ -256,18 +284,22 @@ graph TD
                     설계
                   </li>
                   <li>
-                    • <strong>AI-인간 협력 플랫폼:</strong> 기술적 구현과 윤리적
+                    • <strong>AI-인간 협력 체계:</strong> 협력 모델과 윤리적
                     가이드라인
                   </li>
                   <li>
                     • <strong>기여 기반 분배 시스템:</strong> 공정한 가치 평가와
                     보상 메커니즘
                   </li>
+                  <li>
+                    • <strong>디지털 화폐 시스템:</strong> 투명하고 안전한 교환
+                    매체
+                  </li>
                 </ul>
               </div>
               <div className="bg-white p-3 rounded-lg">
                 <h5 className="font-semibold text-orange-800 mb-2">
-                  실증 검증 (2027-2030)
+                  실증 검증 (2028-2030)
                 </h5>
                 <ul className="text-sm text-orange-700 space-y-1">
                   <li>

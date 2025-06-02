@@ -4,58 +4,58 @@
 export const researchRoadmapChart = `
 graph TD
     subgraph "현재 연구 (2025-2026)"
-        R1["디지털 경제 주체<br/>(생산: AI-인간 협력)"]
-        R2["디지털 경제 권리<br/>(소유: 데이터 주권)"]
-        R3["디지털 경제 권력<br/>(분배: 플랫폼 거버넌스)"]
+        R1["디지털 경제 주체<br/>(생산)"]
+        R2["디지털 경제 권리<br/>(소유)"]
+        R3["디지털 경제 권력<br/>(분배)"]
+        R4["디지털 화폐 질서<br/>(교환)"]
     end
     
-    subgraph "심화 연구 (2025-2027)"
-        S1["데이터 소유권 법제화"]
+    subgraph "심화 연구 (2027-2028)"
         S2["공동체 경제 모델"]
-        S3["AI-인간 협력 플랫폼"]
+        S3["AI 기반 가치 생산"]
+        S1["데이터 소유권 법제화"]
         S4["기여 기반 분배 시스템"]
+        S5["디지털 화폐 시스템"]
     end
     
-    subgraph "실증 검증 (2027-2030)"
-        E1["파일럿 프로그램"]
-        E2["정책 프레임워크"]
-        E3["국제 협력 모델"]
+    subgraph "실증 검증 (2028-2030)"
+        E1["소규모 실증 실험"]
+        E2["정책 제도 설계"]
+        E3["글로벌 표준 개발"]
     end
     
     subgraph "실현 (2030-2035)"
         F1["글로벌 디지털 경제 거버넌스<br/>(Global Digital Economic Governance)"]
-        F2["통합 경제 정책 프레임워크<br/>(Integrated Economic Policy Framework)"]
+        F2["통합 경제 질서 프레임워크<br/>(Integrated Economic Order Framework)"]
         F3["안전하고 건강한 미래<br/>(Safe & Healthy Future)"]
-        F4["국제 디지털 경제 기구<br/>(International Digital Economy Organization)"]
     end
     
-    R1 --> S1
+    R1 --> S2
     R1 --> S3
     R2 --> S1
-    R2 --> S2
-    R3 --> S3
+    R3 --> S2
     R3 --> S4
+    R4 --> S5
     
-    S1 -.-> E1
+    S1 -.-> E2
     S2 -.-> E1
     S3 -.-> E2
     S4 -.-> E3
+    S5 -.-> E3
     
     E1 -.-> F1
     E1 -.-> F2
     E2 -.-> F2
     E3 -.-> F1
-    E3 -.-> F4
     
     F1 -.-> F3
     F2 -.-> F3
-    F4 -.-> F3
     
     classDef current fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
     classDef future fill:#f5f5f5,stroke:#9e9e9e,stroke-width:1px,stroke-dasharray: 5 5,color:#666666
     
-    class R1,R2,R3 current
-    class S1,S2,S3,S4,E1,E2,E3,F1,F2,F3,F4 future
+    class R1,R2,R3,R4 current
+    class S1,S2,S3,S4,S5,E1,E2,E3,F1,F2,F3 future
 `;
 
 // 경제 질서 진화 차트

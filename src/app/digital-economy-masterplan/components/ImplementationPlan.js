@@ -15,13 +15,14 @@ const ImplementationPlan = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="p-4 bg-blue-50 rounded-lg border border-blue-200 shadow-sm">
               <h4 className="font-semibold text-blue-900 mb-2">
-                1단계: 심화 연구 (2025-2027)
+                1단계: 심화 연구 (2027-2028)
               </h4>
               <ul className="text-sm text-blue-700 space-y-1 mb-3">
                 <li>• 데이터 소유권 법제화 연구</li>
                 <li>• 공동체 경제 모델 설계</li>
                 <li>• AI-인간 협력 플랫폼 개발</li>
                 <li>• 기여 기반 분배 시스템 연구</li>
+                <li>• 디지털 화폐 시스템 연구</li>
               </ul>
               <p className="text-xs text-blue-600 italic">
                 이론적 토대 구축 및 프로토타입 개발
@@ -29,7 +30,7 @@ const ImplementationPlan = () => {
             </div>
             <div className="p-4 bg-orange-50 rounded-lg border border-orange-200 shadow-sm">
               <h4 className="font-semibold text-orange-900 mb-2">
-                2단계: 실증 검증 (2027-2030)
+                2단계: 실증 검증 (2028-2030)
               </h4>
               <ul className="text-sm text-orange-700 space-y-1 mb-3">
                 <li>• 파일럿 프로그램 실행</li>
