@@ -31,7 +31,10 @@ const EconomicOrderChangeResearchPlan = () => {
   return (
     <Section title="2. 디지털 시대 경제 질서 변화의 연구 계획">
       <div className="bg-gray-50 p-2 rounded-sm overflow-hidden mb-4">
-        <MermaidRenderer chartDefinition={mermaidChartString} />
+        <MermaidRenderer
+          chartDefinition={mermaidChartString}
+          id="digital-economy-research-plan"
+        />
       </div>
     </Section>
   );

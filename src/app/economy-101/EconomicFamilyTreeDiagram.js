@@ -150,7 +150,10 @@ end
 const EconomicFamilyTreeDiagram = () => {
   return (
     <div className="my-8 rounded-lg shadow-lg bg-gray-50">
-      <MermaidRenderer chartDefinition={chartDefinition} />
+      <MermaidRenderer
+        chartDefinition={chartDefinition}
+        id="economic-family-tree"
+      />
     </div>
   );
 };

@@ -64,14 +64,17 @@ graph TB
             연구 전체 일정
           </h3>
           <MermaidRenderer
-            chart={researchPlanOverview}
+            chartDefinition={researchPlanOverview}
             id="researchPlanOverview"
           />
         </div>
 
         <div className="mb-8 p-6 bg-gray-50 rounded-lg">
           <h3 className="text-xl font-semibold mb-4">연구 프레임워크</h3>
-          <MermaidRenderer chart={researchFramework} id="researchFramework" />
+          <MermaidRenderer
+            chartDefinition={researchFramework}
+            id="researchFramework"
+          />
         </div>
 
         <div className="mb-8">
@@ -593,7 +596,7 @@ graph TB
           시대'의 가능성과 함께 새로운 경제 모델에 대한 논의가 활발합니다.
         </p>
         <MermaidRenderer
-          chart={`
+          chartDefinition={`
 graph TD
     EOC["디지털 시대 경제 질서 변화 (Changes in Economic Order)"] --> LAB["AI의 노동 대체 및 '탈노동' 가능성 (AI Labor Displacement & 'Post-Work' Potential)"];
     LAB --> LAB1["노동 시장 시나리오 (Labor Market Scenarios)"];
@@ -670,7 +673,7 @@ graph TD
         </p>
         <h3 className="text-xl font-semibold mt-6 mb-3">사회 변화 측면</h3>
         <MermaidRenderer
-          chart={`
+          chartDefinition={`
 graph TD
     SA["디지털 시대의 사회 변화 (Social Changes in Digital Age)"] --> SAI["AI의 개인 역량 강화 (AI Individual Empowerment)"];
     SAI --> SAI1["전문가 수준 능력 부여 (Expert-level Capabilities)"];
@@ -740,7 +743,7 @@ graph TD
           공동체 경제 질서 측면
         </h3>
         <MermaidRenderer
-          chart={`
+          chartDefinition={`
 graph TD
     CE["디지털 시대 공동체 경제 질서 (Community Economic Order)"] --> FH["가정 및 지역사회 (Family & Local Community)"];
     FH --> FH1["경제적 역할 재편 (Reshaping Economic Roles)"];
@@ -818,7 +821,7 @@ graph TD
           생태계의 동학을 형성합니다.
         </p>
         <MermaidRenderer
-          chart={`
+          chartDefinition={`
 graph TD
     subgraph 주요 주체 (Key Actors)
         direction LR
@@ -930,7 +933,7 @@ graph TD
           전통적인 패러다임은 도전을 받고 새로운 질서가 모색되고 있습니다.
         </p>
         <MermaidRenderer
-          chart={`
+          chartDefinition={`
 graph TD
     A["디지털/AI 시대 패러다임 전환"] --> VC["가치 창출 방식 변화"];
     A --> OS["소유권 개념 변화"];
@@ -1101,7 +1104,7 @@ graph TD
           문제 등 복합적인 문제점을 야기합니다.
         </p>
         <MermaidRenderer
-          chart={`
+          chartDefinition={`
 graph TD
     PNDO["새로운 디지털 경제 질서의 문제점 (Problems of New Digital Economic Order)"]
 
@@ -1208,7 +1211,7 @@ graph TD
           필요합니다.
         </p>
         <MermaidRenderer
-          chart={`
+          chartDefinition={`
 graph TD
     RT["건강하고 안전한 디지털 사회 위한 연구 과제 (Research for Healthy & Safe Digital Society)"]
 

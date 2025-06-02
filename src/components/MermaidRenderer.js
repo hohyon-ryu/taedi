@@ -53,21 +53,30 @@ const MermaidRenderer = ({ chartDefinition, id }) => {
       try {
         // Clear any previous content and error state
         setError(null);
-        containerRef.current.removeAttribute("data-processed");
 
-        // Clear the container first
+        // Ensure the container is completely reset
+        containerRef.current.removeAttribute("data-processed");
         containerRef.current.innerHTML = "";
 
-        // Set unique ID for this diagram
-        containerRef.current.id = uniqueId;
+        // Create a fresh div element with the unique ID
+        const diagramDiv = document.createElement("div");
+        diagramDiv.id = uniqueId;
+        diagramDiv.className = "mermaid-diagram";
+        diagramDiv.textContent = chartDefinition;
 
-        // Add the chart definition as text content
-        containerRef.current.textContent = chartDefinition;
+        // Append the fresh div to our container
+        containerRef.current.appendChild(diagramDiv);
 
-        // Use mermaid.run() to render the chart
-        window.mermaid.run({
-          nodes: [containerRef.current],
-        });
+        // Use mermaid.run() with a slight delay to ensure the DOM is updated
+        setTimeout(() => {
+          window.mermaid
+            .run({
+              nodes: [diagramDiv],
+            })
+            .catch((error) => {
+              setError(error.message);
+            });
+        }, 10);
       } catch (error) {
         setError(error.message);
         if (containerRef.current) {
