@@ -8,7 +8,6 @@ graph TD
         R1["디지털 경제 주체<br/>(생산)"]
         R2["디지털 경제 권리<br/>(소유)"]
         R3["디지털 경제 권력<br/>(분배)"]
-        R4["디지털 화폐 질서<br/>(교환)"]
     end
     
     subgraph "심화 연구 (2027-2028)"
@@ -16,7 +15,7 @@ graph TD
         S3["AI 기반 가치 생산"]
         S1["데이터 소유권 법제화"]
         S4["기여 기반 분배 시스템"]
-        S5["디지털 화폐 시스템"]
+        S6["디지털 화폐 질서"]
     end
     
     subgraph "실증 검증 (2028-2030)"
@@ -34,15 +33,16 @@ graph TD
     R1 --> S2
     R1 --> S3
     R2 --> S1
+    R2 --> S6
     R3 --> S2
     R3 --> S4
-    R4 --> S5
+    R3 --> S6
     
     S1 -.-> E2
     S2 -.-> E1
     S3 -.-> E2
     S4 -.-> E3
-    S5 -.-> E3
+    S6 -.-> E3
     
     E1 -.-> F1
     E1 -.-> F2
@@ -55,8 +55,8 @@ graph TD
     classDef current fill:#2c3e50,stroke:#34495e,stroke-width:2px,color:#ffffff
     classDef future fill:#f5f7fa,stroke:#7f8c8d,stroke-width:1px,stroke-dasharray: 5 5,color:#2c3e50
     
-    class R1,R2,R3,R4 current
-    class S1,S2,S3,S4,S5,E1,E2,E3,F1,F2,F3 future
+    class R1,R2,R3 current
+    class S1,S2,S3,S4,S6,E1,E2,E3,F1,F2,F3 future
   `;
 
   return (
@@ -168,8 +168,8 @@ graph TD
                     보상 메커니즘
                   </li>
                   <li>
-                    • <strong>디지털 화폐 시스템:</strong> 투명하고 안전한 교환
-                    매체
+                    • <strong>디지털 화폐 질서:</strong> 투명하고 안전한 경제
+                    질서 확립
                   </li>
                 </ul>
               </div>
