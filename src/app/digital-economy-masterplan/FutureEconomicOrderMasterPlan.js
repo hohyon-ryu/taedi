@@ -1,8 +1,6 @@
 import ConclusionSection from "./components/ConclusionSection";
 import DistributionMechanisms from "./components/DistributionMechanisms";
 import EconomicOrderEvolution from "./components/EconomicOrderEvolution";
-import GlobalGovernanceGoals from "./components/GlobalGovernanceGoals";
-import ImplementationPlan from "./components/ImplementationPlan";
 import MasterPlanHeader from "./components/MasterPlanHeader";
 import NewEconomicActors from "./components/NewEconomicActors";
 import OwnershipParadigm from "./components/OwnershipParadigm";
@@ -19,8 +17,6 @@ const FutureEconomicOrderMasterPlan = () => {
       <OwnershipParadigm />
       <DistributionMechanisms />
       <RestraintEconomyModel />
-      <ImplementationPlan />
-      <GlobalGovernanceGoals />
       <ConclusionSection />
     </article>
   );
