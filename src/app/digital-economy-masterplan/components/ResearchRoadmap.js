@@ -19,9 +19,10 @@ graph TD
     end
     
     subgraph "실증 검증 (2028-2030)"
-        E1["소규모 실증 실험"]
-        E2["정책 제도 설계"]
-        E3["글로벌 표준 개발"]
+        E1["소규모 실증 실험<br/>(Pilot Programs)"]
+        E2["정책 제도 설계<br/>(Policy Framework)"]
+        E3["글로벌 표준 개발<br/>(Global Standards)"]
+        E4["효과성 평가<br/>(Effectiveness Assessment)"]
     end
     
     subgraph "실현 (2030-2035)"
@@ -44,10 +45,15 @@ graph TD
     S4 -.-> E3
     S6 -.-> E3
     
+    S1 -.-> E4
+    S4 -.-> E4
+    S6 -.-> E4
+    
     E1 -.-> F1
     E1 -.-> F2
     E2 -.-> F2
     E3 -.-> F1
+    E4 -.-> F2
     
     F1 -.-> F3
     F2 -.-> F3
@@ -56,7 +62,7 @@ graph TD
     classDef future fill:#f5f7fa,stroke:#7f8c8d,stroke-width:1px,stroke-dasharray: 5 5,color:#2c3e50
     
     class R1,R2,R3 current
-    class S1,S2,S3,S4,S6,E1,E2,E3,F1,F2,F3 future
+    class S1,S2,S3,S4,S6,E1,E2,E3,E4,F1,F2,F3 future
   `;
 
   return (
